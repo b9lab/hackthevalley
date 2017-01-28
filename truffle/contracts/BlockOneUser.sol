@@ -4,7 +4,7 @@ import "EntitlementRegistry.sol";
 import "Entitlement.sol";
 
 contract BlockOneUser {
-    EntitlementRegistry registry;
+    EntitlementRegistry public registry;
 
     function BlockOneUser(address entitlementRegistry)  {
         if (entitlementRegistry == 0) {

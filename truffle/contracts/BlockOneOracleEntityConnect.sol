@@ -4,7 +4,7 @@ import "BlockOneOracle.sol";
 import "BlockOneOracleClientI.sol";
 
 contract BlockOneOracleEntityConnect is BlockOneOracleClientI {
-    function request_EntityConnect(bytes32 uri1, bytes32 uri2, uint level) returns(uint requestId) {
+    function request_EntityConnect(bytes32 uri1, bytes32 uri2, uint level) returns (uint requestId) {
         return BlockOneOracle(getOracle()).request_EntityConnect(uri1, uri2, level);
     }
 
