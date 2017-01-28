@@ -5,10 +5,12 @@ module.exports = {
             "js/utils.js",
             "js/app.js"
         ],
+        "list.js": [
+            "js/list.js"
+        ],
         "app.css": [
             "css/app.css"
-        ],
-        "images/": "images/"
+        ]
     },
     rpc: {
         host: "localhost",
