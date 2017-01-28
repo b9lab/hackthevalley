@@ -44,7 +44,7 @@ contract Ratings is BlockOneUser {
     event LogRequestForRatingSubmitted(
         bytes32 indexed key,
         address indexed investor,
-        string indexed ipfsHash,
+        string ipfsHash,
         string name,
         string description,
         string ric,
@@ -106,10 +106,11 @@ contract Ratings is BlockOneUser {
         }
         bytes32 key = sha3(msg.sender, name, description,
             deadline, msg.value, maxAuditors, ipfsHash, block.number);
-        if (bytes(requestForRatings[key].info[IPFS_INDEX]).length != 0) {
+        RequestForRating request = requestForRatings[key];
+        if (request.info.length != 0) {
             throw;
         }
-        RequestForRating request = requestForRatings[key];
+        request.info.length = 5;
         request.info[IPFS_INDEX] = ipfsHash;
         request.info[NAME_INDEX] = name;
         request.info[DESCRIPTION_INDEX] = description;
@@ -136,7 +137,7 @@ contract Ratings is BlockOneUser {
         returns (bool success) {
         RequestForRating request = requestForRatings[key];
         if (msg.value == 0
-            || bytes(request.info[IPFS_INDEX]).length == 0
+            || request.info.length == 0
             || request.deadline < now
             || request.status != Status.OPEN) {
             throw;
@@ -152,7 +153,7 @@ contract Ratings is BlockOneUser {
         returns (bool success) {
         RequestForRating request = requestForRatings[key];
         Auditor auditor = request.auditors[msg.sender];
-        if (bytes(request.info[IPFS_INDEX]).length == 0
+        if (request.info.length == 0
             || request.auditorCount == request.maxAuditors
             || auditor.joined
             || request.deadline < now
@@ -169,7 +170,7 @@ contract Ratings is BlockOneUser {
         returns (bool success) {
         RequestForRating request = requestForRatings[key];
         Auditor auditor = request.auditors[msg.sender];
-        if (bytes(request.info[IPFS_INDEX]).length == 0
+        if (request.info.length == 0
             || !auditor.joined
             || request.deadline < now
             || bytes(ipfsHash).length == 0
@@ -197,7 +198,7 @@ contract Ratings is BlockOneUser {
             //      - or if we have all submissions.
             bool readyToPayOut = (request.deadline < now)
                 || (request.submissionCount == request.maxAuditors);
-            if (bytes(request.info[IPFS_INDEX]).length == 0
+            if (request.info.length == 0
                 || request.submissionCount == 0 // No work done
                 || !readyToPayOut) {
                 throw;
@@ -230,7 +231,7 @@ contract Ratings is BlockOneUser {
         if (request.status == Status.OPEN) {
             bool readyToRefund = (request.deadline < now)
                 && (request.submissionCount == 0);
-            if (bytes(request.info[IPFS_INDEX]).length == 0
+            if (request.info.length == 0
                 || !readyToRefund) { 
                 throw;
             }
