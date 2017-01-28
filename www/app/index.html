@@ -103,7 +103,7 @@
                     <thead class="thead-inverse">
                         <tr>
                             <th>#</th>
-                            <th>Name</th>
+                            <th>Issuer</th>
                             <th>Reward</th>
                             <th>Details</th>
                         </tr>
@@ -113,19 +113,19 @@
                             <th scope="row">0123</th>
                             <td>Alpha</td>
                             <td>100</td>
-                            <td class="text-center"><button class="btn btn-success">DETAILS</button></td>
+                            <td class="text-center"><button class="btn btn-success" data-toggle="modal" data-target="#issuerDetailModal">DETAILS</button></td>
                         </tr>
                         <tr>
                             <th scope="row">0456</th>
                             <td>Beta</td>
                             <td>5</td>
-                            <td class="text-center"><button class="btn btn-success">DETAILS</button></td>
+                            <td class="text-center"><button class="btn btn-success" data-toggle="modal" data-target="#issuerDetailModal">DETAILS</button></td>
                         </tr>
                         <tr>
                             <th scope="row">0789</th>
                             <td>Charlie</td>
                             <td>200</td>
-                            <td class="text-center"><button class="btn btn-success">DETAILS</button></td>
+                            <td class="text-center"><button class="btn btn-success" data-toggle="modal" data-target="#issuerDetailModal">DETAILS</button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -134,13 +134,25 @@
         </div>
         
         
-        <!--<ul class="list-group">
-            <li class="list-group-item">Row 1</li>
-            <li class="list-group-item">Row 2</li>
-            <li class="list-group-item">Row 3</li>
-            <li class="list-group-item">Row 4</li>
-            <li class="list-group-item">Row 5</li>
-        </ul>-->
+        <!-- Issuer Detail Modal -->
+        <div class="modal fade" id="issuerDetailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
         
     </div><!-- /.container -->
 
