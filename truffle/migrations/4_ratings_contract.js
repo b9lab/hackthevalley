@@ -5,5 +5,5 @@ module.exports = function(deployer, network) {
         "default": "0x995bef79dfa2e666de2c6e5f751b4483b6d05cd8",
         "test": "0x995bef79dfa2e666de2c6e5f751b4483b6d05cd8"
     };
-    deployer.deploy(Ratings, entitlementAddresses[network]);
+    deployer.deploy(Ratings, entitlementAddresses[network], RicUri.address);
 };

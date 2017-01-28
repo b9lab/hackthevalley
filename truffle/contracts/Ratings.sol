@@ -1,6 +1,7 @@
 pragma solidity ^0.4.5;
 
 import "BlockOneUser.sol";
+import "RicUri.sol";
 
 contract Ratings is BlockOneUser {
     uint constant IPFS_INDEX = 0;
@@ -38,6 +39,7 @@ contract Ratings is BlockOneUser {
     }
 
     mapping(bytes32 => RequestForRating) public requestForRatings;
+    RicUri public ricUri;
 
     event LogRequestForRatingSubmitted(
         bytes32 indexed key,
@@ -74,8 +76,9 @@ contract Ratings is BlockOneUser {
         address indexed investor,
         uint contribution);
 
-    function Ratings(address entitlementRegistry)
+    function Ratings(address entitlementRegistry, address ricUriAddress)
         BlockOneUser(entitlementRegistry) {
+        ricUri = RicUri(ricUriAddress);
     }
 
     modifier entitledInvestorOnly {

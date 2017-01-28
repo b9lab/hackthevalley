@@ -108,6 +108,4 @@ contract('BlockOneOracleClientTest', function(accounts) {
                 assert.isAtLeast(events[0].args.connections.toNumber(), 7, "should be large connections");
             });
     });
-
-
 });
