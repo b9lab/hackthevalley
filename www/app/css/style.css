@@ -15,6 +15,19 @@
     color: #dd4f52;
 }
 
+.landing-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.landing-form {
+    padding: 50px;
+    background: rgba(0,0,0,0.6);
+    width: 40vw;
+}
+
 
 /*------ Sticky footer -------*/
 html {
