@@ -57,55 +57,55 @@
         <br>
         <br>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  New request
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Submit your rating request</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          New request
         </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="nameInput">Name</label>
-            <input type="text" class="form-control" id="nameInput" aria-describedby="nameHelp" placeholder="Name for request, eg. Augur ICO">
-            <small id="nameHelp" class="form-text text-muted">Please enter a name for your request, eg. Augur ICO.</small>
-          </div>
 
-          <div class="form-group">
-            <label for="descriptionInput">Description</label>
-            <textarea type="text" rows="10" class="form-control" id="descriptionInput" aria-describedby="descriptionHelp" placeholder="Please describe your rating request, including supporting material."></textarea>
-            <small id="descriptionHelp" class="form-text text-muted">Please provide a detailed description of the entity or instrument you would like to request a rating for. Please include relevant websites and links to due diligence documents.</small>
-          </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Submit your rating request</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="nameInput">Name</label>
+                    <input type="text" class="form-control" id="nameInput" aria-describedby="nameHelp" placeholder="Name for request, eg. Augur ICO">
+                    <small id="nameHelp" class="form-text text-muted">Please enter a name for your request, eg. Augur ICO.</small>
+                  </div>
 
-          <div class="form-group">
-            <label for="etherInput">Your offer</label>
-            <input type="number" class="form-control" id="etherInput" aria-describedby="etherHelp" placeholder="10">
-            <small id="etherHelp" class="form-text text-muted">How much Ξ are you offering the auditors for this rating request?</small>
-          </div>
+                  <div class="form-group">
+                    <label for="descriptionInput">Description</label>
+                    <textarea type="text" rows="10" class="form-control" id="descriptionInput" aria-describedby="descriptionHelp" placeholder="Please describe your rating request, including supporting material."></textarea>
+                    <small id="descriptionHelp" class="form-text text-muted">Please provide a detailed description of the entity or instrument you would like to request a rating for. Please include relevant websites and links to due diligence documents.</small>
+                  </div>
 
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input">
-              I confirm that the information provided is correct to my best knowledge.
-            </label>
+                  <div class="form-group">
+                    <label for="etherInput">Your offer</label>
+                    <input type="number" class="form-control" id="etherInput" aria-describedby="etherHelp" placeholder="10">
+                    <small id="etherHelp" class="form-text text-muted">How much Ξ are you offering the auditors for this rating request?</small>
+                  </div>
+
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input">
+                      I confirm that the information provided is correct to my best knowledge.
+                    </label>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+              </div>
+              </form>
+            </div>
           </div>
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit</button>
-      </div>
-      </form>
-    </div>
-  </div>
-</div>
+        </div>
       </div>
 
     </div><!-- /.container -->
@@ -125,10 +125,10 @@
                             <th>Details</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="listBody">
                         <tr>
                             <th scope="row">0123</th>
-                            <td>Alpha</td>
+                            <td>Augur ICO</td>
                             <td>100</td>
                             <td class="text-center"><i class="fa fa-check fa-2x" aria-hidden="true"></i></td>
                             <td class="text-center"><button class="btn btn-success" data-toggle="modal" data-target="#issuerDetailModal">DETAILS</button></td>
