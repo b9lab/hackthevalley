@@ -1,3 +1,21 @@
+.bkg-b9-red {
+    background: #dd4f52 !important;
+    color: #FFF
+}
+
+.bkg-b9-red th {
+    color: #FFF
+}
+
+.fa-check {
+    color: #5cb85c;
+}
+
+.fa-times {
+    color: #dd4f52;
+}
+
+
 /*------ Sticky footer -------*/
 html {
   position: relative;

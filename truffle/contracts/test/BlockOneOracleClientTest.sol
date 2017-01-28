@@ -15,10 +15,6 @@ contract BlockOneOracleClientTest is BlockOneOracleClient,
         BlockOneOracleClient(entitlementRegistry) {
     }
 
-    function getAppName() constant returns (string) {
-        return "com.b9lab.oracle.test";
-    }
-
     event BlockOneOracleClientTest_requested_IntraDay(uint requestId);
     event BlockOneOracleClientTest_respond_IntraDay(uint requestId, uint timestamp, bytes32 symbol, uint price, uint bid, uint ask, uint volume);
 
