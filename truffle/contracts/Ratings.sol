@@ -48,7 +48,7 @@ contract Ratings is BlockOneUser {
         string name,
         string description,
         string ric,
-        string uri,
+        string permid,
         uint deadline,
         uint maxAuditors,
         uint reward);
@@ -91,13 +91,29 @@ contract Ratings is BlockOneUser {
         _;
     }
 
+    function getInfo(bytes32 key)
+        constant
+        returns (string ipfsHash, string name, string description, string ric, string permid) {
+        RequestForRating request = requestForRatings[key];
+        return (request.info[IPFS_INDEX], request.info[NAME_INDEX],
+            request.info[DESCRIPTION_INDEX], request.info[RIC_INDEX],
+            request.info[PERMID_INDEX]);
+    }
+
+    function getAuditor(bytes32 key, address auditorAddr)
+        constant
+        returns (bool joined, uint rating, string ipfsHash, bool paid) {
+        Auditor auditor = requestForRatings[key].auditors[auditorAddr];
+        return (auditor.joined, auditor.rating, auditor.ipfsHash, auditor.paid);
+    }
+
     /**
      * It may fail if
      *      - no Ether
      *      - not entitled investor
      */
     function submitRequestForRating(string name, string description, string ric,
-        string uri, uint deadline, uint maxAuditors, string ipfsHash)
+        string permid, uint deadline, uint maxAuditors, string ipfsHash)
         entitledInvestorOnly
         payable
         returns (bool success) {
@@ -115,7 +131,7 @@ contract Ratings is BlockOneUser {
         request.info[NAME_INDEX] = name;
         request.info[DESCRIPTION_INDEX] = description;
         request.info[RIC_INDEX] = ric;
-        request.info[PERMID_INDEX] = uri;
+        request.info[PERMID_INDEX] = permid;
         request.deadline = deadline;
         request.reward = msg.value;
         request.maxAuditors = maxAuditors;
@@ -125,7 +141,7 @@ contract Ratings is BlockOneUser {
         requestForRatings[key].contributors[msg.sender] = msg.value;
         LogRequestForRatingSubmitted(
             key, msg.sender, ipfsHash,
-            name, description, ric, uri,
+            name, description, ric, permid,
             deadline,
             maxAuditors, msg.value);
         return true;
@@ -160,7 +176,7 @@ contract Ratings is BlockOneUser {
             || request.status != Status.OPEN) {
             throw;
         }
-        request.auditors[msg.sender].joined == true;
+        request.auditors[msg.sender].joined = true;
         LogAuditorJoined(key, msg.sender, ++request.auditorCount);
         return true;
     }
