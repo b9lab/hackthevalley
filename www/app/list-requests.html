@@ -54,13 +54,11 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
+        
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
           New request
         </button>
 
-<<<<<<< Updated upstream
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -78,31 +76,24 @@
                     <input type="text" class="form-control" id="nameInput" aria-describedby="nameHelp" placeholder="Name for request, eg. Augur ICO">
                     <small id="nameHelp" class="form-text text-muted">Please enter a name for your request, eg. Augur ICO.</small>
                   </div>
-=======
-          <div class="form-group">
-            <label for="urlInput">URL</label>
-            <input type="text" class="form-control" id="urlInput" aria-describedby="urlHelp" placeholder="URL, eg. http://augur.net">
-            <small id="urlHelp" class="form-text text-muted">Enter a link to a website for the entity or instrument.</small>
-          </div>
 
-          <div class="form-group">
-            <label for="ricInput">RIC</label>
-            <input type="text" class="form-control" id="ricInput" aria-describedby="ricHelp" placeholder="RIC, eg. GOOG">
-            <small id="ricHelp" class="form-text text-muted">Enter a RIC id for the entity or instrument.</small>
-          </div>
+                  <div class="form-group">
+                    <label for="urlInput">URL</label>
+                    <input type="text" class="form-control" id="urlInput" aria-describedby="urlHelp" placeholder="URL, eg. http://augur.net">
+                    <small id="urlHelp" class="form-text text-muted">Enter a link to a website for the entity or instrument.</small>
+                  </div>
 
-          <div class="form-group">
-            <label for="hashInput">IPFS hash</label>
-            <input type="text" class="form-control" id="hashInput" aria-describedby="hashHelp" placeholder="Hash of the location of supporting documents">
-            <small id="hashHelp" class="form-text text-muted">Enter a hash to identify where the supporting documents for the entity or instrument are stored on IPFS.</small>
-          </div>
+                  <div class="form-group">
+                    <label for="ricInput">RIC</label>
+                    <input type="text" class="form-control" id="ricInput" aria-describedby="ricHelp" placeholder="RIC, eg. GOOG">
+                    <small id="ricHelp" class="form-text text-muted">Enter a RIC id for the entity or instrument.</small>
+                  </div>
 
-          <div class="form-group">
-            <label for="descriptionInput">Description</label>
-            <textarea type="text" rows="10" class="form-control" id="descriptionInput" aria-describedby="descriptionHelp" placeholder="Please describe your rating request, including supporting material."></textarea>
-            <small id="descriptionHelp" class="form-text text-muted">Please provide a detailed description of the entity or instrument you would like to request a rating for. Please include relevant websites and links to due diligence documents.</small>
-          </div>
->>>>>>> Stashed changes
+                  <div class="form-group">
+                    <label for="hashInput">IPFS hash</label>
+                    <input type="text" class="form-control" id="hashInput" aria-describedby="hashHelp" placeholder="Hash of the location of supporting documents">
+                    <small id="hashHelp" class="form-text text-muted">Enter a hash to identify where the supporting documents for the entity or instrument are stored on IPFS.</small>
+                  </div>
 
                   <div class="form-group">
                     <label for="descriptionInput">Description</label>
@@ -126,12 +117,13 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Submit</button>
+                <button id="submit-request" type="button" class="btn btn-primary">Submit</button>
               </div>
               </form>
             </div>
           </div>
         </div>
+
       </div>
 
     </div><!-- /.container -->
@@ -151,32 +143,7 @@
                             <th>Details</th>
                         </tr>
                     </thead>
-<<<<<<< Updated upstream
-                    <tbody id="listBody">
-                        <tr>
-                            <th scope="row">0123</th>
-                            <td>Augur ICO</td>
-                            <td>100</td>
-                            <td class="text-center"><i class="fa fa-check fa-2x" aria-hidden="true"></i></td>
-                            <td class="text-center"><button class="btn btn-success" data-toggle="modal" data-target="#issuerDetailModal">DETAILS</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">0456</th>
-                            <td>Beta</td>
-                            <td>5</td>
-                            <td class="text-center"><i class="fa fa-times fa-2x" aria-hidden="true"></i></td>
-                            <td class="text-center"><button class="btn btn-success" data-toggle="modal" data-target="#issuerDetailModal">DETAILS</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">0789</th>
-                            <td>Charlie</td>
-                            <td>200</td>
-                            <td class="text-center"><i class="fa fa-check fa-2x" aria-hidden="true"></i></td>
-                            <td class="text-center"><button class="btn btn-success" data-toggle="modal" data-target="#issuerDetailModal">DETAILS</button></td>
-                        </tr>
-=======
                     <tbody>
->>>>>>> Stashed changes
                     </tbody>
                 </table>
                 
@@ -252,5 +219,6 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/list.js"></script>
+    <script src="./js/modals.js"></script>
   </body>
 </html>

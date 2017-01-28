@@ -5745,7 +5745,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
       }
     ],
     "events": {},
+<<<<<<< Updated upstream
     "updated_at": 1485621487834
+=======
+    "updated_at": 1485628537290
+>>>>>>> Stashed changes
   }
 };
 
@@ -5874,7 +5878,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   }
 })();
 
+<<<<<<< Updated upstream
 },{"web3":49,"web3/lib/web3/event.js":76}],2:[function(require,module,exports){
+=======
+},{"web3":51,"web3/lib/web3/event.js":78}],2:[function(require,module,exports){
+>>>>>>> Stashed changes
 var Web3 = require("web3");
 var SolidityEvent = require("web3/lib/web3/event.js");
 
@@ -6227,6 +6235,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   "default": {
     "abi": [
       {
+<<<<<<< Updated upstream
         "constant": true,
         "inputs": [],
         "name": "getOracle",
@@ -6258,6 +6267,8 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "type": "function"
       },
       {
+=======
+>>>>>>> Stashed changes
         "constant": true,
         "inputs": [],
         "name": "getAppName",
@@ -6282,7 +6293,12 @@ var SolidityEvent = require("web3/lib/web3/event.js");
       }
     ],
     "events": {},
+<<<<<<< Updated upstream
     "updated_at": 1485621487835
+=======
+    "updated_at": 1485628537312,
+    "unlinked_binary": "0x606060405234610000576040516020806102a183398101604052515b805b600160a060020a038116151561003257610000565b60008054600160a060020a031916600160a060020a0383161790555b5060018054600160a060020a03191633600160a060020a03161790555b505b6102258061007c6000396000f300606060405263ffffffff60e060020a600035041663833b1fce811461002f578063cbaaa3ac14610058575b610000565b346100005761003c6100c7565b60408051600160a060020a039092168252519081900360200190f35b346100005761003c600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061010e95505050505050565b60408051600160a060020a039092168252519081900360200190f35b6000610108604060405190810160405280601281526020017f636f6d2e74722e6f7261636c652e6d61696e000000000000000000000000000081525061010e565b90505b90565b6000805460408051602090810184905290517fdc5acb9000000000000000000000000000000000000000000000000000000000815260048101828152855160248301528551600160a060020a039094169363dc5acb909387938392604490910191850190808383821561019c575b80518252602083111561019c57601f19909201916020918201910161017c565b505050905090810190601f1680156101c85780820380516001836020036101000a031916815260200191505b5092505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b9190505600a165627a7a72305820304bdd9f3d8b3942defeef383a834a36ff842e2b7d0be733268783a67c8565ca0029"
+>>>>>>> Stashed changes
   }
 };
 
@@ -6411,7 +6427,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   }
 })();
 
+<<<<<<< Updated upstream
 },{"web3":49,"web3/lib/web3/event.js":76}],3:[function(require,module,exports){
+=======
+},{"web3":51,"web3/lib/web3/event.js":78}],3:[function(require,module,exports){
+>>>>>>> Stashed changes
 var Web3 = require("web3");
 var SolidityEvent = require("web3/lib/web3/event.js");
 
@@ -6778,7 +6798,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
       }
     ],
     "events": {},
+<<<<<<< Updated upstream
     "updated_at": 1485621487835
+=======
+    "updated_at": 1485628537293
+>>>>>>> Stashed changes
   }
 };
 
@@ -6907,7 +6931,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   }
 })();
 
+<<<<<<< Updated upstream
 },{"web3":49,"web3/lib/web3/event.js":76}],4:[function(require,module,exports){
+=======
+},{"web3":51,"web3/lib/web3/event.js":78}],4:[function(require,module,exports){
+>>>>>>> Stashed changes
 var Web3 = require("web3");
 var SolidityEvent = require("web3/lib/web3/event.js");
 
@@ -7692,7 +7720,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "type": "event"
       }
     ],
+<<<<<<< Updated upstream
     "unlinked_binary": "0x6060604052346100005760405160208061093a83398101604052515b805b805b600160a060020a038116151561003457610000565b60008054600160a060020a031916600160a060020a0383161790555b5060018054600160a060020a03191633600160a060020a03161790555b505b505b6108ba806100806000396000f3006060604052361561009e5763ffffffff60e060020a6000350416630c51402681146100a357806315226e14146100c757806317a96e5e146100ec57806320b08482146101105780636fda1150146101105780637c6a595114610110578063833b1fce1461014f57806383d04ed414610178578063a0cf91f51461018d578063cbaaa3ac146101b5578063d185e2cd14610224578063fe80dc3814610249575b610000565b34610000576100c560043560243560443560643560843560a43560c4356102d6565b005b34610000576100da60043560243561033c565b60408051918252519081900360200190f35b34610000576100c560043560243560443560643560843560a43560c435610386565b005b34610000576100c56004356024356103ec565b005b34610000576100c56004356024356103ec565b005b34610000576100c56004356024356103ec565b005b346100005761015c6104ac565b60408051600160a060020a039092168252519081900360200190f35b34610000576100c56004356024356104f3565b005b34610000576100da600435602435604435610533565b60408051918252519081900360200190f35b346100005761015c600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061057f95505050505050565b60408051600160a060020a039092168252519081900360200190f35b34610000576100da60043560243561066a565b60408051918252519081900360200190f35b34610000576102566106b4565b60408051602080825283518183015283519192839290830191850190808383821561029c575b80518252602083111561029c57601f19909201916020918201910161027c565b505050905090810190601f1680156102c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6040805188815260208101889052808201879052606081018690526080810185905260a0810184905260c0810183905290517f22884df0d5b5279f371d4e62c09a39d8949263624148338cf7101a35c9dfa82e9181900360e00190a15b50505050505050565b600061034883836106f9565b6040805182815290519192507f93b88a2969f23d4db3228f80ab79d8665fe82fb014f430e92fa8b9bbb6247cac919081900360200190a15b92915050565b6040805188815260208101889052808201879052606081018690526080810185905260a0810184905260c0810183905290517fdd184b3e7a312e9f821669373834128810cdded53b1eadbdb699e8c9e78a55849181900360e00190a15b50505050505050565b604080518381526020810183905281517f128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be929181900390910190a15b5050565b604080518381526020810183905281517f128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be929181900390910190a15b5050565b604080518381526020810183905281517f128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be929181900390910190a15b5050565b60006104ed604060405190810160405280601281526020017f636f6d2e74722e6f7261636c652e6d61696e000000000000000000000000000081525061057f565b90505b90565b604080518381526020810183905281517f4d92bae7a66a63f8707f63c99d43ff45132be5c5fb0ced21d061041b3a2f2ddb929181900390910190a15b5050565b6000610540848484610777565b6040805182815290519192507f04f4809a2498e814c9d8b482ab9781e5c8ba5933a69e97ad53835118110cfb28919081900360200190a15b9392505050565b6000805460408051602090810184905290517fdc5acb9000000000000000000000000000000000000000000000000000000000815260048101828152855160248301528551600160a060020a039094169363dc5acb909387938392604490910191850190808383821561060d575b80518252602083111561060d57601f1990920191602091820191016105ed565b505050905090810190601f1680156106395780820380516001836020036101000a031916815260200191505b5092505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b919050565b60006106768383610810565b6040805182815290519192507fe554cce36fbdeba6fb46d90d34f96262fd4a0775aa7d0f5d081264a6c2d0654f919081900360200190a15b92915050565b604080516020818101835260009091528151808301909252601582527f636f6d2e62396c61622e6f7261636c652e746573740000000000000000000000908201525b90565b60006107036104ac565b600160a060020a03166315226e1484846000604051602001526040518363ffffffff1660e060020a02815260040180836000191660001916815260200182815260200192505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b92915050565b60006107816104ac565b604080516000602091820181905282517fa0cf91f50000000000000000000000000000000000000000000000000000000081526004810189905260248101889052604481018790529251600160a060020a03949094169363a0cf91f59360648082019493918390030190829087803b156100005760325a03f115610000575050604051519150505b9392505050565b600061081a6104ac565b600160a060020a031663d185e2cd84846000604051602001526040518363ffffffff1660e060020a02815260040180836000191660001916815260200182815260200192505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b929150505600a165627a7a72305820f543e242c2d2a9ca68d58f665bf4f96bdea912afd37e9a9cce4ae22e51caa8b30029",
+=======
+    "unlinked_binary": "0x6060604052346100005760405160208061093a83398101604052515b805b805b600160a060020a038116151561003457610000565b60008054600160a060020a031916600160a060020a0383161790555b5060018054600160a060020a03191633600160a060020a03161790555b505b505b6108ba806100806000396000f3006060604052361561009e5763ffffffff60e060020a6000350416630c51402681146100a357806315226e14146100c757806317a96e5e146100ec57806320b08482146101105780636fda1150146101105780637c6a595114610110578063833b1fce1461014f57806383d04ed414610178578063a0cf91f51461018d578063cbaaa3ac146101b5578063d185e2cd14610224578063fe80dc3814610249575b610000565b34610000576100c560043560243560443560643560843560a43560c4356102d6565b005b34610000576100da60043560243561033c565b60408051918252519081900360200190f35b34610000576100c560043560243560443560643560843560a43560c435610386565b005b34610000576100c56004356024356103ec565b005b34610000576100c56004356024356103ec565b005b34610000576100c56004356024356103ec565b005b346100005761015c6104ac565b60408051600160a060020a039092168252519081900360200190f35b34610000576100c56004356024356104f3565b005b34610000576100da600435602435604435610533565b60408051918252519081900360200190f35b346100005761015c600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061057f95505050505050565b60408051600160a060020a039092168252519081900360200190f35b34610000576100da60043560243561066a565b60408051918252519081900360200190f35b34610000576102566106b4565b60408051602080825283518183015283519192839290830191850190808383821561029c575b80518252602083111561029c57601f19909201916020918201910161027c565b505050905090810190601f1680156102c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6040805188815260208101889052808201879052606081018690526080810185905260a0810184905260c0810183905290517f22884df0d5b5279f371d4e62c09a39d8949263624148338cf7101a35c9dfa82e9181900360e00190a15b50505050505050565b600061034883836106f9565b6040805182815290519192507f93b88a2969f23d4db3228f80ab79d8665fe82fb014f430e92fa8b9bbb6247cac919081900360200190a15b92915050565b6040805188815260208101889052808201879052606081018690526080810185905260a0810184905260c0810183905290517fdd184b3e7a312e9f821669373834128810cdded53b1eadbdb699e8c9e78a55849181900360e00190a15b50505050505050565b604080518381526020810183905281517f128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be929181900390910190a15b5050565b604080518381526020810183905281517f128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be929181900390910190a15b5050565b604080518381526020810183905281517f128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be929181900390910190a15b5050565b60006104ed604060405190810160405280601281526020017f636f6d2e74722e6f7261636c652e6d61696e000000000000000000000000000081525061057f565b90505b90565b604080518381526020810183905281517f4d92bae7a66a63f8707f63c99d43ff45132be5c5fb0ced21d061041b3a2f2ddb929181900390910190a15b5050565b6000610540848484610777565b6040805182815290519192507f04f4809a2498e814c9d8b482ab9781e5c8ba5933a69e97ad53835118110cfb28919081900360200190a15b9392505050565b6000805460408051602090810184905290517fdc5acb9000000000000000000000000000000000000000000000000000000000815260048101828152855160248301528551600160a060020a039094169363dc5acb909387938392604490910191850190808383821561060d575b80518252602083111561060d57601f1990920191602091820191016105ed565b505050905090810190601f1680156106395780820380516001836020036101000a031916815260200191505b5092505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b919050565b60006106768383610810565b6040805182815290519192507fe554cce36fbdeba6fb46d90d34f96262fd4a0775aa7d0f5d081264a6c2d0654f919081900360200190a15b92915050565b604080516020818101835260009091528151808301909252601582527f636f6d2e62396c61622e6f7261636c652e746573740000000000000000000000908201525b90565b60006107036104ac565b600160a060020a03166315226e1484846000604051602001526040518363ffffffff1660e060020a02815260040180836000191660001916815260200182815260200192505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b92915050565b60006107816104ac565b604080516000602091820181905282517fa0cf91f50000000000000000000000000000000000000000000000000000000081526004810189905260248101889052604481018790529251600160a060020a03949094169363a0cf91f59360648082019493918390030190829087803b156100005760325a03f115610000575050604051519150505b9392505050565b600061081a6104ac565b600160a060020a031663d185e2cd84846000604051602001526040518363ffffffff1660e060020a02815260040180836000191660001916815260200182815260200192505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b929150505600a165627a7a72305820cf75d3354658edecbf5deb81ffb5b57ff3a5f5746097486df196b26b81c82bc40029",
+>>>>>>> Stashed changes
     "events": {
       "0x68385462c45956b3bd1196a090705283c21cb02a3a231b1e0957fa5113252b53": {
         "anonymous": false,
@@ -7796,6 +7828,86 @@ var SolidityEvent = require("web3/lib/web3/event.js");
             "indexed": false,
             "name": "requestId",
             "type": "uint256"
+<<<<<<< Updated upstream
+=======
+          }
+        ],
+        "name": "BlockOneOracleClientTest_requested_EntityConnect",
+        "type": "event"
+      }
+    },
+    "updated_at": 1485610531136,
+    "links": {},
+    "address": "0xbd7702066d7e3b668c0f8d556e9a418468197d3e"
+  },
+  "default": {
+    "abi": [
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "requestId",
+            "type": "uint256"
+          },
+          {
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "name": "bid",
+            "type": "uint256"
+          },
+          {
+            "name": "ask",
+            "type": "uint256"
+          },
+          {
+            "name": "volume",
+            "type": "uint256"
+          }
+        ],
+        "name": "respondSuccess_IntraDay",
+        "outputs": [],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "request_IntraDay",
+        "outputs": [
+          {
+            "name": "requestId",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "requestId",
+            "type": "uint256"
+>>>>>>> Stashed changes
           },
           {
             "indexed": false,
@@ -7859,9 +7971,323 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         ],
         "name": "BlockOneOracleClientTest_respond_EntityConnect",
         "type": "event"
+<<<<<<< Updated upstream
       }
     },
     "updated_at": 1485621487842
+=======
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_requested_IntraDay",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "indexed": false,
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "bid",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "ask",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "volume",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_respond_IntraDay",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_requested_EndOfDay",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "indexed": false,
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "bid",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "ask",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "volume",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_respond_EndOfDay",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_requested_EntityConnect",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "connections",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_respond_EntityConnect",
+        "type": "event"
+      }
+    ],
+    "unlinked_binary": "0x6060604052346100005760405160208061085d83398101604052515b805b805b600160a060020a038116151561003457610000565b60008054600160a060020a031916600160a060020a0383161790555b5060018054600160a060020a03191633600160a060020a03161790555b505b505b6107dd806100806000396000f300606060405236156100935763ffffffff60e060020a6000350416630c514026811461009857806315226e14146100bc57806317a96e5e146100e157806320b08482146101055780636fda1150146101055780637c6a595114610105578063833b1fce1461014457806383d04ed41461016d578063a0cf91f514610182578063cbaaa3ac146101aa578063d185e2cd14610219575b610000565b34610000576100ba60043560243560443560643560843560a43560c43561023e565b005b34610000576100cf6004356024356102a4565b60408051918252519081900360200190f35b34610000576100ba60043560243560443560643560843560a43560c4356102ee565b005b34610000576100ba600435602435610354565b005b34610000576100ba600435602435610354565b005b34610000576100ba600435602435610354565b005b3461000057610151610414565b60408051600160a060020a039092168252519081900360200190f35b34610000576100ba60043560243561045b565b005b34610000576100cf60043560243560443561049b565b60408051918252519081900360200190f35b3461000057610151600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437509496506104e795505050505050565b60408051600160a060020a039092168252519081900360200190f35b34610000576100cf6004356024356105d2565b60408051918252519081900360200190f35b6040805188815260208101889052808201879052606081018690526080810185905260a0810184905260c0810183905290517f22884df0d5b5279f371d4e62c09a39d8949263624148338cf7101a35c9dfa82e9181900360e00190a15b50505050505050565b60006102b0838361061c565b6040805182815290519192507f93b88a2969f23d4db3228f80ab79d8665fe82fb014f430e92fa8b9bbb6247cac919081900360200190a15b92915050565b6040805188815260208101889052808201879052606081018690526080810185905260a0810184905260c0810183905290517fdd184b3e7a312e9f821669373834128810cdded53b1eadbdb699e8c9e78a55849181900360e00190a15b50505050505050565b604080518381526020810183905281517f128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be929181900390910190a15b5050565b604080518381526020810183905281517f128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be929181900390910190a15b5050565b604080518381526020810183905281517f128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be929181900390910190a15b5050565b6000610455604060405190810160405280601281526020017f636f6d2e74722e6f7261636c652e6d61696e00000000000000000000000000008152506104e7565b90505b90565b604080518381526020810183905281517f4d92bae7a66a63f8707f63c99d43ff45132be5c5fb0ced21d061041b3a2f2ddb929181900390910190a15b5050565b60006104a884848461069a565b6040805182815290519192507f04f4809a2498e814c9d8b482ab9781e5c8ba5933a69e97ad53835118110cfb28919081900360200190a15b9392505050565b6000805460408051602090810184905290517fdc5acb9000000000000000000000000000000000000000000000000000000000815260048101828152855160248301528551600160a060020a039094169363dc5acb9093879383926044909101918501908083838215610575575b80518252602083111561057557601f199092019160209182019101610555565b505050905090810190601f1680156105a15780820380516001836020036101000a031916815260200191505b5092505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b919050565b60006105de8383610733565b6040805182815290519192507fe554cce36fbdeba6fb46d90d34f96262fd4a0775aa7d0f5d081264a6c2d0654f919081900360200190a15b92915050565b6000610626610414565b600160a060020a03166315226e1484846000604051602001526040518363ffffffff1660e060020a02815260040180836000191660001916815260200182815260200192505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b92915050565b60006106a4610414565b604080516000602091820181905282517fa0cf91f50000000000000000000000000000000000000000000000000000000081526004810189905260248101889052604481018790529251600160a060020a03949094169363a0cf91f59360648082019493918390030190829087803b156100005760325a03f115610000575050604051519150505b9392505050565b600061073d610414565b600160a060020a031663d185e2cd84846000604051602001526040518363ffffffff1660e060020a02815260040180836000191660001916815260200182815260200192505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b929150505600a165627a7a72305820570d17bdd71d80f5e8fede1f2283af139e288d26ec826696abe5376f4f6d8a730029",
+    "events": {
+      "0x68385462c45956b3bd1196a090705283c21cb02a3a231b1e0957fa5113252b53": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_onOracleResponse",
+        "type": "event"
+      },
+      "0x128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "reason",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_onOracleFailure",
+        "type": "event"
+      },
+      "0x22884df0d5b5279f371d4e62c09a39d8949263624148338cf7101a35c9dfa82e": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "indexed": false,
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "bid",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "ask",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "volume",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_respond_IntraDay",
+        "type": "event"
+      },
+      "0xdd184b3e7a312e9f821669373834128810cdded53b1eadbdb699e8c9e78a5584": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "indexed": false,
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "bid",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "ask",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "volume",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_respond_EndOfDay",
+        "type": "event"
+      },
+      "0x4d92bae7a66a63f8707f63c99d43ff45132be5c5fb0ced21d061041b3a2f2ddb": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "connections",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_respond_EntityConnect",
+        "type": "event"
+      },
+      "0xe554cce36fbdeba6fb46d90d34f96262fd4a0775aa7d0f5d081264a6c2d0654f": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_requested_EndOfDay",
+        "type": "event"
+      },
+      "0x93b88a2969f23d4db3228f80ab79d8665fe82fb014f430e92fa8b9bbb6247cac": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_requested_IntraDay",
+        "type": "event"
+      },
+      "0x04f4809a2498e814c9d8b482ab9781e5c8ba5933a69e97ad53835118110cfb28": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "requestId",
+            "type": "uint256"
+          }
+        ],
+        "name": "BlockOneOracleClientTest_requested_EntityConnect",
+        "type": "event"
+      }
+    },
+    "updated_at": 1485628537305,
+    "address": "0xbc2afb10a399b35d1fd490d801323b989ef53355",
+    "links": {}
+>>>>>>> Stashed changes
   }
 };
 
@@ -7990,7 +8416,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   }
 })();
 
+<<<<<<< Updated upstream
 },{"web3":49,"web3/lib/web3/event.js":76}],5:[function(require,module,exports){
+=======
+},{"web3":51,"web3/lib/web3/event.js":78}],5:[function(require,module,exports){
+>>>>>>> Stashed changes
 var Web3 = require("web3");
 var SolidityEvent = require("web3/lib/web3/event.js");
 
@@ -8433,7 +8863,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
       }
     ],
     "events": {},
+<<<<<<< Updated upstream
     "updated_at": 1485621487843
+=======
+    "updated_at": 1485628537309
+>>>>>>> Stashed changes
   }
 };
 
@@ -8562,7 +8996,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   }
 })();
 
+<<<<<<< Updated upstream
 },{"web3":49,"web3/lib/web3/event.js":76}],6:[function(require,module,exports){
+=======
+},{"web3":51,"web3/lib/web3/event.js":78}],6:[function(require,module,exports){
+>>>>>>> Stashed changes
 var Web3 = require("web3");
 var SolidityEvent = require("web3/lib/web3/event.js");
 
@@ -8989,7 +9427,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
       }
     ],
     "events": {},
+<<<<<<< Updated upstream
     "updated_at": 1485621487844
+=======
+    "updated_at": 1485628537315
+>>>>>>> Stashed changes
   }
 };
 
@@ -9118,7 +9560,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   }
 })();
 
+<<<<<<< Updated upstream
 },{"web3":49,"web3/lib/web3/event.js":76}],7:[function(require,module,exports){
+=======
+},{"web3":51,"web3/lib/web3/event.js":78}],7:[function(require,module,exports){
+>>>>>>> Stashed changes
 var Web3 = require("web3");
 var SolidityEvent = require("web3/lib/web3/event.js");
 
@@ -9561,7 +10007,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
       }
     ],
     "events": {},
+<<<<<<< Updated upstream
     "updated_at": 1485621487844
+=======
+    "updated_at": 1485628537318
+>>>>>>> Stashed changes
   }
 };
 
@@ -9690,7 +10140,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   }
 })();
 
+<<<<<<< Updated upstream
 },{"web3":49,"web3/lib/web3/event.js":76}],8:[function(require,module,exports){
+=======
+},{"web3":51,"web3/lib/web3/event.js":78}],8:[function(require,module,exports){
+>>>>>>> Stashed changes
 var Web3 = require("web3");
 var SolidityEvent = require("web3/lib/web3/event.js");
 
@@ -10051,6 +10505,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
           }
         ],
         "name": "getEntitlement",
+<<<<<<< Updated upstream
         "outputs": [
           {
             "name": "",
@@ -10068,6 +10523,12 @@ var SolidityEvent = require("web3/lib/web3/event.js");
           {
             "name": "",
             "type": "string"
+=======
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+>>>>>>> Stashed changes
           }
         ],
         "payable": false,
@@ -10085,7 +10546,12 @@ var SolidityEvent = require("web3/lib/web3/event.js");
       }
     ],
     "events": {},
+<<<<<<< Updated upstream
     "updated_at": 1485621487844
+=======
+    "updated_at": 1485628537321,
+    "unlinked_binary": "0x6060604052346100005760405160208061022183398101604052515b600160a060020a038116151561003057610000565b60008054600160a060020a031916600160a060020a0383161790555b505b6101c48061005d6000396000f300606060405263ffffffff60e060020a600035041663cbaaa3ac8114610024575b610000565b3461000057610077600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437509496506100a095505050505050565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b6000805460408051602090810184905290517fdc5acb900000000000000000000000000000000000000000000000000000000081526004810182815285516024830152855173ffffffffffffffffffffffffffffffffffffffff9094169363dc5acb909387938392604490910191850190808383821561013b575b80518252602083111561013b57601f19909201916020918201910161011b565b505050905090810190601f1680156101675780820380516001836020036101000a031916815260200191505b5092505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b9190505600a165627a7a72305820b0310cd7f18fdf0248e1be992a001dacb1259faa474c8de51eed96fa7f40a8e60029"
+>>>>>>> Stashed changes
   }
 };
 
@@ -10214,7 +10680,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   }
 })();
 
+<<<<<<< Updated upstream
 },{"web3":49,"web3/lib/web3/event.js":76}],9:[function(require,module,exports){
+=======
+},{"web3":51,"web3/lib/web3/event.js":78}],9:[function(require,module,exports){
+>>>>>>> Stashed changes
 var Web3 = require("web3");
 var SolidityEvent = require("web3/lib/web3/event.js");
 
@@ -10586,7 +11056,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
       }
     ],
     "events": {},
+<<<<<<< Updated upstream
     "updated_at": 1485621487844
+=======
+    "updated_at": 1485628537324
+>>>>>>> Stashed changes
   }
 };
 
@@ -10715,7 +11189,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   }
 })();
 
+<<<<<<< Updated upstream
 },{"web3":49,"web3/lib/web3/event.js":76}],10:[function(require,module,exports){
+=======
+},{"web3":51,"web3/lib/web3/event.js":78}],10:[function(require,module,exports){
+>>>>>>> Stashed changes
 var Web3 = require("web3");
 var SolidityEvent = require("web3/lib/web3/event.js");
 
@@ -10949,13 +11427,21 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 
   Contract.new = function() {
     if (this.currentProvider == null) {
+<<<<<<< Updated upstream
       throw new Error("EntitlementRegistry error: Please call setProvider() first before calling new().");
+=======
+      throw new Error("EntitlementMock error: Please call setProvider() first before calling new().");
+>>>>>>> Stashed changes
     }
 
     var args = Array.prototype.slice.call(arguments);
 
     if (!this.unlinked_binary) {
+<<<<<<< Updated upstream
       throw new Error("EntitlementRegistry error: contract binary not set. Can't deploy new instance.");
+=======
+      throw new Error("EntitlementMock error: contract binary not set. Can't deploy new instance.");
+>>>>>>> Stashed changes
     }
 
     var regex = /__[^_]+_+/g;
@@ -10974,7 +11460,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         return name != arr[index + 1];
       }).join(", ");
 
+<<<<<<< Updated upstream
       throw new Error("EntitlementRegistry contains unresolved libraries. You must deploy and link the following libraries before you can deploy a new version of EntitlementRegistry: " + unlinked_libraries);
+=======
+      throw new Error("EntitlementMock contains unresolved libraries. You must deploy and link the following libraries before you can deploy a new version of EntitlementMock: " + unlinked_libraries);
+>>>>>>> Stashed changes
     }
 
     var self = this;
@@ -11015,7 +11505,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 
   Contract.at = function(address) {
     if (address == null || typeof address != "string" || address.length != 42) {
+<<<<<<< Updated upstream
       throw new Error("Invalid address passed to EntitlementRegistry.at(): " + address);
+=======
+      throw new Error("Invalid address passed to EntitlementMock.at(): " + address);
+>>>>>>> Stashed changes
     }
 
     var contract_class = this.web3.eth.contract(this.abi);
@@ -11026,7 +11520,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 
   Contract.deployed = function() {
     if (!this.address) {
+<<<<<<< Updated upstream
       throw new Error("Cannot find deployed address: EntitlementRegistry not deployed or address not set.");
+=======
+      throw new Error("Cannot find deployed address: EntitlementMock not deployed or address not set.");
+>>>>>>> Stashed changes
     }
 
     return this.at(this.address);
@@ -11071,6 +11569,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "constant": true,
         "inputs": [
           {
+<<<<<<< Updated upstream
             "name": "_name",
             "type": "string"
           }
@@ -11080,6 +11579,16 @@ var SolidityEvent = require("web3/lib/web3/event.js");
           {
             "name": "",
             "type": "address"
+=======
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "entitled",
+        "outputs": [
+          {
+            "name": "",
+            "type": "bool"
           }
         ],
         "payable": false,
@@ -11089,6 +11598,26 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "constant": true,
         "inputs": [
           {
+            "name": "_address",
+            "type": "address"
+          }
+        ],
+        "name": "isEntitled",
+        "outputs": [
+          {
+            "name": "isIndeed",
+            "type": "bool"
+>>>>>>> Stashed changes
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+<<<<<<< Updated upstream
             "name": "_name",
             "type": "string"
           }
@@ -11098,14 +11627,35 @@ var SolidityEvent = require("web3/lib/web3/event.js");
           {
             "name": "",
             "type": "address"
+=======
+            "name": "_address",
+            "type": "address"
+          },
+          {
+            "name": "isIndeed",
+            "type": "bool"
+          }
+        ],
+        "name": "setEntitled",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+>>>>>>> Stashed changes
           }
         ],
         "payable": false,
         "type": "function"
       }
     ],
+<<<<<<< Updated upstream
     "events": {},
     "updated_at": 1485621487844
+=======
+    "unlinked_binary": "0x606060405234610000575b610154806100196000396000f300606060405263ffffffff60e060020a6000350416636e1ede72811461003a5780639ce6582d14610067578063b3c43b1114610094575b610000565b3461000057610053600160a060020a03600435166100c6565b604080519115158252519081900360200190f35b3461000057610053600160a060020a03600435166100db565b604080519115158252519081900360200190f35b3461000057610053600160a060020a036004351660243515156100fd565b604080519115158252519081900360200190f35b60006020819052908152604090205460ff1681565b600160a060020a03811660009081526020819052604090205460ff165b919050565b600160a060020a0382166000908152602081905260408120805460ff19168315151790555b929150505600a165627a7a723058205ecf95f6f44a422ac19a6bee2edd8cf2478bbc6bf321e04db1e75de2ab1e21b30029",
+    "events": {},
+    "updated_at": 1485628537284
+>>>>>>> Stashed changes
   }
 };
 
@@ -11190,7 +11740,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
     Contract.links[name] = address;
   };
 
+<<<<<<< Updated upstream
   Contract.contract_name   = Contract.prototype.contract_name   = "EntitlementRegistry";
+=======
+  Contract.contract_name   = Contract.prototype.contract_name   = "EntitlementMock";
+>>>>>>> Stashed changes
   Contract.generated_with  = Contract.prototype.generated_with  = "3.2.0";
 
   // Allow people to opt-in to breaking changes now.
@@ -11230,11 +11784,1355 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   } else {
     // There will only be one version of this contract in the browser,
     // and we can use that.
+<<<<<<< Updated upstream
     window.EntitlementRegistry = Contract;
   }
 })();
 
 },{"web3":49,"web3/lib/web3/event.js":76}],11:[function(require,module,exports){
+=======
+    window.EntitlementMock = Contract;
+  }
+})();
+
+},{"web3":51,"web3/lib/web3/event.js":78}],11:[function(require,module,exports){
+>>>>>>> Stashed changes
+var Web3 = require("web3");
+var SolidityEvent = require("web3/lib/web3/event.js");
+
+(function() {
+  // Planned for future features, logging, etc.
+  function Provider(provider) {
+    this.provider = provider;
+  }
+
+  Provider.prototype.send = function() {
+    this.provider.send.apply(this.provider, arguments);
+  };
+
+  Provider.prototype.sendAsync = function() {
+    this.provider.sendAsync.apply(this.provider, arguments);
+  };
+
+  var BigNumber = (new Web3()).toBigNumber(0).constructor;
+
+  var Utils = {
+    is_object: function(val) {
+      return typeof val == "object" && !Array.isArray(val);
+    },
+    is_big_number: function(val) {
+      if (typeof val != "object") return false;
+
+      // Instanceof won't work because we have multiple versions of Web3.
+      try {
+        new BigNumber(val);
+        return true;
+      } catch (e) {
+        return false;
+      }
+    },
+    merge: function() {
+      var merged = {};
+      var args = Array.prototype.slice.call(arguments);
+
+      for (var i = 0; i < args.length; i++) {
+        var object = args[i];
+        var keys = Object.keys(object);
+        for (var j = 0; j < keys.length; j++) {
+          var key = keys[j];
+          var value = object[key];
+          merged[key] = value;
+        }
+      }
+
+      return merged;
+    },
+    promisifyFunction: function(fn, C) {
+      var self = this;
+      return function() {
+        var instance = this;
+
+        var args = Array.prototype.slice.call(arguments);
+        var tx_params = {};
+        var last_arg = args[args.length - 1];
+
+        // It's only tx_params if it's an object and not a BigNumber.
+        if (Utils.is_object(last_arg) && !Utils.is_big_number(last_arg)) {
+          tx_params = args.pop();
+        }
+
+        tx_params = Utils.merge(C.class_defaults, tx_params);
+
+        return new Promise(function(accept, reject) {
+          var callback = function(error, result) {
+            if (error != null) {
+              reject(error);
+            } else {
+              accept(result);
+            }
+          };
+          args.push(tx_params, callback);
+          fn.apply(instance.contract, args);
+        });
+      };
+    },
+    synchronizeFunction: function(fn, instance, C) {
+      var self = this;
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        var tx_params = {};
+        var last_arg = args[args.length - 1];
+
+        // It's only tx_params if it's an object and not a BigNumber.
+        if (Utils.is_object(last_arg) && !Utils.is_big_number(last_arg)) {
+          tx_params = args.pop();
+        }
+
+        tx_params = Utils.merge(C.class_defaults, tx_params);
+
+        return new Promise(function(accept, reject) {
+
+          var decodeLogs = function(logs) {
+            return logs.map(function(log) {
+              var logABI = C.events[log.topics[0]];
+
+              if (logABI == null) {
+                return null;
+              }
+
+              var decoder = new SolidityEvent(null, logABI, instance.address);
+              return decoder.decode(log);
+            }).filter(function(log) {
+              return log != null;
+            });
+          };
+
+          var callback = function(error, tx) {
+            if (error != null) {
+              reject(error);
+              return;
+            }
+
+            var timeout = C.synchronization_timeout || 240000;
+            var start = new Date().getTime();
+
+            var make_attempt = function() {
+              C.web3.eth.getTransactionReceipt(tx, function(err, receipt) {
+                if (err) return reject(err);
+
+                if (receipt != null) {
+                  // If they've opted into next gen, return more information.
+                  if (C.next_gen == true) {
+                    return accept({
+                      tx: tx,
+                      receipt: receipt,
+                      logs: decodeLogs(receipt.logs)
+                    });
+                  } else {
+                    return accept(tx);
+                  }
+                }
+
+                if (timeout > 0 && new Date().getTime() - start > timeout) {
+                  return reject(new Error("Transaction " + tx + " wasn't processed in " + (timeout / 1000) + " seconds!"));
+                }
+
+                setTimeout(make_attempt, 1000);
+              });
+            };
+
+            make_attempt();
+          };
+
+          args.push(tx_params, callback);
+          fn.apply(self, args);
+        });
+      };
+    }
+  };
+
+  function instantiate(instance, contract) {
+    instance.contract = contract;
+    var constructor = instance.constructor;
+
+    // Provision our functions.
+    for (var i = 0; i < instance.abi.length; i++) {
+      var item = instance.abi[i];
+      if (item.type == "function") {
+        if (item.constant == true) {
+          instance[item.name] = Utils.promisifyFunction(contract[item.name], constructor);
+        } else {
+          instance[item.name] = Utils.synchronizeFunction(contract[item.name], instance, constructor);
+        }
+
+        instance[item.name].call = Utils.promisifyFunction(contract[item.name].call, constructor);
+        instance[item.name].sendTransaction = Utils.promisifyFunction(contract[item.name].sendTransaction, constructor);
+        instance[item.name].request = contract[item.name].request;
+        instance[item.name].estimateGas = Utils.promisifyFunction(contract[item.name].estimateGas, constructor);
+      }
+
+      if (item.type == "event") {
+        instance[item.name] = contract[item.name];
+      }
+    }
+
+    instance.allEvents = contract.allEvents;
+    instance.address = contract.address;
+    instance.transactionHash = contract.transactionHash;
+  };
+
+  // Use inheritance to create a clone of this contract,
+  // and copy over contract's static functions.
+  function mutate(fn) {
+    var temp = function Clone() { return fn.apply(this, arguments); };
+
+    Object.keys(fn).forEach(function(key) {
+      temp[key] = fn[key];
+    });
+
+    temp.prototype = Object.create(fn.prototype);
+    bootstrap(temp);
+    return temp;
+  };
+
+  function bootstrap(fn) {
+    fn.web3 = new Web3();
+    fn.class_defaults  = fn.prototype.defaults || {};
+
+    // Set the network iniitally to make default data available and re-use code.
+    // Then remove the saved network id so the network will be auto-detected on first use.
+    fn.setNetwork("default");
+    fn.network_id = null;
+    return fn;
+  };
+
+  // Accepts a contract object created with web3.eth.contract.
+  // Optionally, if called without `new`, accepts a network_id and will
+  // create a new version of the contract abstraction with that network_id set.
+  function Contract() {
+    if (this instanceof Contract) {
+      instantiate(this, arguments[0]);
+    } else {
+      var C = mutate(Contract);
+      var network_id = arguments.length > 0 ? arguments[0] : "default";
+      C.setNetwork(network_id);
+      return C;
+    }
+  };
+
+  Contract.currentProvider = null;
+
+  Contract.setProvider = function(provider) {
+    var wrapped = new Provider(provider);
+    this.web3.setProvider(wrapped);
+    this.currentProvider = provider;
+  };
+
+  Contract.new = function() {
+    if (this.currentProvider == null) {
+<<<<<<< Updated upstream
+      throw new Error("Migrations error: Please call setProvider() first before calling new().");
+=======
+      throw new Error("EntitlementRegistry error: Please call setProvider() first before calling new().");
+>>>>>>> Stashed changes
+    }
+
+    var args = Array.prototype.slice.call(arguments);
+
+    if (!this.unlinked_binary) {
+<<<<<<< Updated upstream
+      throw new Error("Migrations error: contract binary not set. Can't deploy new instance.");
+=======
+      throw new Error("EntitlementRegistry error: contract binary not set. Can't deploy new instance.");
+>>>>>>> Stashed changes
+    }
+
+    var regex = /__[^_]+_+/g;
+    var unlinked_libraries = this.binary.match(regex);
+
+    if (unlinked_libraries != null) {
+      unlinked_libraries = unlinked_libraries.map(function(name) {
+        // Remove underscores
+        return name.replace(/_/g, "");
+      }).sort().filter(function(name, index, arr) {
+        // Remove duplicates
+        if (index + 1 >= arr.length) {
+          return true;
+        }
+
+        return name != arr[index + 1];
+      }).join(", ");
+
+<<<<<<< Updated upstream
+      throw new Error("Migrations contains unresolved libraries. You must deploy and link the following libraries before you can deploy a new version of Migrations: " + unlinked_libraries);
+=======
+      throw new Error("EntitlementRegistry contains unresolved libraries. You must deploy and link the following libraries before you can deploy a new version of EntitlementRegistry: " + unlinked_libraries);
+>>>>>>> Stashed changes
+    }
+
+    var self = this;
+
+    return new Promise(function(accept, reject) {
+      var contract_class = self.web3.eth.contract(self.abi);
+      var tx_params = {};
+      var last_arg = args[args.length - 1];
+
+      // It's only tx_params if it's an object and not a BigNumber.
+      if (Utils.is_object(last_arg) && !Utils.is_big_number(last_arg)) {
+        tx_params = args.pop();
+      }
+
+      tx_params = Utils.merge(self.class_defaults, tx_params);
+
+      if (tx_params.data == null) {
+        tx_params.data = self.binary;
+      }
+
+      // web3 0.9.0 and above calls new twice this callback twice.
+      // Why, I have no idea...
+      var intermediary = function(err, web3_instance) {
+        if (err != null) {
+          reject(err);
+          return;
+        }
+
+        if (err == null && web3_instance != null && web3_instance.address != null) {
+          accept(new self(web3_instance));
+        }
+      };
+
+      args.push(tx_params, intermediary);
+      contract_class.new.apply(contract_class, args);
+    });
+  };
+
+  Contract.at = function(address) {
+    if (address == null || typeof address != "string" || address.length != 42) {
+<<<<<<< Updated upstream
+      throw new Error("Invalid address passed to Migrations.at(): " + address);
+=======
+      throw new Error("Invalid address passed to EntitlementRegistry.at(): " + address);
+>>>>>>> Stashed changes
+    }
+
+    var contract_class = this.web3.eth.contract(this.abi);
+    var contract = contract_class.at(address);
+
+    return new this(contract);
+  };
+
+  Contract.deployed = function() {
+    if (!this.address) {
+<<<<<<< Updated upstream
+      throw new Error("Cannot find deployed address: Migrations not deployed or address not set.");
+=======
+      throw new Error("Cannot find deployed address: EntitlementRegistry not deployed or address not set.");
+>>>>>>> Stashed changes
+    }
+
+    return this.at(this.address);
+  };
+
+  Contract.defaults = function(class_defaults) {
+    if (this.class_defaults == null) {
+      this.class_defaults = {};
+    }
+
+    if (class_defaults == null) {
+      class_defaults = {};
+    }
+
+    var self = this;
+    Object.keys(class_defaults).forEach(function(key) {
+      var value = class_defaults[key];
+      self.class_defaults[key] = value;
+    });
+
+    return this.class_defaults;
+  };
+
+  Contract.extend = function() {
+    var args = Array.prototype.slice.call(arguments);
+
+    for (var i = 0; i < arguments.length; i++) {
+      var object = arguments[i];
+      var keys = Object.keys(object);
+      for (var j = 0; j < keys.length; j++) {
+        var key = keys[j];
+        var value = object[key];
+        this.prototype[key] = value;
+      }
+    }
+  };
+
+  Contract.all_networks = {
+  "default": {
+    "abi": [
+      {
+        "constant": false,
+        "inputs": [
+          {
+<<<<<<< Updated upstream
+            "name": "new_address",
+            "type": "address"
+          }
+        ],
+        "name": "upgrade",
+        "outputs": [],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "last_completed_migration",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+=======
+            "name": "_name",
+            "type": "string"
+          }
+        ],
+        "name": "get",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+>>>>>>> Stashed changes
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+          {
+<<<<<<< Updated upstream
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "completed",
+            "type": "uint256"
+=======
+            "name": "_name",
+            "type": "string"
+          }
+        ],
+        "name": "getOrThrow",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+>>>>>>> Stashed changes
+          }
+        ],
+        "name": "setCompleted",
+        "outputs": [],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "payable": false,
+        "type": "constructor"
+      }
+    ],
+    "unlinked_binary": "0x606060405234610000575b60008054600160a060020a03191633600160a060020a03161790555b5b610190806100366000396000f300606060405263ffffffff60e060020a6000350416630900f0108114610045578063445df0ac146100605780638da5cb5b1461007f578063fdacd576146100a8575b610000565b346100005761005e600160a060020a03600435166100ba565b005b346100005761006d61012d565b60408051918252519081900360200190f35b346100005761008c610133565b60408051600160a060020a039092168252519081900360200190f35b346100005761005e600435610142565b005b6000805433600160a060020a03908116911614156101275781905080600160a060020a031663fdacd5766001546040518263ffffffff1660e060020a02815260040180828152602001915050600060405180830381600087803b156100005760325a03f115610000575050505b5b5b5050565b60015481565b600054600160a060020a031681565b60005433600160a060020a039081169116141561015f5760018190555b5b5b505600a165627a7a723058205ae31ef6c16150e28c785e3817172f09f88de27206f1af0e7c752fdd87a4e1950029",
+    "events": {},
+<<<<<<< Updated upstream
+    "updated_at": 1485621487844
+=======
+    "updated_at": 1485628537327
+>>>>>>> Stashed changes
+  }
+};
+
+  Contract.checkNetwork = function(callback) {
+    var self = this;
+
+    if (this.network_id != null) {
+      return callback();
+    }
+
+    this.web3.version.network(function(err, result) {
+      if (err) return callback(err);
+
+      var network_id = result.toString();
+
+      // If we have the main network,
+      if (network_id == "1") {
+        var possible_ids = ["1", "live", "default"];
+
+        for (var i = 0; i < possible_ids.length; i++) {
+          var id = possible_ids[i];
+          if (Contract.all_networks[id] != null) {
+            network_id = id;
+            break;
+          }
+        }
+      }
+
+      if (self.all_networks[network_id] == null) {
+        return callback(new Error(self.name + " error: Can't find artifacts for network id '" + network_id + "'"));
+      }
+
+      self.setNetwork(network_id);
+      callback();
+    })
+  };
+
+  Contract.setNetwork = function(network_id) {
+    var network = this.all_networks[network_id] || {};
+
+    this.abi             = this.prototype.abi             = network.abi;
+    this.unlinked_binary = this.prototype.unlinked_binary = network.unlinked_binary;
+    this.address         = this.prototype.address         = network.address;
+    this.updated_at      = this.prototype.updated_at      = network.updated_at;
+    this.links           = this.prototype.links           = network.links || {};
+    this.events          = this.prototype.events          = network.events || {};
+
+    this.network_id = network_id;
+  };
+
+  Contract.networks = function() {
+    return Object.keys(this.all_networks);
+  };
+
+  Contract.link = function(name, address) {
+    if (typeof name == "function") {
+      var contract = name;
+
+      if (contract.address == null) {
+        throw new Error("Cannot link contract without an address.");
+      }
+
+      Contract.link(contract.contract_name, contract.address);
+
+      // Merge events so this contract knows about library's events
+      Object.keys(contract.events).forEach(function(topic) {
+        Contract.events[topic] = contract.events[topic];
+      });
+
+      return;
+    }
+
+    if (typeof name == "object") {
+      var obj = name;
+      Object.keys(obj).forEach(function(name) {
+        var a = obj[name];
+        Contract.link(name, a);
+      });
+      return;
+    }
+
+    Contract.links[name] = address;
+  };
+
+<<<<<<< Updated upstream
+  Contract.contract_name   = Contract.prototype.contract_name   = "Migrations";
+=======
+  Contract.contract_name   = Contract.prototype.contract_name   = "EntitlementRegistry";
+>>>>>>> Stashed changes
+  Contract.generated_with  = Contract.prototype.generated_with  = "3.2.0";
+
+  // Allow people to opt-in to breaking changes now.
+  Contract.next_gen = false;
+
+  var properties = {
+    binary: function() {
+      var binary = Contract.unlinked_binary;
+
+      Object.keys(Contract.links).forEach(function(library_name) {
+        var library_address = Contract.links[library_name];
+        var regex = new RegExp("__" + library_name + "_*", "g");
+
+        binary = binary.replace(regex, library_address.replace("0x", ""));
+      });
+
+      return binary;
+    }
+  };
+
+  Object.keys(properties).forEach(function(key) {
+    var getter = properties[key];
+
+    var definition = {};
+    definition.enumerable = true;
+    definition.configurable = false;
+    definition.get = getter;
+
+    Object.defineProperty(Contract, key, definition);
+    Object.defineProperty(Contract.prototype, key, definition);
+  });
+
+  bootstrap(Contract);
+
+  if (typeof module != "undefined" && typeof module.exports != "undefined") {
+    module.exports = Contract;
+  } else {
+    // There will only be one version of this contract in the browser,
+    // and we can use that.
+<<<<<<< Updated upstream
+    window.Migrations = Contract;
+  }
+})();
+
+},{"web3":49,"web3/lib/web3/event.js":76}],12:[function(require,module,exports){
+=======
+    window.EntitlementRegistry = Contract;
+  }
+})();
+
+},{"web3":51,"web3/lib/web3/event.js":78}],12:[function(require,module,exports){
+>>>>>>> Stashed changes
+var Web3 = require("web3");
+var SolidityEvent = require("web3/lib/web3/event.js");
+
+(function() {
+  // Planned for future features, logging, etc.
+  function Provider(provider) {
+    this.provider = provider;
+  }
+
+  Provider.prototype.send = function() {
+    this.provider.send.apply(this.provider, arguments);
+  };
+
+  Provider.prototype.sendAsync = function() {
+    this.provider.sendAsync.apply(this.provider, arguments);
+  };
+
+  var BigNumber = (new Web3()).toBigNumber(0).constructor;
+
+  var Utils = {
+    is_object: function(val) {
+      return typeof val == "object" && !Array.isArray(val);
+    },
+    is_big_number: function(val) {
+      if (typeof val != "object") return false;
+
+      // Instanceof won't work because we have multiple versions of Web3.
+      try {
+        new BigNumber(val);
+        return true;
+      } catch (e) {
+        return false;
+      }
+    },
+    merge: function() {
+      var merged = {};
+      var args = Array.prototype.slice.call(arguments);
+
+      for (var i = 0; i < args.length; i++) {
+        var object = args[i];
+        var keys = Object.keys(object);
+        for (var j = 0; j < keys.length; j++) {
+          var key = keys[j];
+          var value = object[key];
+          merged[key] = value;
+        }
+      }
+
+      return merged;
+    },
+    promisifyFunction: function(fn, C) {
+      var self = this;
+      return function() {
+        var instance = this;
+
+        var args = Array.prototype.slice.call(arguments);
+        var tx_params = {};
+        var last_arg = args[args.length - 1];
+
+        // It's only tx_params if it's an object and not a BigNumber.
+        if (Utils.is_object(last_arg) && !Utils.is_big_number(last_arg)) {
+          tx_params = args.pop();
+        }
+
+        tx_params = Utils.merge(C.class_defaults, tx_params);
+
+        return new Promise(function(accept, reject) {
+          var callback = function(error, result) {
+            if (error != null) {
+              reject(error);
+            } else {
+              accept(result);
+            }
+          };
+          args.push(tx_params, callback);
+          fn.apply(instance.contract, args);
+        });
+      };
+    },
+    synchronizeFunction: function(fn, instance, C) {
+      var self = this;
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        var tx_params = {};
+        var last_arg = args[args.length - 1];
+
+        // It's only tx_params if it's an object and not a BigNumber.
+        if (Utils.is_object(last_arg) && !Utils.is_big_number(last_arg)) {
+          tx_params = args.pop();
+        }
+
+        tx_params = Utils.merge(C.class_defaults, tx_params);
+
+        return new Promise(function(accept, reject) {
+
+          var decodeLogs = function(logs) {
+            return logs.map(function(log) {
+              var logABI = C.events[log.topics[0]];
+
+              if (logABI == null) {
+                return null;
+              }
+
+              var decoder = new SolidityEvent(null, logABI, instance.address);
+              return decoder.decode(log);
+            }).filter(function(log) {
+              return log != null;
+            });
+          };
+
+          var callback = function(error, tx) {
+            if (error != null) {
+              reject(error);
+              return;
+            }
+
+            var timeout = C.synchronization_timeout || 240000;
+            var start = new Date().getTime();
+
+            var make_attempt = function() {
+              C.web3.eth.getTransactionReceipt(tx, function(err, receipt) {
+                if (err) return reject(err);
+
+                if (receipt != null) {
+                  // If they've opted into next gen, return more information.
+                  if (C.next_gen == true) {
+                    return accept({
+                      tx: tx,
+                      receipt: receipt,
+                      logs: decodeLogs(receipt.logs)
+                    });
+                  } else {
+                    return accept(tx);
+                  }
+                }
+
+                if (timeout > 0 && new Date().getTime() - start > timeout) {
+                  return reject(new Error("Transaction " + tx + " wasn't processed in " + (timeout / 1000) + " seconds!"));
+                }
+
+                setTimeout(make_attempt, 1000);
+              });
+            };
+
+            make_attempt();
+          };
+
+          args.push(tx_params, callback);
+          fn.apply(self, args);
+        });
+      };
+    }
+  };
+
+  function instantiate(instance, contract) {
+    instance.contract = contract;
+    var constructor = instance.constructor;
+
+    // Provision our functions.
+    for (var i = 0; i < instance.abi.length; i++) {
+      var item = instance.abi[i];
+      if (item.type == "function") {
+        if (item.constant == true) {
+          instance[item.name] = Utils.promisifyFunction(contract[item.name], constructor);
+        } else {
+          instance[item.name] = Utils.synchronizeFunction(contract[item.name], instance, constructor);
+        }
+
+        instance[item.name].call = Utils.promisifyFunction(contract[item.name].call, constructor);
+        instance[item.name].sendTransaction = Utils.promisifyFunction(contract[item.name].sendTransaction, constructor);
+        instance[item.name].request = contract[item.name].request;
+        instance[item.name].estimateGas = Utils.promisifyFunction(contract[item.name].estimateGas, constructor);
+      }
+
+      if (item.type == "event") {
+        instance[item.name] = contract[item.name];
+      }
+    }
+
+    instance.allEvents = contract.allEvents;
+    instance.address = contract.address;
+    instance.transactionHash = contract.transactionHash;
+  };
+
+  // Use inheritance to create a clone of this contract,
+  // and copy over contract's static functions.
+  function mutate(fn) {
+    var temp = function Clone() { return fn.apply(this, arguments); };
+
+    Object.keys(fn).forEach(function(key) {
+      temp[key] = fn[key];
+    });
+
+    temp.prototype = Object.create(fn.prototype);
+    bootstrap(temp);
+    return temp;
+  };
+
+  function bootstrap(fn) {
+    fn.web3 = new Web3();
+    fn.class_defaults  = fn.prototype.defaults || {};
+
+    // Set the network iniitally to make default data available and re-use code.
+    // Then remove the saved network id so the network will be auto-detected on first use.
+    fn.setNetwork("default");
+    fn.network_id = null;
+    return fn;
+  };
+
+  // Accepts a contract object created with web3.eth.contract.
+  // Optionally, if called without `new`, accepts a network_id and will
+  // create a new version of the contract abstraction with that network_id set.
+  function Contract() {
+    if (this instanceof Contract) {
+      instantiate(this, arguments[0]);
+    } else {
+      var C = mutate(Contract);
+      var network_id = arguments.length > 0 ? arguments[0] : "default";
+      C.setNetwork(network_id);
+      return C;
+    }
+  };
+
+  Contract.currentProvider = null;
+
+  Contract.setProvider = function(provider) {
+    var wrapped = new Provider(provider);
+    this.web3.setProvider(wrapped);
+    this.currentProvider = provider;
+  };
+
+  Contract.new = function() {
+    if (this.currentProvider == null) {
+<<<<<<< Updated upstream
+      throw new Error("Ratings error: Please call setProvider() first before calling new().");
+=======
+      throw new Error("EntitlementRegistryMock error: Please call setProvider() first before calling new().");
+>>>>>>> Stashed changes
+    }
+
+    var args = Array.prototype.slice.call(arguments);
+
+    if (!this.unlinked_binary) {
+<<<<<<< Updated upstream
+      throw new Error("Ratings error: contract binary not set. Can't deploy new instance.");
+=======
+      throw new Error("EntitlementRegistryMock error: contract binary not set. Can't deploy new instance.");
+>>>>>>> Stashed changes
+    }
+
+    var regex = /__[^_]+_+/g;
+    var unlinked_libraries = this.binary.match(regex);
+
+    if (unlinked_libraries != null) {
+      unlinked_libraries = unlinked_libraries.map(function(name) {
+        // Remove underscores
+        return name.replace(/_/g, "");
+      }).sort().filter(function(name, index, arr) {
+        // Remove duplicates
+        if (index + 1 >= arr.length) {
+          return true;
+        }
+
+        return name != arr[index + 1];
+      }).join(", ");
+
+<<<<<<< Updated upstream
+      throw new Error("Ratings contains unresolved libraries. You must deploy and link the following libraries before you can deploy a new version of Ratings: " + unlinked_libraries);
+=======
+      throw new Error("EntitlementRegistryMock contains unresolved libraries. You must deploy and link the following libraries before you can deploy a new version of EntitlementRegistryMock: " + unlinked_libraries);
+>>>>>>> Stashed changes
+    }
+
+    var self = this;
+
+    return new Promise(function(accept, reject) {
+      var contract_class = self.web3.eth.contract(self.abi);
+      var tx_params = {};
+      var last_arg = args[args.length - 1];
+
+      // It's only tx_params if it's an object and not a BigNumber.
+      if (Utils.is_object(last_arg) && !Utils.is_big_number(last_arg)) {
+        tx_params = args.pop();
+      }
+
+      tx_params = Utils.merge(self.class_defaults, tx_params);
+
+      if (tx_params.data == null) {
+        tx_params.data = self.binary;
+      }
+
+      // web3 0.9.0 and above calls new twice this callback twice.
+      // Why, I have no idea...
+      var intermediary = function(err, web3_instance) {
+        if (err != null) {
+          reject(err);
+          return;
+        }
+
+        if (err == null && web3_instance != null && web3_instance.address != null) {
+          accept(new self(web3_instance));
+        }
+      };
+
+      args.push(tx_params, intermediary);
+      contract_class.new.apply(contract_class, args);
+    });
+  };
+
+  Contract.at = function(address) {
+    if (address == null || typeof address != "string" || address.length != 42) {
+<<<<<<< Updated upstream
+      throw new Error("Invalid address passed to Ratings.at(): " + address);
+=======
+      throw new Error("Invalid address passed to EntitlementRegistryMock.at(): " + address);
+>>>>>>> Stashed changes
+    }
+
+    var contract_class = this.web3.eth.contract(this.abi);
+    var contract = contract_class.at(address);
+
+    return new this(contract);
+  };
+
+  Contract.deployed = function() {
+    if (!this.address) {
+<<<<<<< Updated upstream
+      throw new Error("Cannot find deployed address: Ratings not deployed or address not set.");
+=======
+      throw new Error("Cannot find deployed address: EntitlementRegistryMock not deployed or address not set.");
+>>>>>>> Stashed changes
+    }
+
+    return this.at(this.address);
+  };
+
+  Contract.defaults = function(class_defaults) {
+    if (this.class_defaults == null) {
+      this.class_defaults = {};
+    }
+
+    if (class_defaults == null) {
+      class_defaults = {};
+    }
+
+    var self = this;
+    Object.keys(class_defaults).forEach(function(key) {
+      var value = class_defaults[key];
+      self.class_defaults[key] = value;
+    });
+
+    return this.class_defaults;
+  };
+
+  Contract.extend = function() {
+    var args = Array.prototype.slice.call(arguments);
+
+    for (var i = 0; i < arguments.length; i++) {
+      var object = arguments[i];
+      var keys = Object.keys(object);
+      for (var j = 0; j < keys.length; j++) {
+        var key = keys[j];
+        var value = object[key];
+        this.prototype[key] = value;
+      }
+    }
+  };
+
+  Contract.all_networks = {
+  "default": {
+    "abi": [
+      {
+        "constant": false,
+        "inputs": [
+          {
+<<<<<<< Updated upstream
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "ric",
+            "type": "string"
+          },
+          {
+            "name": "uri",
+            "type": "string"
+          },
+          {
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "name": "maxAuditors",
+            "type": "uint256"
+          },
+          {
+            "name": "ipfsHash",
+            "type": "string"
+          }
+        ],
+        "name": "submitRequestForRating",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "payable": true,
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "",
+            "type": "bytes32"
+          }
+        ],
+        "name": "requestForRatings",
+        "outputs": [
+          {
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "name": "reward",
+            "type": "uint256"
+          },
+          {
+            "name": "maxAuditors",
+            "type": "uint256"
+          },
+          {
+            "name": "auditorCount",
+            "type": "uint256"
+          },
+          {
+            "name": "submissionCount",
+            "type": "uint256"
+          },
+          {
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+=======
+            "name": "_name",
+            "type": "string"
+          }
+        ],
+        "name": "get",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+>>>>>>> Stashed changes
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+<<<<<<< Updated upstream
+            "name": "key",
+            "type": "bytes32"
+          }
+        ],
+        "name": "contributeToRequestForRating",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "payable": true,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "key",
+            "type": "bytes32"
+          }
+        ],
+        "name": "requestRefund",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "name": "rating",
+            "type": "uint256"
+          },
+          {
+            "name": "ipfsHash",
+            "type": "string"
+          }
+        ],
+        "name": "submitRating",
+=======
+            "name": "_name",
+            "type": "string"
+          },
+          {
+            "name": "entitlement",
+            "type": "address"
+          }
+        ],
+        "name": "set",
+>>>>>>> Stashed changes
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+<<<<<<< Updated upstream
+            "name": "key",
+            "type": "bytes32"
+          }
+        ],
+        "name": "requestPayout",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "key",
+            "type": "bytes32"
+          }
+        ],
+        "name": "joinRating",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+=======
+            "name": "_name",
+            "type": "string"
+          }
+        ],
+        "name": "getOrThrow",
+        "outputs": [
+          {
+            "name": "entitlement",
+            "type": "address"
+>>>>>>> Stashed changes
+          }
+        ],
+        "payable": false,
+        "type": "function"
+<<<<<<< Updated upstream
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ],
+        "name": "getEntitlement",
+        "outputs": [
+          {
+            "name": "",
+=======
+      }
+    ],
+    "unlinked_binary": "0x606060405234610000575b610341806100196000396000f300606060405263ffffffff60e060020a600035041663693ec85e811461003a578063a815ff15146100a9578063dc5acb901461011b575b610000565b346100005761008d600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061018a95505050505050565b60408051600160a060020a039092168252519081900360200190f35b3461000057610107600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965050509235600160a060020a031692506101fd915050565b604080519115158252519081900360200190f35b346100005761008d600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061029695505050505050565b60408051600160a060020a039092168252519081900360200190f35b60006000826040518082805190602001908083835b602083106101be5780518252601f19909201916020918201910161019f565b51815160209384036101000a6000190180199092169116179052920194855250604051938490030190922054600160a060020a0316925050505b919050565b6000816000846040518082805190602001908083835b602083106102325780518252601f199092019160209182019101610213565b51815160209384036101000a60001901801990921691161790529201948552506040519384900301909220805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0394909416939093179092555060019150505b92915050565b60006000826040518082805190602001908083835b602083106102ca5780518252601f1990920191602091820191016102ab565b51815160209384036101000a6000190180199092169116179052920194855250604051938490030190922054600160a060020a0316925050508015156101f857610000565b5b9190505600a165627a7a723058207425273dc51ff60d562bb416533662ffde03f3333f38bf06fa4421d25af9f3ea0029",
+    "events": {},
+    "updated_at": 1485628537285
+  }
+};
+
+  Contract.checkNetwork = function(callback) {
+    var self = this;
+
+    if (this.network_id != null) {
+      return callback();
+    }
+
+    this.web3.version.network(function(err, result) {
+      if (err) return callback(err);
+
+      var network_id = result.toString();
+
+      // If we have the main network,
+      if (network_id == "1") {
+        var possible_ids = ["1", "live", "default"];
+
+        for (var i = 0; i < possible_ids.length; i++) {
+          var id = possible_ids[i];
+          if (Contract.all_networks[id] != null) {
+            network_id = id;
+            break;
+          }
+        }
+      }
+
+      if (self.all_networks[network_id] == null) {
+        return callback(new Error(self.name + " error: Can't find artifacts for network id '" + network_id + "'"));
+      }
+
+      self.setNetwork(network_id);
+      callback();
+    })
+  };
+
+  Contract.setNetwork = function(network_id) {
+    var network = this.all_networks[network_id] || {};
+
+    this.abi             = this.prototype.abi             = network.abi;
+    this.unlinked_binary = this.prototype.unlinked_binary = network.unlinked_binary;
+    this.address         = this.prototype.address         = network.address;
+    this.updated_at      = this.prototype.updated_at      = network.updated_at;
+    this.links           = this.prototype.links           = network.links || {};
+    this.events          = this.prototype.events          = network.events || {};
+
+    this.network_id = network_id;
+  };
+
+  Contract.networks = function() {
+    return Object.keys(this.all_networks);
+  };
+
+  Contract.link = function(name, address) {
+    if (typeof name == "function") {
+      var contract = name;
+
+      if (contract.address == null) {
+        throw new Error("Cannot link contract without an address.");
+      }
+
+      Contract.link(contract.contract_name, contract.address);
+
+      // Merge events so this contract knows about library's events
+      Object.keys(contract.events).forEach(function(topic) {
+        Contract.events[topic] = contract.events[topic];
+      });
+
+      return;
+    }
+
+    if (typeof name == "object") {
+      var obj = name;
+      Object.keys(obj).forEach(function(name) {
+        var a = obj[name];
+        Contract.link(name, a);
+      });
+      return;
+    }
+
+    Contract.links[name] = address;
+  };
+
+  Contract.contract_name   = Contract.prototype.contract_name   = "EntitlementRegistryMock";
+  Contract.generated_with  = Contract.prototype.generated_with  = "3.2.0";
+
+  // Allow people to opt-in to breaking changes now.
+  Contract.next_gen = false;
+
+  var properties = {
+    binary: function() {
+      var binary = Contract.unlinked_binary;
+
+      Object.keys(Contract.links).forEach(function(library_name) {
+        var library_address = Contract.links[library_name];
+        var regex = new RegExp("__" + library_name + "_*", "g");
+
+        binary = binary.replace(regex, library_address.replace("0x", ""));
+      });
+
+      return binary;
+    }
+  };
+
+  Object.keys(properties).forEach(function(key) {
+    var getter = properties[key];
+
+    var definition = {};
+    definition.enumerable = true;
+    definition.configurable = false;
+    definition.get = getter;
+
+    Object.defineProperty(Contract, key, definition);
+    Object.defineProperty(Contract.prototype, key, definition);
+  });
+
+  bootstrap(Contract);
+
+  if (typeof module != "undefined" && typeof module.exports != "undefined") {
+    module.exports = Contract;
+  } else {
+    // There will only be one version of this contract in the browser,
+    // and we can use that.
+    window.EntitlementRegistryMock = Contract;
+  }
+})();
+
+},{"web3":51,"web3/lib/web3/event.js":78}],13:[function(require,module,exports){
 var Web3 = require("web3");
 var SolidityEvent = require("web3/lib/web3/event.js");
 
@@ -11591,6 +13489,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "inputs": [
           {
             "name": "new_address",
+>>>>>>> Stashed changes
             "type": "address"
           }
         ],
@@ -11600,6 +13499,104 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "type": "function"
       },
       {
+<<<<<<< Updated upstream
+        "inputs": [
+          {
+            "name": "entitlementRegistry",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "type": "constructor"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "ric",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "uri",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "maxAuditors",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingSubmitted",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "contribution",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "totalReward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingContributed",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+=======
         "constant": true,
         "inputs": [],
         "name": "last_completed_migration",
@@ -11617,15 +13614,296 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "inputs": [],
         "name": "owner",
         "outputs": [
+>>>>>>> Stashed changes
           {
-            "name": "",
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
             "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "auditorCount",
+            "type": "uint256"
           }
         ],
-        "payable": false,
-        "type": "function"
+        "name": "LogAuditorJoined",
+        "type": "event"
       },
       {
+<<<<<<< Updated upstream
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "rating",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "submissionCount",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorSubmitted",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorPaid",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "contribution",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogInvestorRefunded",
+        "type": "event"
+      }
+    ],
+    "unlinked_binary": "0x6060604052346100005760405160208061198883398101604052515b805b600160a060020a038116151561003257610000565b60008054600160a060020a031916600160a060020a0383161790555b505b505b611927806100616000396000f300606060405236156100725763ffffffff60e060020a600035041663105b68f1811461007757806318bf9a42146101d757806369a75e481461022b578063775274a11461024a578063977194291461026e578063bfde8994146102d9578063c809c3b8146102fd578063cbaaa3ac14610321575b610000565b6101c3600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020888301358a018035601f81018390048302840183019094528383529799893599808301359991985060600196509194509081019250819084018382808284375094965061039095505050505050565b604080519115158252519081900360200190f35b34610000576101e7600435610c89565b6040518087815260200186815260200185815260200184815260200183815260200182600281116100005760ff168152602001965050505050505060405180910390f35b6101c3600435610cc6565b604080519115158252519081900360200190f35b34610000576101c3600435610e7b565b604080519115158252519081900360200190f35b3461000057604080516020600460443581810135601f81018490048402850184019095528484526101c39482359460248035956064949293919092019181908401838280828437509496506110b095505050505050565b604080519115158252519081900360200190f35b34610000576101c36004356113ba565b604080519115158252519081900360200190f35b34610000576101c3600435611641565b604080519115158252519081900360200190f35b3461000057610374600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061181095505050505050565b60408051600160a060020a039092168252519081900360200190f35b6000600060006103d5604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061044e57610000565b341580610459575084155b8061046357508351155b8061046e5750428611155b1561047857610000565b338a8a88348989436040518089600160a060020a0316600160a060020a03166c0100000000000000000000000002815260140188805190602001908083835b602083106104d65780518252601f1990920191602091820191016104b7565b51815160209384036101000a60001901801990921691161790528a5191909301928a0191508083835b6020831061051e5780518252601f1990920191602091820191016104ff565b51815160209384036101000a60001901801990921691161790529201888152808301889052604081018790528551606090910192860191508083835b602083106105795780518252601f19909201916020918201910161055a565b51815160209384036101000a600019018019909216911617905292019384525060408051938490038201909320600081815260019092529281208054939c5099509750508610159450610000935050505057906000526020600020900160005b505460026000196101006001841615020190911604156105f857610000565b50600081815260016020526040812080549091859183919081101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061066f57805160ff191683800117855561069c565b8280016001018555821561069c579182015b8281111561069c578251825591602001919060010190610681565b5b506106bd9291505b808211156106b957600081556001016106a5565b5090565b505089816000016001815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061072757805160ff1916838001178555610754565b82800160010185558215610754579182015b82811115610754578251825591602001919060010190610739565b5b506107759291505b808211156106b957600081556001016106a5565b5090565b505088816000016002815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106107df57805160ff191683800117855561080c565b8280016001018555821561080c579182015b8281111561080c5782518255916020019190600101906107f1565b5b5061082d9291505b808211156106b957600081556001016106a5565b5090565b505087816000016003815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061089757805160ff19168380011785556108c4565b828001600101855582156108c4579182015b828111156108c45782518255916020019190600101906108a9565b5b506108e59291505b808211156106b957600081556001016106a5565b5090565b505086816000016004815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061094f57805160ff191683800117855561097c565b8280016001018555821561097c579182015b8281111561097c578251825591602001919060010190610961565b5b5061099d9291505b808211156106b957600081556001016106a5565b5090565b505060018181018790553460028301819055600383018790556000600584018190556006840181905560088401805460ff191690558481526020928352604080822033600160a060020a031683526004018452908190209190915551855186928291908401908083835b60208310610a265780518252601f199092019160209182019101610a07565b6001836020036101000a038019825116818451168082178552505050505050905001915050604051809103902033600160a060020a031683600019167f7332583e40367a020551753fffdb500c9a44e697d4ad2950edf96a4b9e60216a8d8d8d8d8d8d34604051808060200180602001806020018060200188815260200187815260200186815260200185810385528c818151815260200191508051906020019080838360008314610af3575b805182526020831115610af357601f199092019160209182019101610ad3565b505050905090810190601f168015610b1f5780820380516001836020036101000a031916815260200191505b5085810384528b5181528b516020918201918d01908083838215610b5e575b805182526020831115610b5e57601f199092019160209182019101610b3e565b505050905090810190601f168015610b8a5780820380516001836020036101000a031916815260200191505b5085810383528a5181528a516020918201918c01908083838215610bc9575b805182526020831115610bc957601f199092019160209182019101610ba9565b505050905090810190601f168015610bf55780820380516001836020036101000a031916815260200191505b5085810382528951815289516020918201918b01908083838215610c34575b805182526020831115610c3457601f199092019160209182019101610c14565b505050905090810190601f168015610c605780820380516001836020036101000a031916815260200191505b509b50505050505050505050505060405180910390a4600192505b5b5050979650505050505050565b6001602081905260009182526040909120908101546002820154600383015460058401546006850154600890950154939492939192909160ff1686565b60006000610d09604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f1156100005750506040515115159050610d8257610000565b506000828152600160205260409020341580610dcd5750806000016000815481101561000057906000526020600020900160005b505460026000196101006001841615020190911604155b80610ddb5750428160010154105b80610df657506000600882015460ff16600281116100005714155b15610e0057610000565b600281018054349081018255600160a060020a033316600081815260048501602090815260409182902080548501905593548151938452938301939093528251909286927f3c3e5cbebfd0ef81bf2f3fb207432b7c74d47759fa64a631c485184486211b0d929081900390910190a3600191505b5b50919050565b6000600060006000610ec2604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f1156100005750506040515115159050610f3b57610000565b60008581526001602052604081209350600884015460ff1660028111610000571415610fd257428360010154108015610f7657506006830154155b9150826000016000815481101561000057906000526020600020900160005b5054600260001961010060018416150201909116041580610fb4575081155b15610fbe57610000565b60088301805460ff19166001179055610ff4565b6001600884015460ff166002811161000057141561007257610ff4565b610000565b5b600160a060020a0333166000908152600484016020526040902054151561101b57610000565b50600160a060020a0333166000818152600484016020526040808220805490839055905190929183156108fc02918491818181858888f19350505050151561106257610000565b604080518281529051600160a060020a0333169187917f4ae7c15cd04d8a5097b1f1fda073a122b3d11db2fa19a1d50b62e525bb165d159181900360200190a3600193505b5b505050919050565b6000600060006110f5604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061116e57610000565b50506000848152600160209081526040808320600160a060020a033316845260078101909252822081549192909183919081101561000057906000526020600020900160005b50546002600019610100600184161502019091160415806111d75750805460ff16155b806111e55750428260010154105b806111ef57508351155b8061120a57506000600883015460ff16600281116100005714155b1561121457610000565b600280820154600019610100600183161502011604151561123b5760068201805460010190555b84816001018190555083816002019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061129257805160ff19168380011785556112bf565b828001600101855582156112bf579182015b828111156112bf5782518255916020019190600101906112a4565b5b506112e09291505b808211156106b957600081556001016106a5565b5090565b505033600160a060020a031686600019167f561d692d608576714937a081b8dcd88b472f1781c31a856faddba126374d61a9878786600601546040518084815260200180602001838152602001828103825284818151815260200191508051906020019080838360008314611370575b80518252602083111561137057601f199092019160209182019101611350565b505050905090810190601f16801561139c5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390a3600192505b5b50509392505050565b60006000600060006000611403604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061147c57610000565b6000868152600160209081526040808320600160a060020a03331684526007810190925282209095509350600885015460ff166002811161000057141561153f5742846001015410806114d6575083600301548460060154145b9150836000016000815481101561000057906000526020600020900160005b505460026000196101006001841615020190911604158061151857506006840154155b80611521575081155b1561152b57610000565b60088401805460ff19166002179055611561565b6002600885015460ff166002811161000057141561007257611561565b610000565b5b825460ff1615806115855750600280840154600019610100600183161502011604155b806115945750600383015460ff165b1561159e57610000565b60038301805460ff19166001179055600684015460028501548115610000576040519190049150600160a060020a0333169082156108fc029083906000818181858888f1935050505015156115f257610000565b604080518281529051600160a060020a0333169188917f31bfdeff7497910d6af7611e390ea041175d3897520804a90d9d3c8d8c91c5d09181900360200190a3600194505b5b50505050919050565b600060006000611686604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f11561000057505060405151151590506116ff57610000565b50506000828152600160209081526040808320600160a060020a033316845260078101909252822081549192909183919081101561000057906000526020600020900160005b505460026000196101006001841615020190911604158061176d575081600301548260050154145b806117795750805460ff165b806117875750428260010154105b806117a257506000600883015460ff16600281116100005714155b156117ac57610000565b600160a060020a033316600081905260078301602090815260058401805460010190819055604080519182525187927fc8350213f5030bd4e879cb2eeb4fa2f7f4d318e117772767d25c9c9bc4592e8e928290030190a3600192505b5b5050919050565b6000805460408051602090810184905290517fdc5acb9000000000000000000000000000000000000000000000000000000000815260048101828152855160248301528551600160a060020a039094169363dc5acb909387938392604490910191850190808383821561189e575b80518252602083111561189e57601f19909201916020918201910161187e565b505050905090810190601f1680156118ca5780820380516001836020036101000a031916815260200191505b5092505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b9190505600a165627a7a72305820fea23c85110bc983712e4b3def997c5efb594c93df3b12a2346cb25edb899b8b0029",
+    "events": {
+      "0x7332583e40367a020551753fffdb500c9a44e697d4ad2950edf96a4b9e60216a": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "ric",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "uri",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "maxAuditors",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingSubmitted",
+        "type": "event"
+      },
+      "0x3c3e5cbebfd0ef81bf2f3fb207432b7c74d47759fa64a631c485184486211b0d": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "contribution",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "totalReward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingContributed",
+        "type": "event"
+      },
+      "0xc8350213f5030bd4e879cb2eeb4fa2f7f4d318e117772767d25c9c9bc4592e8e": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "auditorCount",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorJoined",
+        "type": "event"
+      },
+      "0x561d692d608576714937a081b8dcd88b472f1781c31a856faddba126374d61a9": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "rating",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "submissionCount",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorSubmitted",
+        "type": "event"
+      },
+      "0x31bfdeff7497910d6af7611e390ea041175d3897520804a90d9d3c8d8c91c5d0": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorPaid",
+        "type": "event"
+      },
+      "0x4ae7c15cd04d8a5097b1f1fda073a122b3d11db2fa19a1d50b62e525bb165d15": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "contribution",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogInvestorRefunded",
+        "type": "event"
+      }
+    },
+    "updated_at": 1485621262215,
+    "links": {},
+    "address": "0xcffb7109c83746d7b8e6f82237314169e2903ba1"
+  },
+  "default": {
+    "abi": [
+=======
         "constant": false,
         "inputs": [
           {
@@ -11775,7 +14053,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   }
 })();
 
-},{"web3":49,"web3/lib/web3/event.js":76}],12:[function(require,module,exports){
+},{"web3":51,"web3/lib/web3/event.js":78}],14:[function(require,module,exports){
 var Web3 = require("web3");
 var SolidityEvent = require("web3/lib/web3/event.js");
 
@@ -12243,15 +14521,40 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "payable": false,
         "type": "function"
       },
+>>>>>>> Stashed changes
       {
         "constant": false,
         "inputs": [
           {
+<<<<<<< Updated upstream
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "ric",
+            "type": "string"
+          },
+          {
+            "name": "uri",
+            "type": "string"
+          },
+          {
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "name": "maxAuditors",
+=======
             "name": "key",
             "type": "bytes32"
           },
           {
             "name": "rating",
+>>>>>>> Stashed changes
             "type": "uint256"
           },
           {
@@ -12259,6 +14562,9 @@ var SolidityEvent = require("web3/lib/web3/event.js");
             "type": "string"
           }
         ],
+<<<<<<< Updated upstream
+        "name": "submitRequestForRating",
+=======
         "name": "submitRating",
         "outputs": [
           {
@@ -12270,476 +14576,10 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "type": "function"
       },
       {
-        "constant": false,
-        "inputs": [
-          {
-            "name": "key",
-            "type": "bytes32"
-          }
-        ],
-        "name": "requestPayout",
-        "outputs": [
-          {
-            "name": "success",
-            "type": "bool"
-          }
-        ],
-        "payable": false,
-        "type": "function"
-      },
-      {
-        "constant": false,
-        "inputs": [
-          {
-            "name": "key",
-            "type": "bytes32"
-          }
-        ],
-        "name": "joinRating",
-        "outputs": [
-          {
-            "name": "success",
-            "type": "bool"
-          }
-        ],
-        "payable": false,
-        "type": "function"
-      },
-      {
         "constant": true,
-        "inputs": [
-          {
-            "name": "name",
-            "type": "string"
-          }
-        ],
-        "name": "getEntitlement",
-        "outputs": [
-          {
-            "name": "",
-            "type": "address"
-          }
-        ],
-        "payable": false,
-        "type": "function"
-      },
-      {
-        "inputs": [
-          {
-            "name": "entitlementRegistry",
-            "type": "address"
-          }
-        ],
-        "payable": false,
-        "type": "constructor"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "name": "key",
-            "type": "bytes32"
-          },
-          {
-            "indexed": true,
-            "name": "investor",
-            "type": "address"
-          },
-          {
-            "indexed": true,
-            "name": "ipfsHash",
-            "type": "string"
-          },
-          {
-            "indexed": false,
-            "name": "name",
-            "type": "string"
-          },
-          {
-            "indexed": false,
-            "name": "description",
-            "type": "string"
-          },
-          {
-            "indexed": false,
-            "name": "ric",
-            "type": "string"
-          },
-          {
-            "indexed": false,
-            "name": "uri",
-            "type": "string"
-          },
-          {
-            "indexed": false,
-            "name": "deadline",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "maxAuditors",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "reward",
-            "type": "uint256"
-          }
-        ],
-        "name": "LogRequestForRatingSubmitted",
-        "type": "event"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "name": "key",
-            "type": "bytes32"
-          },
-          {
-            "indexed": true,
-            "name": "investor",
-            "type": "address"
-          },
-          {
-            "indexed": false,
-            "name": "contribution",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "totalReward",
-            "type": "uint256"
-          }
-        ],
-        "name": "LogRequestForRatingContributed",
-        "type": "event"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "name": "key",
-            "type": "bytes32"
-          },
-          {
-            "indexed": true,
-            "name": "auditor",
-            "type": "address"
-          },
-          {
-            "indexed": false,
-            "name": "auditorCount",
-            "type": "uint256"
-          }
-        ],
-        "name": "LogAuditorJoined",
-        "type": "event"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "name": "key",
-            "type": "bytes32"
-          },
-          {
-            "indexed": true,
-            "name": "auditor",
-            "type": "address"
-          },
-          {
-            "indexed": false,
-            "name": "rating",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "ipfsHash",
-            "type": "string"
-          },
-          {
-            "indexed": false,
-            "name": "submissionCount",
-            "type": "uint256"
-          }
-        ],
-        "name": "LogAuditorSubmitted",
-        "type": "event"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "name": "key",
-            "type": "bytes32"
-          },
-          {
-            "indexed": true,
-            "name": "auditor",
-            "type": "address"
-          },
-          {
-            "indexed": false,
-            "name": "reward",
-            "type": "uint256"
-          }
-        ],
-        "name": "LogAuditorPaid",
-        "type": "event"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "name": "key",
-            "type": "bytes32"
-          },
-          {
-            "indexed": true,
-            "name": "investor",
-            "type": "address"
-          },
-          {
-            "indexed": false,
-            "name": "contribution",
-            "type": "uint256"
-          }
-        ],
-        "name": "LogInvestorRefunded",
-        "type": "event"
-      }
-    ],
-    "unlinked_binary": "0x6060604052346100005760405160208061198883398101604052515b805b600160a060020a038116151561003257610000565b60008054600160a060020a031916600160a060020a0383161790555b505b505b611927806100616000396000f300606060405236156100725763ffffffff60e060020a600035041663105b68f1811461007757806318bf9a42146101d757806369a75e481461022b578063775274a11461024a578063977194291461026e578063bfde8994146102d9578063c809c3b8146102fd578063cbaaa3ac14610321575b610000565b6101c3600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020888301358a018035601f81018390048302840183019094528383529799893599808301359991985060600196509194509081019250819084018382808284375094965061039095505050505050565b604080519115158252519081900360200190f35b34610000576101e7600435610c89565b6040518087815260200186815260200185815260200184815260200183815260200182600281116100005760ff168152602001965050505050505060405180910390f35b6101c3600435610cc6565b604080519115158252519081900360200190f35b34610000576101c3600435610e7b565b604080519115158252519081900360200190f35b3461000057604080516020600460443581810135601f81018490048402850184019095528484526101c39482359460248035956064949293919092019181908401838280828437509496506110b095505050505050565b604080519115158252519081900360200190f35b34610000576101c36004356113ba565b604080519115158252519081900360200190f35b34610000576101c3600435611641565b604080519115158252519081900360200190f35b3461000057610374600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061181095505050505050565b60408051600160a060020a039092168252519081900360200190f35b6000600060006103d5604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061044e57610000565b341580610459575084155b8061046357508351155b8061046e5750428611155b1561047857610000565b338a8a88348989436040518089600160a060020a0316600160a060020a03166c0100000000000000000000000002815260140188805190602001908083835b602083106104d65780518252601f1990920191602091820191016104b7565b51815160209384036101000a60001901801990921691161790528a5191909301928a0191508083835b6020831061051e5780518252601f1990920191602091820191016104ff565b51815160209384036101000a60001901801990921691161790529201888152808301889052604081018790528551606090910192860191508083835b602083106105795780518252601f19909201916020918201910161055a565b51815160209384036101000a600019018019909216911617905292019384525060408051938490038201909320600081815260019092529281208054939c5099509750508610159450610000935050505057906000526020600020900160005b505460026000196101006001841615020190911604156105f857610000565b50600081815260016020526040812080549091859183919081101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061066f57805160ff191683800117855561069c565b8280016001018555821561069c579182015b8281111561069c578251825591602001919060010190610681565b5b506106bd9291505b808211156106b957600081556001016106a5565b5090565b505089816000016001815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061072757805160ff1916838001178555610754565b82800160010185558215610754579182015b82811115610754578251825591602001919060010190610739565b5b506107759291505b808211156106b957600081556001016106a5565b5090565b505088816000016002815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106107df57805160ff191683800117855561080c565b8280016001018555821561080c579182015b8281111561080c5782518255916020019190600101906107f1565b5b5061082d9291505b808211156106b957600081556001016106a5565b5090565b505087816000016003815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061089757805160ff19168380011785556108c4565b828001600101855582156108c4579182015b828111156108c45782518255916020019190600101906108a9565b5b506108e59291505b808211156106b957600081556001016106a5565b5090565b505086816000016004815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061094f57805160ff191683800117855561097c565b8280016001018555821561097c579182015b8281111561097c578251825591602001919060010190610961565b5b5061099d9291505b808211156106b957600081556001016106a5565b5090565b505060018181018790553460028301819055600383018790556000600584018190556006840181905560088401805460ff191690558481526020928352604080822033600160a060020a031683526004018452908190209190915551855186928291908401908083835b60208310610a265780518252601f199092019160209182019101610a07565b6001836020036101000a038019825116818451168082178552505050505050905001915050604051809103902033600160a060020a031683600019167f7332583e40367a020551753fffdb500c9a44e697d4ad2950edf96a4b9e60216a8d8d8d8d8d8d34604051808060200180602001806020018060200188815260200187815260200186815260200185810385528c818151815260200191508051906020019080838360008314610af3575b805182526020831115610af357601f199092019160209182019101610ad3565b505050905090810190601f168015610b1f5780820380516001836020036101000a031916815260200191505b5085810384528b5181528b516020918201918d01908083838215610b5e575b805182526020831115610b5e57601f199092019160209182019101610b3e565b505050905090810190601f168015610b8a5780820380516001836020036101000a031916815260200191505b5085810383528a5181528a516020918201918c01908083838215610bc9575b805182526020831115610bc957601f199092019160209182019101610ba9565b505050905090810190601f168015610bf55780820380516001836020036101000a031916815260200191505b5085810382528951815289516020918201918b01908083838215610c34575b805182526020831115610c3457601f199092019160209182019101610c14565b505050905090810190601f168015610c605780820380516001836020036101000a031916815260200191505b509b50505050505050505050505060405180910390a4600192505b5b5050979650505050505050565b6001602081905260009182526040909120908101546002820154600383015460058401546006850154600890950154939492939192909160ff1686565b60006000610d09604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f1156100005750506040515115159050610d8257610000565b506000828152600160205260409020341580610dcd5750806000016000815481101561000057906000526020600020900160005b505460026000196101006001841615020190911604155b80610ddb5750428160010154105b80610df657506000600882015460ff16600281116100005714155b15610e0057610000565b600281018054349081018255600160a060020a033316600081815260048501602090815260409182902080548501905593548151938452938301939093528251909286927f3c3e5cbebfd0ef81bf2f3fb207432b7c74d47759fa64a631c485184486211b0d929081900390910190a3600191505b5b50919050565b6000600060006000610ec2604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f1156100005750506040515115159050610f3b57610000565b60008581526001602052604081209350600884015460ff1660028111610000571415610fd257428360010154108015610f7657506006830154155b9150826000016000815481101561000057906000526020600020900160005b5054600260001961010060018416150201909116041580610fb4575081155b15610fbe57610000565b60088301805460ff19166001179055610ff4565b6001600884015460ff166002811161000057141561007257610ff4565b610000565b5b600160a060020a0333166000908152600484016020526040902054151561101b57610000565b50600160a060020a0333166000818152600484016020526040808220805490839055905190929183156108fc02918491818181858888f19350505050151561106257610000565b604080518281529051600160a060020a0333169187917f4ae7c15cd04d8a5097b1f1fda073a122b3d11db2fa19a1d50b62e525bb165d159181900360200190a3600193505b5b505050919050565b6000600060006110f5604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061116e57610000565b50506000848152600160209081526040808320600160a060020a033316845260078101909252822081549192909183919081101561000057906000526020600020900160005b50546002600019610100600184161502019091160415806111d75750805460ff16155b806111e55750428260010154105b806111ef57508351155b8061120a57506000600883015460ff16600281116100005714155b1561121457610000565b600280820154600019610100600183161502011604151561123b5760068201805460010190555b84816001018190555083816002019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061129257805160ff19168380011785556112bf565b828001600101855582156112bf579182015b828111156112bf5782518255916020019190600101906112a4565b5b506112e09291505b808211156106b957600081556001016106a5565b5090565b505033600160a060020a031686600019167f561d692d608576714937a081b8dcd88b472f1781c31a856faddba126374d61a9878786600601546040518084815260200180602001838152602001828103825284818151815260200191508051906020019080838360008314611370575b80518252602083111561137057601f199092019160209182019101611350565b505050905090810190601f16801561139c5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390a3600192505b5b50509392505050565b60006000600060006000611403604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061147c57610000565b6000868152600160209081526040808320600160a060020a03331684526007810190925282209095509350600885015460ff166002811161000057141561153f5742846001015410806114d6575083600301548460060154145b9150836000016000815481101561000057906000526020600020900160005b505460026000196101006001841615020190911604158061151857506006840154155b80611521575081155b1561152b57610000565b60088401805460ff19166002179055611561565b6002600885015460ff166002811161000057141561007257611561565b610000565b5b825460ff1615806115855750600280840154600019610100600183161502011604155b806115945750600383015460ff165b1561159e57610000565b60038301805460ff19166001179055600684015460028501548115610000576040519190049150600160a060020a0333169082156108fc029083906000818181858888f1935050505015156115f257610000565b604080518281529051600160a060020a0333169188917f31bfdeff7497910d6af7611e390ea041175d3897520804a90d9d3c8d8c91c5d09181900360200190a3600194505b5b50505050919050565b600060006000611686604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f11561000057505060405151151590506116ff57610000565b50506000828152600160209081526040808320600160a060020a033316845260078101909252822081549192909183919081101561000057906000526020600020900160005b505460026000196101006001841615020190911604158061176d575081600301548260050154145b806117795750805460ff165b806117875750428260010154105b806117a257506000600883015460ff16600281116100005714155b156117ac57610000565b600160a060020a033316600081905260078301602090815260058401805460010190819055604080519182525187927fc8350213f5030bd4e879cb2eeb4fa2f7f4d318e117772767d25c9c9bc4592e8e928290030190a3600192505b5b5050919050565b6000805460408051602090810184905290517fdc5acb9000000000000000000000000000000000000000000000000000000000815260048101828152855160248301528551600160a060020a039094169363dc5acb909387938392604490910191850190808383821561189e575b80518252602083111561189e57601f19909201916020918201910161187e565b505050905090810190601f1680156118ca5780820380516001836020036101000a031916815260200191505b5092505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b9190505600a165627a7a72305820fea23c85110bc983712e4b3def997c5efb594c93df3b12a2346cb25edb899b8b0029",
-    "events": {
-      "0x7332583e40367a020551753fffdb500c9a44e697d4ad2950edf96a4b9e60216a": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "name": "key",
-            "type": "bytes32"
-          },
-          {
-            "indexed": true,
-            "name": "investor",
-            "type": "address"
-          },
-          {
-            "indexed": true,
-            "name": "ipfsHash",
-            "type": "string"
-          },
-          {
-            "indexed": false,
-            "name": "name",
-            "type": "string"
-          },
-          {
-            "indexed": false,
-            "name": "description",
-            "type": "string"
-          },
-          {
-            "indexed": false,
-            "name": "ric",
-            "type": "string"
-          },
-          {
-            "indexed": false,
-            "name": "uri",
-            "type": "string"
-          },
-          {
-            "indexed": false,
-            "name": "deadline",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "maxAuditors",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "reward",
-            "type": "uint256"
-          }
-        ],
-        "name": "LogRequestForRatingSubmitted",
-        "type": "event"
-      },
-      "0x3c3e5cbebfd0ef81bf2f3fb207432b7c74d47759fa64a631c485184486211b0d": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "name": "key",
-            "type": "bytes32"
-          },
-          {
-            "indexed": true,
-            "name": "investor",
-            "type": "address"
-          },
-          {
-            "indexed": false,
-            "name": "contribution",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "totalReward",
-            "type": "uint256"
-          }
-        ],
-        "name": "LogRequestForRatingContributed",
-        "type": "event"
-      },
-      "0xc8350213f5030bd4e879cb2eeb4fa2f7f4d318e117772767d25c9c9bc4592e8e": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "name": "key",
-            "type": "bytes32"
-          },
-          {
-            "indexed": true,
-            "name": "auditor",
-            "type": "address"
-          },
-          {
-            "indexed": false,
-            "name": "auditorCount",
-            "type": "uint256"
-          }
-        ],
-        "name": "LogAuditorJoined",
-        "type": "event"
-      },
-      "0x561d692d608576714937a081b8dcd88b472f1781c31a856faddba126374d61a9": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "name": "key",
-            "type": "bytes32"
-          },
-          {
-            "indexed": true,
-            "name": "auditor",
-            "type": "address"
-          },
-          {
-            "indexed": false,
-            "name": "rating",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "ipfsHash",
-            "type": "string"
-          },
-          {
-            "indexed": false,
-            "name": "submissionCount",
-            "type": "uint256"
-          }
-        ],
-        "name": "LogAuditorSubmitted",
-        "type": "event"
-      },
-      "0x31bfdeff7497910d6af7611e390ea041175d3897520804a90d9d3c8d8c91c5d0": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "name": "key",
-            "type": "bytes32"
-          },
-          {
-            "indexed": true,
-            "name": "auditor",
-            "type": "address"
-          },
-          {
-            "indexed": false,
-            "name": "reward",
-            "type": "uint256"
-          }
-        ],
-        "name": "LogAuditorPaid",
-        "type": "event"
-      },
-      "0x4ae7c15cd04d8a5097b1f1fda073a122b3d11db2fa19a1d50b62e525bb165d15": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "name": "key",
-            "type": "bytes32"
-          },
-          {
-            "indexed": true,
-            "name": "investor",
-            "type": "address"
-          },
-          {
-            "indexed": false,
-            "name": "contribution",
-            "type": "uint256"
-          }
-        ],
-        "name": "LogInvestorRefunded",
-        "type": "event"
-      }
-    },
-    "updated_at": 1485621262215,
-    "links": {},
-    "address": "0xcffb7109c83746d7b8e6f82237314169e2903ba1"
-  },
-  "default": {
-    "abi": [
-      {
-        "constant": false,
-        "inputs": [
-          {
-            "name": "name",
-            "type": "string"
-          },
-          {
-            "name": "description",
-            "type": "string"
-          },
-          {
-            "name": "ric",
-            "type": "string"
-          },
-          {
-            "name": "uri",
-            "type": "string"
-          },
-          {
-            "name": "deadline",
-            "type": "uint256"
-          },
-          {
-            "name": "maxAuditors",
-            "type": "uint256"
-          },
-          {
-            "name": "ipfsHash",
-            "type": "string"
-          }
-        ],
-        "name": "submitRequestForRating",
+        "inputs": [],
+        "name": "ricUri",
+>>>>>>> Stashed changes
         "outputs": [
           {
             "name": "success",
@@ -12795,6 +14635,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
             "type": "bytes32"
           }
         ],
+<<<<<<< Updated upstream
         "name": "contributeToRequestForRating",
         "outputs": [
           {
@@ -12875,6 +14716,26 @@ var SolidityEvent = require("web3/lib/web3/event.js");
             "type": "bytes32"
           }
         ],
+=======
+        "name": "requestPayout",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "key",
+            "type": "bytes32"
+          }
+        ],
+>>>>>>> Stashed changes
         "name": "joinRating",
         "outputs": [
           {
@@ -12904,6 +14765,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "type": "function"
       },
       {
+<<<<<<< Updated upstream
         "constant": true,
         "inputs": [],
         "name": "getAppName",
@@ -12911,15 +14773,14 @@ var SolidityEvent = require("web3/lib/web3/event.js");
           {
             "name": "",
             "type": "string"
-          }
-        ],
-        "payable": false,
-        "type": "function"
-      },
-      {
+=======
         "inputs": [
           {
             "name": "entitlementRegistry",
+            "type": "address"
+          },
+          {
+            "name": "ricUriAddress",
             "type": "address"
           }
         ],
@@ -12940,7 +14801,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
             "type": "address"
           },
           {
-            "indexed": true,
+            "indexed": false,
             "name": "ipfsHash",
             "type": "string"
           },
@@ -13109,7 +14970,755 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "type": "event"
       }
     ],
+    "unlinked_binary": "0x606060405234610000576040516040806119a28339810160405280516020909101515b815b600160a060020a038116151561003957610000565b60008054600160a060020a031916600160a060020a0383161790555b5060028054600160a060020a031916600160a060020a0383161790555b50505b61191e806100846000396000f3006060604052361561007d5763ffffffff60e060020a600035041663105b68f1811461008257806318bf9a42146101e257806369a75e4814610236578063775274a1146102555780639771942914610279578063b3b200d6146102e4578063bfde89941461030d578063c809c3b814610331578063cbaaa3ac14610355575b610000565b6101ce600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020888301358a018035601f8101839004830284018301909452838352979989359980830135999198506060019650919450908101925081908401838280828437509496506103c495505050505050565b604080519115158252519081900360200190f35b34610000576101f2600435610d5f565b6040518087815260200186815260200185815260200184815260200183815260200182600281116100005760ff168152602001965050505050505060405180910390f35b6101ce600435610d9c565b604080519115158252519081900360200190f35b34610000576101ce600435610f21565b604080519115158252519081900360200190f35b3461000057604080516020600460443581810135601f81018490048402850184019095528484526101ce94823594602480359560649492939190920191819084018382808284375094965061112795505050505050565b604080519115158252519081900360200190f35b34610000576102f1611401565b60408051600160a060020a039092168252519081900360200190f35b34610000576101ce600435611410565b604080519115158252519081900360200190f35b34610000576101ce600435611668565b604080519115158252519081900360200190f35b34610000576102f1600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061180795505050505050565b60408051600160a060020a039092168252519081900360200190f35b600060006000610409604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611807565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061048257610000565b34158061048d575084155b8061049757508351155b806104a25750428611155b156104ac57610000565b338a8a88348989436040518089600160a060020a0316600160a060020a03166c0100000000000000000000000002815260140188805190602001908083835b6020831061050a5780518252601f1990920191602091820191016104eb565b51815160209384036101000a60001901801990921691161790528a5191909301928a0191508083835b602083106105525780518252601f199092019160209182019101610533565b51815160209384036101000a60001901801990921691161790529201888152808301889052604081018790528551606090910192860191508083835b602083106105ad5780518252601f19909201916020918201910161058e565b51815160209384036101000a600019018019909216911617905292019384525060408051938490038201909320600081815260019092529290208054929b509950501596506106029550505050505057610000565b6005816000018181548183558181151161069a5760008381526020902061069a9181019083015b8082111561068757600081805460018160011615610100020316600290046000825580601f10610659575061068b565b601f01602090049060005260206000209081019061068b91905b808211156106875760008155600101610673565b5090565b5b5050600101610629565b5090565b5b5050505083816000016000815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061070757805160ff1916838001178555610734565b82800160010185558215610734579182015b82811115610734578251825591602001919060010190610719565b5b506107559291505b808211156106875760008155600101610673565b5090565b505089816000016001815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106107bf57805160ff19168380011785556107ec565b828001600101855582156107ec579182015b828111156107ec5782518255916020019190600101906107d1565b5b5061080d9291505b808211156106875760008155600101610673565b5090565b505088816000016002815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061087757805160ff19168380011785556108a4565b828001600101855582156108a4579182015b828111156108a4578251825591602001919060010190610889565b5b506108c59291505b808211156106875760008155600101610673565b5090565b505087816000016003815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061092f57805160ff191683800117855561095c565b8280016001018555821561095c579182015b8281111561095c578251825591602001919060010190610941565b5b5061097d9291505b808211156106875760008155600101610673565b5090565b505086816000016004815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106109e757805160ff1916838001178555610a14565b82800160010185558215610a14579182015b82811115610a145782518255916020019190600101906109f9565b5b50610a359291505b808211156106875760008155600101610673565b5090565b5050600180820187905534600283015560038201869055600060058301819055600683018190556008830180549192909160ff19169083021790555034600160008460001916600019168152602001908152602001600020600401600033600160a060020a0316600160a060020a031681526020019081526020016000208190555033600160a060020a031682600019167f7332583e40367a020551753fffdb500c9a44e697d4ad2950edf96a4b9e60216a868d8d8d8d8d8d3460405180806020018060200180602001806020018060200189815260200188815260200187815260200186810386528e818151815260200191508051906020019080838360008314610b5c575b805182526020831115610b5c57601f199092019160209182019101610b3c565b505050905090810190601f168015610b885780820380516001836020036101000a031916815260200191505b5086810385528d5181528d516020918201918f01908083838215610bc7575b805182526020831115610bc757601f199092019160209182019101610ba7565b505050905090810190601f168015610bf35780820380516001836020036101000a031916815260200191505b5086810384528c5181528c516020918201918e01908083838215610c32575b805182526020831115610c3257601f199092019160209182019101610c12565b505050905090810190601f168015610c5e5780820380516001836020036101000a031916815260200191505b5086810383528b5181528b516020918201918d01908083838215610c9d575b805182526020831115610c9d57601f199092019160209182019101610c7d565b505050905090810190601f168015610cc95780820380516001836020036101000a031916815260200191505b5086810382528a5181528a516020918201918c01908083838215610d08575b805182526020831115610d0857601f199092019160209182019101610ce8565b505050905090810190601f168015610d345780820380516001836020036101000a031916815260200191505b509d505050505050505050505050505060405180910390a3600192505b5b5050979650505050505050565b6001602081905260009182526040909120908101546002820154600383015460058401546006850154600890950154939492939192909160ff1686565b60006000610ddf604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611807565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f1156100005750506040515115159050610e5857610000565b506000828152600160205260409020341580610e7357508054155b80610e815750428160010154105b80610e9c57506000600882015460ff16600281116100005714155b15610ea657610000565b600281018054349081018255600160a060020a033316600081815260048501602090815260409182902080548501905593548151938452938301939093528251909286927f3c3e5cbebfd0ef81bf2f3fb207432b7c74d47759fa64a631c485184486211b0d929081900390910190a3600191505b5b50919050565b6000600060006000610f68604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611807565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f1156100005750506040515115159050610fe157610000565b60008581526001602052604081209350600884015460ff16600281116100005714156110495742836001015410801561101c57506006830154155b8354909250158061102b575081155b1561103557610000565b60088301805460ff1916600117905561106b565b6001600884015460ff166002811161000057141561007d5761106b565b610000565b5b600160a060020a0333166000908152600484016020526040902054151561109257610000565b50600160a060020a0333166000818152600484016020526040808220805490839055905190929183156108fc02918491818181858888f1935050505015156110d957610000565b604080518281529051600160a060020a0333169187917f4ae7c15cd04d8a5097b1f1fda073a122b3d11db2fa19a1d50b62e525bb165d159181900360200190a3600193505b5b505050919050565b60006000600061116c604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611807565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f11561000057505060405151151590506111e557610000565b50506000848152600160209081526040808320600160a060020a0333168452600781019092529091208154158061121e5750805460ff16155b8061122c5750428260010154105b8061123657508351155b8061125157506000600883015460ff16600281116100005714155b1561125b57610000565b60028082015460001961010060018316150201160415156112825760068201805460010190555b84816001018190555083816002019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106112d957805160ff1916838001178555611306565b82800160010185558215611306579182015b828111156113065782518255916020019190600101906112eb565b5b506113279291505b808211156106875760008155600101610673565b5090565b505033600160a060020a031686600019167f561d692d608576714937a081b8dcd88b472f1781c31a856faddba126374d61a98787866006015460405180848152602001806020018381526020018281038252848181518152602001915080519060200190808383600083146113b7575b8051825260208311156113b757601f199092019160209182019101611397565b505050905090810190601f1680156113e35780820380516001836020036101000a031916815260200191505b5094505050505060405180910390a3600192505b5b50509392505050565b600254600160a060020a031681565b60006000600060006000611459604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611807565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f11561000057505060405151151590506114d257610000565b6000868152600160209081526040808320600160a060020a03331684526007810190925282209095509350600885015460ff166002811161000057141561156657428460010154108061152c575083600301548460060154145b8454909250158061153f57506006840154155b80611548575081155b1561155257610000565b60088401805460ff19166002179055611588565b6002600885015460ff166002811161000057141561007d57611588565b610000565b5b825460ff1615806115ac5750600280840154600019610100600183161502011604155b806115bb5750600383015460ff165b156115c557610000565b60038301805460ff19166001179055600684015460028501548115610000576040519190049150600160a060020a0333169082156108fc029083906000818181858888f19350505050151561161957610000565b604080518281529051600160a060020a0333169188917f31bfdeff7497910d6af7611e390ea041175d3897520804a90d9d3c8d8c91c5d09181900360200190a3600194505b5b50505050919050565b6000600060006116ad604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611807565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061172657610000565b50506000828152600160209081526040808320600160a060020a03331684526007810190925290912081541580611764575081600301548260050154145b806117705750805460ff165b8061177e5750428260010154105b8061179957506000600883015460ff16600281116100005714155b156117a357610000565b600160a060020a033316600081905260078301602090815260058401805460010190819055604080519182525187927fc8350213f5030bd4e879cb2eeb4fa2f7f4d318e117772767d25c9c9bc4592e8e928290030190a3600192505b5b5050919050565b6000805460408051602090810184905290517fdc5acb9000000000000000000000000000000000000000000000000000000000815260048101828152855160248301528551600160a060020a039094169363dc5acb9093879383926044909101918501908083838215611895575b80518252602083111561189557601f199092019160209182019101611875565b505050905090810190601f1680156118c15780820380516001836020036101000a031916815260200191505b5092505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b9190505600a165627a7a723058203509fdb0fd6ff74f2946ce249a6a6ac65d49b70ee69cc51a8908fcae9795c1770029",
+    "events": {
+      "0x7332583e40367a020551753fffdb500c9a44e697d4ad2950edf96a4b9e60216a": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "ric",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "uri",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "maxAuditors",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingSubmitted",
+        "type": "event"
+      },
+      "0x3c3e5cbebfd0ef81bf2f3fb207432b7c74d47759fa64a631c485184486211b0d": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "contribution",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "totalReward",
+            "type": "uint256"
+>>>>>>> Stashed changes
+          }
+        ],
+        "name": "LogRequestForRatingContributed",
+        "type": "event"
+      },
+<<<<<<< Updated upstream
+      {
+        "inputs": [
+          {
+            "name": "entitlementRegistry",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "type": "constructor"
+      },
+      {
+=======
+      "0xc8350213f5030bd4e879cb2eeb4fa2f7f4d318e117772767d25c9c9bc4592e8e": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "auditorCount",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorJoined",
+        "type": "event"
+      },
+      "0x561d692d608576714937a081b8dcd88b472f1781c31a856faddba126374d61a9": {
+>>>>>>> Stashed changes
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+<<<<<<< Updated upstream
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "ric",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "uri",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "deadline",
+=======
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "rating",
+>>>>>>> Stashed changes
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+<<<<<<< Updated upstream
+            "name": "maxAuditors",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingSubmitted",
+=======
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "submissionCount",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorSubmitted",
+>>>>>>> Stashed changes
+        "type": "event"
+      },
+      "0x31bfdeff7497910d6af7611e390ea041175d3897520804a90d9d3c8d8c91c5d0": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+<<<<<<< Updated upstream
+            "name": "investor",
+=======
+            "name": "auditor",
+>>>>>>> Stashed changes
+            "type": "address"
+          },
+          {
+            "indexed": false,
+<<<<<<< Updated upstream
+            "name": "contribution",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "totalReward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingContributed",
+        "type": "event"
+      },
+      {
+=======
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorPaid",
+        "type": "event"
+      },
+      "0x4ae7c15cd04d8a5097b1f1fda073a122b3d11db2fa19a1d50b62e525bb165d15": {
+>>>>>>> Stashed changes
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+<<<<<<< Updated upstream
+            "name": "auditor",
+=======
+            "name": "investor",
+>>>>>>> Stashed changes
+            "type": "address"
+          },
+          {
+            "indexed": false,
+<<<<<<< Updated upstream
+            "name": "auditorCount",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorJoined",
+        "type": "event"
+      },
+=======
+            "name": "contribution",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogInvestorRefunded",
+        "type": "event"
+      }
+    },
+    "updated_at": 1485628339714,
+    "links": {},
+    "address": "0x6fcb71a7f1deabc00631da6aee17e3340acd5768"
+  },
+  "default": {
+    "abi": [
+>>>>>>> Stashed changes
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+<<<<<<< Updated upstream
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "rating",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+=======
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "ric",
+            "type": "string"
+          },
+          {
+            "name": "uri",
+            "type": "string"
+          },
+          {
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "name": "maxAuditors",
+            "type": "uint256"
+          },
+          {
+            "name": "ipfsHash",
+            "type": "string"
+          }
+        ],
+        "name": "submitRequestForRating",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "payable": true,
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "",
+            "type": "bytes32"
+          }
+        ],
+        "name": "requestForRatings",
+        "outputs": [
+          {
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "name": "reward",
+            "type": "uint256"
+          },
+          {
+            "name": "maxAuditors",
+            "type": "uint256"
+          },
+          {
+            "name": "auditorCount",
+            "type": "uint256"
+          },
+          {
+>>>>>>> Stashed changes
+            "name": "submissionCount",
+            "type": "uint256"
+          },
+          {
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "key",
+            "type": "bytes32"
+          }
+        ],
+        "name": "contributeToRequestForRating",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "payable": true,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "key",
+            "type": "bytes32"
+          }
+        ],
+<<<<<<< Updated upstream
+        "name": "LogAuditorSubmitted",
+        "type": "event"
+=======
+        "name": "requestRefund",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+>>>>>>> Stashed changes
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+<<<<<<< Updated upstream
+            "indexed": true,
+=======
+>>>>>>> Stashed changes
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+<<<<<<< Updated upstream
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorPaid",
+        "type": "event"
+=======
+            "name": "rating",
+            "type": "uint256"
+          },
+          {
+            "name": "ipfsHash",
+            "type": "string"
+          }
+        ],
+        "name": "submitRating",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "ricUri",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "key",
+            "type": "bytes32"
+          }
+        ],
+        "name": "requestPayout",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "key",
+            "type": "bytes32"
+          }
+        ],
+        "name": "joinRating",
+        "outputs": [
+          {
+            "name": "success",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ],
+        "name": "getEntitlement",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "name": "entitlementRegistry",
+            "type": "address"
+          },
+          {
+            "name": "ricUriAddress",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "type": "constructor"
+>>>>>>> Stashed changes
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+<<<<<<< Updated upstream
+=======
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "ric",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "uri",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "maxAuditors",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingSubmitted",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "contribution",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "totalReward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingContributed",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "auditorCount",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorJoined",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "rating",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "submissionCount",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorSubmitted",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+>>>>>>> Stashed changes
+          },
+          {
+            "indexed": false,
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorPaid",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "contribution",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogInvestorRefunded",
+        "type": "event"
+      }
+    ],
+<<<<<<< Updated upstream
     "unlinked_binary": "0x6060604052346100005760405160208061198883398101604052515b805b600160a060020a038116151561003257610000565b60008054600160a060020a031916600160a060020a0383161790555b505b505b611927806100616000396000f300606060405236156100725763ffffffff60e060020a600035041663105b68f1811461007757806318bf9a42146101d757806369a75e481461022b578063775274a11461024a578063977194291461026e578063bfde8994146102d9578063c809c3b8146102fd578063cbaaa3ac14610321575b610000565b6101c3600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020888301358a018035601f81018390048302840183019094528383529799893599808301359991985060600196509194509081019250819084018382808284375094965061039095505050505050565b604080519115158252519081900360200190f35b34610000576101e7600435610c89565b6040518087815260200186815260200185815260200184815260200183815260200182600281116100005760ff168152602001965050505050505060405180910390f35b6101c3600435610cc6565b604080519115158252519081900360200190f35b34610000576101c3600435610e7b565b604080519115158252519081900360200190f35b3461000057604080516020600460443581810135601f81018490048402850184019095528484526101c39482359460248035956064949293919092019181908401838280828437509496506110b095505050505050565b604080519115158252519081900360200190f35b34610000576101c36004356113ba565b604080519115158252519081900360200190f35b34610000576101c3600435611641565b604080519115158252519081900360200190f35b3461000057610374600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061181095505050505050565b60408051600160a060020a039092168252519081900360200190f35b6000600060006103d5604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061044e57610000565b341580610459575084155b8061046357508351155b8061046e5750428611155b1561047857610000565b338a8a88348989436040518089600160a060020a0316600160a060020a03166c0100000000000000000000000002815260140188805190602001908083835b602083106104d65780518252601f1990920191602091820191016104b7565b51815160209384036101000a60001901801990921691161790528a5191909301928a0191508083835b6020831061051e5780518252601f1990920191602091820191016104ff565b51815160209384036101000a60001901801990921691161790529201888152808301889052604081018790528551606090910192860191508083835b602083106105795780518252601f19909201916020918201910161055a565b51815160209384036101000a600019018019909216911617905292019384525060408051938490038201909320600081815260019092529281208054939c5099509750508610159450610000935050505057906000526020600020900160005b505460026000196101006001841615020190911604156105f857610000565b50600081815260016020526040812080549091859183919081101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061066f57805160ff191683800117855561069c565b8280016001018555821561069c579182015b8281111561069c578251825591602001919060010190610681565b5b506106bd9291505b808211156106b957600081556001016106a5565b5090565b505089816000016001815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061072757805160ff1916838001178555610754565b82800160010185558215610754579182015b82811115610754578251825591602001919060010190610739565b5b506107759291505b808211156106b957600081556001016106a5565b5090565b505088816000016002815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106107df57805160ff191683800117855561080c565b8280016001018555821561080c579182015b8281111561080c5782518255916020019190600101906107f1565b5b5061082d9291505b808211156106b957600081556001016106a5565b5090565b505087816000016003815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061089757805160ff19168380011785556108c4565b828001600101855582156108c4579182015b828111156108c45782518255916020019190600101906108a9565b5b506108e59291505b808211156106b957600081556001016106a5565b5090565b505086816000016004815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061094f57805160ff191683800117855561097c565b8280016001018555821561097c579182015b8281111561097c578251825591602001919060010190610961565b5b5061099d9291505b808211156106b957600081556001016106a5565b5090565b505060018181018790553460028301819055600383018790556000600584018190556006840181905560088401805460ff191690558481526020928352604080822033600160a060020a031683526004018452908190209190915551855186928291908401908083835b60208310610a265780518252601f199092019160209182019101610a07565b6001836020036101000a038019825116818451168082178552505050505050905001915050604051809103902033600160a060020a031683600019167f7332583e40367a020551753fffdb500c9a44e697d4ad2950edf96a4b9e60216a8d8d8d8d8d8d34604051808060200180602001806020018060200188815260200187815260200186815260200185810385528c818151815260200191508051906020019080838360008314610af3575b805182526020831115610af357601f199092019160209182019101610ad3565b505050905090810190601f168015610b1f5780820380516001836020036101000a031916815260200191505b5085810384528b5181528b516020918201918d01908083838215610b5e575b805182526020831115610b5e57601f199092019160209182019101610b3e565b505050905090810190601f168015610b8a5780820380516001836020036101000a031916815260200191505b5085810383528a5181528a516020918201918c01908083838215610bc9575b805182526020831115610bc957601f199092019160209182019101610ba9565b505050905090810190601f168015610bf55780820380516001836020036101000a031916815260200191505b5085810382528951815289516020918201918b01908083838215610c34575b805182526020831115610c3457601f199092019160209182019101610c14565b505050905090810190601f168015610c605780820380516001836020036101000a031916815260200191505b509b50505050505050505050505060405180910390a4600192505b5b5050979650505050505050565b6001602081905260009182526040909120908101546002820154600383015460058401546006850154600890950154939492939192909160ff1686565b60006000610d09604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f1156100005750506040515115159050610d8257610000565b506000828152600160205260409020341580610dcd5750806000016000815481101561000057906000526020600020900160005b505460026000196101006001841615020190911604155b80610ddb5750428160010154105b80610df657506000600882015460ff16600281116100005714155b15610e0057610000565b600281018054349081018255600160a060020a033316600081815260048501602090815260409182902080548501905593548151938452938301939093528251909286927f3c3e5cbebfd0ef81bf2f3fb207432b7c74d47759fa64a631c485184486211b0d929081900390910190a3600191505b5b50919050565b6000600060006000610ec2604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f1156100005750506040515115159050610f3b57610000565b60008581526001602052604081209350600884015460ff1660028111610000571415610fd257428360010154108015610f7657506006830154155b9150826000016000815481101561000057906000526020600020900160005b5054600260001961010060018416150201909116041580610fb4575081155b15610fbe57610000565b60088301805460ff19166001179055610ff4565b6001600884015460ff166002811161000057141561007257610ff4565b610000565b5b600160a060020a0333166000908152600484016020526040902054151561101b57610000565b50600160a060020a0333166000818152600484016020526040808220805490839055905190929183156108fc02918491818181858888f19350505050151561106257610000565b604080518281529051600160a060020a0333169187917f4ae7c15cd04d8a5097b1f1fda073a122b3d11db2fa19a1d50b62e525bb165d159181900360200190a3600193505b5b505050919050565b6000600060006110f5604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061116e57610000565b50506000848152600160209081526040808320600160a060020a033316845260078101909252822081549192909183919081101561000057906000526020600020900160005b50546002600019610100600184161502019091160415806111d75750805460ff16155b806111e55750428260010154105b806111ef57508351155b8061120a57506000600883015460ff16600281116100005714155b1561121457610000565b600280820154600019610100600183161502011604151561123b5760068201805460010190555b84816001018190555083816002019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061129257805160ff19168380011785556112bf565b828001600101855582156112bf579182015b828111156112bf5782518255916020019190600101906112a4565b5b506112e09291505b808211156106b957600081556001016106a5565b5090565b505033600160a060020a031686600019167f561d692d608576714937a081b8dcd88b472f1781c31a856faddba126374d61a9878786600601546040518084815260200180602001838152602001828103825284818151815260200191508051906020019080838360008314611370575b80518252602083111561137057601f199092019160209182019101611350565b505050905090810190601f16801561139c5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390a3600192505b5b50509392505050565b60006000600060006000611403604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061147c57610000565b6000868152600160209081526040808320600160a060020a03331684526007810190925282209095509350600885015460ff166002811161000057141561153f5742846001015410806114d6575083600301548460060154145b9150836000016000815481101561000057906000526020600020900160005b505460026000196101006001841615020190911604158061151857506006840154155b80611521575081155b1561152b57610000565b60088401805460ff19166002179055611561565b6002600885015460ff166002811161000057141561007257611561565b610000565b5b825460ff1615806115855750600280840154600019610100600183161502011604155b806115945750600383015460ff165b1561159e57610000565b60038301805460ff19166001179055600684015460028501548115610000576040519190049150600160a060020a0333169082156108fc029083906000818181858888f1935050505015156115f257610000565b604080518281529051600160a060020a0333169188917f31bfdeff7497910d6af7611e390ea041175d3897520804a90d9d3c8d8c91c5d09181900360200190a3600194505b5b50505050919050565b600060006000611686604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611810565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f11561000057505060405151151590506116ff57610000565b50506000828152600160209081526040808320600160a060020a033316845260078101909252822081549192909183919081101561000057906000526020600020900160005b505460026000196101006001841615020190911604158061176d575081600301548260050154145b806117795750805460ff165b806117875750428260010154105b806117a257506000600883015460ff16600281116100005714155b156117ac57610000565b600160a060020a033316600081905260078301602090815260058401805460010190819055604080519182525187927fc8350213f5030bd4e879cb2eeb4fa2f7f4d318e117772767d25c9c9bc4592e8e928290030190a3600192505b5b5050919050565b6000805460408051602090810184905290517fdc5acb9000000000000000000000000000000000000000000000000000000000815260048101828152855160248301528551600160a060020a039094169363dc5acb909387938392604490910191850190808383821561189e575b80518252602083111561189e57601f19909201916020918201910161187e565b505050905090810190601f1680156118ca5780820380516001836020036101000a031916815260200191505b5092505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b9190505600a165627a7a723058209d8158c3aef431ec6b5c782a3aa35113b8cf49c592eef0298eb9a7e2b95106cd0029",
+=======
+    "unlinked_binary": "0x606060405234610000576040516040806119a28339810160405280516020909101515b815b600160a060020a038116151561003957610000565b60008054600160a060020a031916600160a060020a0383161790555b5060028054600160a060020a031916600160a060020a0383161790555b50505b61191e806100846000396000f3006060604052361561007d5763ffffffff60e060020a600035041663105b68f1811461008257806318bf9a42146101e257806369a75e4814610236578063775274a1146102555780639771942914610279578063b3b200d6146102e4578063bfde89941461030d578063c809c3b814610331578063cbaaa3ac14610355575b610000565b6101ce600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020601f89358b0180359182018390048302840183019094528083529799988101979196509182019450925082915084018382808284375050604080516020888301358a018035601f8101839004830284018301909452838352979989359980830135999198506060019650919450908101925081908401838280828437509496506103c495505050505050565b604080519115158252519081900360200190f35b34610000576101f2600435610d5f565b6040518087815260200186815260200185815260200184815260200183815260200182600281116100005760ff168152602001965050505050505060405180910390f35b6101ce600435610d9c565b604080519115158252519081900360200190f35b34610000576101ce600435610f21565b604080519115158252519081900360200190f35b3461000057604080516020600460443581810135601f81018490048402850184019095528484526101ce94823594602480359560649492939190920191819084018382808284375094965061112795505050505050565b604080519115158252519081900360200190f35b34610000576102f1611401565b60408051600160a060020a039092168252519081900360200190f35b34610000576101ce600435611410565b604080519115158252519081900360200190f35b34610000576101ce600435611668565b604080519115158252519081900360200190f35b34610000576102f1600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061180795505050505050565b60408051600160a060020a039092168252519081900360200190f35b600060006000610409604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611807565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061048257610000565b34158061048d575084155b8061049757508351155b806104a25750428611155b156104ac57610000565b338a8a88348989436040518089600160a060020a0316600160a060020a03166c0100000000000000000000000002815260140188805190602001908083835b6020831061050a5780518252601f1990920191602091820191016104eb565b51815160209384036101000a60001901801990921691161790528a5191909301928a0191508083835b602083106105525780518252601f199092019160209182019101610533565b51815160209384036101000a60001901801990921691161790529201888152808301889052604081018790528551606090910192860191508083835b602083106105ad5780518252601f19909201916020918201910161058e565b51815160209384036101000a600019018019909216911617905292019384525060408051938490038201909320600081815260019092529290208054929b509950501596506106029550505050505057610000565b6005816000018181548183558181151161069a5760008381526020902061069a9181019083015b8082111561068757600081805460018160011615610100020316600290046000825580601f10610659575061068b565b601f01602090049060005260206000209081019061068b91905b808211156106875760008155600101610673565b5090565b5b5050600101610629565b5090565b5b5050505083816000016000815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061070757805160ff1916838001178555610734565b82800160010185558215610734579182015b82811115610734578251825591602001919060010190610719565b5b506107559291505b808211156106875760008155600101610673565b5090565b505089816000016001815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106107bf57805160ff19168380011785556107ec565b828001600101855582156107ec579182015b828111156107ec5782518255916020019190600101906107d1565b5b5061080d9291505b808211156106875760008155600101610673565b5090565b505088816000016002815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061087757805160ff19168380011785556108a4565b828001600101855582156108a4579182015b828111156108a4578251825591602001919060010190610889565b5b506108c59291505b808211156106875760008155600101610673565b5090565b505087816000016003815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061092f57805160ff191683800117855561095c565b8280016001018555821561095c579182015b8281111561095c578251825591602001919060010190610941565b5b5061097d9291505b808211156106875760008155600101610673565b5090565b505086816000016004815481101561000057906000526020600020900160005b509080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106109e757805160ff1916838001178555610a14565b82800160010185558215610a14579182015b82811115610a145782518255916020019190600101906109f9565b5b50610a359291505b808211156106875760008155600101610673565b5090565b5050600180820187905534600283015560038201869055600060058301819055600683018190556008830180549192909160ff19169083021790555034600160008460001916600019168152602001908152602001600020600401600033600160a060020a0316600160a060020a031681526020019081526020016000208190555033600160a060020a031682600019167f7332583e40367a020551753fffdb500c9a44e697d4ad2950edf96a4b9e60216a868d8d8d8d8d8d3460405180806020018060200180602001806020018060200189815260200188815260200187815260200186810386528e818151815260200191508051906020019080838360008314610b5c575b805182526020831115610b5c57601f199092019160209182019101610b3c565b505050905090810190601f168015610b885780820380516001836020036101000a031916815260200191505b5086810385528d5181528d516020918201918f01908083838215610bc7575b805182526020831115610bc757601f199092019160209182019101610ba7565b505050905090810190601f168015610bf35780820380516001836020036101000a031916815260200191505b5086810384528c5181528c516020918201918e01908083838215610c32575b805182526020831115610c3257601f199092019160209182019101610c12565b505050905090810190601f168015610c5e5780820380516001836020036101000a031916815260200191505b5086810383528b5181528b516020918201918d01908083838215610c9d575b805182526020831115610c9d57601f199092019160209182019101610c7d565b505050905090810190601f168015610cc95780820380516001836020036101000a031916815260200191505b5086810382528a5181528a516020918201918c01908083838215610d08575b805182526020831115610d0857601f199092019160209182019101610ce8565b505050905090810190601f168015610d345780820380516001836020036101000a031916815260200191505b509d505050505050505050505050505060405180910390a3600192505b5b5050979650505050505050565b6001602081905260009182526040909120908101546002820154600383015460058401546006850154600890950154939492939192909160ff1686565b60006000610ddf604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611807565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f1156100005750506040515115159050610e5857610000565b506000828152600160205260409020341580610e7357508054155b80610e815750428160010154105b80610e9c57506000600882015460ff16600281116100005714155b15610ea657610000565b600281018054349081018255600160a060020a033316600081815260048501602090815260409182902080548501905593548151938452938301939093528251909286927f3c3e5cbebfd0ef81bf2f3fb207432b7c74d47759fa64a631c485184486211b0d929081900390910190a3600191505b5b50919050565b6000600060006000610f68604060405190810160405280601a81526020017f636f6d2e62396c61622e64726174696e672e696e766573746f72000000000000815250611807565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f1156100005750506040515115159050610fe157610000565b60008581526001602052604081209350600884015460ff16600281116100005714156110495742836001015410801561101c57506006830154155b8354909250158061102b575081155b1561103557610000565b60088301805460ff1916600117905561106b565b6001600884015460ff166002811161000057141561007d5761106b565b610000565b5b600160a060020a0333166000908152600484016020526040902054151561109257610000565b50600160a060020a0333166000818152600484016020526040808220805490839055905190929183156108fc02918491818181858888f1935050505015156110d957610000565b604080518281529051600160a060020a0333169187917f4ae7c15cd04d8a5097b1f1fda073a122b3d11db2fa19a1d50b62e525bb165d159181900360200190a3600193505b5b505050919050565b60006000600061116c604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611807565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f11561000057505060405151151590506111e557610000565b50506000848152600160209081526040808320600160a060020a0333168452600781019092529091208154158061121e5750805460ff16155b8061122c5750428260010154105b8061123657508351155b8061125157506000600883015460ff16600281116100005714155b1561125b57610000565b60028082015460001961010060018316150201160415156112825760068201805460010190555b84816001018190555083816002019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106112d957805160ff1916838001178555611306565b82800160010185558215611306579182015b828111156113065782518255916020019190600101906112eb565b5b506113279291505b808211156106875760008155600101610673565b5090565b505033600160a060020a031686600019167f561d692d608576714937a081b8dcd88b472f1781c31a856faddba126374d61a98787866006015460405180848152602001806020018381526020018281038252848181518152602001915080519060200190808383600083146113b7575b8051825260208311156113b757601f199092019160209182019101611397565b505050905090810190601f1680156113e35780820380516001836020036101000a031916815260200191505b5094505050505060405180910390a3600192505b5b50509392505050565b600254600160a060020a031681565b60006000600060006000611459604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611807565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f11561000057505060405151151590506114d257610000565b6000868152600160209081526040808320600160a060020a03331684526007810190925282209095509350600885015460ff166002811161000057141561156657428460010154108061152c575083600301548460060154145b8454909250158061153f57506006840154155b80611548575081155b1561155257610000565b60088401805460ff19166002179055611588565b6002600885015460ff166002811161000057141561007d57611588565b610000565b5b825460ff1615806115ac5750600280840154600019610100600183161502011604155b806115bb5750600383015460ff165b156115c557610000565b60038301805460ff19166001179055600684015460028501548115610000576040519190049150600160a060020a0333169082156108fc029083906000818181858888f19350505050151561161957610000565b604080518281529051600160a060020a0333169188917f31bfdeff7497910d6af7611e390ea041175d3897520804a90d9d3c8d8c91c5d09181900360200190a3600194505b5b50505050919050565b6000600060006116ad604060405190810160405280601981526020017f636f6d2e62396c61622e64726174696e672e61756469746f7200000000000000815250611807565b600160a060020a0316639ce6582d336000604051602001526040518263ffffffff1660e060020a0281526004018082600160a060020a0316600160a060020a03168152602001915050602060405180830381600087803b156100005760325a03f115610000575050604051511515905061172657610000565b50506000828152600160209081526040808320600160a060020a03331684526007810190925290912081541580611764575081600301548260050154145b806117705750805460ff165b8061177e5750428260010154105b8061179957506000600883015460ff16600281116100005714155b156117a357610000565b600160a060020a033316600081905260078301602090815260058401805460010190819055604080519182525187927fc8350213f5030bd4e879cb2eeb4fa2f7f4d318e117772767d25c9c9bc4592e8e928290030190a3600192505b5b5050919050565b6000805460408051602090810184905290517fdc5acb9000000000000000000000000000000000000000000000000000000000815260048101828152855160248301528551600160a060020a039094169363dc5acb9093879383926044909101918501908083838215611895575b80518252602083111561189557601f199092019160209182019101611875565b505050905090810190601f1680156118c15780820380516001836020036101000a031916815260200191505b5092505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b9190505600a165627a7a72305820c18fa08587c367f6eab16c2cf74075154f57cc6bf2ab843b021a6c0627cf07b60029",
+>>>>>>> Stashed changes
     "events": {
       "0xd88b47349affe2e2dca403cd1d45a5649172a5eaee469a5876eb6cef4841cbf1": {
         "anonymous": false,
@@ -13118,6 +15727,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
             "indexed": true,
             "name": "key",
             "type": "bytes32"
+<<<<<<< Updated upstream
+          },
+          {
+            "indexed": true,
+=======
           },
           {
             "indexed": true,
@@ -13168,6 +15782,59 @@ var SolidityEvent = require("web3/lib/web3/event.js");
           },
           {
             "indexed": true,
+>>>>>>> Stashed changes
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+<<<<<<< Updated upstream
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "maxAuditors",
+=======
+            "name": "contribution",
+>>>>>>> Stashed changes
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+<<<<<<< Updated upstream
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingSubmitted",
+        "type": "event"
+      },
+      "0x3c3e5cbebfd0ef81bf2f3fb207432b7c74d47759fa64a631c485184486211b0d": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
             "name": "investor",
             "type": "address"
           },
@@ -13185,6 +15852,15 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "name": "LogRequestForRatingContributed",
         "type": "event"
       },
+=======
+            "name": "totalReward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingContributed",
+        "type": "event"
+      },
+>>>>>>> Stashed changes
       "0xc8350213f5030bd4e879cb2eeb4fa2f7f4d318e117772767d25c9c9bc4592e8e": {
         "anonymous": false,
         "inputs": [
@@ -13202,6 +15878,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
             "indexed": false,
             "name": "auditorCount",
             "type": "uint256"
+<<<<<<< Updated upstream
           }
         ],
         "name": "LogAuditorJoined",
@@ -13419,6 +16096,227 @@ var SolidityEvent = require("web3/lib/web3/event.js");
             network_id = id;
             break;
           }
+=======
+          }
+        ],
+        "name": "LogAuditorJoined",
+        "type": "event"
+      },
+      "0x561d692d608576714937a081b8dcd88b472f1781c31a856faddba126374d61a9": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "rating",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "submissionCount",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorSubmitted",
+        "type": "event"
+      },
+      "0x31bfdeff7497910d6af7611e390ea041175d3897520804a90d9d3c8d8c91c5d0": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "auditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogAuditorPaid",
+        "type": "event"
+      },
+      "0x4ae7c15cd04d8a5097b1f1fda073a122b3d11db2fa19a1d50b62e525bb165d15": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "contribution",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogInvestorRefunded",
+        "type": "event"
+      },
+      "0x89b54d16a0fd0921ec4884a402c5730b6946a12d729b59f9ebff9f8e67138f2f": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "ric",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "maxAuditors",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingSubmitted",
+        "type": "event"
+      },
+      "0x7332583e40367a020551753fffdb500c9a44e697d4ad2950edf96a4b9e60216a": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "ric",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "uri",
+            "type": "string"
+          },
+          {
+            "indexed": false,
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "maxAuditors",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "reward",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestForRatingSubmitted",
+        "type": "event"
+      }
+    },
+    "updated_at": 1485628537333,
+    "links": {},
+    "address": "0x9f347f6d5391b21153d939bd56f78c1df18dad0a"
+  }
+};
+
+  Contract.checkNetwork = function(callback) {
+    var self = this;
+
+    if (this.network_id != null) {
+      return callback();
+    }
+
+    this.web3.version.network(function(err, result) {
+      if (err) return callback(err);
+
+      var network_id = result.toString();
+
+      // If we have the main network,
+      if (network_id == "1") {
+        var possible_ids = ["1", "live", "default"];
+
+        for (var i = 0; i < possible_ids.length; i++) {
+          var id = possible_ids[i];
+          if (Contract.all_networks[id] != null) {
+            network_id = id;
+            break;
+          }
+>>>>>>> Stashed changes
         }
       }
 
@@ -13522,7 +16420,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   }
 })();
 
+<<<<<<< Updated upstream
 },{"web3":49,"web3/lib/web3/event.js":76}],13:[function(require,module,exports){
+=======
+},{"web3":51,"web3/lib/web3/event.js":78}],15:[function(require,module,exports){
+>>>>>>> Stashed changes
 var Web3 = require("web3");
 var SolidityEvent = require("web3/lib/web3/event.js");
 
@@ -13977,10 +16879,17 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "type": "function"
       }
     ],
+<<<<<<< Updated upstream
     "unlinked_binary": "0x606060405234610000575b61075b806100196000396000f300606060405263ffffffff60e060020a60003504166334d1854981146100505780638c080313146100b75780639b642de11461011e578063c6ddb64214610185578063f2666ae314610398575b610000565b34610000576100a3600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437509496506103ff95505050505050565b604080519115158252519081900360200190f35b34610000576100a3600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437509496506104ba95505050505050565b604080519115158252519081900360200190f35b34610000576100a3600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061058895505050505050565b604080519115158252519081900360200190f35b346100005761019e600160a060020a0360043516610656565b604080516080808252865460026000196101006001841615020190911604908201819052909182916020830191830190606084019060a08501908a9080156102275780601f106101fc57610100808354040283529160200191610227565b820191906000526020600020905b81548152906001019060200180831161020a57829003601f168201915b505085810384528854600260001961010060018416150201909116048082526020909101908990801561029b5780601f106102705761010080835404028352916020019161029b565b820191906000526020600020905b81548152906001019060200180831161027e57829003601f168201915b505085810383528754600260001961010060018416150201909116048082526020909101908890801561030f5780601f106102e45761010080835404028352916020019161030f565b820191906000526020600020905b8154815290600101906020018083116102f257829003601f168201915b50508581038252865460026000196101006001841615020190911604808252602090910190879080156103835780601f1061035857610100808354040283529160200191610383565b820191906000526020600020905b81548152906001019060200180831161036657829003601f168201915b50509850505050505050505060405180910390f35b34610000576100a3600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061067395505050505050565b604080519115158252519081900360200190f35b600160a060020a0333166000908152602081815260408220835181548285528385209293601f600260001961010060018616150201909316929092048201819004840193919087019083901061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b919050565b6000816000600033600160a060020a0316600160a060020a031681526020019081526020016000206003019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b919050565b6000816000600033600160a060020a0316600160a060020a031681526020019081526020016000206001019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b919050565b600060208190529081526040902060018101600282016003830184565b600160a060020a03331660009081526020818152604082208351600291820180548186528486209194601f6000196101006001851615020190921694909404810184900482019387019083901061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b9190505600a165627a7a72305820f762552ac3ae55b7a64d904f26e6ae7e6c93869b81cd3d1e3c908855d356a08f0029",
     "events": {},
     "updated_at": 1485621262227,
     "address": "0x1f623db7dd92e303388f32fe8ed9406ccec4a902",
+=======
+    "unlinked_binary": "0x606060405234610000575b61075b806100196000396000f300606060405263ffffffff60e060020a60003504166334d1854981146100505780638c080313146100b75780639b642de11461011e578063c6ddb64214610185578063f2666ae314610398575b610000565b34610000576100a3600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437509496506103ff95505050505050565b604080519115158252519081900360200190f35b34610000576100a3600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437509496506104ba95505050505050565b604080519115158252519081900360200190f35b34610000576100a3600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061058895505050505050565b604080519115158252519081900360200190f35b346100005761019e600160a060020a0360043516610656565b604080516080808252865460026000196101006001841615020190911604908201819052909182916020830191830190606084019060a08501908a9080156102275780601f106101fc57610100808354040283529160200191610227565b820191906000526020600020905b81548152906001019060200180831161020a57829003601f168201915b505085810384528854600260001961010060018416150201909116048082526020909101908990801561029b5780601f106102705761010080835404028352916020019161029b565b820191906000526020600020905b81548152906001019060200180831161027e57829003601f168201915b505085810383528754600260001961010060018416150201909116048082526020909101908890801561030f5780601f106102e45761010080835404028352916020019161030f565b820191906000526020600020905b8154815290600101906020018083116102f257829003601f168201915b50508581038252865460026000196101006001841615020190911604808252602090910190879080156103835780601f1061035857610100808354040283529160200191610383565b820191906000526020600020905b81548152906001019060200180831161036657829003601f168201915b50509850505050505050505060405180910390f35b34610000576100a3600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061067395505050505050565b604080519115158252519081900360200190f35b600160a060020a0333166000908152602081815260408220835181548285528385209293601f600260001961010060018616150201909316929092048201819004840193919087019083901061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b919050565b6000816000600033600160a060020a0316600160a060020a031681526020019081526020016000206003019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b919050565b6000816000600033600160a060020a0316600160a060020a031681526020019081526020016000206001019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b919050565b600060208190529081526040902060018101600282016003830184565b600160a060020a03331660009081526020818152604082208351600291820180548186528486209194601f6000196101006001851615020190921694909404810184900482019387019083901061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b9190505600a165627a7a72305820c8abf640caed4ee3c63368cfd618e2a874fca6b85c9a9e60cec18bb2c5443c920029",
+    "events": {},
+    "updated_at": 1485628339706,
+    "address": "0xd0a5adbf30da1819512524f1758e194fdce58379",
+>>>>>>> Stashed changes
     "links": {}
   },
   "default": {
@@ -14088,9 +16997,17 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "type": "function"
       }
     ],
+<<<<<<< Updated upstream
     "unlinked_binary": "0x606060405234610000575b61075b806100196000396000f300606060405263ffffffff60e060020a60003504166334d1854981146100505780638c080313146100b75780639b642de11461011e578063c6ddb64214610185578063f2666ae314610398575b610000565b34610000576100a3600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437509496506103ff95505050505050565b604080519115158252519081900360200190f35b34610000576100a3600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437509496506104ba95505050505050565b604080519115158252519081900360200190f35b34610000576100a3600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061058895505050505050565b604080519115158252519081900360200190f35b346100005761019e600160a060020a0360043516610656565b604080516080808252865460026000196101006001841615020190911604908201819052909182916020830191830190606084019060a08501908a9080156102275780601f106101fc57610100808354040283529160200191610227565b820191906000526020600020905b81548152906001019060200180831161020a57829003601f168201915b505085810384528854600260001961010060018416150201909116048082526020909101908990801561029b5780601f106102705761010080835404028352916020019161029b565b820191906000526020600020905b81548152906001019060200180831161027e57829003601f168201915b505085810383528754600260001961010060018416150201909116048082526020909101908890801561030f5780601f106102e45761010080835404028352916020019161030f565b820191906000526020600020905b8154815290600101906020018083116102f257829003601f168201915b50508581038252865460026000196101006001841615020190911604808252602090910190879080156103835780601f1061035857610100808354040283529160200191610383565b820191906000526020600020905b81548152906001019060200180831161036657829003601f168201915b50509850505050505050505060405180910390f35b34610000576100a3600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061067395505050505050565b604080519115158252519081900360200190f35b600160a060020a0333166000908152602081815260408220835181548285528385209293601f600260001961010060018616150201909316929092048201819004840193919087019083901061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b919050565b6000816000600033600160a060020a0316600160a060020a031681526020019081526020016000206003019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b919050565b6000816000600033600160a060020a0316600160a060020a031681526020019081526020016000206001019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b919050565b600060208190529081526040902060018101600282016003830184565b600160a060020a03331660009081526020818152604082208351600291820180548186528486209194601f6000196101006001851615020190921694909404810184900482019387019083901061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b9190505600a165627a7a72305820fbda74e0c722bb4bdf07e72726555832e89dc69fd75dfc5add7ce28acec567320029",
     "events": {},
     "updated_at": 1485621487860
+=======
+    "unlinked_binary": "0x606060405234610000575b61075b806100196000396000f300606060405263ffffffff60e060020a60003504166334d1854981146100505780638c080313146100b75780639b642de11461011e578063c6ddb64214610185578063f2666ae314610398575b610000565b34610000576100a3600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437509496506103ff95505050505050565b604080519115158252519081900360200190f35b34610000576100a3600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437509496506104ba95505050505050565b604080519115158252519081900360200190f35b34610000576100a3600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061058895505050505050565b604080519115158252519081900360200190f35b346100005761019e600160a060020a0360043516610656565b604080516080808252865460026000196101006001841615020190911604908201819052909182916020830191830190606084019060a08501908a9080156102275780601f106101fc57610100808354040283529160200191610227565b820191906000526020600020905b81548152906001019060200180831161020a57829003601f168201915b505085810384528854600260001961010060018416150201909116048082526020909101908990801561029b5780601f106102705761010080835404028352916020019161029b565b820191906000526020600020905b81548152906001019060200180831161027e57829003601f168201915b505085810383528754600260001961010060018416150201909116048082526020909101908890801561030f5780601f106102e45761010080835404028352916020019161030f565b820191906000526020600020905b8154815290600101906020018083116102f257829003601f168201915b50508581038252865460026000196101006001841615020190911604808252602090910190879080156103835780601f1061035857610100808354040283529160200191610383565b820191906000526020600020905b81548152906001019060200180831161036657829003601f168201915b50509850505050505050505060405180910390f35b34610000576100a3600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061067395505050505050565b604080519115158252519081900360200190f35b600160a060020a0333166000908152602081815260408220835181548285528385209293601f600260001961010060018616150201909316929092048201819004840193919087019083901061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b919050565b6000816000600033600160a060020a0316600160a060020a031681526020019081526020016000206003019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b919050565b6000816000600033600160a060020a0316600160a060020a031681526020019081526020016000206001019080519060200190828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b919050565b600060208190529081526040902060018101600282016003830184565b600160a060020a03331660009081526020818152604082208351600291820180548186528486209194601f6000196101006001851615020190921694909404810184900482019387019083901061046057805160ff191683800117855561048d565b8280016001018555821561048d579182015b8281111561048d578251825591602001919060010190610472565b5b506104ae9291505b808211156104aa5760008155600101610496565b5090565b5050600190505b9190505600a165627a7a723058207b7e0858c7e0d273aa6380b3b2f6f6a9ebd33969a73ca86ea9d8d3f020eaed2d0029",
+    "events": {},
+    "updated_at": 1485628537337,
+    "links": {},
+    "address": "0x678ccc3efda316b4f8ea21c9e59d90dea2ec264f"
+>>>>>>> Stashed changes
   }
 };
 
@@ -14219,7 +17136,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   }
 })();
 
+<<<<<<< Updated upstream
 },{"web3":49,"web3/lib/web3/event.js":76}],14:[function(require,module,exports){
+=======
+},{"web3":51,"web3/lib/web3/event.js":78}],16:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -14234,6 +17155,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 		factory(root.CryptoJS);
 	}
 }(this, function (CryptoJS) {
+<<<<<<< Updated upstream
 
 	(function () {
 	    // Shortcuts
@@ -14520,6 +17442,276 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 
 	        /**
 	         * Creates this cipher in decryption mode.
+=======
+
+	(function () {
+	    // Shortcuts
+	    var C = CryptoJS;
+	    var C_lib = C.lib;
+	    var BlockCipher = C_lib.BlockCipher;
+	    var C_algo = C.algo;
+
+	    // Lookup tables
+	    var SBOX = [];
+	    var INV_SBOX = [];
+	    var SUB_MIX_0 = [];
+	    var SUB_MIX_1 = [];
+	    var SUB_MIX_2 = [];
+	    var SUB_MIX_3 = [];
+	    var INV_SUB_MIX_0 = [];
+	    var INV_SUB_MIX_1 = [];
+	    var INV_SUB_MIX_2 = [];
+	    var INV_SUB_MIX_3 = [];
+
+	    // Compute lookup tables
+	    (function () {
+	        // Compute double table
+	        var d = [];
+	        for (var i = 0; i < 256; i++) {
+	            if (i < 128) {
+	                d[i] = i << 1;
+	            } else {
+	                d[i] = (i << 1) ^ 0x11b;
+	            }
+	        }
+
+	        // Walk GF(2^8)
+	        var x = 0;
+	        var xi = 0;
+	        for (var i = 0; i < 256; i++) {
+	            // Compute sbox
+	            var sx = xi ^ (xi << 1) ^ (xi << 2) ^ (xi << 3) ^ (xi << 4);
+	            sx = (sx >>> 8) ^ (sx & 0xff) ^ 0x63;
+	            SBOX[x] = sx;
+	            INV_SBOX[sx] = x;
+
+	            // Compute multiplication
+	            var x2 = d[x];
+	            var x4 = d[x2];
+	            var x8 = d[x4];
+
+	            // Compute sub bytes, mix columns tables
+	            var t = (d[sx] * 0x101) ^ (sx * 0x1010100);
+	            SUB_MIX_0[x] = (t << 24) | (t >>> 8);
+	            SUB_MIX_1[x] = (t << 16) | (t >>> 16);
+	            SUB_MIX_2[x] = (t << 8)  | (t >>> 24);
+	            SUB_MIX_3[x] = t;
+
+	            // Compute inv sub bytes, inv mix columns tables
+	            var t = (x8 * 0x1010101) ^ (x4 * 0x10001) ^ (x2 * 0x101) ^ (x * 0x1010100);
+	            INV_SUB_MIX_0[sx] = (t << 24) | (t >>> 8);
+	            INV_SUB_MIX_1[sx] = (t << 16) | (t >>> 16);
+	            INV_SUB_MIX_2[sx] = (t << 8)  | (t >>> 24);
+	            INV_SUB_MIX_3[sx] = t;
+
+	            // Compute next counter
+	            if (!x) {
+	                x = xi = 1;
+	            } else {
+	                x = x2 ^ d[d[d[x8 ^ x2]]];
+	                xi ^= d[d[xi]];
+	            }
+	        }
+	    }());
+
+	    // Precomputed Rcon lookup
+	    var RCON = [0x00, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1b, 0x36];
+
+	    /**
+	     * AES block cipher algorithm.
+	     */
+	    var AES = C_algo.AES = BlockCipher.extend({
+	        _doReset: function () {
+	            // Skip reset of nRounds has been set before and key did not change
+	            if (this._nRounds && this._keyPriorReset === this._key) {
+	                return;
+	            }
+
+	            // Shortcuts
+	            var key = this._keyPriorReset = this._key;
+	            var keyWords = key.words;
+	            var keySize = key.sigBytes / 4;
+
+	            // Compute number of rounds
+	            var nRounds = this._nRounds = keySize + 6;
+
+	            // Compute number of key schedule rows
+	            var ksRows = (nRounds + 1) * 4;
+
+	            // Compute key schedule
+	            var keySchedule = this._keySchedule = [];
+	            for (var ksRow = 0; ksRow < ksRows; ksRow++) {
+	                if (ksRow < keySize) {
+	                    keySchedule[ksRow] = keyWords[ksRow];
+	                } else {
+	                    var t = keySchedule[ksRow - 1];
+
+	                    if (!(ksRow % keySize)) {
+	                        // Rot word
+	                        t = (t << 8) | (t >>> 24);
+
+	                        // Sub word
+	                        t = (SBOX[t >>> 24] << 24) | (SBOX[(t >>> 16) & 0xff] << 16) | (SBOX[(t >>> 8) & 0xff] << 8) | SBOX[t & 0xff];
+
+	                        // Mix Rcon
+	                        t ^= RCON[(ksRow / keySize) | 0] << 24;
+	                    } else if (keySize > 6 && ksRow % keySize == 4) {
+	                        // Sub word
+	                        t = (SBOX[t >>> 24] << 24) | (SBOX[(t >>> 16) & 0xff] << 16) | (SBOX[(t >>> 8) & 0xff] << 8) | SBOX[t & 0xff];
+	                    }
+
+	                    keySchedule[ksRow] = keySchedule[ksRow - keySize] ^ t;
+	                }
+	            }
+
+	            // Compute inv key schedule
+	            var invKeySchedule = this._invKeySchedule = [];
+	            for (var invKsRow = 0; invKsRow < ksRows; invKsRow++) {
+	                var ksRow = ksRows - invKsRow;
+
+	                if (invKsRow % 4) {
+	                    var t = keySchedule[ksRow];
+	                } else {
+	                    var t = keySchedule[ksRow - 4];
+	                }
+
+	                if (invKsRow < 4 || ksRow <= 4) {
+	                    invKeySchedule[invKsRow] = t;
+	                } else {
+	                    invKeySchedule[invKsRow] = INV_SUB_MIX_0[SBOX[t >>> 24]] ^ INV_SUB_MIX_1[SBOX[(t >>> 16) & 0xff]] ^
+	                                               INV_SUB_MIX_2[SBOX[(t >>> 8) & 0xff]] ^ INV_SUB_MIX_3[SBOX[t & 0xff]];
+	                }
+	            }
+	        },
+
+	        encryptBlock: function (M, offset) {
+	            this._doCryptBlock(M, offset, this._keySchedule, SUB_MIX_0, SUB_MIX_1, SUB_MIX_2, SUB_MIX_3, SBOX);
+	        },
+
+	        decryptBlock: function (M, offset) {
+	            // Swap 2nd and 4th rows
+	            var t = M[offset + 1];
+	            M[offset + 1] = M[offset + 3];
+	            M[offset + 3] = t;
+
+	            this._doCryptBlock(M, offset, this._invKeySchedule, INV_SUB_MIX_0, INV_SUB_MIX_1, INV_SUB_MIX_2, INV_SUB_MIX_3, INV_SBOX);
+
+	            // Inv swap 2nd and 4th rows
+	            var t = M[offset + 1];
+	            M[offset + 1] = M[offset + 3];
+	            M[offset + 3] = t;
+	        },
+
+	        _doCryptBlock: function (M, offset, keySchedule, SUB_MIX_0, SUB_MIX_1, SUB_MIX_2, SUB_MIX_3, SBOX) {
+	            // Shortcut
+	            var nRounds = this._nRounds;
+
+	            // Get input, add round key
+	            var s0 = M[offset]     ^ keySchedule[0];
+	            var s1 = M[offset + 1] ^ keySchedule[1];
+	            var s2 = M[offset + 2] ^ keySchedule[2];
+	            var s3 = M[offset + 3] ^ keySchedule[3];
+
+	            // Key schedule row counter
+	            var ksRow = 4;
+
+	            // Rounds
+	            for (var round = 1; round < nRounds; round++) {
+	                // Shift rows, sub bytes, mix columns, add round key
+	                var t0 = SUB_MIX_0[s0 >>> 24] ^ SUB_MIX_1[(s1 >>> 16) & 0xff] ^ SUB_MIX_2[(s2 >>> 8) & 0xff] ^ SUB_MIX_3[s3 & 0xff] ^ keySchedule[ksRow++];
+	                var t1 = SUB_MIX_0[s1 >>> 24] ^ SUB_MIX_1[(s2 >>> 16) & 0xff] ^ SUB_MIX_2[(s3 >>> 8) & 0xff] ^ SUB_MIX_3[s0 & 0xff] ^ keySchedule[ksRow++];
+	                var t2 = SUB_MIX_0[s2 >>> 24] ^ SUB_MIX_1[(s3 >>> 16) & 0xff] ^ SUB_MIX_2[(s0 >>> 8) & 0xff] ^ SUB_MIX_3[s1 & 0xff] ^ keySchedule[ksRow++];
+	                var t3 = SUB_MIX_0[s3 >>> 24] ^ SUB_MIX_1[(s0 >>> 16) & 0xff] ^ SUB_MIX_2[(s1 >>> 8) & 0xff] ^ SUB_MIX_3[s2 & 0xff] ^ keySchedule[ksRow++];
+
+	                // Update state
+	                s0 = t0;
+	                s1 = t1;
+	                s2 = t2;
+	                s3 = t3;
+	            }
+
+	            // Shift rows, sub bytes, add round key
+	            var t0 = ((SBOX[s0 >>> 24] << 24) | (SBOX[(s1 >>> 16) & 0xff] << 16) | (SBOX[(s2 >>> 8) & 0xff] << 8) | SBOX[s3 & 0xff]) ^ keySchedule[ksRow++];
+	            var t1 = ((SBOX[s1 >>> 24] << 24) | (SBOX[(s2 >>> 16) & 0xff] << 16) | (SBOX[(s3 >>> 8) & 0xff] << 8) | SBOX[s0 & 0xff]) ^ keySchedule[ksRow++];
+	            var t2 = ((SBOX[s2 >>> 24] << 24) | (SBOX[(s3 >>> 16) & 0xff] << 16) | (SBOX[(s0 >>> 8) & 0xff] << 8) | SBOX[s1 & 0xff]) ^ keySchedule[ksRow++];
+	            var t3 = ((SBOX[s3 >>> 24] << 24) | (SBOX[(s0 >>> 16) & 0xff] << 16) | (SBOX[(s1 >>> 8) & 0xff] << 8) | SBOX[s2 & 0xff]) ^ keySchedule[ksRow++];
+
+	            // Set output
+	            M[offset]     = t0;
+	            M[offset + 1] = t1;
+	            M[offset + 2] = t2;
+	            M[offset + 3] = t3;
+	        },
+
+	        keySize: 256/32
+	    });
+
+	    /**
+	     * Shortcut functions to the cipher's object interface.
+	     *
+	     * @example
+	     *
+	     *     var ciphertext = CryptoJS.AES.encrypt(message, key, cfg);
+	     *     var plaintext  = CryptoJS.AES.decrypt(ciphertext, key, cfg);
+	     */
+	    C.AES = BlockCipher._createHelper(AES);
+	}());
+
+
+	return CryptoJS.AES;
+
+}));
+},{"./cipher-core":17,"./core":18,"./enc-base64":19,"./evpkdf":21,"./md5":26}],17:[function(require,module,exports){
+;(function (root, factory) {
+	if (typeof exports === "object") {
+		// CommonJS
+		module.exports = exports = factory(require("./core"));
+	}
+	else if (typeof define === "function" && define.amd) {
+		// AMD
+		define(["./core"], factory);
+	}
+	else {
+		// Global (browser)
+		factory(root.CryptoJS);
+	}
+}(this, function (CryptoJS) {
+
+	/**
+	 * Cipher core components.
+	 */
+	CryptoJS.lib.Cipher || (function (undefined) {
+	    // Shortcuts
+	    var C = CryptoJS;
+	    var C_lib = C.lib;
+	    var Base = C_lib.Base;
+	    var WordArray = C_lib.WordArray;
+	    var BufferedBlockAlgorithm = C_lib.BufferedBlockAlgorithm;
+	    var C_enc = C.enc;
+	    var Utf8 = C_enc.Utf8;
+	    var Base64 = C_enc.Base64;
+	    var C_algo = C.algo;
+	    var EvpKDF = C_algo.EvpKDF;
+
+	    /**
+	     * Abstract base cipher template.
+	     *
+	     * @property {number} keySize This cipher's key size. Default: 4 (128 bits)
+	     * @property {number} ivSize This cipher's IV size. Default: 4 (128 bits)
+	     * @property {number} _ENC_XFORM_MODE A constant representing encryption mode.
+	     * @property {number} _DEC_XFORM_MODE A constant representing decryption mode.
+	     */
+	    var Cipher = C_lib.Cipher = BufferedBlockAlgorithm.extend({
+	        /**
+	         * Configuration options.
+	         *
+	         * @property {WordArray} iv The IV to use for this operation.
+	         */
+	        cfg: Base.extend(),
+
+	        /**
+	         * Creates this cipher in encryption mode.
+>>>>>>> Stashed changes
 	         *
 	         * @param {WordArray} key The key.
 	         * @param {Object} cfg (Optional) The configuration options to use for this operation.
@@ -14530,6 +17722,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	         *
 	         * @example
 	         *
+<<<<<<< Updated upstream
 	         *     var cipher = CryptoJS.algo.AES.createDecryptor(keyWordArray, { iv: ivWordArray });
 	         */
 	        createDecryptor: function (key, cfg) {
@@ -15261,11 +18454,714 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	         * @param {Object} cfg (Optional) The configuration options to use for this operation.
 	         *
 	         * @return {CipherParams} A cipher params object.
+=======
+	         *     var cipher = CryptoJS.algo.AES.createEncryptor(keyWordArray, { iv: ivWordArray });
+	         */
+	        createEncryptor: function (key, cfg) {
+	            return this.create(this._ENC_XFORM_MODE, key, cfg);
+	        },
+
+	        /**
+	         * Creates this cipher in decryption mode.
+	         *
+	         * @param {WordArray} key The key.
+	         * @param {Object} cfg (Optional) The configuration options to use for this operation.
+	         *
+	         * @return {Cipher} A cipher instance.
 	         *
 	         * @static
 	         *
 	         * @example
 	         *
+	         *     var cipher = CryptoJS.algo.AES.createDecryptor(keyWordArray, { iv: ivWordArray });
+	         */
+	        createDecryptor: function (key, cfg) {
+	            return this.create(this._DEC_XFORM_MODE, key, cfg);
+	        },
+
+	        /**
+	         * Initializes a newly created cipher.
+	         *
+	         * @param {number} xformMode Either the encryption or decryption transormation mode constant.
+	         * @param {WordArray} key The key.
+	         * @param {Object} cfg (Optional) The configuration options to use for this operation.
+	         *
+	         * @example
+	         *
+	         *     var cipher = CryptoJS.algo.AES.create(CryptoJS.algo.AES._ENC_XFORM_MODE, keyWordArray, { iv: ivWordArray });
+	         */
+	        init: function (xformMode, key, cfg) {
+	            // Apply config defaults
+	            this.cfg = this.cfg.extend(cfg);
+
+	            // Store transform mode and key
+	            this._xformMode = xformMode;
+	            this._key = key;
+
+	            // Set initial values
+	            this.reset();
+	        },
+
+	        /**
+	         * Resets this cipher to its initial state.
+	         *
+	         * @example
+	         *
+	         *     cipher.reset();
+	         */
+	        reset: function () {
+	            // Reset data buffer
+	            BufferedBlockAlgorithm.reset.call(this);
+
+	            // Perform concrete-cipher logic
+	            this._doReset();
+	        },
+
+	        /**
+	         * Adds data to be encrypted or decrypted.
+	         *
+	         * @param {WordArray|string} dataUpdate The data to encrypt or decrypt.
+	         *
+	         * @return {WordArray} The data after processing.
+	         *
+	         * @example
+	         *
+	         *     var encrypted = cipher.process('data');
+	         *     var encrypted = cipher.process(wordArray);
+	         */
+	        process: function (dataUpdate) {
+	            // Append
+	            this._append(dataUpdate);
+
+	            // Process available blocks
+	            return this._process();
+	        },
+
+	        /**
+	         * Finalizes the encryption or decryption process.
+	         * Note that the finalize operation is effectively a destructive, read-once operation.
+	         *
+	         * @param {WordArray|string} dataUpdate The final data to encrypt or decrypt.
+	         *
+	         * @return {WordArray} The data after final processing.
+	         *
+	         * @example
+	         *
+	         *     var encrypted = cipher.finalize();
+	         *     var encrypted = cipher.finalize('data');
+	         *     var encrypted = cipher.finalize(wordArray);
+	         */
+	        finalize: function (dataUpdate) {
+	            // Final data update
+	            if (dataUpdate) {
+	                this._append(dataUpdate);
+	            }
+
+	            // Perform concrete-cipher logic
+	            var finalProcessedData = this._doFinalize();
+
+	            return finalProcessedData;
+	        },
+
+	        keySize: 128/32,
+
+	        ivSize: 128/32,
+
+	        _ENC_XFORM_MODE: 1,
+
+	        _DEC_XFORM_MODE: 2,
+
+	        /**
+	         * Creates shortcut functions to a cipher's object interface.
+	         *
+	         * @param {Cipher} cipher The cipher to create a helper for.
+	         *
+	         * @return {Object} An object with encrypt and decrypt shortcut functions.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     var AES = CryptoJS.lib.Cipher._createHelper(CryptoJS.algo.AES);
+	         */
+	        _createHelper: (function () {
+	            function selectCipherStrategy(key) {
+	                if (typeof key == 'string') {
+	                    return PasswordBasedCipher;
+	                } else {
+	                    return SerializableCipher;
+	                }
+	            }
+
+	            return function (cipher) {
+	                return {
+	                    encrypt: function (message, key, cfg) {
+	                        return selectCipherStrategy(key).encrypt(cipher, message, key, cfg);
+	                    },
+
+	                    decrypt: function (ciphertext, key, cfg) {
+	                        return selectCipherStrategy(key).decrypt(cipher, ciphertext, key, cfg);
+	                    }
+	                };
+	            };
+	        }())
+	    });
+
+	    /**
+	     * Abstract base stream cipher template.
+	     *
+	     * @property {number} blockSize The number of 32-bit words this cipher operates on. Default: 1 (32 bits)
+	     */
+	    var StreamCipher = C_lib.StreamCipher = Cipher.extend({
+	        _doFinalize: function () {
+	            // Process partial blocks
+	            var finalProcessedBlocks = this._process(!!'flush');
+
+	            return finalProcessedBlocks;
+	        },
+
+	        blockSize: 1
+	    });
+
+	    /**
+	     * Mode namespace.
+	     */
+	    var C_mode = C.mode = {};
+
+	    /**
+	     * Abstract base block cipher mode template.
+	     */
+	    var BlockCipherMode = C_lib.BlockCipherMode = Base.extend({
+	        /**
+	         * Creates this mode for encryption.
+	         *
+	         * @param {Cipher} cipher A block cipher instance.
+	         * @param {Array} iv The IV words.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     var mode = CryptoJS.mode.CBC.createEncryptor(cipher, iv.words);
+	         */
+	        createEncryptor: function (cipher, iv) {
+	            return this.Encryptor.create(cipher, iv);
+	        },
+
+	        /**
+	         * Creates this mode for decryption.
+	         *
+	         * @param {Cipher} cipher A block cipher instance.
+	         * @param {Array} iv The IV words.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     var mode = CryptoJS.mode.CBC.createDecryptor(cipher, iv.words);
+	         */
+	        createDecryptor: function (cipher, iv) {
+	            return this.Decryptor.create(cipher, iv);
+	        },
+
+	        /**
+	         * Initializes a newly created mode.
+	         *
+	         * @param {Cipher} cipher A block cipher instance.
+	         * @param {Array} iv The IV words.
+	         *
+	         * @example
+	         *
+	         *     var mode = CryptoJS.mode.CBC.Encryptor.create(cipher, iv.words);
+	         */
+	        init: function (cipher, iv) {
+	            this._cipher = cipher;
+	            this._iv = iv;
+	        }
+	    });
+
+	    /**
+	     * Cipher Block Chaining mode.
+	     */
+	    var CBC = C_mode.CBC = (function () {
+	        /**
+	         * Abstract base CBC mode.
+	         */
+	        var CBC = BlockCipherMode.extend();
+
+	        /**
+	         * CBC encryptor.
+	         */
+	        CBC.Encryptor = CBC.extend({
+	            /**
+	             * Processes the data block at offset.
+	             *
+	             * @param {Array} words The data words to operate on.
+	             * @param {number} offset The offset where the block starts.
+	             *
+	             * @example
+	             *
+	             *     mode.processBlock(data.words, offset);
+	             */
+	            processBlock: function (words, offset) {
+	                // Shortcuts
+	                var cipher = this._cipher;
+	                var blockSize = cipher.blockSize;
+
+	                // XOR and encrypt
+	                xorBlock.call(this, words, offset, blockSize);
+	                cipher.encryptBlock(words, offset);
+
+	                // Remember this block to use with next block
+	                this._prevBlock = words.slice(offset, offset + blockSize);
+	            }
+	        });
+
+	        /**
+	         * CBC decryptor.
+	         */
+	        CBC.Decryptor = CBC.extend({
+	            /**
+	             * Processes the data block at offset.
+	             *
+	             * @param {Array} words The data words to operate on.
+	             * @param {number} offset The offset where the block starts.
+	             *
+	             * @example
+	             *
+	             *     mode.processBlock(data.words, offset);
+	             */
+	            processBlock: function (words, offset) {
+	                // Shortcuts
+	                var cipher = this._cipher;
+	                var blockSize = cipher.blockSize;
+
+	                // Remember this block to use with next block
+	                var thisBlock = words.slice(offset, offset + blockSize);
+
+	                // Decrypt and XOR
+	                cipher.decryptBlock(words, offset);
+	                xorBlock.call(this, words, offset, blockSize);
+
+	                // This block becomes the previous block
+	                this._prevBlock = thisBlock;
+	            }
+	        });
+
+	        function xorBlock(words, offset, blockSize) {
+	            // Shortcut
+	            var iv = this._iv;
+
+	            // Choose mixing block
+	            if (iv) {
+	                var block = iv;
+
+	                // Remove IV for subsequent blocks
+	                this._iv = undefined;
+	            } else {
+	                var block = this._prevBlock;
+	            }
+
+	            // XOR blocks
+	            for (var i = 0; i < blockSize; i++) {
+	                words[offset + i] ^= block[i];
+	            }
+	        }
+
+	        return CBC;
+	    }());
+
+	    /**
+	     * Padding namespace.
+	     */
+	    var C_pad = C.pad = {};
+
+	    /**
+	     * PKCS #5/7 padding strategy.
+	     */
+	    var Pkcs7 = C_pad.Pkcs7 = {
+	        /**
+	         * Pads data using the algorithm defined in PKCS #5/7.
+	         *
+	         * @param {WordArray} data The data to pad.
+	         * @param {number} blockSize The multiple that the data should be padded to.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     CryptoJS.pad.Pkcs7.pad(wordArray, 4);
+	         */
+	        pad: function (data, blockSize) {
+	            // Shortcut
+	            var blockSizeBytes = blockSize * 4;
+
+	            // Count padding bytes
+	            var nPaddingBytes = blockSizeBytes - data.sigBytes % blockSizeBytes;
+
+	            // Create padding word
+	            var paddingWord = (nPaddingBytes << 24) | (nPaddingBytes << 16) | (nPaddingBytes << 8) | nPaddingBytes;
+
+	            // Create padding
+	            var paddingWords = [];
+	            for (var i = 0; i < nPaddingBytes; i += 4) {
+	                paddingWords.push(paddingWord);
+	            }
+	            var padding = WordArray.create(paddingWords, nPaddingBytes);
+
+	            // Add padding
+	            data.concat(padding);
+	        },
+
+	        /**
+	         * Unpads data that had been padded using the algorithm defined in PKCS #5/7.
+	         *
+	         * @param {WordArray} data The data to unpad.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     CryptoJS.pad.Pkcs7.unpad(wordArray);
+	         */
+	        unpad: function (data) {
+	            // Get number of padding bytes from last byte
+	            var nPaddingBytes = data.words[(data.sigBytes - 1) >>> 2] & 0xff;
+
+	            // Remove padding
+	            data.sigBytes -= nPaddingBytes;
+	        }
+	    };
+
+	    /**
+	     * Abstract base block cipher template.
+	     *
+	     * @property {number} blockSize The number of 32-bit words this cipher operates on. Default: 4 (128 bits)
+	     */
+	    var BlockCipher = C_lib.BlockCipher = Cipher.extend({
+	        /**
+	         * Configuration options.
+	         *
+	         * @property {Mode} mode The block mode to use. Default: CBC
+	         * @property {Padding} padding The padding strategy to use. Default: Pkcs7
+	         */
+	        cfg: Cipher.cfg.extend({
+	            mode: CBC,
+	            padding: Pkcs7
+	        }),
+
+	        reset: function () {
+	            // Reset cipher
+	            Cipher.reset.call(this);
+
+	            // Shortcuts
+	            var cfg = this.cfg;
+	            var iv = cfg.iv;
+	            var mode = cfg.mode;
+
+	            // Reset block mode
+	            if (this._xformMode == this._ENC_XFORM_MODE) {
+	                var modeCreator = mode.createEncryptor;
+	            } else /* if (this._xformMode == this._DEC_XFORM_MODE) */ {
+	                var modeCreator = mode.createDecryptor;
+
+	                // Keep at least one block in the buffer for unpadding
+	                this._minBufferSize = 1;
+	            }
+	            this._mode = modeCreator.call(mode, this, iv && iv.words);
+	        },
+
+	        _doProcessBlock: function (words, offset) {
+	            this._mode.processBlock(words, offset);
+	        },
+
+	        _doFinalize: function () {
+	            // Shortcut
+	            var padding = this.cfg.padding;
+
+	            // Finalize
+	            if (this._xformMode == this._ENC_XFORM_MODE) {
+	                // Pad data
+	                padding.pad(this._data, this.blockSize);
+
+	                // Process final blocks
+	                var finalProcessedBlocks = this._process(!!'flush');
+	            } else /* if (this._xformMode == this._DEC_XFORM_MODE) */ {
+	                // Process final blocks
+	                var finalProcessedBlocks = this._process(!!'flush');
+
+	                // Unpad data
+	                padding.unpad(finalProcessedBlocks);
+	            }
+
+	            return finalProcessedBlocks;
+	        },
+
+	        blockSize: 128/32
+	    });
+
+	    /**
+	     * A collection of cipher parameters.
+	     *
+	     * @property {WordArray} ciphertext The raw ciphertext.
+	     * @property {WordArray} key The key to this ciphertext.
+	     * @property {WordArray} iv The IV used in the ciphering operation.
+	     * @property {WordArray} salt The salt used with a key derivation function.
+	     * @property {Cipher} algorithm The cipher algorithm.
+	     * @property {Mode} mode The block mode used in the ciphering operation.
+	     * @property {Padding} padding The padding scheme used in the ciphering operation.
+	     * @property {number} blockSize The block size of the cipher.
+	     * @property {Format} formatter The default formatting strategy to convert this cipher params object to a string.
+	     */
+	    var CipherParams = C_lib.CipherParams = Base.extend({
+	        /**
+	         * Initializes a newly created cipher params object.
+	         *
+	         * @param {Object} cipherParams An object with any of the possible cipher parameters.
+	         *
+	         * @example
+	         *
+	         *     var cipherParams = CryptoJS.lib.CipherParams.create({
+	         *         ciphertext: ciphertextWordArray,
+	         *         key: keyWordArray,
+	         *         iv: ivWordArray,
+	         *         salt: saltWordArray,
+	         *         algorithm: CryptoJS.algo.AES,
+	         *         mode: CryptoJS.mode.CBC,
+	         *         padding: CryptoJS.pad.PKCS7,
+	         *         blockSize: 4,
+	         *         formatter: CryptoJS.format.OpenSSL
+	         *     });
+	         */
+	        init: function (cipherParams) {
+	            this.mixIn(cipherParams);
+	        },
+
+	        /**
+	         * Converts this cipher params object to a string.
+	         *
+	         * @param {Format} formatter (Optional) The formatting strategy to use.
+	         *
+	         * @return {string} The stringified cipher params.
+	         *
+	         * @throws Error If neither the formatter nor the default formatter is set.
+	         *
+	         * @example
+	         *
+	         *     var string = cipherParams + '';
+	         *     var string = cipherParams.toString();
+	         *     var string = cipherParams.toString(CryptoJS.format.OpenSSL);
+	         */
+	        toString: function (formatter) {
+	            return (formatter || this.formatter).stringify(this);
+	        }
+	    });
+
+	    /**
+	     * Format namespace.
+	     */
+	    var C_format = C.format = {};
+
+	    /**
+	     * OpenSSL formatting strategy.
+	     */
+	    var OpenSSLFormatter = C_format.OpenSSL = {
+	        /**
+	         * Converts a cipher params object to an OpenSSL-compatible string.
+	         *
+	         * @param {CipherParams} cipherParams The cipher params object.
+	         *
+	         * @return {string} The OpenSSL-compatible string.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     var openSSLString = CryptoJS.format.OpenSSL.stringify(cipherParams);
+	         */
+	        stringify: function (cipherParams) {
+	            // Shortcuts
+	            var ciphertext = cipherParams.ciphertext;
+	            var salt = cipherParams.salt;
+
+	            // Format
+	            if (salt) {
+	                var wordArray = WordArray.create([0x53616c74, 0x65645f5f]).concat(salt).concat(ciphertext);
+	            } else {
+	                var wordArray = ciphertext;
+	            }
+
+	            return wordArray.toString(Base64);
+	        },
+
+	        /**
+	         * Converts an OpenSSL-compatible string to a cipher params object.
+	         *
+	         * @param {string} openSSLStr The OpenSSL-compatible string.
+	         *
+	         * @return {CipherParams} The cipher params object.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     var cipherParams = CryptoJS.format.OpenSSL.parse(openSSLString);
+	         */
+	        parse: function (openSSLStr) {
+	            // Parse base64
+	            var ciphertext = Base64.parse(openSSLStr);
+
+	            // Shortcut
+	            var ciphertextWords = ciphertext.words;
+
+	            // Test for salt
+	            if (ciphertextWords[0] == 0x53616c74 && ciphertextWords[1] == 0x65645f5f) {
+	                // Extract salt
+	                var salt = WordArray.create(ciphertextWords.slice(2, 4));
+
+	                // Remove salt from ciphertext
+	                ciphertextWords.splice(0, 4);
+	                ciphertext.sigBytes -= 16;
+	            }
+
+	            return CipherParams.create({ ciphertext: ciphertext, salt: salt });
+	        }
+	    };
+
+	    /**
+	     * A cipher wrapper that returns ciphertext as a serializable cipher params object.
+	     */
+	    var SerializableCipher = C_lib.SerializableCipher = Base.extend({
+	        /**
+	         * Configuration options.
+	         *
+	         * @property {Formatter} format The formatting strategy to convert cipher param objects to and from a string. Default: OpenSSL
+	         */
+	        cfg: Base.extend({
+	            format: OpenSSLFormatter
+	        }),
+
+	        /**
+	         * Encrypts a message.
+	         *
+	         * @param {Cipher} cipher The cipher algorithm to use.
+	         * @param {WordArray|string} message The message to encrypt.
+	         * @param {WordArray} key The key.
+	         * @param {Object} cfg (Optional) The configuration options to use for this operation.
+	         *
+	         * @return {CipherParams} A cipher params object.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     var ciphertextParams = CryptoJS.lib.SerializableCipher.encrypt(CryptoJS.algo.AES, message, key);
+	         *     var ciphertextParams = CryptoJS.lib.SerializableCipher.encrypt(CryptoJS.algo.AES, message, key, { iv: iv });
+	         *     var ciphertextParams = CryptoJS.lib.SerializableCipher.encrypt(CryptoJS.algo.AES, message, key, { iv: iv, format: CryptoJS.format.OpenSSL });
+	         */
+	        encrypt: function (cipher, message, key, cfg) {
+	            // Apply config defaults
+	            cfg = this.cfg.extend(cfg);
+
+	            // Encrypt
+	            var encryptor = cipher.createEncryptor(key, cfg);
+	            var ciphertext = encryptor.finalize(message);
+
+	            // Shortcut
+	            var cipherCfg = encryptor.cfg;
+
+	            // Create and return serializable cipher params
+	            return CipherParams.create({
+	                ciphertext: ciphertext,
+	                key: key,
+	                iv: cipherCfg.iv,
+	                algorithm: cipher,
+	                mode: cipherCfg.mode,
+	                padding: cipherCfg.padding,
+	                blockSize: cipher.blockSize,
+	                formatter: cfg.format
+	            });
+	        },
+
+	        /**
+	         * Decrypts serialized ciphertext.
+	         *
+	         * @param {Cipher} cipher The cipher algorithm to use.
+	         * @param {CipherParams|string} ciphertext The ciphertext to decrypt.
+	         * @param {WordArray} key The key.
+	         * @param {Object} cfg (Optional) The configuration options to use for this operation.
+	         *
+	         * @return {WordArray} The plaintext.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     var plaintext = CryptoJS.lib.SerializableCipher.decrypt(CryptoJS.algo.AES, formattedCiphertext, key, { iv: iv, format: CryptoJS.format.OpenSSL });
+	         *     var plaintext = CryptoJS.lib.SerializableCipher.decrypt(CryptoJS.algo.AES, ciphertextParams, key, { iv: iv, format: CryptoJS.format.OpenSSL });
+	         */
+	        decrypt: function (cipher, ciphertext, key, cfg) {
+	            // Apply config defaults
+	            cfg = this.cfg.extend(cfg);
+
+	            // Convert string to CipherParams
+	            ciphertext = this._parse(ciphertext, cfg.format);
+
+	            // Decrypt
+	            var plaintext = cipher.createDecryptor(key, cfg).finalize(ciphertext.ciphertext);
+
+	            return plaintext;
+	        },
+
+	        /**
+	         * Converts serialized ciphertext to CipherParams,
+	         * else assumed CipherParams already and returns ciphertext unchanged.
+	         *
+	         * @param {CipherParams|string} ciphertext The ciphertext.
+	         * @param {Formatter} format The formatting strategy to use to parse serialized ciphertext.
+	         *
+	         * @return {CipherParams} The unserialized ciphertext.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     var ciphertextParams = CryptoJS.lib.SerializableCipher._parse(ciphertextStringOrParams, format);
+	         */
+	        _parse: function (ciphertext, format) {
+	            if (typeof ciphertext == 'string') {
+	                return format.parse(ciphertext, this);
+	            } else {
+	                return ciphertext;
+	            }
+	        }
+	    });
+
+	    /**
+	     * Key derivation function namespace.
+	     */
+	    var C_kdf = C.kdf = {};
+
+	    /**
+	     * OpenSSL key derivation function.
+	     */
+	    var OpenSSLKdf = C_kdf.OpenSSL = {
+	        /**
+	         * Derives a key and IV from a password.
+	         *
+	         * @param {string} password The password to derive from.
+	         * @param {number} keySize The size in words of the key to generate.
+	         * @param {number} ivSize The size in words of the IV to generate.
+	         * @param {WordArray|string} salt (Optional) A 64-bit salt to use. If omitted, a salt will be generated randomly.
+	         *
+	         * @return {CipherParams} A cipher params object with the key, IV, and salt.
+>>>>>>> Stashed changes
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+<<<<<<< Updated upstream
 	         *     var ciphertextParams = CryptoJS.lib.PasswordBasedCipher.encrypt(CryptoJS.algo.AES, message, 'password');
 	         *     var ciphertextParams = CryptoJS.lib.PasswordBasedCipher.encrypt(CryptoJS.algo.AES, message, 'password', { format: CryptoJS.format.OpenSSL });
 	         */
@@ -15500,6 +19396,291 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	        };
 	    }());
 
+=======
+	         *     var derivedParams = CryptoJS.kdf.OpenSSL.execute('Password', 256/32, 128/32);
+	         *     var derivedParams = CryptoJS.kdf.OpenSSL.execute('Password', 256/32, 128/32, 'saltsalt');
+	         */
+	        execute: function (password, keySize, ivSize, salt) {
+	            // Generate random salt
+	            if (!salt) {
+	                salt = WordArray.random(64/8);
+	            }
+
+	            // Derive key and IV
+	            var key = EvpKDF.create({ keySize: keySize + ivSize }).compute(password, salt);
+
+	            // Separate key and IV
+	            var iv = WordArray.create(key.words.slice(keySize), ivSize * 4);
+	            key.sigBytes = keySize * 4;
+
+	            // Return params
+	            return CipherParams.create({ key: key, iv: iv, salt: salt });
+	        }
+	    };
+
+	    /**
+	     * A serializable cipher wrapper that derives the key from a password,
+	     * and returns ciphertext as a serializable cipher params object.
+	     */
+	    var PasswordBasedCipher = C_lib.PasswordBasedCipher = SerializableCipher.extend({
+	        /**
+	         * Configuration options.
+	         *
+	         * @property {KDF} kdf The key derivation function to use to generate a key and IV from a password. Default: OpenSSL
+	         */
+	        cfg: SerializableCipher.cfg.extend({
+	            kdf: OpenSSLKdf
+	        }),
+
+	        /**
+	         * Encrypts a message using a password.
+	         *
+	         * @param {Cipher} cipher The cipher algorithm to use.
+	         * @param {WordArray|string} message The message to encrypt.
+	         * @param {string} password The password.
+	         * @param {Object} cfg (Optional) The configuration options to use for this operation.
+	         *
+	         * @return {CipherParams} A cipher params object.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     var ciphertextParams = CryptoJS.lib.PasswordBasedCipher.encrypt(CryptoJS.algo.AES, message, 'password');
+	         *     var ciphertextParams = CryptoJS.lib.PasswordBasedCipher.encrypt(CryptoJS.algo.AES, message, 'password', { format: CryptoJS.format.OpenSSL });
+	         */
+	        encrypt: function (cipher, message, password, cfg) {
+	            // Apply config defaults
+	            cfg = this.cfg.extend(cfg);
+
+	            // Derive key and other params
+	            var derivedParams = cfg.kdf.execute(password, cipher.keySize, cipher.ivSize);
+
+	            // Add IV to config
+	            cfg.iv = derivedParams.iv;
+
+	            // Encrypt
+	            var ciphertext = SerializableCipher.encrypt.call(this, cipher, message, derivedParams.key, cfg);
+
+	            // Mix in derived params
+	            ciphertext.mixIn(derivedParams);
+
+	            return ciphertext;
+	        },
+
+	        /**
+	         * Decrypts serialized ciphertext using a password.
+	         *
+	         * @param {Cipher} cipher The cipher algorithm to use.
+	         * @param {CipherParams|string} ciphertext The ciphertext to decrypt.
+	         * @param {string} password The password.
+	         * @param {Object} cfg (Optional) The configuration options to use for this operation.
+	         *
+	         * @return {WordArray} The plaintext.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     var plaintext = CryptoJS.lib.PasswordBasedCipher.decrypt(CryptoJS.algo.AES, formattedCiphertext, 'password', { format: CryptoJS.format.OpenSSL });
+	         *     var plaintext = CryptoJS.lib.PasswordBasedCipher.decrypt(CryptoJS.algo.AES, ciphertextParams, 'password', { format: CryptoJS.format.OpenSSL });
+	         */
+	        decrypt: function (cipher, ciphertext, password, cfg) {
+	            // Apply config defaults
+	            cfg = this.cfg.extend(cfg);
+
+	            // Convert string to CipherParams
+	            ciphertext = this._parse(ciphertext, cfg.format);
+
+	            // Derive key and other params
+	            var derivedParams = cfg.kdf.execute(password, cipher.keySize, cipher.ivSize, ciphertext.salt);
+
+	            // Add IV to config
+	            cfg.iv = derivedParams.iv;
+
+	            // Decrypt
+	            var plaintext = SerializableCipher.decrypt.call(this, cipher, ciphertext, derivedParams.key, cfg);
+
+	            return plaintext;
+	        }
+	    });
+	}());
+
+
+}));
+},{"./core":18}],18:[function(require,module,exports){
+;(function (root, factory) {
+	if (typeof exports === "object") {
+		// CommonJS
+		module.exports = exports = factory();
+	}
+	else if (typeof define === "function" && define.amd) {
+		// AMD
+		define([], factory);
+	}
+	else {
+		// Global (browser)
+		root.CryptoJS = factory();
+	}
+}(this, function () {
+
+	/**
+	 * CryptoJS core components.
+	 */
+	var CryptoJS = CryptoJS || (function (Math, undefined) {
+	    /*
+	     * Local polyfil of Object.create
+	     */
+	    var create = Object.create || (function () {
+	        function F() {};
+
+	        return function (obj) {
+	            var subtype;
+
+	            F.prototype = obj;
+
+	            subtype = new F();
+
+	            F.prototype = null;
+
+	            return subtype;
+	        };
+	    }())
+
+	    /**
+	     * CryptoJS namespace.
+	     */
+	    var C = {};
+
+	    /**
+	     * Library namespace.
+	     */
+	    var C_lib = C.lib = {};
+
+	    /**
+	     * Base object for prototypal inheritance.
+	     */
+	    var Base = C_lib.Base = (function () {
+
+
+	        return {
+	            /**
+	             * Creates a new object that inherits from this object.
+	             *
+	             * @param {Object} overrides Properties to copy into the new object.
+	             *
+	             * @return {Object} The new object.
+	             *
+	             * @static
+	             *
+	             * @example
+	             *
+	             *     var MyType = CryptoJS.lib.Base.extend({
+	             *         field: 'value',
+	             *
+	             *         method: function () {
+	             *         }
+	             *     });
+	             */
+	            extend: function (overrides) {
+	                // Spawn
+	                var subtype = create(this);
+
+	                // Augment
+	                if (overrides) {
+	                    subtype.mixIn(overrides);
+	                }
+
+	                // Create default initializer
+	                if (!subtype.hasOwnProperty('init') || this.init === subtype.init) {
+	                    subtype.init = function () {
+	                        subtype.$super.init.apply(this, arguments);
+	                    };
+	                }
+
+	                // Initializer's prototype is the subtype object
+	                subtype.init.prototype = subtype;
+
+	                // Reference supertype
+	                subtype.$super = this;
+
+	                return subtype;
+	            },
+
+	            /**
+	             * Extends this object and runs the init method.
+	             * Arguments to create() will be passed to init().
+	             *
+	             * @return {Object} The new object.
+	             *
+	             * @static
+	             *
+	             * @example
+	             *
+	             *     var instance = MyType.create();
+	             */
+	            create: function () {
+	                var instance = this.extend();
+	                instance.init.apply(instance, arguments);
+
+	                return instance;
+	            },
+
+	            /**
+	             * Initializes a newly created object.
+	             * Override this method to add some logic when your objects are created.
+	             *
+	             * @example
+	             *
+	             *     var MyType = CryptoJS.lib.Base.extend({
+	             *         init: function () {
+	             *             // ...
+	             *         }
+	             *     });
+	             */
+	            init: function () {
+	            },
+
+	            /**
+	             * Copies properties into this object.
+	             *
+	             * @param {Object} properties The properties to mix in.
+	             *
+	             * @example
+	             *
+	             *     MyType.mixIn({
+	             *         field: 'value'
+	             *     });
+	             */
+	            mixIn: function (properties) {
+	                for (var propertyName in properties) {
+	                    if (properties.hasOwnProperty(propertyName)) {
+	                        this[propertyName] = properties[propertyName];
+	                    }
+	                }
+
+	                // IE won't copy toString using the loop above
+	                if (properties.hasOwnProperty('toString')) {
+	                    this.toString = properties.toString;
+	                }
+	            },
+
+	            /**
+	             * Creates a copy of this object.
+	             *
+	             * @return {Object} The clone.
+	             *
+	             * @example
+	             *
+	             *     var clone = instance.clone();
+	             */
+	            clone: function () {
+	                return this.init.prototype.extend(this);
+	            }
+	        };
+	    }());
+
+>>>>>>> Stashed changes
 	    /**
 	     * An array of 32-bit words.
 	     *
@@ -16089,7 +20270,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS;
 
 }));
+<<<<<<< Updated upstream
 },{}],17:[function(require,module,exports){
+=======
+},{}],19:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -16225,7 +20410,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.enc.Base64;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16}],18:[function(require,module,exports){
+=======
+},{"./core":18}],20:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -16375,7 +20564,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.enc.Utf16;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16}],19:[function(require,module,exports){
+=======
+},{"./core":18}],21:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -16508,7 +20701,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.EvpKDF;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16,"./hmac":21,"./sha1":40}],20:[function(require,module,exports){
+=======
+},{"./core":18,"./hmac":23,"./sha1":42}],22:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -16575,7 +20772,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.format.Hex;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16}],21:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18}],23:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -16719,7 +20920,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16}],22:[function(require,module,exports){
+=======
+},{"./core":18}],24:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -16738,7 +20943,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS;
 
 }));
+<<<<<<< Updated upstream
 },{"./aes":14,"./cipher-core":15,"./core":16,"./enc-base64":17,"./enc-utf16":18,"./evpkdf":19,"./format-hex":20,"./hmac":21,"./lib-typedarrays":23,"./md5":24,"./mode-cfb":25,"./mode-ctr":27,"./mode-ctr-gladman":26,"./mode-ecb":28,"./mode-ofb":29,"./pad-ansix923":30,"./pad-iso10126":31,"./pad-iso97971":32,"./pad-nopadding":33,"./pad-zeropadding":34,"./pbkdf2":35,"./rabbit":37,"./rabbit-legacy":36,"./rc4":38,"./ripemd160":39,"./sha1":40,"./sha224":41,"./sha256":42,"./sha3":43,"./sha384":44,"./sha512":45,"./tripledes":46,"./x64-core":47}],23:[function(require,module,exports){
+=======
+},{"./aes":16,"./cipher-core":17,"./core":18,"./enc-base64":19,"./enc-utf16":20,"./evpkdf":21,"./format-hex":22,"./hmac":23,"./lib-typedarrays":25,"./md5":26,"./mode-cfb":27,"./mode-ctr":29,"./mode-ctr-gladman":28,"./mode-ecb":30,"./mode-ofb":31,"./pad-ansix923":32,"./pad-iso10126":33,"./pad-iso97971":34,"./pad-nopadding":35,"./pad-zeropadding":36,"./pbkdf2":37,"./rabbit":39,"./rabbit-legacy":38,"./rc4":40,"./ripemd160":41,"./sha1":42,"./sha224":43,"./sha256":44,"./sha3":45,"./sha384":46,"./sha512":47,"./tripledes":48,"./x64-core":49}],25:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -16815,7 +21024,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.lib.WordArray;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16}],24:[function(require,module,exports){
+=======
+},{"./core":18}],26:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17084,7 +21297,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.MD5;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16}],25:[function(require,module,exports){
+=======
+},{"./core":18}],27:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17163,7 +21380,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.mode.CFB;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16}],26:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18}],28:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17280,7 +21501,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.mode.CTRGladman;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16}],27:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18}],29:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17339,7 +21564,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.mode.CTR;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16}],28:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18}],30:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17380,7 +21609,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.mode.ECB;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16}],29:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18}],31:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17435,7 +21668,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.mode.OFB;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16}],30:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18}],32:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17485,7 +21722,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.pad.Ansix923;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16}],31:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18}],33:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17530,7 +21771,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.pad.Iso10126;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16}],32:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18}],34:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17571,7 +21816,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.pad.Iso97971;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16}],33:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18}],35:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17602,7 +21851,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.pad.NoPadding;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16}],34:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18}],36:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17648,7 +21901,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.pad.ZeroPadding;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16}],35:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18}],37:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17794,7 +22051,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.PBKDF2;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16,"./hmac":21,"./sha1":40}],36:[function(require,module,exports){
+=======
+},{"./core":18,"./hmac":23,"./sha1":42}],38:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17985,7 +22246,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.RabbitLegacy;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16,"./enc-base64":17,"./evpkdf":19,"./md5":24}],37:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18,"./enc-base64":19,"./evpkdf":21,"./md5":26}],39:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -18178,7 +22443,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.Rabbit;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16,"./enc-base64":17,"./evpkdf":19,"./md5":24}],38:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18,"./enc-base64":19,"./evpkdf":21,"./md5":26}],40:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -18318,7 +22587,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.RC4;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16,"./enc-base64":17,"./evpkdf":19,"./md5":24}],39:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18,"./enc-base64":19,"./evpkdf":21,"./md5":26}],41:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -18586,7 +22859,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.RIPEMD160;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16}],40:[function(require,module,exports){
+=======
+},{"./core":18}],42:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -18737,7 +23014,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.SHA1;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16}],41:[function(require,module,exports){
+=======
+},{"./core":18}],43:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -18818,7 +23099,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.SHA224;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16,"./sha256":42}],42:[function(require,module,exports){
+=======
+},{"./core":18,"./sha256":44}],44:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19018,7 +23303,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.SHA256;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16}],43:[function(require,module,exports){
+=======
+},{"./core":18}],45:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19342,7 +23631,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.SHA3;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16,"./x64-core":47}],44:[function(require,module,exports){
+=======
+},{"./core":18,"./x64-core":49}],46:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19426,7 +23719,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.SHA384;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16,"./sha512":45,"./x64-core":47}],45:[function(require,module,exports){
+=======
+},{"./core":18,"./sha512":47,"./x64-core":49}],47:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19750,7 +24047,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.SHA512;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16,"./x64-core":47}],46:[function(require,module,exports){
+=======
+},{"./core":18,"./x64-core":49}],48:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -20521,7 +24822,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS.TripleDES;
 
 }));
+<<<<<<< Updated upstream
 },{"./cipher-core":15,"./core":16,"./enc-base64":17,"./evpkdf":19,"./md5":24}],47:[function(require,module,exports){
+=======
+},{"./cipher-core":17,"./core":18,"./enc-base64":19,"./evpkdf":21,"./md5":26}],49:[function(require,module,exports){
+>>>>>>> Stashed changes
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -20826,7 +25131,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 	return CryptoJS;
 
 }));
+<<<<<<< Updated upstream
 },{"./core":16}],48:[function(require,module,exports){
+=======
+},{"./core":18}],50:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (global){
 /*! https://mths.be/utf8js v2.1.2 by @mathias */
 ;(function(root) {
@@ -21074,7 +25383,11 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 }(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+<<<<<<< Updated upstream
 },{}],49:[function(require,module,exports){
+=======
+},{}],51:[function(require,module,exports){
+>>>>>>> Stashed changes
 var Web3 = require('./lib/web3');
 
 // dont override global variable
@@ -21084,7 +25397,11 @@ if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
 
 module.exports = Web3;
 
+<<<<<<< Updated upstream
 },{"./lib/web3":71}],50:[function(require,module,exports){
+=======
+},{"./lib/web3":73}],52:[function(require,module,exports){
+>>>>>>> Stashed changes
 module.exports=[
   {
     "constant": true,
@@ -21340,7 +25657,11 @@ module.exports=[
   }
 ]
 
+<<<<<<< Updated upstream
 },{}],51:[function(require,module,exports){
+=======
+},{}],53:[function(require,module,exports){
+>>>>>>> Stashed changes
 module.exports=[
   {
     "constant": true,
@@ -21450,7 +25771,11 @@ module.exports=[
   }
 ]
 
+<<<<<<< Updated upstream
 },{}],52:[function(require,module,exports){
+=======
+},{}],54:[function(require,module,exports){
+>>>>>>> Stashed changes
 module.exports=[
   {
     "constant": false,
@@ -21598,7 +25923,11 @@ module.exports=[
   }
 ]
 
+<<<<<<< Updated upstream
 },{}],53:[function(require,module,exports){
+=======
+},{}],55:[function(require,module,exports){
+>>>>>>> Stashed changes
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -21631,7 +25960,11 @@ SolidityTypeAddress.prototype.staticPartLength = function (name) {
 module.exports = SolidityTypeAddress;
 
 
+<<<<<<< Updated upstream
 },{"./formatters":58,"./type":63}],54:[function(require,module,exports){
+=======
+},{"./formatters":60,"./type":65}],56:[function(require,module,exports){
+>>>>>>> Stashed changes
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -21663,7 +25996,11 @@ SolidityTypeBool.prototype.staticPartLength = function (name) {
 
 module.exports = SolidityTypeBool;
 
+<<<<<<< Updated upstream
 },{"./formatters":58,"./type":63}],55:[function(require,module,exports){
+=======
+},{"./formatters":60,"./type":65}],57:[function(require,module,exports){
+>>>>>>> Stashed changes
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -21703,7 +26040,11 @@ SolidityTypeBytes.prototype.staticPartLength = function (name) {
 
 module.exports = SolidityTypeBytes;
 
+<<<<<<< Updated upstream
 },{"./formatters":58,"./type":63}],56:[function(require,module,exports){
+=======
+},{"./formatters":60,"./type":65}],58:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -21965,7 +26306,11 @@ var coder = new SolidityCoder([
 module.exports = coder;
 
 
+<<<<<<< Updated upstream
 },{"./address":53,"./bool":54,"./bytes":55,"./dynamicbytes":57,"./formatters":58,"./int":59,"./real":61,"./string":62,"./uint":64,"./ureal":65}],57:[function(require,module,exports){
+=======
+},{"./address":55,"./bool":56,"./bytes":57,"./dynamicbytes":59,"./formatters":60,"./int":61,"./real":63,"./string":64,"./uint":66,"./ureal":67}],59:[function(require,module,exports){
+>>>>>>> Stashed changes
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -21992,7 +26337,11 @@ SolidityTypeDynamicBytes.prototype.isDynamicType = function () {
 module.exports = SolidityTypeDynamicBytes;
 
 
+<<<<<<< Updated upstream
 },{"./formatters":58,"./type":63}],58:[function(require,module,exports){
+=======
+},{"./formatters":60,"./type":65}],60:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -22244,7 +26593,11 @@ module.exports = {
 };
 
 
+<<<<<<< Updated upstream
 },{"../utils/config":67,"../utils/utils":69,"./param":60,"bignumber.js":98}],59:[function(require,module,exports){
+=======
+},{"../utils/config":69,"../utils/utils":71,"./param":62,"bignumber.js":100}],61:[function(require,module,exports){
+>>>>>>> Stashed changes
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -22282,7 +26635,11 @@ SolidityTypeInt.prototype.staticPartLength = function (name) {
 
 module.exports = SolidityTypeInt;
 
+<<<<<<< Updated upstream
 },{"./formatters":58,"./type":63}],60:[function(require,module,exports){
+=======
+},{"./formatters":60,"./type":65}],62:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -22436,7 +26793,11 @@ SolidityParam.encodeList = function (params) {
 module.exports = SolidityParam;
 
 
+<<<<<<< Updated upstream
 },{"../utils/utils":69}],61:[function(require,module,exports){
+=======
+},{"../utils/utils":71}],63:[function(require,module,exports){
+>>>>>>> Stashed changes
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -22474,7 +26835,11 @@ SolidityTypeReal.prototype.staticPartLength = function (name) {
 
 module.exports = SolidityTypeReal;
 
+<<<<<<< Updated upstream
 },{"./formatters":58,"./type":63}],62:[function(require,module,exports){
+=======
+},{"./formatters":60,"./type":65}],64:[function(require,module,exports){
+>>>>>>> Stashed changes
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -22501,7 +26866,11 @@ SolidityTypeString.prototype.isDynamicType = function () {
 module.exports = SolidityTypeString;
 
 
+<<<<<<< Updated upstream
 },{"./formatters":58,"./type":63}],63:[function(require,module,exports){
+=======
+},{"./formatters":60,"./type":65}],65:[function(require,module,exports){
+>>>>>>> Stashed changes
 var f = require('./formatters');
 var SolidityParam = require('./param');
 
@@ -22748,7 +27117,11 @@ SolidityType.prototype.decode = function (bytes, offset, name) {
 
 module.exports = SolidityType;
 
+<<<<<<< Updated upstream
 },{"./formatters":58,"./param":60}],64:[function(require,module,exports){
+=======
+},{"./formatters":60,"./param":62}],66:[function(require,module,exports){
+>>>>>>> Stashed changes
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -22786,7 +27159,11 @@ SolidityTypeUInt.prototype.staticPartLength = function (name) {
 
 module.exports = SolidityTypeUInt;
 
+<<<<<<< Updated upstream
 },{"./formatters":58,"./type":63}],65:[function(require,module,exports){
+=======
+},{"./formatters":60,"./type":65}],67:[function(require,module,exports){
+>>>>>>> Stashed changes
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -22824,7 +27201,11 @@ SolidityTypeUReal.prototype.staticPartLength = function (name) {
 
 module.exports = SolidityTypeUReal;
 
+<<<<<<< Updated upstream
 },{"./formatters":58,"./type":63}],66:[function(require,module,exports){
+=======
+},{"./formatters":60,"./type":65}],68:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 // go env doesn't have and need XMLHttpRequest
@@ -22835,7 +27216,11 @@ if (typeof XMLHttpRequest === 'undefined') {
 }
 
 
+<<<<<<< Updated upstream
 },{}],67:[function(require,module,exports){
+=======
+},{}],69:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -22916,7 +27301,11 @@ module.exports = {
 };
 
 
+<<<<<<< Updated upstream
 },{"bignumber.js":98}],68:[function(require,module,exports){
+=======
+},{"bignumber.js":100}],70:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -22956,7 +27345,11 @@ module.exports = function (value, options) {
 };
 
 
+<<<<<<< Updated upstream
 },{"crypto-js":22,"crypto-js/sha3":43}],69:[function(require,module,exports){
+=======
+},{"crypto-js":24,"crypto-js/sha3":45}],71:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -23555,12 +27948,20 @@ module.exports = {
     isJson: isJson
 };
 
+<<<<<<< Updated upstream
 },{"./sha3.js":68,"bignumber.js":98,"utf8":48}],70:[function(require,module,exports){
+=======
+},{"./sha3.js":70,"bignumber.js":100,"utf8":50}],72:[function(require,module,exports){
+>>>>>>> Stashed changes
 module.exports={
     "version": "0.16.0"
 }
 
+<<<<<<< Updated upstream
 },{}],71:[function(require,module,exports){
+=======
+},{}],73:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -23708,7 +28109,11 @@ Web3.prototype.createBatch = function () {
 module.exports = Web3;
 
 
+<<<<<<< Updated upstream
 },{"./utils/sha3":68,"./utils/utils":69,"./version.json":70,"./web3/batch":73,"./web3/extend":77,"./web3/httpprovider":81,"./web3/iban":82,"./web3/ipcprovider":83,"./web3/methods/db":86,"./web3/methods/eth":87,"./web3/methods/net":88,"./web3/methods/personal":89,"./web3/methods/shh":90,"./web3/property":93,"./web3/requestmanager":94,"./web3/settings":95}],72:[function(require,module,exports){
+=======
+},{"./utils/sha3":70,"./utils/utils":71,"./version.json":72,"./web3/batch":75,"./web3/extend":79,"./web3/httpprovider":83,"./web3/iban":84,"./web3/ipcprovider":85,"./web3/methods/db":88,"./web3/methods/eth":89,"./web3/methods/net":90,"./web3/methods/personal":91,"./web3/methods/shh":92,"./web3/property":95,"./web3/requestmanager":96,"./web3/settings":97}],74:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -23798,7 +28203,11 @@ AllSolidityEvents.prototype.attachToContract = function (contract) {
 module.exports = AllSolidityEvents;
 
 
+<<<<<<< Updated upstream
 },{"../utils/sha3":68,"../utils/utils":69,"./event":76,"./filter":78,"./formatters":79,"./methods/watches":91}],73:[function(require,module,exports){
+=======
+},{"../utils/sha3":70,"../utils/utils":71,"./event":78,"./filter":80,"./formatters":81,"./methods/watches":93}],75:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -23866,7 +28275,11 @@ Batch.prototype.execute = function () {
 module.exports = Batch;
 
 
+<<<<<<< Updated upstream
 },{"./errors":75,"./jsonrpc":84}],74:[function(require,module,exports){
+=======
+},{"./errors":77,"./jsonrpc":86}],76:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -24166,7 +28579,11 @@ var Contract = function (eth, abi, address) {
 
 module.exports = ContractFactory;
 
+<<<<<<< Updated upstream
 },{"../solidity/coder":56,"../utils/utils":69,"./allevents":72,"./event":76,"./function":80}],75:[function(require,module,exports){
+=======
+},{"../solidity/coder":58,"../utils/utils":71,"./allevents":74,"./event":78,"./function":82}],77:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -24206,7 +28623,11 @@ module.exports = {
 };
 
 
+<<<<<<< Updated upstream
 },{}],76:[function(require,module,exports){
+=======
+},{}],78:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -24416,7 +28837,11 @@ SolidityEvent.prototype.attachToContract = function (contract) {
 module.exports = SolidityEvent;
 
 
+<<<<<<< Updated upstream
 },{"../solidity/coder":56,"../utils/sha3":68,"../utils/utils":69,"./filter":78,"./formatters":79,"./methods/watches":91}],77:[function(require,module,exports){
+=======
+},{"../solidity/coder":58,"../utils/sha3":70,"../utils/utils":71,"./filter":80,"./formatters":81,"./methods/watches":93}],79:[function(require,module,exports){
+>>>>>>> Stashed changes
 var formatters = require('./formatters');
 var utils = require('./../utils/utils');
 var Method = require('./method');
@@ -24466,7 +28891,11 @@ var extend = function (web3) {
 module.exports = extend;
 
 
+<<<<<<< Updated upstream
 },{"./../utils/utils":69,"./formatters":79,"./method":85,"./property":93}],78:[function(require,module,exports){
+=======
+},{"./../utils/utils":71,"./formatters":81,"./method":87,"./property":95}],80:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -24698,7 +29127,11 @@ Filter.prototype.get = function (callback) {
 module.exports = Filter;
 
 
+<<<<<<< Updated upstream
 },{"../utils/utils":69,"./formatters":79}],79:[function(require,module,exports){
+=======
+},{"../utils/utils":71,"./formatters":81}],81:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -24999,7 +29432,11 @@ module.exports = {
 };
 
 
+<<<<<<< Updated upstream
 },{"../utils/config":67,"../utils/utils":69,"./iban":82}],80:[function(require,module,exports){
+=======
+},{"../utils/config":69,"../utils/utils":71,"./iban":84}],82:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -25248,7 +29685,11 @@ SolidityFunction.prototype.attachToContract = function (contract) {
 module.exports = SolidityFunction;
 
 
+<<<<<<< Updated upstream
 },{"../solidity/coder":56,"../utils/sha3":68,"../utils/utils":69,"./formatters":79}],81:[function(require,module,exports){
+=======
+},{"../solidity/coder":58,"../utils/sha3":70,"../utils/utils":71,"./formatters":81}],83:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -25396,7 +29837,11 @@ HttpProvider.prototype.isConnected = function() {
 module.exports = HttpProvider;
 
 
+<<<<<<< Updated upstream
 },{"./errors":75,"xmlhttprequest":66}],82:[function(require,module,exports){
+=======
+},{"./errors":77,"xmlhttprequest":68}],84:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -25625,7 +30070,11 @@ Iban.prototype.toString = function () {
 module.exports = Iban;
 
 
+<<<<<<< Updated upstream
 },{"bignumber.js":98}],83:[function(require,module,exports){
+=======
+},{"bignumber.js":100}],85:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -25834,7 +30283,11 @@ IpcProvider.prototype.sendAsync = function (payload, callback) {
 module.exports = IpcProvider;
 
 
+<<<<<<< Updated upstream
 },{"../utils/utils":69,"./errors":75}],84:[function(require,module,exports){
+=======
+},{"../utils/utils":71,"./errors":77}],86:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -25927,7 +30380,11 @@ Jsonrpc.prototype.toBatchPayload = function (messages) {
 module.exports = Jsonrpc;
 
 
+<<<<<<< Updated upstream
 },{}],85:[function(require,module,exports){
+=======
+},{}],87:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -26094,7 +30551,11 @@ Method.prototype.request = function () {
 module.exports = Method;
 
 
+<<<<<<< Updated upstream
 },{"../utils/utils":69,"./errors":75}],86:[function(require,module,exports){
+=======
+},{"../utils/utils":71,"./errors":77}],88:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -26162,7 +30623,11 @@ var methods = function () {
 
 module.exports = DB;
 
+<<<<<<< Updated upstream
 },{"../method":85}],87:[function(require,module,exports){
+=======
+},{"../method":87}],89:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -26507,7 +30972,11 @@ Eth.prototype.isSyncing = function (callback) {
 module.exports = Eth;
 
 
+<<<<<<< Updated upstream
 },{"../../utils/config":67,"../../utils/utils":69,"../contract":74,"../filter":78,"../formatters":79,"../iban":82,"../method":85,"../namereg":92,"../property":93,"../syncing":96,"../transfer":97,"./watches":91}],88:[function(require,module,exports){
+=======
+},{"../../utils/config":69,"../../utils/utils":71,"../contract":76,"../filter":80,"../formatters":81,"../iban":84,"../method":87,"../namereg":94,"../property":95,"../syncing":98,"../transfer":99,"./watches":93}],90:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -26561,7 +31030,11 @@ var properties = function () {
 
 module.exports = Net;
 
+<<<<<<< Updated upstream
 },{"../../utils/utils":69,"../property":93}],89:[function(require,module,exports){
+=======
+},{"../../utils/utils":71,"../property":95}],91:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -26648,7 +31121,11 @@ var properties = function () {
 
 module.exports = Personal;
 
+<<<<<<< Updated upstream
 },{"../formatters":79,"../method":85,"../property":93}],90:[function(require,module,exports){
+=======
+},{"../formatters":81,"../method":87,"../property":95}],92:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -26736,7 +31213,11 @@ var methods = function () {
 module.exports = Shh;
 
 
+<<<<<<< Updated upstream
 },{"../filter":78,"../formatters":79,"../method":85,"./watches":91}],91:[function(require,module,exports){
+=======
+},{"../filter":80,"../formatters":81,"../method":87,"./watches":93}],93:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -26852,7 +31333,11 @@ module.exports = {
 };
 
 
+<<<<<<< Updated upstream
 },{"../method":85}],92:[function(require,module,exports){
+=======
+},{"../method":87}],94:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -26893,7 +31378,11 @@ module.exports = {
 };
 
 
+<<<<<<< Updated upstream
 },{"../contracts/GlobalRegistrar.json":50,"../contracts/ICAPRegistrar.json":51}],93:[function(require,module,exports){
+=======
+},{"../contracts/GlobalRegistrar.json":52,"../contracts/ICAPRegistrar.json":53}],95:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -27039,7 +31528,11 @@ Property.prototype.request = function () {
 module.exports = Property;
 
 
+<<<<<<< Updated upstream
 },{"../utils/utils":69}],94:[function(require,module,exports){
+=======
+},{"../utils/utils":71}],96:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -27306,7 +31799,11 @@ RequestManager.prototype.poll = function () {
 module.exports = RequestManager;
 
 
+<<<<<<< Updated upstream
 },{"../utils/config":67,"../utils/utils":69,"./errors":75,"./jsonrpc":84}],95:[function(require,module,exports){
+=======
+},{"../utils/config":69,"../utils/utils":71,"./errors":77,"./jsonrpc":86}],97:[function(require,module,exports){
+>>>>>>> Stashed changes
 
 
 var Settings = function () {
@@ -27317,7 +31814,11 @@ var Settings = function () {
 module.exports = Settings;
 
 
+<<<<<<< Updated upstream
 },{}],96:[function(require,module,exports){
+=======
+},{}],98:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -27412,7 +31913,11 @@ IsSyncing.prototype.stopWatching = function () {
 module.exports = IsSyncing;
 
 
+<<<<<<< Updated upstream
 },{"../utils/utils":69,"./formatters":79}],97:[function(require,module,exports){
+=======
+},{"../utils/utils":71,"./formatters":81}],99:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*
     This file is part of web3.js.
 
@@ -27506,7 +32011,11 @@ var deposit = function (eth, from, to, value, client, callback) {
 module.exports = transfer;
 
 
+<<<<<<< Updated upstream
 },{"../contracts/SmartExchange.json":52,"./iban":82}],98:[function(require,module,exports){
+=======
+},{"../contracts/SmartExchange.json":54,"./iban":84}],100:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*! bignumber.js v2.0.7 https://github.com/MikeMcl/bignumber.js/LICENCE */
 
 ;(function (global) {
@@ -30191,23 +34700,42 @@ module.exports = transfer;
     }
 })(this);
 
+<<<<<<< Updated upstream
 },{"crypto":153}],99:[function(require,module,exports){
 module.exports = {
   "BlockOneOracle": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracle.sol.js"),
   "BlockOneOracleClient": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleClient.sol.js"),
+=======
+},{"crypto":155}],101:[function(require,module,exports){
+module.exports = {
+  "BlockOneOracle": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracle.sol.js"),
+>>>>>>> Stashed changes
   "BlockOneOracleClientI": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleClientI.sol.js"),
   "BlockOneOracleClientTest": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleClientTest.sol.js"),
   "BlockOneOracleEndOfDay": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleEndOfDay.sol.js"),
   "BlockOneOracleEntityConnect": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleEntityConnect.sol.js"),
   "BlockOneOracleIntraDay": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleIntraDay.sol.js"),
+<<<<<<< Updated upstream
   "BlockOneUser": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneUser.sol.js"),
   "Entitlement": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/Entitlement.sol.js"),
   "EntitlementRegistry": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/EntitlementRegistry.sol.js"),
+=======
+  "BlockOneOracleClient": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleClient.sol.js"),
+  "BlockOneUser": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneUser.sol.js"),
+  "Entitlement": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/Entitlement.sol.js"),
+  "EntitlementMock": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/EntitlementMock.sol.js"),
+  "EntitlementRegistry": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/EntitlementRegistry.sol.js"),
+  "EntitlementRegistryMock": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/EntitlementRegistryMock.sol.js"),
+>>>>>>> Stashed changes
   "Migrations": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/Migrations.sol.js"),
   "Ratings": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/Ratings.sol.js"),
   "RicUri": require("/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/RicUri.sol.js"),
 };
+<<<<<<< Updated upstream
 },{"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracle.sol.js":1,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleClient.sol.js":2,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleClientI.sol.js":3,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleClientTest.sol.js":4,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleEndOfDay.sol.js":5,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleEntityConnect.sol.js":6,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleIntraDay.sol.js":7,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneUser.sol.js":8,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/Entitlement.sol.js":9,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/EntitlementRegistry.sol.js":10,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/Migrations.sol.js":11,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/Ratings.sol.js":12,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/RicUri.sol.js":13}],100:[function(require,module,exports){
+=======
+},{"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracle.sol.js":1,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleClient.sol.js":2,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleClientI.sol.js":3,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleClientTest.sol.js":4,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleEndOfDay.sol.js":5,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleEntityConnect.sol.js":6,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneOracleIntraDay.sol.js":7,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/BlockOneUser.sol.js":8,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/Entitlement.sol.js":9,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/EntitlementMock.sol.js":10,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/EntitlementRegistry.sol.js":11,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/EntitlementRegistryMock.sol.js":12,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/Migrations.sol.js":13,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/Ratings.sol.js":14,"/home/bitpal/Work/b9lab/projects/hackthevalley/truffle/build/contracts/RicUri.sol.js":15}],102:[function(require,module,exports){
+>>>>>>> Stashed changes
 var asn1 = exports;
 
 asn1.bignum = require('bn.js');
@@ -30218,7 +34746,11 @@ asn1.constants = require('./asn1/constants');
 asn1.decoders = require('./asn1/decoders');
 asn1.encoders = require('./asn1/encoders');
 
+<<<<<<< Updated upstream
 },{"./asn1/api":101,"./asn1/base":103,"./asn1/constants":107,"./asn1/decoders":109,"./asn1/encoders":112,"bn.js":115}],101:[function(require,module,exports){
+=======
+},{"./asn1/api":103,"./asn1/base":105,"./asn1/constants":109,"./asn1/decoders":111,"./asn1/encoders":114,"bn.js":117}],103:[function(require,module,exports){
+>>>>>>> Stashed changes
 var asn1 = require('../asn1');
 var inherits = require('inherits');
 
@@ -30281,7 +34813,11 @@ Entity.prototype.encode = function encode(data, enc, /* internal */ reporter) {
   return this._getEncoder(enc).encode(data, reporter);
 };
 
+<<<<<<< Updated upstream
 },{"../asn1":100,"inherits":191,"vm":233}],102:[function(require,module,exports){
+=======
+},{"../asn1":102,"inherits":193,"vm":235}],104:[function(require,module,exports){
+>>>>>>> Stashed changes
 var inherits = require('inherits');
 var Reporter = require('../base').Reporter;
 var Buffer = require('buffer').Buffer;
@@ -30399,7 +34935,11 @@ EncoderBuffer.prototype.join = function join(out, offset) {
   return out;
 };
 
+<<<<<<< Updated upstream
 },{"../base":103,"buffer":145,"inherits":191}],103:[function(require,module,exports){
+=======
+},{"../base":105,"buffer":147,"inherits":193}],105:[function(require,module,exports){
+>>>>>>> Stashed changes
 var base = exports;
 
 base.Reporter = require('./reporter').Reporter;
@@ -30407,7 +34947,11 @@ base.DecoderBuffer = require('./buffer').DecoderBuffer;
 base.EncoderBuffer = require('./buffer').EncoderBuffer;
 base.Node = require('./node');
 
+<<<<<<< Updated upstream
 },{"./buffer":102,"./node":104,"./reporter":105}],104:[function(require,module,exports){
+=======
+},{"./buffer":104,"./node":106,"./reporter":107}],106:[function(require,module,exports){
+>>>>>>> Stashed changes
 var Reporter = require('../base').Reporter;
 var EncoderBuffer = require('../base').EncoderBuffer;
 var DecoderBuffer = require('../base').DecoderBuffer;
@@ -31043,7 +35587,11 @@ Node.prototype._isPrintstr = function isPrintstr(str) {
   return /^[A-Za-z0-9 '\(\)\+,\-\.\/:=\?]*$/.test(str);
 };
 
+<<<<<<< Updated upstream
 },{"../base":103,"minimalistic-assert":195}],105:[function(require,module,exports){
+=======
+},{"../base":105,"minimalistic-assert":197}],107:[function(require,module,exports){
+>>>>>>> Stashed changes
 var inherits = require('inherits');
 
 function Reporter(options) {
@@ -31166,7 +35714,11 @@ ReporterError.prototype.rethrow = function rethrow(msg) {
   return this;
 };
 
+<<<<<<< Updated upstream
 },{"inherits":191}],106:[function(require,module,exports){
+=======
+},{"inherits":193}],108:[function(require,module,exports){
+>>>>>>> Stashed changes
 var constants = require('../constants');
 
 exports.tagClass = {
@@ -31210,7 +35762,11 @@ exports.tag = {
 };
 exports.tagByName = constants._reverse(exports.tag);
 
+<<<<<<< Updated upstream
 },{"../constants":107}],107:[function(require,module,exports){
+=======
+},{"../constants":109}],109:[function(require,module,exports){
+>>>>>>> Stashed changes
 var constants = exports;
 
 // Helper
@@ -31231,7 +35787,11 @@ constants._reverse = function reverse(map) {
 
 constants.der = require('./der');
 
+<<<<<<< Updated upstream
 },{"./der":106}],108:[function(require,module,exports){
+=======
+},{"./der":108}],110:[function(require,module,exports){
+>>>>>>> Stashed changes
 var inherits = require('inherits');
 
 var asn1 = require('../../asn1');
@@ -31557,13 +36117,21 @@ function derDecodeLen(buf, primitive, fail) {
   return len;
 }
 
+<<<<<<< Updated upstream
 },{"../../asn1":100,"inherits":191}],109:[function(require,module,exports){
+=======
+},{"../../asn1":102,"inherits":193}],111:[function(require,module,exports){
+>>>>>>> Stashed changes
 var decoders = exports;
 
 decoders.der = require('./der');
 decoders.pem = require('./pem');
 
+<<<<<<< Updated upstream
 },{"./der":108,"./pem":110}],110:[function(require,module,exports){
+=======
+},{"./der":110,"./pem":112}],112:[function(require,module,exports){
+>>>>>>> Stashed changes
 var inherits = require('inherits');
 var Buffer = require('buffer').Buffer;
 
@@ -31614,7 +36182,11 @@ PEMDecoder.prototype.decode = function decode(data, options) {
   return DERDecoder.prototype.decode.call(this, input, options);
 };
 
+<<<<<<< Updated upstream
 },{"./der":108,"buffer":145,"inherits":191}],111:[function(require,module,exports){
+=======
+},{"./der":110,"buffer":147,"inherits":193}],113:[function(require,module,exports){
+>>>>>>> Stashed changes
 var inherits = require('inherits');
 var Buffer = require('buffer').Buffer;
 
@@ -31911,13 +36483,21 @@ function encodeTag(tag, primitive, cls, reporter) {
   return res;
 }
 
+<<<<<<< Updated upstream
 },{"../../asn1":100,"buffer":145,"inherits":191}],112:[function(require,module,exports){
+=======
+},{"../../asn1":102,"buffer":147,"inherits":193}],114:[function(require,module,exports){
+>>>>>>> Stashed changes
 var encoders = exports;
 
 encoders.der = require('./der');
 encoders.pem = require('./pem');
 
+<<<<<<< Updated upstream
 },{"./der":111,"./pem":113}],113:[function(require,module,exports){
+=======
+},{"./der":113,"./pem":115}],115:[function(require,module,exports){
+>>>>>>> Stashed changes
 var inherits = require('inherits');
 
 var DEREncoder = require('./der');
@@ -31940,7 +36520,11 @@ PEMEncoder.prototype.encode = function encode(data, options) {
   return out.join('\n');
 };
 
+<<<<<<< Updated upstream
 },{"./der":111,"inherits":191}],114:[function(require,module,exports){
+=======
+},{"./der":113,"inherits":193}],116:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict'
 
 exports.byteLength = byteLength
@@ -32056,7 +36640,11 @@ function fromByteArray (uint8) {
   return parts.join('')
 }
 
+<<<<<<< Updated upstream
 },{}],115:[function(require,module,exports){
+=======
+},{}],117:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (module, exports) {
   'use strict';
 
@@ -33758,6 +38346,7 @@ function fromByteArray (uint8) {
     for (var i = 0; i < l; i++) {
       rb |= (x & 1) << (l - i - 1);
       x >>= 1;
+<<<<<<< Updated upstream
     }
 
     return rb;
@@ -34238,6 +38827,488 @@ function fromByteArray (uint8) {
 
     this.words[0] -= num;
 
+=======
+    }
+
+    return rb;
+  };
+
+  // Performs "tweedling" phase, therefore 'emulating'
+  // behaviour of the recursive algorithm
+  FFTM.prototype.permute = function permute (rbt, rws, iws, rtws, itws, N) {
+    for (var i = 0; i < N; i++) {
+      rtws[i] = rws[rbt[i]];
+      itws[i] = iws[rbt[i]];
+    }
+  };
+
+  FFTM.prototype.transform = function transform (rws, iws, rtws, itws, N, rbt) {
+    this.permute(rbt, rws, iws, rtws, itws, N);
+
+    for (var s = 1; s < N; s <<= 1) {
+      var l = s << 1;
+
+      var rtwdf = Math.cos(2 * Math.PI / l);
+      var itwdf = Math.sin(2 * Math.PI / l);
+
+      for (var p = 0; p < N; p += l) {
+        var rtwdf_ = rtwdf;
+        var itwdf_ = itwdf;
+
+        for (var j = 0; j < s; j++) {
+          var re = rtws[p + j];
+          var ie = itws[p + j];
+
+          var ro = rtws[p + j + s];
+          var io = itws[p + j + s];
+
+          var rx = rtwdf_ * ro - itwdf_ * io;
+
+          io = rtwdf_ * io + itwdf_ * ro;
+          ro = rx;
+
+          rtws[p + j] = re + ro;
+          itws[p + j] = ie + io;
+
+          rtws[p + j + s] = re - ro;
+          itws[p + j + s] = ie - io;
+
+          /* jshint maxdepth : false */
+          if (j !== l) {
+            rx = rtwdf * rtwdf_ - itwdf * itwdf_;
+
+            itwdf_ = rtwdf * itwdf_ + itwdf * rtwdf_;
+            rtwdf_ = rx;
+          }
+        }
+      }
+    }
+  };
+
+  FFTM.prototype.guessLen13b = function guessLen13b (n, m) {
+    var N = Math.max(m, n) | 1;
+    var odd = N & 1;
+    var i = 0;
+    for (N = N / 2 | 0; N; N = N >>> 1) {
+      i++;
+    }
+
+    return 1 << i + 1 + odd;
+  };
+
+  FFTM.prototype.conjugate = function conjugate (rws, iws, N) {
+    if (N <= 1) return;
+
+    for (var i = 0; i < N / 2; i++) {
+      var t = rws[i];
+
+      rws[i] = rws[N - i - 1];
+      rws[N - i - 1] = t;
+
+      t = iws[i];
+
+      iws[i] = -iws[N - i - 1];
+      iws[N - i - 1] = -t;
+    }
+  };
+
+  FFTM.prototype.normalize13b = function normalize13b (ws, N) {
+    var carry = 0;
+    for (var i = 0; i < N / 2; i++) {
+      var w = Math.round(ws[2 * i + 1] / N) * 0x2000 +
+        Math.round(ws[2 * i] / N) +
+        carry;
+
+      ws[i] = w & 0x3ffffff;
+
+      if (w < 0x4000000) {
+        carry = 0;
+      } else {
+        carry = w / 0x4000000 | 0;
+      }
+    }
+
+    return ws;
+  };
+
+  FFTM.prototype.convert13b = function convert13b (ws, len, rws, N) {
+    var carry = 0;
+    for (var i = 0; i < len; i++) {
+      carry = carry + (ws[i] | 0);
+
+      rws[2 * i] = carry & 0x1fff; carry = carry >>> 13;
+      rws[2 * i + 1] = carry & 0x1fff; carry = carry >>> 13;
+    }
+
+    // Pad with zeroes
+    for (i = 2 * len; i < N; ++i) {
+      rws[i] = 0;
+    }
+
+    assert(carry === 0);
+    assert((carry & ~0x1fff) === 0);
+  };
+
+  FFTM.prototype.stub = function stub (N) {
+    var ph = new Array(N);
+    for (var i = 0; i < N; i++) {
+      ph[i] = 0;
+    }
+
+    return ph;
+  };
+
+  FFTM.prototype.mulp = function mulp (x, y, out) {
+    var N = 2 * this.guessLen13b(x.length, y.length);
+
+    var rbt = this.makeRBT(N);
+
+    var _ = this.stub(N);
+
+    var rws = new Array(N);
+    var rwst = new Array(N);
+    var iwst = new Array(N);
+
+    var nrws = new Array(N);
+    var nrwst = new Array(N);
+    var niwst = new Array(N);
+
+    var rmws = out.words;
+    rmws.length = N;
+
+    this.convert13b(x.words, x.length, rws, N);
+    this.convert13b(y.words, y.length, nrws, N);
+
+    this.transform(rws, _, rwst, iwst, N, rbt);
+    this.transform(nrws, _, nrwst, niwst, N, rbt);
+
+    for (var i = 0; i < N; i++) {
+      var rx = rwst[i] * nrwst[i] - iwst[i] * niwst[i];
+      iwst[i] = rwst[i] * niwst[i] + iwst[i] * nrwst[i];
+      rwst[i] = rx;
+    }
+
+    this.conjugate(rwst, iwst, N);
+    this.transform(rwst, iwst, rmws, _, N, rbt);
+    this.conjugate(rmws, _, N);
+    this.normalize13b(rmws, N);
+
+    out.negative = x.negative ^ y.negative;
+    out.length = x.length + y.length;
+    return out.strip();
+  };
+
+  // Multiply `this` by `num`
+  BN.prototype.mul = function mul (num) {
+    var out = new BN(null);
+    out.words = new Array(this.length + num.length);
+    return this.mulTo(num, out);
+  };
+
+  // Multiply employing FFT
+  BN.prototype.mulf = function mulf (num) {
+    var out = new BN(null);
+    out.words = new Array(this.length + num.length);
+    return jumboMulTo(this, num, out);
+  };
+
+  // In-place Multiplication
+  BN.prototype.imul = function imul (num) {
+    return this.clone().mulTo(num, this);
+  };
+
+  BN.prototype.imuln = function imuln (num) {
+    assert(typeof num === 'number');
+    assert(num < 0x4000000);
+
+    // Carry
+    var carry = 0;
+    for (var i = 0; i < this.length; i++) {
+      var w = (this.words[i] | 0) * num;
+      var lo = (w & 0x3ffffff) + (carry & 0x3ffffff);
+      carry >>= 26;
+      carry += (w / 0x4000000) | 0;
+      // NOTE: lo is 27bit maximum
+      carry += lo >>> 26;
+      this.words[i] = lo & 0x3ffffff;
+    }
+
+    if (carry !== 0) {
+      this.words[i] = carry;
+      this.length++;
+    }
+
+    return this;
+  };
+
+  BN.prototype.muln = function muln (num) {
+    return this.clone().imuln(num);
+  };
+
+  // `this` * `this`
+  BN.prototype.sqr = function sqr () {
+    return this.mul(this);
+  };
+
+  // `this` * `this` in-place
+  BN.prototype.isqr = function isqr () {
+    return this.imul(this.clone());
+  };
+
+  // Math.pow(`this`, `num`)
+  BN.prototype.pow = function pow (num) {
+    var w = toBitArray(num);
+    if (w.length === 0) return new BN(1);
+
+    // Skip leading zeroes
+    var res = this;
+    for (var i = 0; i < w.length; i++, res = res.sqr()) {
+      if (w[i] !== 0) break;
+    }
+
+    if (++i < w.length) {
+      for (var q = res.sqr(); i < w.length; i++, q = q.sqr()) {
+        if (w[i] === 0) continue;
+
+        res = res.mul(q);
+      }
+    }
+
+    return res;
+  };
+
+  // Shift-left in-place
+  BN.prototype.iushln = function iushln (bits) {
+    assert(typeof bits === 'number' && bits >= 0);
+    var r = bits % 26;
+    var s = (bits - r) / 26;
+    var carryMask = (0x3ffffff >>> (26 - r)) << (26 - r);
+    var i;
+
+    if (r !== 0) {
+      var carry = 0;
+
+      for (i = 0; i < this.length; i++) {
+        var newCarry = this.words[i] & carryMask;
+        var c = ((this.words[i] | 0) - newCarry) << r;
+        this.words[i] = c | carry;
+        carry = newCarry >>> (26 - r);
+      }
+
+      if (carry) {
+        this.words[i] = carry;
+        this.length++;
+      }
+    }
+
+    if (s !== 0) {
+      for (i = this.length - 1; i >= 0; i--) {
+        this.words[i + s] = this.words[i];
+      }
+
+      for (i = 0; i < s; i++) {
+        this.words[i] = 0;
+      }
+
+      this.length += s;
+    }
+
+    return this.strip();
+  };
+
+  BN.prototype.ishln = function ishln (bits) {
+    // TODO(indutny): implement me
+    assert(this.negative === 0);
+    return this.iushln(bits);
+  };
+
+  // Shift-right in-place
+  // NOTE: `hint` is a lowest bit before trailing zeroes
+  // NOTE: if `extended` is present - it will be filled with destroyed bits
+  BN.prototype.iushrn = function iushrn (bits, hint, extended) {
+    assert(typeof bits === 'number' && bits >= 0);
+    var h;
+    if (hint) {
+      h = (hint - (hint % 26)) / 26;
+    } else {
+      h = 0;
+    }
+
+    var r = bits % 26;
+    var s = Math.min((bits - r) / 26, this.length);
+    var mask = 0x3ffffff ^ ((0x3ffffff >>> r) << r);
+    var maskedWords = extended;
+
+    h -= s;
+    h = Math.max(0, h);
+
+    // Extended mode, copy masked part
+    if (maskedWords) {
+      for (var i = 0; i < s; i++) {
+        maskedWords.words[i] = this.words[i];
+      }
+      maskedWords.length = s;
+    }
+
+    if (s === 0) {
+      // No-op, we should not move anything at all
+    } else if (this.length > s) {
+      this.length -= s;
+      for (i = 0; i < this.length; i++) {
+        this.words[i] = this.words[i + s];
+      }
+    } else {
+      this.words[0] = 0;
+      this.length = 1;
+    }
+
+    var carry = 0;
+    for (i = this.length - 1; i >= 0 && (carry !== 0 || i >= h); i--) {
+      var word = this.words[i] | 0;
+      this.words[i] = (carry << (26 - r)) | (word >>> r);
+      carry = word & mask;
+    }
+
+    // Push carried bits as a mask
+    if (maskedWords && carry !== 0) {
+      maskedWords.words[maskedWords.length++] = carry;
+    }
+
+    if (this.length === 0) {
+      this.words[0] = 0;
+      this.length = 1;
+    }
+
+    return this.strip();
+  };
+
+  BN.prototype.ishrn = function ishrn (bits, hint, extended) {
+    // TODO(indutny): implement me
+    assert(this.negative === 0);
+    return this.iushrn(bits, hint, extended);
+  };
+
+  // Shift-left
+  BN.prototype.shln = function shln (bits) {
+    return this.clone().ishln(bits);
+  };
+
+  BN.prototype.ushln = function ushln (bits) {
+    return this.clone().iushln(bits);
+  };
+
+  // Shift-right
+  BN.prototype.shrn = function shrn (bits) {
+    return this.clone().ishrn(bits);
+  };
+
+  BN.prototype.ushrn = function ushrn (bits) {
+    return this.clone().iushrn(bits);
+  };
+
+  // Test if n bit is set
+  BN.prototype.testn = function testn (bit) {
+    assert(typeof bit === 'number' && bit >= 0);
+    var r = bit % 26;
+    var s = (bit - r) / 26;
+    var q = 1 << r;
+
+    // Fast case: bit is much higher than all existing words
+    if (this.length <= s) return false;
+
+    // Check bit and return
+    var w = this.words[s];
+
+    return !!(w & q);
+  };
+
+  // Return only lowers bits of number (in-place)
+  BN.prototype.imaskn = function imaskn (bits) {
+    assert(typeof bits === 'number' && bits >= 0);
+    var r = bits % 26;
+    var s = (bits - r) / 26;
+
+    assert(this.negative === 0, 'imaskn works only with positive numbers');
+
+    if (this.length <= s) {
+      return this;
+    }
+
+    if (r !== 0) {
+      s++;
+    }
+    this.length = Math.min(s, this.length);
+
+    if (r !== 0) {
+      var mask = 0x3ffffff ^ ((0x3ffffff >>> r) << r);
+      this.words[this.length - 1] &= mask;
+    }
+
+    return this.strip();
+  };
+
+  // Return only lowers bits of number
+  BN.prototype.maskn = function maskn (bits) {
+    return this.clone().imaskn(bits);
+  };
+
+  // Add plain number `num` to `this`
+  BN.prototype.iaddn = function iaddn (num) {
+    assert(typeof num === 'number');
+    assert(num < 0x4000000);
+    if (num < 0) return this.isubn(-num);
+
+    // Possible sign change
+    if (this.negative !== 0) {
+      if (this.length === 1 && (this.words[0] | 0) < num) {
+        this.words[0] = num - (this.words[0] | 0);
+        this.negative = 0;
+        return this;
+      }
+
+      this.negative = 0;
+      this.isubn(num);
+      this.negative = 1;
+      return this;
+    }
+
+    // Add without checks
+    return this._iaddn(num);
+  };
+
+  BN.prototype._iaddn = function _iaddn (num) {
+    this.words[0] += num;
+
+    // Carry
+    for (var i = 0; i < this.length && this.words[i] >= 0x4000000; i++) {
+      this.words[i] -= 0x4000000;
+      if (i === this.length - 1) {
+        this.words[i + 1] = 1;
+      } else {
+        this.words[i + 1]++;
+      }
+    }
+    this.length = Math.max(this.length, i + 1);
+
+    return this;
+  };
+
+  // Subtract plain number `num` from `this`
+  BN.prototype.isubn = function isubn (num) {
+    assert(typeof num === 'number');
+    assert(num < 0x4000000);
+    if (num < 0) return this.iaddn(-num);
+
+    if (this.negative !== 0) {
+      this.negative = 0;
+      this.iaddn(num);
+      this.negative = 1;
+      return this;
+    }
+
+    this.words[0] -= num;
+
+>>>>>>> Stashed changes
     if (this.length === 1 && this.words[0] < 0) {
       this.words[0] = -this.words[0];
       this.negative = 1;
@@ -35485,7 +40556,11 @@ function fromByteArray (uint8) {
   };
 })(typeof module === 'undefined' || module, this);
 
+<<<<<<< Updated upstream
 },{}],116:[function(require,module,exports){
+=======
+},{}],118:[function(require,module,exports){
+>>>>>>> Stashed changes
 var r;
 
 module.exports = function rand(len) {
@@ -35544,9 +40619,15 @@ if (typeof window === 'object') {
   }
 }
 
+<<<<<<< Updated upstream
 },{"crypto":117}],117:[function(require,module,exports){
 
 },{}],118:[function(require,module,exports){
+=======
+},{"crypto":119}],119:[function(require,module,exports){
+
+},{}],120:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 // based on the aes implimentation in triple sec
 // https://github.com/keybase/triplesec
@@ -35727,7 +40808,11 @@ AES.prototype._doCryptBlock = function (M, keySchedule, SUB_MIX, SBOX) {
 exports.AES = AES
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145}],119:[function(require,module,exports){
+=======
+},{"buffer":147}],121:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var aes = require('./aes')
 var Transform = require('cipher-base')
@@ -35826,6 +40911,7 @@ function xorTest (a, b) {
   }
   return out
 }
+<<<<<<< Updated upstream
 
 }).call(this,require("buffer").Buffer)
 },{"./aes":118,"./ghash":123,"buffer":145,"buffer-xor":144,"cipher-base":146,"inherits":191}],120:[function(require,module,exports){
@@ -35898,6 +40984,80 @@ Splitter.prototype.add = function (data) {
   this.cache = Buffer.concat([this.cache, data])
 }
 
+=======
+
+}).call(this,require("buffer").Buffer)
+},{"./aes":120,"./ghash":125,"buffer":147,"buffer-xor":146,"cipher-base":148,"inherits":193}],122:[function(require,module,exports){
+var ciphers = require('./encrypter')
+exports.createCipher = exports.Cipher = ciphers.createCipher
+exports.createCipheriv = exports.Cipheriv = ciphers.createCipheriv
+var deciphers = require('./decrypter')
+exports.createDecipher = exports.Decipher = deciphers.createDecipher
+exports.createDecipheriv = exports.Decipheriv = deciphers.createDecipheriv
+var modes = require('./modes')
+function getCiphers () {
+  return Object.keys(modes)
+}
+exports.listCiphers = exports.getCiphers = getCiphers
+
+},{"./decrypter":123,"./encrypter":124,"./modes":126}],123:[function(require,module,exports){
+(function (Buffer){
+var aes = require('./aes')
+var Transform = require('cipher-base')
+var inherits = require('inherits')
+var modes = require('./modes')
+var StreamCipher = require('./streamCipher')
+var AuthCipher = require('./authCipher')
+var ebtk = require('evp_bytestokey')
+
+inherits(Decipher, Transform)
+function Decipher (mode, key, iv) {
+  if (!(this instanceof Decipher)) {
+    return new Decipher(mode, key, iv)
+  }
+  Transform.call(this)
+  this._cache = new Splitter()
+  this._last = void 0
+  this._cipher = new aes.AES(key)
+  this._prev = new Buffer(iv.length)
+  iv.copy(this._prev)
+  this._mode = mode
+  this._autopadding = true
+}
+Decipher.prototype._update = function (data) {
+  this._cache.add(data)
+  var chunk
+  var thing
+  var out = []
+  while ((chunk = this._cache.get(this._autopadding))) {
+    thing = this._mode.decrypt(this, chunk)
+    out.push(thing)
+  }
+  return Buffer.concat(out)
+}
+Decipher.prototype._final = function () {
+  var chunk = this._cache.flush()
+  if (this._autopadding) {
+    return unpad(this._mode.decrypt(this, chunk))
+  } else if (chunk) {
+    throw new Error('data not multiple of block length')
+  }
+}
+Decipher.prototype.setAutoPadding = function (setTo) {
+  this._autopadding = !!setTo
+  return this
+}
+function Splitter () {
+  if (!(this instanceof Splitter)) {
+    return new Splitter()
+  }
+  this.cache = new Buffer('')
+}
+Splitter.prototype.add = function (data) {
+  this.cache = Buffer.concat([this.cache, data])
+}
+
+>>>>>>> Stashed changes
 Splitter.prototype.get = function (autoPadding) {
   var out
   if (autoPadding) {
@@ -35961,6 +41121,7 @@ function createDecipheriv (suite, password, iv) {
   }
   if (iv.length !== config.iv) {
     throw new TypeError('invalid iv length ' + iv.length)
+<<<<<<< Updated upstream
   }
   if (config.type === 'stream') {
     return new StreamCipher(modelist[config.mode], password, iv, true)
@@ -35975,6 +41136,22 @@ function createDecipher (suite, password) {
   if (!config) {
     throw new TypeError('invalid suite type')
   }
+=======
+  }
+  if (config.type === 'stream') {
+    return new StreamCipher(modelist[config.mode], password, iv, true)
+  } else if (config.type === 'auth') {
+    return new AuthCipher(modelist[config.mode], password, iv, true)
+  }
+  return new Decipher(modelist[config.mode], password, iv)
+}
+
+function createDecipher (suite, password) {
+  var config = modes[suite.toLowerCase()]
+  if (!config) {
+    throw new TypeError('invalid suite type')
+  }
+>>>>>>> Stashed changes
   var keys = ebtk(password, false, config.key, config.iv)
   return createDecipheriv(suite, keys.key, keys.iv)
 }
@@ -35982,7 +41159,11 @@ exports.createDecipher = createDecipher
 exports.createDecipheriv = createDecipheriv
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./aes":118,"./authCipher":119,"./modes":124,"./modes/cbc":125,"./modes/cfb":126,"./modes/cfb1":127,"./modes/cfb8":128,"./modes/ctr":129,"./modes/ecb":130,"./modes/ofb":131,"./streamCipher":132,"buffer":145,"cipher-base":146,"evp_bytestokey":182,"inherits":191}],122:[function(require,module,exports){
+=======
+},{"./aes":120,"./authCipher":121,"./modes":126,"./modes/cbc":127,"./modes/cfb":128,"./modes/cfb1":129,"./modes/cfb8":130,"./modes/ctr":131,"./modes/ecb":132,"./modes/ofb":133,"./streamCipher":134,"buffer":147,"cipher-base":148,"evp_bytestokey":184,"inherits":193}],124:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var aes = require('./aes')
 var Transform = require('cipher-base')
@@ -36108,7 +41289,11 @@ exports.createCipheriv = createCipheriv
 exports.createCipher = createCipher
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./aes":118,"./authCipher":119,"./modes":124,"./modes/cbc":125,"./modes/cfb":126,"./modes/cfb1":127,"./modes/cfb8":128,"./modes/ctr":129,"./modes/ecb":130,"./modes/ofb":131,"./streamCipher":132,"buffer":145,"cipher-base":146,"evp_bytestokey":182,"inherits":191}],123:[function(require,module,exports){
+=======
+},{"./aes":120,"./authCipher":121,"./modes":126,"./modes/cbc":127,"./modes/cfb":128,"./modes/cfb1":129,"./modes/cfb8":130,"./modes/ctr":131,"./modes/ecb":132,"./modes/ofb":133,"./streamCipher":134,"buffer":147,"cipher-base":148,"evp_bytestokey":184,"inherits":193}],125:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var zeros = new Buffer(16)
 zeros.fill(0)
@@ -36210,7 +41395,11 @@ function xor (a, b) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145}],124:[function(require,module,exports){
+=======
+},{"buffer":147}],126:[function(require,module,exports){
+>>>>>>> Stashed changes
 exports['aes-128-ecb'] = {
   cipher: 'AES',
   key: 128,
@@ -36383,7 +41572,11 @@ exports['aes-256-gcm'] = {
   type: 'auth'
 }
 
+<<<<<<< Updated upstream
 },{}],125:[function(require,module,exports){
+=======
+},{}],127:[function(require,module,exports){
+>>>>>>> Stashed changes
 var xor = require('buffer-xor')
 
 exports.encrypt = function (self, block) {
@@ -36402,7 +41595,11 @@ exports.decrypt = function (self, block) {
   return xor(out, pad)
 }
 
+<<<<<<< Updated upstream
 },{"buffer-xor":144}],126:[function(require,module,exports){
+=======
+},{"buffer-xor":146}],128:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var xor = require('buffer-xor')
 
@@ -36437,7 +41634,11 @@ function encryptStart (self, data, decrypt) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145,"buffer-xor":144}],127:[function(require,module,exports){
+=======
+},{"buffer":147,"buffer-xor":146}],129:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 function encryptByte (self, byteParam, decrypt) {
   var pad
@@ -36475,7 +41676,11 @@ function shiftIn (buffer, value) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145}],128:[function(require,module,exports){
+=======
+},{"buffer":147}],130:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 function encryptByte (self, byteParam, decrypt) {
   var pad = self._cipher.encryptBlock(self._prev)
@@ -36494,7 +41699,11 @@ exports.encrypt = function (self, chunk, decrypt) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145}],129:[function(require,module,exports){
+=======
+},{"buffer":147}],131:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var xor = require('buffer-xor')
 
@@ -36529,7 +41738,11 @@ exports.encrypt = function (self, chunk) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145,"buffer-xor":144}],130:[function(require,module,exports){
+=======
+},{"buffer":147,"buffer-xor":146}],132:[function(require,module,exports){
+>>>>>>> Stashed changes
 exports.encrypt = function (self, block) {
   return self._cipher.encryptBlock(block)
 }
@@ -36537,7 +41750,11 @@ exports.decrypt = function (self, block) {
   return self._cipher.decryptBlock(block)
 }
 
+<<<<<<< Updated upstream
 },{}],131:[function(require,module,exports){
+=======
+},{}],133:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var xor = require('buffer-xor')
 
@@ -36557,7 +41774,11 @@ exports.encrypt = function (self, chunk) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145,"buffer-xor":144}],132:[function(require,module,exports){
+=======
+},{"buffer":147,"buffer-xor":146}],134:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var aes = require('./aes')
 var Transform = require('cipher-base')
@@ -36586,7 +41807,11 @@ StreamCipher.prototype._final = function () {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./aes":118,"buffer":145,"cipher-base":146,"inherits":191}],133:[function(require,module,exports){
+=======
+},{"./aes":120,"buffer":147,"cipher-base":148,"inherits":193}],135:[function(require,module,exports){
+>>>>>>> Stashed changes
 var ebtk = require('evp_bytestokey')
 var aes = require('browserify-aes/browser')
 var DES = require('browserify-des')
@@ -36661,7 +41886,11 @@ function getCiphers () {
 }
 exports.listCiphers = exports.getCiphers = getCiphers
 
+<<<<<<< Updated upstream
 },{"browserify-aes/browser":120,"browserify-aes/modes":124,"browserify-des":134,"browserify-des/modes":135,"evp_bytestokey":182}],134:[function(require,module,exports){
+=======
+},{"browserify-aes/browser":122,"browserify-aes/modes":126,"browserify-des":136,"browserify-des/modes":137,"evp_bytestokey":184}],136:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var CipherBase = require('cipher-base')
 var des = require('des.js')
@@ -36708,7 +41937,11 @@ DES.prototype._final = function () {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145,"cipher-base":146,"des.js":154,"inherits":191}],135:[function(require,module,exports){
+=======
+},{"buffer":147,"cipher-base":148,"des.js":156,"inherits":193}],137:[function(require,module,exports){
+>>>>>>> Stashed changes
 exports['des-ecb'] = {
   key: 8,
   iv: 0
@@ -36734,7 +41967,11 @@ exports['des-ede'] = {
   iv: 0
 }
 
+<<<<<<< Updated upstream
 },{}],136:[function(require,module,exports){
+=======
+},{}],138:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var bn = require('bn.js');
 var randomBytes = require('randombytes');
@@ -36778,7 +42015,11 @@ function getr(priv) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"bn.js":115,"buffer":145,"randombytes":209}],137:[function(require,module,exports){
+=======
+},{"bn.js":117,"buffer":147,"randombytes":211}],139:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 'use strict'
 exports['RSA-SHA224'] = exports.sha224WithRSAEncryption = {
@@ -36854,7 +42095,11 @@ exports['RSA-MD5'] = exports.md5WithRSAEncryption = {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145}],138:[function(require,module,exports){
+=======
+},{"buffer":147}],140:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var _algos = require('./algos')
 var createHash = require('create-hash')
@@ -36961,7 +42206,11 @@ module.exports = {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./algos":137,"./sign":140,"./verify":141,"buffer":145,"create-hash":149,"inherits":191,"stream":230}],139:[function(require,module,exports){
+=======
+},{"./algos":139,"./sign":142,"./verify":143,"buffer":147,"create-hash":151,"inherits":193,"stream":232}],141:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict'
 exports['1.3.132.0.10'] = 'secp256k1'
 
@@ -36975,7 +42224,11 @@ exports['1.3.132.0.34'] = 'p384'
 
 exports['1.3.132.0.35'] = 'p521'
 
+<<<<<<< Updated upstream
 },{}],140:[function(require,module,exports){
+=======
+},{}],142:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
 var createHmac = require('create-hmac')
@@ -37164,7 +42417,11 @@ module.exports.getKey = getKey
 module.exports.makeKey = makeKey
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./curves":139,"bn.js":115,"browserify-rsa":136,"buffer":145,"create-hmac":152,"elliptic":164,"parse-asn1":199}],141:[function(require,module,exports){
+=======
+},{"./curves":141,"bn.js":117,"browserify-rsa":138,"buffer":147,"create-hmac":154,"elliptic":166,"parse-asn1":201}],143:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
 var curves = require('./curves')
@@ -37271,7 +42528,11 @@ function checkValue (b, q) {
 module.exports = verify
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./curves":139,"bn.js":115,"buffer":145,"elliptic":164,"parse-asn1":199}],142:[function(require,module,exports){
+=======
+},{"./curves":141,"bn.js":117,"buffer":147,"elliptic":166,"parse-asn1":201}],144:[function(require,module,exports){
+>>>>>>> Stashed changes
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -37453,7 +42714,11 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
+<<<<<<< Updated upstream
 },{}],143:[function(require,module,exports){
+=======
+},{}],145:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (global){
 'use strict';
 
@@ -37565,7 +42830,11 @@ exports.allocUnsafeSlow = function allocUnsafeSlow(size) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+<<<<<<< Updated upstream
 },{"buffer":145}],144:[function(require,module,exports){
+=======
+},{"buffer":147}],146:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 module.exports = function xor (a, b) {
   var length = Math.min(a.length, b.length)
@@ -37579,7 +42848,11 @@ module.exports = function xor (a, b) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145}],145:[function(require,module,exports){
+=======
+},{"buffer":147}],147:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (global){
 /*!
  * The buffer module from node.js, for the browser.
@@ -37598,6 +42871,51 @@ var isArray = require('isarray')
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
 exports.INSPECT_MAX_BYTES = 50
+<<<<<<< Updated upstream
+
+/**
+ * If `Buffer.TYPED_ARRAY_SUPPORT`:
+ *   === true    Use Uint8Array implementation (fastest)
+ *   === false   Use Object implementation (most compatible, even IE6)
+ *
+ * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
+ * Opera 11.6+, iOS 4.2+.
+ *
+ * Due to various browser bugs, sometimes the Object implementation will be used even
+ * when the browser supports typed arrays.
+ *
+ * Note:
+ *
+ *   - Firefox 4-29 lacks support for adding new properties to `Uint8Array` instances,
+ *     See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438.
+ *
+ *   - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
+ *
+ *   - IE10 has a broken `TypedArray.prototype.subarray` function which returns arrays of
+ *     incorrect length in some situations.
+
+ * We detect these buggy browsers and set `Buffer.TYPED_ARRAY_SUPPORT` to `false` so they
+ * get the Object implementation, which is slower but behaves correctly.
+ */
+Buffer.TYPED_ARRAY_SUPPORT = global.TYPED_ARRAY_SUPPORT !== undefined
+  ? global.TYPED_ARRAY_SUPPORT
+  : typedArraySupport()
+
+/*
+ * Export kMaxLength after typed array support is determined.
+ */
+exports.kMaxLength = kMaxLength()
+
+function typedArraySupport () {
+  try {
+    var arr = new Uint8Array(1)
+    arr.__proto__ = {__proto__: Uint8Array.prototype, foo: function () { return 42 }}
+    return arr.foo() === 42 && // typed array instances can be augmented
+        typeof arr.subarray === 'function' && // chrome 9-10 lack `subarray`
+        arr.subarray(1, 1).byteLength === 0 // ie10 has broken `subarray`
+  } catch (e) {
+    return false
+=======
 
 /**
  * If `Buffer.TYPED_ARRAY_SUPPORT`:
@@ -37644,6 +42962,31 @@ function typedArraySupport () {
   }
 }
 
+function kMaxLength () {
+  return Buffer.TYPED_ARRAY_SUPPORT
+    ? 0x7fffffff
+    : 0x3fffffff
+}
+
+function createBuffer (that, length) {
+  if (kMaxLength() < length) {
+    throw new RangeError('Invalid typed array length')
+  }
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = new Uint8Array(length)
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    if (that === null) {
+      that = new Buffer(length)
+    }
+    that.length = length
+>>>>>>> Stashed changes
+  }
+}
+
+<<<<<<< Updated upstream
 function kMaxLength () {
   return Buffer.TYPED_ARRAY_SUPPORT
     ? 0x7fffffff
@@ -37713,6 +43056,55 @@ function from (that, value, encodingOrOffset, length) {
     return fromArrayBuffer(that, value, encodingOrOffset, length)
   }
 
+=======
+  return that
+}
+
+/**
+ * The Buffer constructor returns instances of `Uint8Array` that have their
+ * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
+ * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
+ * and the `Uint8Array` methods. Square bracket notation works as expected -- it
+ * returns a single octet.
+ *
+ * The `Uint8Array` prototype remains unmodified.
+ */
+
+function Buffer (arg, encodingOrOffset, length) {
+  if (!Buffer.TYPED_ARRAY_SUPPORT && !(this instanceof Buffer)) {
+    return new Buffer(arg, encodingOrOffset, length)
+  }
+
+  // Common case.
+  if (typeof arg === 'number') {
+    if (typeof encodingOrOffset === 'string') {
+      throw new Error(
+        'If encoding is specified then the first argument must be a string'
+      )
+    }
+    return allocUnsafe(this, arg)
+  }
+  return from(this, arg, encodingOrOffset, length)
+}
+
+Buffer.poolSize = 8192 // not used by this implementation
+
+// TODO: Legacy, not needed anymore. Remove in next major version.
+Buffer._augment = function (arr) {
+  arr.__proto__ = Buffer.prototype
+  return arr
+}
+
+function from (that, value, encodingOrOffset, length) {
+  if (typeof value === 'number') {
+    throw new TypeError('"value" argument must not be a number')
+  }
+
+  if (typeof ArrayBuffer !== 'undefined' && value instanceof ArrayBuffer) {
+    return fromArrayBuffer(that, value, encodingOrOffset, length)
+  }
+
+>>>>>>> Stashed changes
   if (typeof value === 'string') {
     return fromString(that, value, encodingOrOffset)
   }
@@ -38105,6 +43497,22 @@ function slowToString (encoding, start, end) {
 // The property is used by `Buffer.isBuffer` and `is-buffer` (in Safari 5-7) to detect
 // Buffer instances.
 Buffer.prototype._isBuffer = true
+<<<<<<< Updated upstream
+
+function swap (b, n, m) {
+  var i = b[n]
+  b[n] = b[m]
+  b[m] = i
+}
+
+Buffer.prototype.swap16 = function swap16 () {
+  var len = this.length
+  if (len % 2 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 16-bits')
+  }
+  for (var i = 0; i < len; i += 2) {
+    swap(this, i, i + 1)
+=======
 
 function swap (b, n, m) {
   var i = b[n]
@@ -38123,6 +43531,20 @@ Buffer.prototype.swap16 = function swap16 () {
   return this
 }
 
+Buffer.prototype.swap32 = function swap32 () {
+  var len = this.length
+  if (len % 4 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 32-bits')
+  }
+  for (var i = 0; i < len; i += 4) {
+    swap(this, i, i + 3)
+    swap(this, i + 1, i + 2)
+>>>>>>> Stashed changes
+  }
+  return this
+}
+
+<<<<<<< Updated upstream
 Buffer.prototype.swap32 = function swap32 () {
   var len = this.length
   if (len % 4 !== 0) {
@@ -38658,6 +44080,531 @@ Buffer.prototype.slice = function slice (start, end) {
 
   if (end < start) end = start
 
+=======
+Buffer.prototype.swap64 = function swap64 () {
+  var len = this.length
+  if (len % 8 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 64-bits')
+  }
+  for (var i = 0; i < len; i += 8) {
+    swap(this, i, i + 7)
+    swap(this, i + 1, i + 6)
+    swap(this, i + 2, i + 5)
+    swap(this, i + 3, i + 4)
+  }
+  return this
+}
+
+Buffer.prototype.toString = function toString () {
+  var length = this.length | 0
+  if (length === 0) return ''
+  if (arguments.length === 0) return utf8Slice(this, 0, length)
+  return slowToString.apply(this, arguments)
+}
+
+Buffer.prototype.equals = function equals (b) {
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  if (this === b) return true
+  return Buffer.compare(this, b) === 0
+}
+
+Buffer.prototype.inspect = function inspect () {
+  var str = ''
+  var max = exports.INSPECT_MAX_BYTES
+  if (this.length > 0) {
+    str = this.toString('hex', 0, max).match(/.{2}/g).join(' ')
+    if (this.length > max) str += ' ... '
+  }
+  return '<Buffer ' + str + '>'
+}
+
+Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
+  if (!Buffer.isBuffer(target)) {
+    throw new TypeError('Argument must be a Buffer')
+  }
+
+  if (start === undefined) {
+    start = 0
+  }
+  if (end === undefined) {
+    end = target ? target.length : 0
+  }
+  if (thisStart === undefined) {
+    thisStart = 0
+  }
+  if (thisEnd === undefined) {
+    thisEnd = this.length
+  }
+
+  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
+    throw new RangeError('out of range index')
+  }
+
+  if (thisStart >= thisEnd && start >= end) {
+    return 0
+  }
+  if (thisStart >= thisEnd) {
+    return -1
+  }
+  if (start >= end) {
+    return 1
+  }
+
+  start >>>= 0
+  end >>>= 0
+  thisStart >>>= 0
+  thisEnd >>>= 0
+
+  if (this === target) return 0
+
+  var x = thisEnd - thisStart
+  var y = end - start
+  var len = Math.min(x, y)
+
+  var thisCopy = this.slice(thisStart, thisEnd)
+  var targetCopy = target.slice(start, end)
+
+  for (var i = 0; i < len; ++i) {
+    if (thisCopy[i] !== targetCopy[i]) {
+      x = thisCopy[i]
+      y = targetCopy[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
+// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
+//
+// Arguments:
+// - buffer - a Buffer to search
+// - val - a string, Buffer, or number
+// - byteOffset - an index into `buffer`; will be clamped to an int32
+// - encoding - an optional encoding, relevant is val is a string
+// - dir - true for indexOf, false for lastIndexOf
+function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
+  // Empty buffer means no match
+  if (buffer.length === 0) return -1
+
+  // Normalize byteOffset
+  if (typeof byteOffset === 'string') {
+    encoding = byteOffset
+    byteOffset = 0
+  } else if (byteOffset > 0x7fffffff) {
+    byteOffset = 0x7fffffff
+  } else if (byteOffset < -0x80000000) {
+    byteOffset = -0x80000000
+  }
+  byteOffset = +byteOffset  // Coerce to Number.
+  if (isNaN(byteOffset)) {
+    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
+    byteOffset = dir ? 0 : (buffer.length - 1)
+  }
+
+  // Normalize byteOffset: negative offsets start from the end of the buffer
+  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
+  if (byteOffset >= buffer.length) {
+    if (dir) return -1
+    else byteOffset = buffer.length - 1
+  } else if (byteOffset < 0) {
+    if (dir) byteOffset = 0
+    else return -1
+  }
+
+  // Normalize val
+  if (typeof val === 'string') {
+    val = Buffer.from(val, encoding)
+  }
+
+  // Finally, search either indexOf (if dir is true) or lastIndexOf
+  if (Buffer.isBuffer(val)) {
+    // Special case: looking for empty string/buffer always fails
+    if (val.length === 0) {
+      return -1
+    }
+    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
+  } else if (typeof val === 'number') {
+    val = val & 0xFF // Search for a byte value [0-255]
+    if (Buffer.TYPED_ARRAY_SUPPORT &&
+        typeof Uint8Array.prototype.indexOf === 'function') {
+      if (dir) {
+        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
+      } else {
+        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
+      }
+    }
+    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
+  }
+
+  throw new TypeError('val must be string, number or Buffer')
+}
+
+function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
+  var indexSize = 1
+  var arrLength = arr.length
+  var valLength = val.length
+
+  if (encoding !== undefined) {
+    encoding = String(encoding).toLowerCase()
+    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
+        encoding === 'utf16le' || encoding === 'utf-16le') {
+      if (arr.length < 2 || val.length < 2) {
+        return -1
+      }
+      indexSize = 2
+      arrLength /= 2
+      valLength /= 2
+      byteOffset /= 2
+    }
+  }
+
+  function read (buf, i) {
+    if (indexSize === 1) {
+      return buf[i]
+    } else {
+      return buf.readUInt16BE(i * indexSize)
+    }
+  }
+
+  var i
+  if (dir) {
+    var foundIndex = -1
+    for (i = byteOffset; i < arrLength; i++) {
+      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
+        if (foundIndex === -1) foundIndex = i
+        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
+      } else {
+        if (foundIndex !== -1) i -= i - foundIndex
+        foundIndex = -1
+      }
+    }
+  } else {
+    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
+    for (i = byteOffset; i >= 0; i--) {
+      var found = true
+      for (var j = 0; j < valLength; j++) {
+        if (read(arr, i + j) !== read(val, j)) {
+          found = false
+          break
+        }
+      }
+      if (found) return i
+    }
+  }
+
+  return -1
+}
+
+Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
+  return this.indexOf(val, byteOffset, encoding) !== -1
+}
+
+Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
+}
+
+Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
+}
+
+function hexWrite (buf, string, offset, length) {
+  offset = Number(offset) || 0
+  var remaining = buf.length - offset
+  if (!length) {
+    length = remaining
+  } else {
+    length = Number(length)
+    if (length > remaining) {
+      length = remaining
+    }
+  }
+
+  // must be an even number of digits
+  var strLen = string.length
+  if (strLen % 2 !== 0) throw new TypeError('Invalid hex string')
+
+  if (length > strLen / 2) {
+    length = strLen / 2
+  }
+  for (var i = 0; i < length; ++i) {
+    var parsed = parseInt(string.substr(i * 2, 2), 16)
+    if (isNaN(parsed)) return i
+    buf[offset + i] = parsed
+  }
+  return i
+}
+
+function utf8Write (buf, string, offset, length) {
+  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+function asciiWrite (buf, string, offset, length) {
+  return blitBuffer(asciiToBytes(string), buf, offset, length)
+}
+
+function latin1Write (buf, string, offset, length) {
+  return asciiWrite(buf, string, offset, length)
+}
+
+function base64Write (buf, string, offset, length) {
+  return blitBuffer(base64ToBytes(string), buf, offset, length)
+}
+
+function ucs2Write (buf, string, offset, length) {
+  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+Buffer.prototype.write = function write (string, offset, length, encoding) {
+  // Buffer#write(string)
+  if (offset === undefined) {
+    encoding = 'utf8'
+    length = this.length
+    offset = 0
+  // Buffer#write(string, encoding)
+  } else if (length === undefined && typeof offset === 'string') {
+    encoding = offset
+    length = this.length
+    offset = 0
+  // Buffer#write(string, offset[, length][, encoding])
+  } else if (isFinite(offset)) {
+    offset = offset | 0
+    if (isFinite(length)) {
+      length = length | 0
+      if (encoding === undefined) encoding = 'utf8'
+    } else {
+      encoding = length
+      length = undefined
+    }
+  // legacy write(string, encoding, offset, length) - remove in v0.13
+  } else {
+    throw new Error(
+      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
+    )
+  }
+
+  var remaining = this.length - offset
+  if (length === undefined || length > remaining) length = remaining
+
+  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
+    throw new RangeError('Attempt to write outside buffer bounds')
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'hex':
+        return hexWrite(this, string, offset, length)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Write(this, string, offset, length)
+
+      case 'ascii':
+        return asciiWrite(this, string, offset, length)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Write(this, string, offset, length)
+
+      case 'base64':
+        // Warning: maxLength not taken into account in base64Write
+        return base64Write(this, string, offset, length)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return ucs2Write(this, string, offset, length)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+Buffer.prototype.toJSON = function toJSON () {
+  return {
+    type: 'Buffer',
+    data: Array.prototype.slice.call(this._arr || this, 0)
+  }
+}
+
+function base64Slice (buf, start, end) {
+  if (start === 0 && end === buf.length) {
+    return base64.fromByteArray(buf)
+  } else {
+    return base64.fromByteArray(buf.slice(start, end))
+  }
+}
+
+function utf8Slice (buf, start, end) {
+  end = Math.min(buf.length, end)
+  var res = []
+
+  var i = start
+  while (i < end) {
+    var firstByte = buf[i]
+    var codePoint = null
+    var bytesPerSequence = (firstByte > 0xEF) ? 4
+      : (firstByte > 0xDF) ? 3
+      : (firstByte > 0xBF) ? 2
+      : 1
+
+    if (i + bytesPerSequence <= end) {
+      var secondByte, thirdByte, fourthByte, tempCodePoint
+
+      switch (bytesPerSequence) {
+        case 1:
+          if (firstByte < 0x80) {
+            codePoint = firstByte
+          }
+          break
+        case 2:
+          secondByte = buf[i + 1]
+          if ((secondByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
+            if (tempCodePoint > 0x7F) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 3:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
+            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 4:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          fourthByte = buf[i + 3]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
+            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
+              codePoint = tempCodePoint
+            }
+          }
+      }
+    }
+
+    if (codePoint === null) {
+      // we did not generate a valid codePoint so insert a
+      // replacement char (U+FFFD) and advance only 1 byte
+      codePoint = 0xFFFD
+      bytesPerSequence = 1
+    } else if (codePoint > 0xFFFF) {
+      // encode to utf16 (surrogate pair dance)
+      codePoint -= 0x10000
+      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
+      codePoint = 0xDC00 | codePoint & 0x3FF
+    }
+
+    res.push(codePoint)
+    i += bytesPerSequence
+  }
+
+  return decodeCodePointsArray(res)
+}
+
+// Based on http://stackoverflow.com/a/22747272/680742, the browser with
+// the lowest limit is Chrome, with 0x10000 args.
+// We go 1 magnitude less, for safety
+var MAX_ARGUMENTS_LENGTH = 0x1000
+
+function decodeCodePointsArray (codePoints) {
+  var len = codePoints.length
+  if (len <= MAX_ARGUMENTS_LENGTH) {
+    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
+  }
+
+  // Decode in chunks to avoid "call stack size exceeded".
+  var res = ''
+  var i = 0
+  while (i < len) {
+    res += String.fromCharCode.apply(
+      String,
+      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
+    )
+  }
+  return res
+}
+
+function asciiSlice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i] & 0x7F)
+  }
+  return ret
+}
+
+function latin1Slice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i])
+  }
+  return ret
+}
+
+function hexSlice (buf, start, end) {
+  var len = buf.length
+
+  if (!start || start < 0) start = 0
+  if (!end || end < 0 || end > len) end = len
+
+  var out = ''
+  for (var i = start; i < end; ++i) {
+    out += toHex(buf[i])
+  }
+  return out
+}
+
+function utf16leSlice (buf, start, end) {
+  var bytes = buf.slice(start, end)
+  var res = ''
+  for (var i = 0; i < bytes.length; i += 2) {
+    res += String.fromCharCode(bytes[i] + bytes[i + 1] * 256)
+  }
+  return res
+}
+
+Buffer.prototype.slice = function slice (start, end) {
+  var len = this.length
+  start = ~~start
+  end = end === undefined ? len : ~~end
+
+  if (start < 0) {
+    start += len
+    if (start < 0) start = 0
+  } else if (start > len) {
+    start = len
+  }
+
+  if (end < 0) {
+    end += len
+    if (end < 0) end = 0
+  } else if (end > len) {
+    end = len
+  }
+
+  if (end < start) end = start
+
+>>>>>>> Stashed changes
   var newBuf
   if (Buffer.TYPED_ARRAY_SUPPORT) {
     newBuf = this.subarray(start, end)
@@ -38966,6 +44913,7 @@ Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, no
   offset = offset | 0
   if (!noAssert) {
     var limit = Math.pow(2, 8 * byteLength - 1)
+<<<<<<< Updated upstream
 
     checkInt(this, value, offset, byteLength, limit - 1, -limit)
   }
@@ -38981,6 +44929,23 @@ Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, no
     this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
   }
 
+=======
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = 0
+  var mul = 1
+  var sub = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+>>>>>>> Stashed changes
   return offset + byteLength
 }
 
@@ -39243,6 +45208,7 @@ function base64clean (str) {
 function stringtrim (str) {
   if (str.trim) return str.trim()
   return str.replace(/^\s+|\s+$/g, '')
+<<<<<<< Updated upstream
 }
 
 function toHex (n) {
@@ -39250,6 +45216,15 @@ function toHex (n) {
   return n.toString(16)
 }
 
+=======
+}
+
+function toHex (n) {
+  if (n < 16) return '0' + n.toString(16)
+  return n.toString(16)
+}
+
+>>>>>>> Stashed changes
 function utf8ToBytes (string, units) {
   units = units || Infinity
   var codePoint
@@ -39372,7 +45347,11 @@ function isnan (val) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+<<<<<<< Updated upstream
 },{"base64-js":114,"ieee754":189,"isarray":193}],146:[function(require,module,exports){
+=======
+},{"base64-js":116,"ieee754":191,"isarray":195}],148:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var Transform = require('stream').Transform
 var inherits = require('inherits')
@@ -39397,10 +45376,17 @@ CipherBase.prototype.update = function (data, inputEnc, outputEnc) {
   var outData = this._update(data)
   if (this.hashMode) {
     return this
+<<<<<<< Updated upstream
   }
   if (outputEnc) {
     outData = this._toString(outData, outputEnc)
   }
+=======
+  }
+  if (outputEnc) {
+    outData = this._toString(outData, outputEnc)
+  }
+>>>>>>> Stashed changes
   return outData
 }
 
@@ -39466,7 +45452,11 @@ CipherBase.prototype._toString = function (value, enc, fin) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145,"inherits":191,"stream":230,"string_decoder":231}],147:[function(require,module,exports){
+=======
+},{"buffer":147,"inherits":193,"stream":232,"string_decoder":233}],149:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -39577,7 +45567,11 @@ function objectToString(o) {
 }
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
+<<<<<<< Updated upstream
 },{"../../is-buffer/index.js":192}],148:[function(require,module,exports){
+=======
+},{"../../is-buffer/index.js":194}],150:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var elliptic = require('elliptic');
 var BN = require('bn.js');
@@ -39703,7 +45697,11 @@ function formatReturnValue(bn, enc, len) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"bn.js":115,"buffer":145,"elliptic":164}],149:[function(require,module,exports){
+=======
+},{"bn.js":117,"buffer":147,"elliptic":166}],151:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 'use strict';
 var inherits = require('inherits')
@@ -39759,7 +45757,11 @@ module.exports = function createHash (alg) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./md5":151,"buffer":145,"cipher-base":146,"inherits":191,"ripemd160":221,"sha.js":223}],150:[function(require,module,exports){
+=======
+},{"./md5":153,"buffer":147,"cipher-base":148,"inherits":193,"ripemd160":223,"sha.js":225}],152:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 'use strict';
 var intSize = 4;
@@ -39796,7 +45798,11 @@ function hash(buf, fn, hashSize, bigEndian) {
 }
 exports.hash = hash;
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145}],151:[function(require,module,exports){
+=======
+},{"buffer":147}],153:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 /*
  * A JavaScript implementation of the RSA Data Security, Inc. MD5 Message
@@ -39953,13 +45959,18 @@ function bit_rol(num, cnt)
 module.exports = function md5(buf) {
   return helpers.hash(buf, core_md5, 16);
 };
+<<<<<<< Updated upstream
 },{"./helpers":150}],152:[function(require,module,exports){
+=======
+},{"./helpers":152}],154:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 'use strict';
 var createHash = require('create-hash/browser');
 var inherits = require('inherits')
 
 var Transform = require('stream').Transform
+<<<<<<< Updated upstream
 
 var ZEROS = new Buffer(128)
 ZEROS.fill(0)
@@ -39971,6 +45982,19 @@ function Hmac(alg, key) {
     key = new Buffer(key)
   }
 
+=======
+
+var ZEROS = new Buffer(128)
+ZEROS.fill(0)
+
+function Hmac(alg, key) {
+  Transform.call(this)
+  alg = alg.toLowerCase()
+  if (typeof key === 'string') {
+    key = new Buffer(key)
+  }
+
+>>>>>>> Stashed changes
   var blocksize = (alg === 'sha512' || alg === 'sha384') ? 128 : 64
 
   this._alg = alg
@@ -40025,7 +46049,11 @@ module.exports = function createHmac(alg, key) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145,"create-hash/browser":149,"inherits":191,"stream":230}],153:[function(require,module,exports){
+=======
+},{"buffer":147,"create-hash/browser":151,"inherits":193,"stream":232}],155:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict'
 
 exports.randomBytes = exports.rng = exports.pseudoRandomBytes = exports.prng = require('randombytes')
@@ -40104,7 +46132,11 @@ var publicEncrypt = require('public-encrypt')
   }
 })
 
+<<<<<<< Updated upstream
 },{"browserify-cipher":133,"browserify-sign":138,"browserify-sign/algos":137,"create-ecdh":148,"create-hash":149,"create-hmac":152,"diffie-hellman":160,"pbkdf2":200,"public-encrypt":203,"randombytes":209}],154:[function(require,module,exports){
+=======
+},{"browserify-cipher":135,"browserify-sign":140,"browserify-sign/algos":139,"create-ecdh":150,"create-hash":151,"create-hmac":154,"diffie-hellman":162,"pbkdf2":202,"public-encrypt":205,"randombytes":211}],156:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 exports.utils = require('./des/utils');
@@ -40113,7 +46145,11 @@ exports.DES = require('./des/des');
 exports.CBC = require('./des/cbc');
 exports.EDE = require('./des/ede');
 
+<<<<<<< Updated upstream
 },{"./des/cbc":155,"./des/cipher":156,"./des/des":157,"./des/ede":158,"./des/utils":159}],155:[function(require,module,exports){
+=======
+},{"./des/cbc":157,"./des/cipher":158,"./des/des":159,"./des/ede":160,"./des/utils":161}],157:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -40180,7 +46216,11 @@ proto._update = function _update(inp, inOff, out, outOff) {
   }
 };
 
+<<<<<<< Updated upstream
 },{"inherits":191,"minimalistic-assert":195}],156:[function(require,module,exports){
+=======
+},{"inherits":193,"minimalistic-assert":197}],158:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -40323,7 +46363,11 @@ Cipher.prototype._finalDecrypt = function _finalDecrypt() {
   return this._unpad(out);
 };
 
+<<<<<<< Updated upstream
 },{"minimalistic-assert":195}],157:[function(require,module,exports){
+=======
+},{"minimalistic-assert":197}],159:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -40468,7 +46512,11 @@ DES.prototype._decrypt = function _decrypt(state, lStart, rStart, out, off) {
   utils.rip(l, r, out, off);
 };
 
+<<<<<<< Updated upstream
 },{"../des":154,"inherits":191,"minimalistic-assert":195}],158:[function(require,module,exports){
+=======
+},{"../des":156,"inherits":193,"minimalistic-assert":197}],160:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -40525,7 +46573,11 @@ EDE.prototype._update = function _update(inp, inOff, out, outOff) {
 EDE.prototype._pad = DES.prototype._pad;
 EDE.prototype._unpad = DES.prototype._unpad;
 
+<<<<<<< Updated upstream
 },{"../des":154,"inherits":191,"minimalistic-assert":195}],159:[function(require,module,exports){
+=======
+},{"../des":156,"inherits":193,"minimalistic-assert":197}],161:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 exports.readUInt32BE = function readUInt32BE(bytes, off) {
@@ -40629,11 +46681,19 @@ exports.pc1 = function pc1(inL, inR, out, off) {
     for (var j = 0; j <= 24; j += 8) {
       outR <<= 1;
       outR |= (inR >> (j + i)) & 1;
+<<<<<<< Updated upstream
     }
     for (var j = 0; j <= 24; j += 8) {
       outR <<= 1;
       outR |= (inL >> (j + i)) & 1;
     }
+=======
+    }
+    for (var j = 0; j <= 24; j += 8) {
+      outR <<= 1;
+      outR |= (inL >> (j + i)) & 1;
+    }
+>>>>>>> Stashed changes
   }
   for (var j = 0; j <= 24; j += 8) {
     outR <<= 1;
@@ -40783,7 +46843,11 @@ exports.padSplit = function padSplit(num, size, group) {
   return out.join(' ');
 };
 
+<<<<<<< Updated upstream
 },{}],160:[function(require,module,exports){
+=======
+},{}],162:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var generatePrime = require('./lib/generatePrime')
 var primes = require('./lib/primes.json')
@@ -40829,7 +46893,11 @@ exports.DiffieHellmanGroup = exports.createDiffieHellmanGroup = exports.getDiffi
 exports.createDiffieHellman = exports.DiffieHellman = createDiffieHellman
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./lib/dh":161,"./lib/generatePrime":162,"./lib/primes.json":163,"buffer":145}],161:[function(require,module,exports){
+=======
+},{"./lib/dh":163,"./lib/generatePrime":164,"./lib/primes.json":165,"buffer":147}],163:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var BN = require('bn.js');
 var MillerRabin = require('miller-rabin');
@@ -40997,7 +47065,11 @@ function formatReturnValue(bn, enc) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./generatePrime":162,"bn.js":115,"buffer":145,"miller-rabin":194,"randombytes":209}],162:[function(require,module,exports){
+=======
+},{"./generatePrime":164,"bn.js":117,"buffer":147,"miller-rabin":196,"randombytes":211}],164:[function(require,module,exports){
+>>>>>>> Stashed changes
 var randomBytes = require('randombytes');
 module.exports = findPrime;
 findPrime.simpleSieve = simpleSieve;
@@ -41104,7 +47176,11 @@ function findPrime(bits, gen) {
 
 }
 
+<<<<<<< Updated upstream
 },{"bn.js":115,"miller-rabin":194,"randombytes":209}],163:[function(require,module,exports){
+=======
+},{"bn.js":117,"miller-rabin":196,"randombytes":211}],165:[function(require,module,exports){
+>>>>>>> Stashed changes
 module.exports={
     "modp1": {
         "gen": "02",
@@ -41139,7 +47215,11 @@ module.exports={
         "prime": "ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece45b3dc2007cb8a163bf0598da48361c55d39a69163fa8fd24cf5f83655d23dca3ad961c62f356208552bb9ed529077096966d670c354e4abc9804f1746c08ca18217c32905e462e36ce3be39e772c180e86039b2783a2ec07a28fb5c55df06f4c52c9de2bcbf6955817183995497cea956ae515d2261898fa051015728e5a8aaac42dad33170d04507a33a85521abdf1cba64ecfb850458dbef0a8aea71575d060c7db3970f85a6e1e4c7abf5ae8cdb0933d71e8c94e04a25619dcee3d2261ad2ee6bf12ffa06d98a0864d87602733ec86a64521f2b18177b200cbbe117577a615d6c770988c0bad946e208e24fa074e5ab3143db5bfce0fd108e4b82d120a92108011a723c12a787e6d788719a10bdba5b2699c327186af4e23c1a946834b6150bda2583e9ca2ad44ce8dbbbc2db04de8ef92e8efc141fbecaa6287c59474e6bc05d99b2964fa090c3a2233ba186515be7ed1f612970cee2d7afb81bdd762170481cd0069127d5b05aa993b4ea988d8fddc186ffb7dc90a6c08f4df435c93402849236c3fab4d27c7026c1d4dcb2602646dec9751e763dba37bdf8ff9406ad9e530ee5db382f413001aeb06a53ed9027d831179727b0865a8918da3edbebcf9b14ed44ce6cbaced4bb1bdb7f1447e6cc254b332051512bd7af426fb8f401378cd2bf5983ca01c64b92ecf032ea15d1721d03f482d7ce6e74fef6d55e702f46980c82b5a84031900b1c9e59e7c97fbec7e8f323a97a7e36cc88be0f1d45b7ff585ac54bd407b22b4154aacc8f6d7ebf48e1d814cc5ed20f8037e0a79715eef29be32806a1d58bb7c5da76f550aa3d8a1fbff0eb19ccb1a313d55cda56c9ec2ef29632387fe8d76e3c0468043e8f663f4860ee12bf2d5b0b7474d6e694f91e6dbe115974a3926f12fee5e438777cb6a932df8cd8bec4d073b931ba3bc832b68d9dd300741fa7bf8afc47ed2576f6936ba424663aab639c5ae4f5683423b4742bf1c978238f16cbe39d652de3fdb8befc848ad922222e04a4037c0713eb57a81a23f0c73473fc646cea306b4bcbc8862f8385ddfa9d4b7fa2c087e879683303ed5bdd3a062b3cf5b3a278a66d2a13f83f44f82ddf310ee074ab6a364597e899a0255dc164f31cc50846851df9ab48195ded7ea1b1d510bd7ee74d73faf36bc31ecfa268359046f4eb879f924009438b481c6cd7889a002ed5ee382bc9190da6fc026e479558e4475677e9aa9e3050e2765694dfc81f56e880b96e7160c980dd98edd3dfffffffffffffffff"
     }
 }
+<<<<<<< Updated upstream
 },{}],164:[function(require,module,exports){
+=======
+},{}],166:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var elliptic = exports;
@@ -41155,7 +47235,11 @@ elliptic.curves = require('./elliptic/curves');
 elliptic.ec = require('./elliptic/ec');
 elliptic.eddsa = require('./elliptic/eddsa');
 
+<<<<<<< Updated upstream
 },{"../package.json":180,"./elliptic/curve":167,"./elliptic/curves":170,"./elliptic/ec":171,"./elliptic/eddsa":174,"./elliptic/hmac-drbg":177,"./elliptic/utils":179,"brorand":116}],165:[function(require,module,exports){
+=======
+},{"../package.json":182,"./elliptic/curve":169,"./elliptic/curves":172,"./elliptic/ec":173,"./elliptic/eddsa":176,"./elliptic/hmac-drbg":179,"./elliptic/utils":181,"brorand":118}],167:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var BN = require('bn.js');
@@ -41532,7 +47616,11 @@ BasePoint.prototype.dblp = function dblp(k) {
   return r;
 };
 
+<<<<<<< Updated upstream
 },{"../../elliptic":164,"bn.js":115}],166:[function(require,module,exports){
+=======
+},{"../../elliptic":166,"bn.js":117}],168:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var curve = require('../curve');
@@ -41967,7 +48055,11 @@ Point.prototype.eqXToP = function eqXToP(x) {
 Point.prototype.toP = Point.prototype.normalize;
 Point.prototype.mixedAdd = Point.prototype.add;
 
+<<<<<<< Updated upstream
 },{"../../elliptic":164,"../curve":167,"bn.js":115,"inherits":191}],167:[function(require,module,exports){
+=======
+},{"../../elliptic":166,"../curve":169,"bn.js":117,"inherits":193}],169:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var curve = exports;
@@ -41977,7 +48069,11 @@ curve.short = require('./short');
 curve.mont = require('./mont');
 curve.edwards = require('./edwards');
 
+<<<<<<< Updated upstream
 },{"./base":165,"./edwards":166,"./mont":168,"./short":169}],168:[function(require,module,exports){
+=======
+},{"./base":167,"./edwards":168,"./mont":170,"./short":171}],170:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var curve = require('../curve');
@@ -42159,7 +48255,11 @@ Point.prototype.getX = function getX() {
   return this.x.fromRed();
 };
 
+<<<<<<< Updated upstream
 },{"../../elliptic":164,"../curve":167,"bn.js":115,"inherits":191}],169:[function(require,module,exports){
+=======
+},{"../../elliptic":166,"../curve":169,"bn.js":117,"inherits":193}],171:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var curve = require('../curve');
@@ -43099,7 +49199,11 @@ JPoint.prototype.isInfinity = function isInfinity() {
   return this.z.cmpn(0) === 0;
 };
 
+<<<<<<< Updated upstream
 },{"../../elliptic":164,"../curve":167,"bn.js":115,"inherits":191}],170:[function(require,module,exports){
+=======
+},{"../../elliptic":166,"../curve":169,"bn.js":117,"inherits":193}],172:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var curves = exports;
@@ -43306,7 +49410,11 @@ defineCurve('secp256k1', {
   ]
 });
 
+<<<<<<< Updated upstream
 },{"../elliptic":164,"./precomputed/secp256k1":178,"hash.js":183}],171:[function(require,module,exports){
+=======
+},{"../elliptic":166,"./precomputed/secp256k1":180,"hash.js":185}],173:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var BN = require('bn.js');
@@ -43545,7 +49653,11 @@ EC.prototype.getKeyRecoveryParam = function(e, signature, Q, enc) {
   throw new Error('Unable to find valid recovery factor');
 };
 
+<<<<<<< Updated upstream
 },{"../../elliptic":164,"./key":172,"./signature":173,"bn.js":115}],172:[function(require,module,exports){
+=======
+},{"../../elliptic":166,"./key":174,"./signature":175,"bn.js":117}],174:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var BN = require('bn.js');
@@ -43654,7 +49766,11 @@ KeyPair.prototype.inspect = function inspect() {
          ' pub: ' + (this.pub && this.pub.inspect()) + ' >';
 };
 
+<<<<<<< Updated upstream
 },{"bn.js":115}],173:[function(require,module,exports){
+=======
+},{"bn.js":117}],175:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var BN = require('bn.js');
@@ -43791,7 +49907,11 @@ Signature.prototype.toDER = function toDER(enc) {
   return utils.encode(res, enc);
 };
 
+<<<<<<< Updated upstream
 },{"../../elliptic":164,"bn.js":115}],174:[function(require,module,exports){
+=======
+},{"../../elliptic":166,"bn.js":117}],176:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var hash = require('hash.js');
@@ -43911,7 +50031,11 @@ EDDSA.prototype.isPoint = function isPoint(val) {
   return val instanceof this.pointClass;
 };
 
+<<<<<<< Updated upstream
 },{"../../elliptic":164,"./key":175,"./signature":176,"hash.js":183}],175:[function(require,module,exports){
+=======
+},{"../../elliptic":166,"./key":177,"./signature":178,"hash.js":185}],177:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var elliptic = require('../../elliptic');
@@ -44009,7 +50133,11 @@ KeyPair.prototype.getPublic = function getPublic(enc) {
 
 module.exports = KeyPair;
 
+<<<<<<< Updated upstream
 },{"../../elliptic":164}],176:[function(require,module,exports){
+=======
+},{"../../elliptic":166}],178:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var BN = require('bn.js');
@@ -44077,7 +50205,11 @@ Signature.prototype.toHex = function toHex() {
 
 module.exports = Signature;
 
+<<<<<<< Updated upstream
 },{"../../elliptic":164,"bn.js":115}],177:[function(require,module,exports){
+=======
+},{"../../elliptic":166,"bn.js":117}],179:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var hash = require('hash.js');
@@ -44193,7 +50325,11 @@ HmacDRBG.prototype.generate = function generate(len, enc, add, addEnc) {
   return utils.encode(res, enc);
 };
 
+<<<<<<< Updated upstream
 },{"../elliptic":164,"hash.js":183}],178:[function(require,module,exports){
+=======
+},{"../elliptic":166,"hash.js":185}],180:[function(require,module,exports){
+>>>>>>> Stashed changes
 module.exports = {
   doubles: {
     step: 4,
@@ -44975,7 +51111,11 @@ module.exports = {
   }
 };
 
+<<<<<<< Updated upstream
 },{}],179:[function(require,module,exports){
+=======
+},{}],181:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var utils = exports;
@@ -45149,7 +51289,11 @@ function intFromLE(bytes) {
 utils.intFromLE = intFromLE;
 
 
+<<<<<<< Updated upstream
 },{"bn.js":115}],180:[function(require,module,exports){
+=======
+},{"bn.js":117}],182:[function(require,module,exports){
+>>>>>>> Stashed changes
 module.exports={
   "_args": [
     [
@@ -45262,7 +51406,11 @@ module.exports={
   "version": "6.3.2"
 }
 
+<<<<<<< Updated upstream
 },{}],181:[function(require,module,exports){
+=======
+},{}],183:[function(require,module,exports){
+>>>>>>> Stashed changes
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -45566,7 +51714,11 @@ function isUndefined(arg) {
   return arg === void 0;
 }
 
+<<<<<<< Updated upstream
 },{}],182:[function(require,module,exports){
+=======
+},{}],184:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var md5 = require('create-hash/md5')
 module.exports = EVP_BytesToKey
@@ -45638,7 +51790,11 @@ function EVP_BytesToKey (password, salt, keyLen, ivLen) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145,"create-hash/md5":151}],183:[function(require,module,exports){
+=======
+},{"buffer":147,"create-hash/md5":153}],185:[function(require,module,exports){
+>>>>>>> Stashed changes
 var hash = exports;
 
 hash.utils = require('./hash/utils');
@@ -45655,7 +51811,11 @@ hash.sha384 = hash.sha.sha384;
 hash.sha512 = hash.sha.sha512;
 hash.ripemd160 = hash.ripemd.ripemd160;
 
+<<<<<<< Updated upstream
 },{"./hash/common":184,"./hash/hmac":185,"./hash/ripemd":186,"./hash/sha":187,"./hash/utils":188}],184:[function(require,module,exports){
+=======
+},{"./hash/common":186,"./hash/hmac":187,"./hash/ripemd":188,"./hash/sha":189,"./hash/utils":190}],186:[function(require,module,exports){
+>>>>>>> Stashed changes
 var hash = require('../hash');
 var utils = hash.utils;
 var assert = utils.assert;
@@ -45748,7 +51908,11 @@ BlockHash.prototype._pad = function pad() {
   return res;
 };
 
+<<<<<<< Updated upstream
 },{"../hash":183}],185:[function(require,module,exports){
+=======
+},{"../hash":185}],187:[function(require,module,exports){
+>>>>>>> Stashed changes
 var hmac = exports;
 
 var hash = require('../hash');
@@ -45798,7 +51962,11 @@ Hmac.prototype.digest = function digest(enc) {
   return this.outer.digest(enc);
 };
 
+<<<<<<< Updated upstream
 },{"../hash":183}],186:[function(require,module,exports){
+=======
+},{"../hash":185}],188:[function(require,module,exports){
+>>>>>>> Stashed changes
 var hash = require('../hash');
 var utils = hash.utils;
 
@@ -45944,7 +52112,11 @@ var sh = [
   8, 5, 12, 9, 12, 5, 14, 6, 8, 13, 6, 5, 15, 13, 11, 11
 ];
 
+<<<<<<< Updated upstream
 },{"../hash":183}],187:[function(require,module,exports){
+=======
+},{"../hash":185}],189:[function(require,module,exports){
+>>>>>>> Stashed changes
 var hash = require('../hash');
 var utils = hash.utils;
 var assert = utils.assert;
@@ -46510,7 +52682,11 @@ function g1_512_lo(xh, xl) {
   return r;
 }
 
+<<<<<<< Updated upstream
 },{"../hash":183}],188:[function(require,module,exports){
+=======
+},{"../hash":185}],190:[function(require,module,exports){
+>>>>>>> Stashed changes
 var utils = exports;
 var inherits = require('inherits');
 
@@ -46769,7 +52945,11 @@ function shr64_lo(ah, al, num) {
 };
 exports.shr64_lo = shr64_lo;
 
+<<<<<<< Updated upstream
 },{"inherits":191}],189:[function(require,module,exports){
+=======
+},{"inherits":193}],191:[function(require,module,exports){
+>>>>>>> Stashed changes
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = nBytes * 8 - mLen - 1
@@ -46855,7 +53035,11 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
+<<<<<<< Updated upstream
 },{}],190:[function(require,module,exports){
+=======
+},{}],192:[function(require,module,exports){
+>>>>>>> Stashed changes
 
 var indexOf = [].indexOf;
 
@@ -46866,7 +53050,11 @@ module.exports = function(arr, obj){
   }
   return -1;
 };
+<<<<<<< Updated upstream
 },{}],191:[function(require,module,exports){
+=======
+},{}],193:[function(require,module,exports){
+>>>>>>> Stashed changes
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -46891,7 +53079,11 @@ if (typeof Object.create === 'function') {
   }
 }
 
+<<<<<<< Updated upstream
 },{}],192:[function(require,module,exports){
+=======
+},{}],194:[function(require,module,exports){
+>>>>>>> Stashed changes
 /*!
  * Determine if an object is a Buffer
  *
@@ -46914,14 +53106,22 @@ function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
 
+<<<<<<< Updated upstream
 },{}],193:[function(require,module,exports){
+=======
+},{}],195:[function(require,module,exports){
+>>>>>>> Stashed changes
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
+<<<<<<< Updated upstream
 },{}],194:[function(require,module,exports){
+=======
+},{}],196:[function(require,module,exports){
+>>>>>>> Stashed changes
 var bn = require('bn.js');
 var brorand = require('brorand');
 
@@ -47036,7 +53236,11 @@ MillerRabin.prototype.getDivisor = function getDivisor(n, k) {
   return false;
 };
 
+<<<<<<< Updated upstream
 },{"bn.js":115,"brorand":116}],195:[function(require,module,exports){
+=======
+},{"bn.js":117,"brorand":118}],197:[function(require,module,exports){
+>>>>>>> Stashed changes
 module.exports = assert;
 
 function assert(val, msg) {
@@ -47049,7 +53253,11 @@ assert.equal = function assertEqual(l, r, msg) {
     throw new Error(msg || ('Assertion failed: ' + l + ' != ' + r));
 };
 
+<<<<<<< Updated upstream
 },{}],196:[function(require,module,exports){
+=======
+},{}],198:[function(require,module,exports){
+>>>>>>> Stashed changes
 module.exports={"2.16.840.1.101.3.4.1.1": "aes-128-ecb",
 "2.16.840.1.101.3.4.1.2": "aes-128-cbc",
 "2.16.840.1.101.3.4.1.3": "aes-128-ofb",
@@ -47063,7 +53271,11 @@ module.exports={"2.16.840.1.101.3.4.1.1": "aes-128-ecb",
 "2.16.840.1.101.3.4.1.43": "aes-256-ofb",
 "2.16.840.1.101.3.4.1.44": "aes-256-cfb"
 }
+<<<<<<< Updated upstream
 },{}],197:[function(require,module,exports){
+=======
+},{}],199:[function(require,module,exports){
+>>>>>>> Stashed changes
 // from https://github.com/indutny/self-signed/blob/gh-pages/lib/asn1.js
 // Fedor, you are amazing.
 
@@ -47182,7 +53394,11 @@ exports.signature = asn1.define('signature', function () {
   )
 })
 
+<<<<<<< Updated upstream
 },{"asn1.js":100}],198:[function(require,module,exports){
+=======
+},{"asn1.js":102}],200:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 // adapted from https://github.com/apatil/pemstrip
 var findProc = /Proc-Type: 4,ENCRYPTED\r?\nDEK-Info: AES-((?:128)|(?:192)|(?:256))-CBC,([0-9A-H]+)\r?\n\r?\n([0-9A-z\n\r\+\/\=]+)\r?\n/m
@@ -47216,7 +53432,11 @@ module.exports = function (okey, password) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"browserify-aes":120,"buffer":145,"evp_bytestokey":182}],199:[function(require,module,exports){
+=======
+},{"browserify-aes":122,"buffer":147,"evp_bytestokey":184}],201:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var asn1 = require('./asn1')
 var aesid = require('./aesid.json')
@@ -47321,7 +53541,11 @@ function decrypt (data, password) {
 }
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./aesid.json":196,"./asn1":197,"./fixProc":198,"browserify-aes":120,"buffer":145,"pbkdf2":200}],200:[function(require,module,exports){
+=======
+},{"./aesid.json":198,"./asn1":199,"./fixProc":200,"browserify-aes":122,"buffer":147,"pbkdf2":202}],202:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (process,Buffer){
 var createHmac = require('create-hmac')
 var checkParameters = require('./precondition')
@@ -47393,7 +53617,11 @@ exports.pbkdf2Sync = function (password, salt, iterations, keylen, digest) {
 }
 
 }).call(this,require('_process'),require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./precondition":201,"_process":142,"buffer":145,"create-hmac":152}],201:[function(require,module,exports){
+=======
+},{"./precondition":203,"_process":144,"buffer":147,"create-hmac":154}],203:[function(require,module,exports){
+>>>>>>> Stashed changes
 var MAX_ALLOC = Math.pow(2, 30) - 1 // default in iojs
 module.exports = function (iterations, keylen) {
   if (typeof iterations !== 'number') {
@@ -47413,7 +53641,11 @@ module.exports = function (iterations, keylen) {
   }
 }
 
+<<<<<<< Updated upstream
 },{}],202:[function(require,module,exports){
+=======
+},{}],204:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (process){
 'use strict';
 
@@ -47460,7 +53692,11 @@ function nextTick(fn, arg1, arg2, arg3) {
 }
 
 }).call(this,require('_process'))
+<<<<<<< Updated upstream
 },{"_process":142}],203:[function(require,module,exports){
+=======
+},{"_process":144}],205:[function(require,module,exports){
+>>>>>>> Stashed changes
 exports.publicEncrypt = require('./publicEncrypt');
 exports.privateDecrypt = require('./privateDecrypt');
 
@@ -47471,7 +53707,11 @@ exports.privateEncrypt = function privateEncrypt(key, buf) {
 exports.publicDecrypt = function publicDecrypt(key, buf) {
   return exports.privateDecrypt(key, buf, true);
 };
+<<<<<<< Updated upstream
 },{"./privateDecrypt":205,"./publicEncrypt":206}],204:[function(require,module,exports){
+=======
+},{"./privateDecrypt":207,"./publicEncrypt":208}],206:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var createHash = require('create-hash');
 module.exports = function (seed, len) {
@@ -47490,7 +53730,11 @@ function i2ops(c) {
   return out;
 }
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145,"create-hash":149}],205:[function(require,module,exports){
+=======
+},{"buffer":147,"create-hash":151}],207:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var parseKeys = require('parse-asn1');
 var mgf = require('./mgf');
@@ -47601,7 +53845,11 @@ function compare(a, b){
   return dif;
 }
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./mgf":204,"./withPublic":207,"./xor":208,"bn.js":115,"browserify-rsa":136,"buffer":145,"create-hash":149,"parse-asn1":199}],206:[function(require,module,exports){
+=======
+},{"./mgf":206,"./withPublic":209,"./xor":210,"bn.js":117,"browserify-rsa":138,"buffer":147,"create-hash":151,"parse-asn1":201}],208:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var parseKeys = require('parse-asn1');
 var randomBytes = require('randombytes');
@@ -47699,7 +53947,11 @@ function nonZero(len, crypto) {
   return out;
 }
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./mgf":204,"./withPublic":207,"./xor":208,"bn.js":115,"browserify-rsa":136,"buffer":145,"create-hash":149,"parse-asn1":199,"randombytes":209}],207:[function(require,module,exports){
+=======
+},{"./mgf":206,"./withPublic":209,"./xor":210,"bn.js":117,"browserify-rsa":138,"buffer":147,"create-hash":151,"parse-asn1":201,"randombytes":211}],209:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var bn = require('bn.js');
 function withPublic(paddedMsg, key) {
@@ -47712,7 +53964,11 @@ function withPublic(paddedMsg, key) {
 
 module.exports = withPublic;
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"bn.js":115,"buffer":145}],208:[function(require,module,exports){
+=======
+},{"bn.js":117,"buffer":147}],210:[function(require,module,exports){
+>>>>>>> Stashed changes
 module.exports = function xor(a, b) {
   var len = a.length;
   var i = -1;
@@ -47721,7 +53977,11 @@ module.exports = function xor(a, b) {
   }
   return a
 };
+<<<<<<< Updated upstream
 },{}],209:[function(require,module,exports){
+=======
+},{}],211:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (process,global,Buffer){
 'use strict'
 
@@ -47761,10 +54021,17 @@ function randomBytes (size, cb) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"_process":142,"buffer":145}],210:[function(require,module,exports){
 module.exports = require("./lib/_stream_duplex.js")
 
 },{"./lib/_stream_duplex.js":211}],211:[function(require,module,exports){
+=======
+},{"_process":144,"buffer":147}],212:[function(require,module,exports){
+module.exports = require("./lib/_stream_duplex.js")
+
+},{"./lib/_stream_duplex.js":213}],213:[function(require,module,exports){
+>>>>>>> Stashed changes
 // a duplex stream is just a stream that is both readable and writable.
 // Since JS doesn't have multiple prototypal inheritance, this class
 // prototypally inherits from Readable, and then parasitically from
@@ -47840,7 +54107,11 @@ function forEach(xs, f) {
     f(xs[i], i);
   }
 }
+<<<<<<< Updated upstream
 },{"./_stream_readable":213,"./_stream_writable":215,"core-util-is":147,"inherits":191,"process-nextick-args":202}],212:[function(require,module,exports){
+=======
+},{"./_stream_readable":215,"./_stream_writable":217,"core-util-is":149,"inherits":193,"process-nextick-args":204}],214:[function(require,module,exports){
+>>>>>>> Stashed changes
 // a passthrough stream.
 // basically just the most minimal sort of Transform stream.
 // Every written chunk gets output as-is.
@@ -47867,7 +54138,11 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
+<<<<<<< Updated upstream
 },{"./_stream_transform":214,"core-util-is":147,"inherits":191}],213:[function(require,module,exports){
+=======
+},{"./_stream_transform":216,"core-util-is":149,"inherits":193}],215:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (process){
 'use strict';
 
@@ -48811,7 +55086,11 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this,require('_process'))
+<<<<<<< Updated upstream
 },{"./_stream_duplex":211,"./internal/streams/BufferList":216,"_process":142,"buffer":145,"buffer-shims":143,"core-util-is":147,"events":181,"inherits":191,"isarray":193,"process-nextick-args":202,"string_decoder/":231,"util":117}],214:[function(require,module,exports){
+=======
+},{"./_stream_duplex":213,"./internal/streams/BufferList":218,"_process":144,"buffer":147,"buffer-shims":145,"core-util-is":149,"events":183,"inherits":193,"isarray":195,"process-nextick-args":204,"string_decoder/":233,"util":119}],216:[function(require,module,exports){
+>>>>>>> Stashed changes
 // a transform stream is a readable/writable stream where you do
 // something with the data.  Sometimes it's called a "filter",
 // but that's not a great name for it, since that implies a thing where
@@ -48994,7 +55273,11 @@ function done(stream, er, data) {
 
   return stream.push(null);
 }
+<<<<<<< Updated upstream
 },{"./_stream_duplex":211,"core-util-is":147,"inherits":191}],215:[function(require,module,exports){
+=======
+},{"./_stream_duplex":213,"core-util-is":149,"inherits":193}],217:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (process){
 // A bit simpler than readable streams.
 // Implement an async ._write(chunk, encoding, cb), and it'll handle all
@@ -49551,7 +55834,11 @@ function CorkedRequest(state) {
   };
 }
 }).call(this,require('_process'))
+<<<<<<< Updated upstream
 },{"./_stream_duplex":211,"_process":142,"buffer":145,"buffer-shims":143,"core-util-is":147,"events":181,"inherits":191,"process-nextick-args":202,"util-deprecate":232}],216:[function(require,module,exports){
+=======
+},{"./_stream_duplex":213,"_process":144,"buffer":147,"buffer-shims":145,"core-util-is":149,"events":183,"inherits":193,"process-nextick-args":204,"util-deprecate":234}],218:[function(require,module,exports){
+>>>>>>> Stashed changes
 'use strict';
 
 var Buffer = require('buffer').Buffer;
@@ -49616,10 +55903,17 @@ BufferList.prototype.concat = function (n) {
   }
   return ret;
 };
+<<<<<<< Updated upstream
 },{"buffer":145,"buffer-shims":143}],217:[function(require,module,exports){
 module.exports = require("./lib/_stream_passthrough.js")
 
 },{"./lib/_stream_passthrough.js":212}],218:[function(require,module,exports){
+=======
+},{"buffer":147,"buffer-shims":145}],219:[function(require,module,exports){
+module.exports = require("./lib/_stream_passthrough.js")
+
+},{"./lib/_stream_passthrough.js":214}],220:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (process){
 var Stream = (function (){
   try {
@@ -49639,6 +55933,7 @@ if (!process.browser && process.env.READABLE_STREAM === 'disable' && Stream) {
 }
 
 }).call(this,require('_process'))
+<<<<<<< Updated upstream
 },{"./lib/_stream_duplex.js":211,"./lib/_stream_passthrough.js":212,"./lib/_stream_readable.js":213,"./lib/_stream_transform.js":214,"./lib/_stream_writable.js":215,"_process":142}],219:[function(require,module,exports){
 module.exports = require("./lib/_stream_transform.js")
 
@@ -49646,6 +55941,15 @@ module.exports = require("./lib/_stream_transform.js")
 module.exports = require("./lib/_stream_writable.js")
 
 },{"./lib/_stream_writable.js":215}],221:[function(require,module,exports){
+=======
+},{"./lib/_stream_duplex.js":213,"./lib/_stream_passthrough.js":214,"./lib/_stream_readable.js":215,"./lib/_stream_transform.js":216,"./lib/_stream_writable.js":217,"_process":144}],221:[function(require,module,exports){
+module.exports = require("./lib/_stream_transform.js")
+
+},{"./lib/_stream_transform.js":216}],222:[function(require,module,exports){
+module.exports = require("./lib/_stream_writable.js")
+
+},{"./lib/_stream_writable.js":217}],223:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 /*
 CryptoJS v3.1.2
@@ -49859,7 +56163,11 @@ function ripemd160 (message) {
 module.exports = ripemd160
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145}],222:[function(require,module,exports){
+=======
+},{"buffer":147}],224:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 // prototype class for hash functions
 function Hash (blockSize, finalSize) {
@@ -49932,7 +56240,11 @@ Hash.prototype._update = function () {
 module.exports = Hash
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"buffer":145}],223:[function(require,module,exports){
+=======
+},{"buffer":147}],225:[function(require,module,exports){
+>>>>>>> Stashed changes
 var exports = module.exports = function SHA (algorithm) {
   algorithm = algorithm.toLowerCase()
 
@@ -49949,7 +56261,11 @@ exports.sha256 = require('./sha256')
 exports.sha384 = require('./sha384')
 exports.sha512 = require('./sha512')
 
+<<<<<<< Updated upstream
 },{"./sha":224,"./sha1":225,"./sha224":226,"./sha256":227,"./sha384":228,"./sha512":229}],224:[function(require,module,exports){
+=======
+},{"./sha":226,"./sha1":227,"./sha224":228,"./sha256":229,"./sha384":230,"./sha512":231}],226:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-0, as defined
@@ -50046,7 +56362,11 @@ Sha.prototype._hash = function () {
 module.exports = Sha
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./hash":222,"buffer":145,"inherits":191}],225:[function(require,module,exports){
+=======
+},{"./hash":224,"buffer":147,"inherits":193}],227:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined
@@ -50148,7 +56468,11 @@ Sha1.prototype._hash = function () {
 module.exports = Sha1
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./hash":222,"buffer":145,"inherits":191}],226:[function(require,module,exports){
+=======
+},{"./hash":224,"buffer":147,"inherits":193}],228:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
@@ -50204,7 +56528,11 @@ Sha224.prototype._hash = function () {
 module.exports = Sha224
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./hash":222,"./sha256":227,"buffer":145,"inherits":191}],227:[function(require,module,exports){
+=======
+},{"./hash":224,"./sha256":229,"buffer":147,"inherits":193}],229:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
@@ -50342,7 +56670,11 @@ Sha256.prototype._hash = function () {
 module.exports = Sha256
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./hash":222,"buffer":145,"inherits":191}],228:[function(require,module,exports){
+=======
+},{"./hash":224,"buffer":147,"inherits":193}],230:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var inherits = require('inherits')
 var SHA512 = require('./sha512')
@@ -50402,7 +56734,11 @@ Sha384.prototype._hash = function () {
 module.exports = Sha384
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./hash":222,"./sha512":229,"buffer":145,"inherits":191}],229:[function(require,module,exports){
+=======
+},{"./hash":224,"./sha512":231,"buffer":147,"inherits":193}],231:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (Buffer){
 var inherits = require('inherits')
 var Hash = require('./hash')
@@ -50665,7 +57001,11 @@ Sha512.prototype._hash = function () {
 module.exports = Sha512
 
 }).call(this,require("buffer").Buffer)
+<<<<<<< Updated upstream
 },{"./hash":222,"buffer":145,"inherits":191}],230:[function(require,module,exports){
+=======
+},{"./hash":224,"buffer":147,"inherits":193}],232:[function(require,module,exports){
+>>>>>>> Stashed changes
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -50794,7 +57134,11 @@ Stream.prototype.pipe = function(dest, options) {
   return dest;
 };
 
+<<<<<<< Updated upstream
 },{"events":181,"inherits":191,"readable-stream/duplex.js":210,"readable-stream/passthrough.js":217,"readable-stream/readable.js":218,"readable-stream/transform.js":219,"readable-stream/writable.js":220}],231:[function(require,module,exports){
+=======
+},{"events":183,"inherits":193,"readable-stream/duplex.js":212,"readable-stream/passthrough.js":219,"readable-stream/readable.js":220,"readable-stream/transform.js":221,"readable-stream/writable.js":222}],233:[function(require,module,exports){
+>>>>>>> Stashed changes
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -51017,7 +57361,11 @@ function base64DetectIncompleteChar(buffer) {
   this.charLength = this.charReceived ? 3 : 0;
 }
 
+<<<<<<< Updated upstream
 },{"buffer":145}],232:[function(require,module,exports){
+=======
+},{"buffer":147}],234:[function(require,module,exports){
+>>>>>>> Stashed changes
 (function (global){
 
 /**
@@ -51088,7 +57436,11 @@ function config (name) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+<<<<<<< Updated upstream
 },{}],233:[function(require,module,exports){
+=======
+},{}],235:[function(require,module,exports){
+>>>>>>> Stashed changes
 var indexOf = require('indexof');
 
 var Object_keys = function (obj) {
@@ -51228,7 +57580,11 @@ exports.createContext = Script.createContext = function (context) {
     return copy;
 };
 
+<<<<<<< Updated upstream
 },{"indexof":190}]},{},[99])(99)
+=======
+},{"indexof":192}]},{},[101])(101)
+>>>>>>> Stashed changes
 });
 
 //// TRUFFLE BOOTSTRAP                                          
@@ -51261,7 +57617,11 @@ window.addEventListener('load', function() {
 
                                                                 
 
+<<<<<<< Updated upstream
   [BlockOneOracleClient,BlockOneOracleClientI,BlockOneOracleClientTest,BlockOneOracleEndOfDay,BlockOneOracleEntityConnect,BlockOneOracleIntraDay,BlockOneUser,Entitlement,EntitlementRegistry,BlockOneOracle,Ratings,RicUri,Migrations].forEach(function(contract) {         
+=======
+  [BlockOneOracleClient,BlockOneOracle,BlockOneOracleClientI,BlockOneOracleClientTest,BlockOneOracleEndOfDay,BlockOneOracleEntityConnect,BlockOneOracleIntraDay,BlockOneUser,Entitlement,EntitlementMock,EntitlementRegistry,EntitlementRegistryMock,Migrations,Ratings,RicUri].forEach(function(contract) {         
+>>>>>>> Stashed changes
 
     contract.setProvider(window.web3.currentProvider);          
 
@@ -51436,6 +57796,7 @@ window.onload = function() {
             [ Ratings, RicUri ].forEach(function (contract) {
                 if (contract.networks().indexOf(network) > -1) {
                     contract.setNetwork(network);
+                    $.event.trigger({ type: "networkSet"});
                 }
             });
         });
