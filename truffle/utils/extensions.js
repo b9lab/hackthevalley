@@ -7,14 +7,16 @@ module.exports = {
             interval = interval ? interval : 500;
             transactionReceiptAsync = function(txnHash, resolve, reject) {
                 try {
-                    var receipt = web3.eth.getTransactionReceipt(txnHash);
-                    if (receipt == null) {
-                        setTimeout(function () {
-                            transactionReceiptAsync(txnHash, resolve, reject);
-                        }, interval);
-                    } else {
-                        resolve(receipt);
-                    }
+                    web3.eth.getTransactionReceiptPromise(txnHash)
+                        .then(function (receipt) {
+                            if (receipt == null) {
+                                setTimeout(function () {
+                                    transactionReceiptAsync(txnHash, resolve, reject);
+                                }, interval);
+                            } else {
+                                resolve(receipt);
+                            }
+                        });
                 } catch(e) {
                     reject(e);
                 }
@@ -160,13 +162,17 @@ module.exports = {
     makeSureHasAtLeast: function (richAccount, recipients, wei) {
         var requests = [];
         recipients.forEach(function (recipient) {
-            if (web3.eth.getBalance(recipient).lessThan(wei)) {
-                requests.push(web3.eth.sendTransaction({
-                    from: richAccount,
-                    to: recipient,
-                    value: wei
-                }));
-            }
+            requests.push(web3.eth.getBalancePromise(recipient)
+                .then(function (balance) {
+                    if (balance.lessThan(wei)) {
+                        return web3.eth.sendTransactionPromise({
+                            from: richAccount,
+                            to: recipient,
+                            value: wei
+                        });
+                    }
+                })
+            );
         });
         return requests;
     },
