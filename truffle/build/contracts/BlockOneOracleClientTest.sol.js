@@ -1320,7 +1320,6 @@ var SolidityEvent = require("web3/lib/web3/event.js");
             "type": "uint256"
           },
           {
->>>>>>> Stashed changes
             "indexed": false,
             "name": "connections",
             "type": "uint256"
@@ -1330,13 +1329,9 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "type": "event"
       }
     },
-<<<<<<< Updated upstream
-    "updated_at": 1485621487842
-=======
     "updated_at": 1485628537305,
     "address": "0xbc2afb10a399b35d1fd490d801323b989ef53355",
     "links": {}
->>>>>>> Stashed changes
   }
 };
 
