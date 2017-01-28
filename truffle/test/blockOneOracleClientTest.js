@@ -18,10 +18,39 @@ contract('BlockOneOracleClientTest', function(accounts) {
             });
     });
 
+    it("should get an intra day", function() {
+        var requestId;
+        return BlockOneOracleClientTest.deployed()
+            .request_IntraDay.call("VOD.L", new Date().getTime())
+            .then(function (requestId) {
+                assert.isAtLeast(requestId.toNumber(), 3, "should not be the first request");
+                return BlockOneOracleClientTest.deployed()
+                    .request_IntraDay.sendTransaction("VOD.L", new Date().getTime(), { from: user });
+            })
+            .then(function (txHash) {
+                return web3.eth.getTransactionReceiptMined(txHash);
+            })
+            .then(function (receipt) {
+                var formattedEvent = BlockOneOracleClientTest.deployed()
+                    .BlockOneOracleClientTest_requested_IntraDay()
+                    .formatter(receipt.logs[1]);
+                requestId = formattedEvent.args.requestId;
+                console.log("requestId:", requestId.toString(10));
+                assert.isAtLeast(requestId.toNumber(), 14, "should not be the first request");
+                return Extensions.getEventsPromise(BlockOneOracleClientTest.deployed()
+                    .BlockOneOracleClientTest_respond_IntraDay(
+                        {}, { fromBlock: receipt.blockNumber }));
+            })
+            .then(function (events) {
+                assert.strictEqual(events.length, 1, "should have received one");
+                assert.strictEqual(events[0].args.requestId.toString(10), requestId.toString(10), "should match");
+            });
+    });
+
     it("should get an end of day", function() {
         var requestId;
         return BlockOneOracleClientTest.deployed()
-            .request_EndOfDay.call("V0D.L", new Date().getTime())
+            .request_EndOfDay.call("VOD.L", new Date().getTime())
             .then(function (requestId) {
                 assert.isAtLeast(requestId.toNumber(), 3, "should not be the first request");
                 return BlockOneOracleClientTest.deployed()
@@ -44,6 +73,39 @@ contract('BlockOneOracleClientTest', function(accounts) {
             .then(function (events) {
                 assert.strictEqual(events.length, 1, "should have received one");
                 assert.strictEqual(events[0].args.requestId.toString(10), requestId.toString(10), "should match");
+            });
+    });
+
+    it("should get an entity count", function() {
+        var requestId;
+        var goldmanSachs = "http://permid.org/1-4295884772";
+        var unilever = "http://permid.org/1-4295911963";
+        return BlockOneOracleClientTest.deployed()
+            .request_EntityConnect.call(goldmanSachs, unilever, 2)
+            .then(function (requestId) {
+                assert.isAtLeast(requestId.toNumber(), 3, "should not be the first request");
+                return BlockOneOracleClientTest.deployed()
+                    .request_EntityConnect.sendTransaction(
+                        goldmanSachs, unilever, 2, { from: user });
+            })
+            .then(function (txHash) {
+                return web3.eth.getTransactionReceiptMined(txHash);
+            })
+            .then(function (receipt) {
+                var formattedEvent = BlockOneOracleClientTest.deployed()
+                    .BlockOneOracleClientTest_requested_EntityConnect()
+                    .formatter(receipt.logs[1]);
+                requestId = formattedEvent.args.requestId;
+                console.log("requestId:", requestId.toString(10));
+                assert.isAtLeast(requestId.toNumber(), 14, "should not be the first request");
+                return Extensions.getEventsPromise(BlockOneOracleClientTest.deployed()
+                    .BlockOneOracleClientTest_respond_EntityConnect(
+                        {}, { fromBlock: receipt.blockNumber }));
+            })
+            .then(function (events) {
+                assert.strictEqual(events.length, 1, "should have received one");
+                assert.strictEqual(events[0].args.requestId.toString(10), requestId.toString(10), "should match");
+                assert.isAtLeast(events[0].args.connections.toNumber(), 7, "should be large connections");
             });
     });
 

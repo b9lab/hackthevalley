@@ -14,7 +14,13 @@ contract BlockOneOracleClientTest is BlockOneOracleClient,
     function BlockOneOracleClientTest() BlockOneOracleClient() {
     }
 
+    event BlockOneOracleClientTest_requested_IntraDay(uint requestId);
     event BlockOneOracleClientTest_respond_IntraDay(uint requestId, uint timestamp, bytes32 symbol, uint price, uint bid, uint ask, uint volume);
+
+    function request_IntraDay(bytes32 symbol, uint timestamp) returns (uint requestId) {
+        requestId = BlockOneOracleIntraDay.request_IntraDay(symbol, timestamp);
+        BlockOneOracleClientTest_requested_IntraDay(requestId);
+    }
 
     function respondSuccess_IntraDay(uint requestId, uint timestamp, bytes32 symbol, uint price, uint bid, uint ask, uint volume) {
         BlockOneOracleClientTest_respond_IntraDay(requestId, timestamp, symbol, price, bid, ask, volume);
@@ -44,7 +50,13 @@ contract BlockOneOracleClientTest is BlockOneOracleClient,
 
     //-------------------------------------------------------------------------------------------------------
 
+    event BlockOneOracleClientTest_requested_EntityConnect(uint requestId);
     event BlockOneOracleClientTest_respond_EntityConnect(uint requestId, uint connections);
+
+    function request_EntityConnect(bytes32 uri1, bytes32 uri2, uint level) returns(uint requestId) {
+        requestId = BlockOneOracleEntityConnect.request_EntityConnect(uri1, uri2, level);
+        BlockOneOracleClientTest_requested_EntityConnect(requestId);
+    }
 
     function respondSuccess_EntityConnect(uint requestId, uint connections) {
         BlockOneOracleClientTest_respond_EntityConnect(requestId, connections);
