@@ -2,10 +2,10 @@ module.exports = {
     build: {
         "index.html": "index.html",
         "app.js": [
-            "javascripts/app.js"
+            "js/app.js"
         ],
         "app.css": [
-            "stylesheets/app.css"
+            "css/app.css"
         ],
         "images/": "images/"
     },
