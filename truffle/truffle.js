@@ -1,5 +1,4 @@
 module.exports = {
-  }
     build: {
         "index.html": "index.html",
         "app.js": [
@@ -13,4 +12,10 @@ module.exports = {
     rpc: {
         host: "localhost",
         port: 8545
+    },
+    networks: {
+        norsborg: {
+            network_id: 16123
+        }
+    }
 };
