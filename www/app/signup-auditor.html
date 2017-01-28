@@ -1,0 +1,44 @@
+<html>
+   <head>
+       <meta charset="utf-8"> <!-- needed for ether symbol to display correctly -->
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <script src="https://blockone.thomsonreuters.com/wallet-bar/bundle.js"></script>
+       <script src="https://rawgit.com/ethereum/web3.js/develop/dist/web3.min.js"></script>
+   </head>
+   <body>
+
+       <script>
+           // PUT YOUR CONTRACT'S ABI HERE
+           // var abi = [{"constant":true,"inputs":[],"name":"getEntitlement","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"}];
+
+           // PUT YOUR UNIQUE DAPP ID HERE
+           var dappId = "com.b9lab.drdao";
+
+           // PUT YOUR CONTRACT ADDRESS HERE
+           // var contractAddress = "0x09d3f15660192f09f5510c1063b7b3b31cca0787";
+
+           var walletBar = new WalletBar({
+               dappNamespace: dappId,
+               blockchain: "norsborg",
+               callbacks: { signOut: function () { location.reload(); } }
+           });
+
+           var web3 = new Web3();
+           // var myContract;
+           walletBar.applyHook(web3)
+           .then(function() {
+               document.getElementById("app").style.display="";
+               // myContract = web3.eth.contract(abi).at(contractAddress);
+
+               setInterval( function () {
+                  alert("callback"); 
+               }, 1000);
+           })
+           .catch(function(err) {
+               console.log(err);
+           });
+
+       
+       </script>
+   </body>
+</html>
