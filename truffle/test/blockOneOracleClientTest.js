@@ -11,40 +11,40 @@ contract('BlockOneOracleClientTest', function(accounts) {
         return Extensions.makeSureAreUnlocked(
                 [ user ])
             .then(function() {
-                var requests = Extensions.makeSureHasAtLeast(
+                return Extensions.makeSureHasAtLeast(
                     user,
                     [ user ],
                     web3.toWei(1));
-                return web3.eth.getTransactionReceiptMined(requests);
             });
     });
 
     it("should get an end of day", function() {
+        var requestId;
         return BlockOneOracleClientTest.deployed()
             .request_EndOfDay.call("V0D.L", new Date().getTime())
             .then(function (requestId) {
                 assert.isAtLeast(requestId.toNumber(), 3, "should not be the first request");
                 return BlockOneOracleClientTest.deployed()
-                    .request_EndOfDay.sendTransaction("V0D.L", new Date().getTime(), { from: user });
+                    .request_EndOfDay.sendTransaction("VOD.L", new Date().getTime(), { from: user });
             })
             .then(function (txHash) {
                 return web3.eth.getTransactionReceiptMined(txHash);
             })
             .then(function (receipt) {
                 var formattedEvent = BlockOneOracleClientTest.deployed()
-                    .BlockOneOracleClientTest_respond_EndOfDay()
-                    .formatter(receipt.logs[0]);
-                console.log(formattedEvent.args.requestId.toString(10));
-                console.log(formattedEvent.args.timestamp.toString(10));
-                console.log(web3.toUtf8(formattedEvent.args.symbol));
-                console.log(formattedEvent.args.price.toString(10));
-                console.log(formattedEvent.args.bid.toString(10));
-                console.log(formattedEvent.args.ask.toString(10));
-                console.log(formattedEvent.args.volume.toString(10));
-                assert.strictEqual(web3.toUtf8(formattedEvent.args.symbol), "", "should be something else");
-                // assert.strictEqual(formattedEvent.args.symbol, "0x00000000000000000000000000000000000000000000000000000159e496c0d4", "should be hex");
-                assert.isAtLeast(formattedEvent.args.requestId.toNumber(), 3, "should not be the first request");
+                    .BlockOneOracleClientTest_requested_EndOfDay()
+                    .formatter(receipt.logs[1]);
+                requestId = formattedEvent.args.requestId;
+                console.log("requestId:", requestId.toString(10));
+                assert.isAtLeast(requestId.toNumber(), 14, "should not be the first request");
+                return Extensions.getEventsPromise(BlockOneOracleClientTest.deployed()
+                    .BlockOneOracleClientTest_respond_EndOfDay(
+                        {}, { fromBlock: receipt.blockNumber }));
             })
+            .then(function (events) {
+                assert.strictEqual(events.length, 1, "should have received one");
+                assert.strictEqual(events[0].args.requestId.toString(10), requestId.toString(10), "should match");
+            });
     });
 
 

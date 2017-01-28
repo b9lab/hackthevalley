@@ -26,7 +26,13 @@ contract BlockOneOracleClientTest is BlockOneOracleClient,
 
     //-------------------------------------------------------------------------------------------------------
 
+    event BlockOneOracleClientTest_requested_EndOfDay(uint requestId);
     event BlockOneOracleClientTest_respond_EndOfDay(uint requestId, uint timestamp, bytes32 symbol, uint price, uint bid, uint ask, uint volume);
+
+    function request_EndOfDay(bytes32 symbol, uint timestamp) returns (uint requestId) {
+        requestId = BlockOneOracleEndOfDay.request_EndOfDay(symbol, timestamp);
+        BlockOneOracleClientTest_requested_EndOfDay(requestId);
+    }
 
     function respondSuccess_EndOfDay(uint requestId, uint timestamp, bytes32 symbol, uint price, uint bid, uint ask, uint volume) {
         BlockOneOracleClientTest_respond_EndOfDay(requestId, timestamp, symbol, price, bid, ask, volume);
