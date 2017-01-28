@@ -3,6 +3,12 @@ pragma solidity ^0.4.5;
 import "BlockOneUser.sol";
 
 contract Ratings is BlockOneUser {
+    uint constant IPFS_HASH = 0;
+    uint constant NAME_HASH = 1;
+    uint constant DESCRIPTION_HASH = 2;
+    uint constant RIC_HASH = 3;
+    uint constant URI_HASH = 4;
+
     enum Status {
         OPEN, REFUND, PAYOUT
     }
@@ -15,9 +21,12 @@ contract Ratings is BlockOneUser {
     }
 
     struct RequestForRating {
-        string ipfsHash; // Document to rate
-        string name; // Name of the rating required
-        string description; // Description of the rating required
+        // [ IPFS_HASH ]: Document to rate
+        // [ NAME_HASH ]: Name of the rating required
+        // [ DESCRIPTION_HASH ]: Description of the rating required
+        // [ RIC_HASH ]: RIC code as known by Thomson Reuters
+        // [ URI_HASH ]: Uri as  known by Thomson Reuters
+        string[] info;
         uint deadline; // As a 1970 timestamp
         uint reward; // In Ether in escrow in this contract
         uint maxAuditors; // Max number of auditors to work on it
@@ -36,6 +45,8 @@ contract Ratings is BlockOneUser {
         string indexed ipfsHash,
         string name,
         string description,
+        string ric,
+        string uri,
         uint deadline,
         uint maxAuditors,
         uint reward);
@@ -77,8 +88,8 @@ contract Ratings is BlockOneUser {
         _;
     }
 
-    function submitRequestForRating(string name, string description,
-        uint deadline, uint maxAuditors, string ipfsHash)
+    function submitRequestForRating(string name, string description, string ric,
+        string uri, uint deadline, uint maxAuditors, string ipfsHash)
         entitledInvestorOnly
         payable
         returns (bool success) {
@@ -87,24 +98,26 @@ contract Ratings is BlockOneUser {
         }
         bytes32 key = sha3(msg.sender, name, description,
             deadline, msg.value, maxAuditors, ipfsHash, block.number);
-        if (bytes(requestForRatings[key].ipfsHash).length != 0) {
+        if (bytes(requestForRatings[key].info[IPFS_HASH]).length != 0) {
             throw;
         }
-        requestForRatings[key] = RequestForRating({
-            name: name,
-            description: description,
-            deadline: deadline,
-            reward: msg.value,
-            maxAuditors: maxAuditors,
-            ipfsHash: ipfsHash,
-            auditorCount: 0,
-            submissionCount: 0,
-            status: Status.OPEN
-        });
+        RequestForRating request = requestForRatings[key];
+        request.info[IPFS_HASH] = ipfsHash;
+        request.info[NAME_HASH] = name;
+        request.info[DESCRIPTION_HASH] = description;
+        request.info[RIC_HASH] = ric;
+        request.info[URI_HASH] = uri;
+        request.deadline = deadline;
+        request.reward = msg.value;
+        request.maxAuditors = maxAuditors;
+        request.auditorCount = 0;
+        request.submissionCount = 0;
+        request.status = Status.OPEN;
         requestForRatings[key].contributors[msg.sender] = msg.value;
         LogRequestForRatingSubmitted(
             key, msg.sender, ipfsHash,
-            name, description, deadline,
+            name, description, ric, uri,
+            deadline,
             maxAuditors, msg.value);
         return true;
     }
@@ -115,7 +128,7 @@ contract Ratings is BlockOneUser {
         returns (bool success) {
         RequestForRating request = requestForRatings[key];
         if (msg.value == 0
-            || bytes(request.ipfsHash).length == 0
+            || bytes(request.info[IPFS_HASH]).length == 0
             || request.deadline < now
             || request.status != Status.OPEN) {
             throw;
@@ -131,7 +144,7 @@ contract Ratings is BlockOneUser {
         returns (bool success) {
         RequestForRating request = requestForRatings[key];
         Auditor auditor = request.auditors[msg.sender];
-        if (bytes(request.ipfsHash).length == 0
+        if (bytes(request.info[IPFS_HASH]).length == 0
             || request.auditorCount == request.maxAuditors
             || auditor.joined
             || request.deadline < now
@@ -148,7 +161,7 @@ contract Ratings is BlockOneUser {
         returns (bool success) {
         RequestForRating request = requestForRatings[key];
         Auditor auditor = request.auditors[msg.sender];
-        if (bytes(request.ipfsHash).length == 0
+        if (bytes(request.info[IPFS_HASH]).length == 0
             || !auditor.joined
             || request.deadline < now
             || bytes(ipfsHash).length == 0
@@ -176,7 +189,7 @@ contract Ratings is BlockOneUser {
             //      - or if we have all submissions.
             bool readyToPayOut = (request.deadline < now)
                 || (request.submissionCount == request.maxAuditors);
-            if (bytes(request.ipfsHash).length == 0
+            if (bytes(request.info[IPFS_HASH]).length == 0
                 || request.submissionCount == 0 // No work done
                 || !readyToPayOut) {
                 throw;
@@ -209,7 +222,7 @@ contract Ratings is BlockOneUser {
         if (request.status == Status.OPEN) {
             bool readyToRefund = (request.deadline < now)
                 && (request.submissionCount == 0);
-            if (bytes(request.ipfsHash).length == 0
+            if (bytes(request.info[IPFS_HASH]).length == 0
                 || !readyToRefund) { 
                 throw;
             }
