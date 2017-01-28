@@ -1,4 +1,4 @@
-pragma solidity ^0.4.4;
+pragma solidity ^0.4.5;
 
 contract BlockOneOracle {
     function request_IntraDay(bytes32 symbol,uint256 timestamp)returns (uint256 );

@@ -15,7 +15,5 @@ window.onload = function() {
 
     accounts = accs;
     account = accounts[0];
-
-    refreshBalance();
   });
 }

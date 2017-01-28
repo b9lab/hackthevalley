@@ -1,4 +1,4 @@
-pragma solidity ^0.4.4;
+pragma solidity ^0.4.5;
 
 import "../BlockOneOracleClient.sol";
 import "../BlockOneOracleIntraDay.sol";
@@ -11,7 +11,12 @@ contract BlockOneOracleClientTest is BlockOneOracleClient,
     event BlockOneOracleClientTest_onOracleResponse(uint requestId);
     event BlockOneOracleClientTest_onOracleFailure(uint requestId, uint reason);
 
-    function BlockOneOracleClientTest() BlockOneOracleClient() {
+    function BlockOneOracleClientTest(address entitlementRegistry)
+        BlockOneOracleClient(entitlementRegistry) {
+    }
+
+    function getAppName() constant returns (string) {
+        return "com.b9lab.oracle.test";
     }
 
     event BlockOneOracleClientTest_requested_IntraDay(uint requestId);

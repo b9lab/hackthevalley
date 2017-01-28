@@ -1,11 +1,10 @@
-pragma solidity ^0.4.4;
+pragma solidity ^0.4.5;
 
+import "BlockOneUser.sol";
 import "BlockOneOracleClientI.sol";
-import "EntitlementRegistry.sol";
 
 // You need to inherit from this contract
-contract BlockOneOracleClient is BlockOneOracleClientI {
-    EntitlementRegistry registry;
+contract BlockOneOracleClient is BlockOneUser, BlockOneOracleClientI {
     address entitledOwner;
 
     // to be used by both BlockOneOracle and BlockOneOracleClient
@@ -15,12 +14,12 @@ contract BlockOneOracleClient is BlockOneOracleClientI {
     uint8 constant ERR_GENERAL_FAILURE    = 4;
     uint8 constant ERR_INVALID_SYMBOL     = 5;
 
-    function BlockOneOracleClient()  {
-        registry = EntitlementRegistry(0x995bef79dfa2e666de2c6e5f751b4483b6d05cd8);
+    function BlockOneOracleClient(address entitlementRegistry)
+        BlockOneUser(entitlementRegistry) {
         entitledOwner = msg.sender;
     }
 
     function getOracle() constant returns(address) {
-        return registry.get("com.tr.oracle.main");
+        return getEntitlement("com.tr.oracle.main");
     }
 }
