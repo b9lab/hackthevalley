@@ -82,6 +82,7 @@ window.onload = function() {
             [ Ratings, RicUri ].forEach(function (contract) {
                 if (contract.networks().indexOf(network) > -1) {
                     contract.setNetwork(network);
+                    $.event.trigger({ type: "networkSet"});
                 }
             });
         });
