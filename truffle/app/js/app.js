@@ -56,12 +56,13 @@ var logInvestorRefunded;
 
 function setupSolidityEventExamples() {
     logRequestForRatingSubmitted = Ratings.deployed().LogRequestForRatingSubmitted(
-        {}, {});
+        {}, { fromBlock: 0 });
     logRequestForRatingContributed = Ratings.deployed().LogRequestForRatingContributed(
-        { key: keyToWatch }, {});
+        { key: keyToWatch }, { fromBlock: 0 });
 }
 
 window.onload = function() {
+    init(web3);
     web3.eth.getAccounts(function(err, accs) {
         if (err != null) {
             alert("There was an error fetching your accounts.");
@@ -76,4 +77,12 @@ window.onload = function() {
         accounts = accs;
         account = accounts[0];
     });
+    web3.version.getNetworkPromise()
+        .then(function(network) {
+            [ Ratings, RicUri ].forEach(function (contract) {
+                if (contract.networks().indexOf(network) > -1) {
+                    contract.setNetwork(network);
+                }
+            });
+        });
 }
