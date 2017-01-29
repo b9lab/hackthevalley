@@ -1,5 +1,5 @@
 addListItem = function(logItemArgs) {
-    $("#list").append("<tr><td><a href='"+logItemArgs["uri"]+"'>"+logItemArgs["name"]+"</a></td><td>"+logItemArgs["ric"]+"</td><td>"+logItemArgs["reward"]+"</td><td class='text-center'><i class='fa fa-check fa-2x' aria-hidden='true'></i></td><td class='text-center'><button class='btn btn-success' data-toggle='modal' data-target='#detailsModal'>DETAILS</button></td><td class='text-center'><button class='btn btn-success' id='btn-join-analysis' data-key='"+logItemArgs["key"]+"'>Join Analysis</button></td></tr>");
+    $("#list").append("<tr><td><a href='"+logItemArgs["uri"]+"'>"+logItemArgs["name"]+"</a></td><td>"+logItemArgs["ric"]+"</td><td>"+logItemArgs["reward"]+"</td><td class='text-center'><button class='btn btn-success' id='btn-join-analysis' data-key='"+logItemArgs["key"]+"'>Join Analysis</button><button type='button' class='btn btn-primary' data-toggle='modal' data-target='#responseModal'>Submit analysis</button><td class='text-center'><button class='btn btn-success' data-toggle='modal' data-target='#detailsModal'>DETAILS</button></td></tr>");
 }
 
 buildList = function() {
@@ -47,6 +47,32 @@ bindEvents = function() {
                 }
                 return Ratings.deployed().joinRequest.sendTransaction(
                     $("#btn-join-analysis").data("key"),
+                    { from: account, value: 0 });
+            })
+            .then(function (txHash) {
+                // TODO update screen to inform it is on the way
+                return web3.eth.getTransactionReceiptMined(txHash);
+            })
+            .then(function (receipt) {
+                // TODO update screen
+            });
+    })
+
+    $("#btn-submit-response").click(function() {
+        key = $("#btn-submit-response").data("key")
+        ipfsHash = $("#responseHashInput").val()
+        score = $("#scoreInput").val()
+        return Ratings.deployed().submitResponse.call(
+            key, score, ipfsHash,
+            { from: account, value: 0 })
+            .then(function (success) {
+                if (!success) {
+                    console.log("Cannot join. key:", $("#btn-join-analysis").data("key"));
+                    // TODO inform user that it failed
+                    throw "Cannot join";
+                }
+                return Ratings.deployed().submitResponse.sendTransaction(
+                    key, score, ipfsHash,
                     { from: account, value: 0 });
             })
             .then(function (txHash) {

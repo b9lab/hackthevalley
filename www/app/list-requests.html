@@ -125,6 +125,51 @@
         </div>
 
       </div>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#responseModal">
+        Submit analysis
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="responseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Submit your rating response</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+
+                <div class="form-group">
+                  <label for="scoreInput">Your score</label>
+                  <input type="number" class="form-control" id="scoreInput" aria-describedby="scoreHelp" placeholder="0">
+                  <small id="scoreHelp" class="form-text text-muted">Please enter your score (0-100).</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="responseHashInput">IPFS hash</label>
+                  <input type="text" class="form-control" id="responseHashInput" aria-describedby="rHashHelp" placeholder="Hash of the location of supporting documents">
+                  <small id="rHashHelp" class="form-text text-muted">Enter a hash to identify where the supporting documents your analysis are stored on IPFS.</small>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    I confirm that the information provided is correct to my best knowledge.
+                  </label>
+                </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button id="btn-submit-response" data-key="" type="button" class="btn btn-primary">Submit</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
     </div><!-- /.container -->
       
@@ -141,7 +186,6 @@
                             <th>Reward</th>
                             <th>Joined</th>
                             <th>Details</th>
-                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
