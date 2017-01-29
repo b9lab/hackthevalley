@@ -1,6 +1,3 @@
-var accounts;
-var account;
-
 var entitlementAddresses = {
     "3": "0x6216e07ba072ca4451f35bdfa2326f46d3f99dbe",
     "norsborg": "0x995bef79dfa2e666de2c6e5f751b4483b6d05cd8",
@@ -70,20 +67,6 @@ function setupSolidityEventExamples() {
 
 window.onload = function() {
     init(web3);
-    web3.eth.getAccounts(function(err, accs) {
-        if (err != null) {
-            alert("There was an error fetching your accounts.");
-            return;
-        }
-
-        if (accs.length == 0) {
-            console("Couldn't get any accounts! Make sure your Ethereum client is configured correctly.");
-            return;
-        }
-
-        accounts = accs;
-        account = accounts[0];
-    });
     web3.version.getNetworkPromise()
         .then(function(network) {
             [ Ratings, RicUri, Migrations ].forEach(function (contract) {

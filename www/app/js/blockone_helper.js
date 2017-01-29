@@ -1,18 +1,19 @@
 // Helps forming the request for the blockone signup
 
-var dappInvestorId = "com.b9lab.drating.investor";
-var dappAuditorId = "com.b9lab.drating.auditor";
-var network = "norsborg"
+var dappId = {
+    "?investor": "com.b9lab.drating.investor",
+    "?auditor": "com.b9lab.drating.auditor"
+  }[window.location.search] || "com.b9lab.drating.auditor";
+console.log(dappId);
+  var network = "norsborg"
 
-var G_blockone_auth = false;
-var G_account_type;
 var G_account;
 
 var G_walletBar;
 
 $(document).on("networkSet", function() {
   G_walletBar = new WalletBar({
-    dappNamespace: dappInvestorId,
+    dappNamespace: dappId,
     blockchain: network,
     callbacks: { signOut: function () { location.reload(); } }
   });
@@ -20,7 +21,7 @@ $(document).on("networkSet", function() {
   // var myContract;
   return G_walletBar.applyHook(web3)
     .then(function() {
-      return waitPromise(1000);
+      return waitPromise(2000);
     })
     .then(function() {
       G_account = G_walletBar.getCurrentAccount()
@@ -28,13 +29,9 @@ $(document).on("networkSet", function() {
         alert("You need to log in to transact, " + G_account);
       }
       console.log("account", G_account);
-      G_blockone_auth = true;
       return checkAccount(G_account);
     })
-    .then(function (accountType) {
-      console.log("accountType", accountType);
-      G_account_type = accountType;
-      triggerAuth();
+    .then(function () {
       updateUI();
     })
     .catch(function(err) {
@@ -54,7 +51,7 @@ function testTx() {
 }
 
 
-// Returns a Promise with the account type.
+// Returns a Promise 
 function checkAccount(account) {
   console.log("checking", account);
   if(!web3) {
@@ -62,75 +59,40 @@ function checkAccount(account) {
     return null;
   }
 
-  return Promise.all([
-      Ratings.deployed().getEntitlement("com.b9lab.drating.investor"),
-      Ratings.deployed().getEntitlement("com.b9lab.drating.auditor")
-    ])
-    .then(function(entitlementAddrs) {
-      console.log("entitlementAddrs", entitlementAddrs)
-      return Promise.all([
-          Entitlement.at(entitlementAddrs[0]).isEntitled(account),
-          Entitlement.at(entitlementAddrs[1]).isEntitled(account)
-        ]);
+  return Ratings.deployed().getEntitlement(dappId)
+    .then(function(entitlementAddr) {
+      console.log("entitlementAddr", entitlementAddr)
+      return Entitlement.at(entitlementAddr).isEntitled(account);
     })
-    .then(function(isIndeeds) {
-      console.log("isIndeeds", isIndeeds);
-      if (isIndeeds[0]) {
-        return "investor";
-      } else if (isIndeeds[1]) {
-        return "auditor";
-      } else {
-        return "unknown";
+    .then(function(isIndeed) {
+      console.log("isIndeed", isIndeed);
+      if (!isIndeed) {
+        alert("Your account is not entitled with " + dappId);
       }
     });
-}
-
-function triggerAuth(userType) {
-  var contractAddress;
-  var dappId;
-  if (!userType && G_account_type)
-  {
-    console.log("no user type set, fetching from account type");
-    userType = G_account_type;
-  }
-
-  contractAddress = Ratings.deployed().address;
-  if (userType == "investor") {
-  	dappId = dappInvestorId;
-  } else if (userType == "auditor") {
-  	dappId = dappAuditorId;
-  } else {
-    console.log("no user - allow signup");
-    // no user - allow signup
-  	//alert("error: unknown user Type (" + userType + ")");
-    dappId = dappInvestorId;
-  }
-
 }
 
 // Helper to update menu, etc according to user
 function updateUI()
 {
-  console.log("update ui. Account type: " + G_account_type);
-
   btn_login = $("#M_log_in");
   btn_signup_i = $("#M_signup_investor");
   btn_signup_a = $("#M_signup_auditor");
   btn_logout = $("#M_log_out");
   lbl_info = $("#M_info_label")
 
-  if(G_account_type == "investor" || G_account_type == "auditor") {
+  // if(G_account_type == "investor" || G_account_type == "auditor") {
     btn_login.hide();
     btn_signup_a.hide();
     btn_signup_i.hide();
-  } else if (G_account_type == "unknown") {
-    btn_login.hide();
-    btn_logout.hide();
-  } else {
-    btn_login.hide();
-    btn_signup_a.hide();
-    btn_signup_i.hide();
-    btn_logout.hide();
-    lbl_info.show();
-  }
+  // } else if (G_account_type == "unknown") {
+  //   btn_login.hide();
+  //   btn_logout.hide();
+  // } else {
+  //   btn_login.hide();
+  //   btn_signup_a.hide();
+  //   btn_signup_i.hide();
+  //   btn_logout.hide();
+  //   lbl_info.show();
+  // }
 }

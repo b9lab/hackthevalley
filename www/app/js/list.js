@@ -1,5 +1,45 @@
 addListItem = function(logItemArgs) {
-    $("#list").append("<tr><td><a href='"+logItemArgs["uri"]+"'>"+logItemArgs["name"]+"</a></td><td>"+logItemArgs["ric"]+"</td><td>"+logItemArgs["reward"]+"</td><td class='text-center'><button class='btn btn-success' id='btn-join-analysis' data-key='"+logItemArgs["key"]+"'>Join Analysis</button><button type='button' class='btn btn-primary' data-toggle='modal' data-target='#responseModal' data-key='"+logItemArgs["key"]+"'>Submit analysis</button><td class='text-center'><button class='btn btn-success' data-toggle='modal' data-target='#detailsModal'>DETAILS</button></td></tr>");
+    var actionbar = $("#list").append("<tr><td><a href='"+logItemArgs["uri"]+"'>"+logItemArgs["name"]+"</a></td><td>"+logItemArgs["ric"]+"</td><td>"+logItemArgs["reward"]+"</td><td class='action-cell text-center'></td>").find(".action-cell");
+    var btn_join = $('<button/>', {
+        text: 'Join analysis',
+        id: 'btn-join-analysis',
+        class: 'btn btn-success',
+        "data-key": logItemArgs["key"]
+    });
+
+    var btn_response = $('<button/>', {
+        text: 'Submit analysis',
+        id: 'btn-submit-analysis',
+        class: 'btn btn-primary',
+        "data-toggle": 'modal',
+        "data-target": '#responseModal',
+        "data-key": logItemArgs["key"]
+    });
+    
+    var btn_details = $('<button/>', {
+        text: 'Details',
+        id: 'btn-details-analysis',
+        class: 'btn btn-success',
+        "data-toggle": 'modal',
+        "data-target": '#detailsModal',
+        "data-key": logItemArgs["key"],
+        "data-item-ipfsHash": logItemArgs["ipfsHash"],
+        "data-item-name": logItemArgs["name"],
+        "data-item-description": logItemArgs["description"],
+        "data-item-ric": logItemArgs["ric"],
+        "data-item-permid": logItemArgs["permid"],
+        "data-item-deadline": logItemArgs["deadline"],
+        "data-item-maxAuditors": logItemArgs["maxAuditors"],
+        "data-item-reward": logItemArgs["reward"]
+    });
+    
+        /*
+        <button class='btn btn-success' id='btn-join-analysis' data-key='"+logItemArgs["key"]+"'>Join Analysis</button>
+        <button type='button' class='btn btn-primary' data-toggle='modal' data-target='#responseModal' data-key='"+logItemArgs["key"]+"'>Submit analysis</button>
+        <button class='btn btn-success' data-toggle='modal' data-target='#detailsModal'>DETAILS</button></td></tr>"
+        */
+
+    actionbar.append(btn_join).append(btn_response).append(btn_details);
 }
 
 buildList = function() {
@@ -27,7 +67,7 @@ setModalHandler = function() {
   $("#detailsModal").on("show.bs.modal", function(e) {
     var r_source = $(e.relatedTarget);
     var r_modal = $(e.target);
-    var $modalBody = $("#detailsModal").find(".modal-body");
+    var $modalBody = r_modal.find(".modal-body");
     $modalBody.load("templates/list-details.html", function(e) {
       setListDetails(r_modal, r_source);
     });
@@ -40,6 +80,19 @@ setModalHandler = function() {
     r_modal.find("#submit-request").data("key") = r_source.data("key");
     console.log("set data key:" + r_source.data("key"));
   });
+
+  $("#requestModal").on("show.bs.modal", function(e) {
+    var r_source = $(e.relatedTarget);
+    var r_modal = $(e.target);
+    
+    //r_modal.find("#submit-request").data("key") = r_source.data("key");
+    //console.log("set data key:" + r_source.data("key"));
+    var $modalBody = r_modal.find(".modal-body");
+    $modalBody.load("templates/submit-request.html", function(e) {
+      // nop
+    });
+  });
+
 }
 
 bindEvents = function() {

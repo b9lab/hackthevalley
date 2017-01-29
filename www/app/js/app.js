@@ -54693,7 +54693,7 @@ window.addEventListener('load', function() {
 
                                                                 
 
-  [BlockOneOracleClient,BlockOneOracle,BlockOneOracleClientTest,BlockOneOracleClientI,BlockOneOracleEndOfDay,BlockOneOracleEntityConnect,BlockOneOracleIntraDay,BlockOneOracleMock,BlockOneUser,Entitlement,EntitlementMock,EntitlementRegistryMock,Migrations,RicUri,EntitlementRegistry,Ratings].forEach(function(contract) {         
+  [BlockOneOracle,BlockOneOracleClient,BlockOneOracleClientI,BlockOneOracleClientTest,BlockOneOracleEndOfDay,BlockOneOracleEntityConnect,BlockOneOracleIntraDay,BlockOneOracleMock,BlockOneUser,Entitlement,EntitlementRegistryMock,Migrations,EntitlementRegistry,EntitlementMock,Ratings,RicUri].forEach(function(contract) {         
 
     contract.setProvider(window.web3.currentProvider);          
 
@@ -54794,9 +54794,6 @@ waitPromise = function (timeOut, toPassOn) {
 };
 
 
-var accounts;
-var account;
-
 var entitlementAddresses = {
     "3": "0x6216e07ba072ca4451f35bdfa2326f46d3f99dbe",
     "norsborg": "0x995bef79dfa2e666de2c6e5f751b4483b6d05cd8",
@@ -54866,20 +54863,6 @@ function setupSolidityEventExamples() {
 
 window.onload = function() {
     init(web3);
-    web3.eth.getAccounts(function(err, accs) {
-        if (err != null) {
-            alert("There was an error fetching your accounts.");
-            return;
-        }
-
-        if (accs.length == 0) {
-            console("Couldn't get any accounts! Make sure your Ethereum client is configured correctly.");
-            return;
-        }
-
-        accounts = accs;
-        account = accounts[0];
-    });
     web3.version.getNetworkPromise()
         .then(function(network) {
             [ Ratings, RicUri, Migrations ].forEach(function (contract) {
