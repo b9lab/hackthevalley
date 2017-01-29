@@ -66,7 +66,7 @@ contract Ratings is BlockOneUser, BlockOneOracleClient, BlockOneOracleEntityConn
         uint maxAuditors,
         uint reward);
     event LogRequestForRatingInteractionsUpdated(
-        bytes32 key,
+        bytes32 indexed key,
         uint totalInteractions);
     event LogRequestForRatingContributed(
         bytes32 indexed key,
@@ -140,7 +140,7 @@ contract Ratings is BlockOneUser, BlockOneOracleClient, BlockOneOracleEntityConn
      */
     function submitRequestForRating(string name, string description, string ric,
         bytes32 permid, uint deadline, uint maxAuditors, string ipfsHash)
-        // entitledInvestorOnly
+        entitledInvestorOnly
         payable
         returns (bool success) {
         if (msg.value == 0 || maxAuditors == 0 || bytes(ipfsHash).length == 0 || deadline <= now) {
