@@ -1,7 +1,5 @@
 // Helps forming the request for the blockone signup
 
-var contractInvestorAddress = "";
-var contractAuditorAddress = "";
 var dappInvestorId = "com.b9lab.drating.investor";
 var dappAuditorId = "com.b9lab.drating.auditor";
 var network = "norsborg"
@@ -10,17 +8,21 @@ var G_blockone_auth = false;
 var G_account_type;
 
 $(document).on("networkSet", function() {
-  checkAccount();
-  triggerAuth();
-  updateUI();
+  checkAccount()
+    .then(function (accountType) {
+      console.log("accountType", accountType);
+      G_account_type = accountType;
+      triggerAuth();
+      updateUI();
+    });
 });
 
-function checkAccount(callback) {
-
-  
+// Returns a Promise with the account type.
+function checkAccount() {
+  console.log("checking");
   if(!web3) {
-    updateUI();
-    return false;
+    console.log("no web3");
+    return null;
   }
 
   return web3.eth.getAccountsPromise()
@@ -40,25 +42,18 @@ function checkAccount(callback) {
         ]);
     })
     .then(function(isIndeeds) {
-      console.log("check entitlement");
+      console.log("check entitlement", isIndeeds);
       if (isIndeeds[0]) {
-        G_account_type = "investor";
-        updateUI();
-        return true;
+        return "investor";
       } else if (isIndeeds[1]) {
-        G_account_type = "auditor";
-        updateUI();
-        return true;
+        return "auditor";
       } else {
-        G_account_type = "unknown";
-        updateUI();
-        return false;
+        return "unknown";
       }
-    })
+    });
 }
 
-function triggerAuth(userType)
-{
+function triggerAuth(userType) {
   var contractAddress;
   var dappId;
   if (!userType && G_account_type)
@@ -67,17 +62,15 @@ function triggerAuth(userType)
     userType = G_account_type;
   }
 
+  contractAddress = Ratings.deployed().address;
   if (userType == "investor") {
-  	contractAddress = contractInvestorAddress;
   	dappId = dappInvestorId;
   } else if (userType == "auditor") {
-  	contractAddress = contractAuditorAddress;
   	dappId = dappAuditorId;
   } else {
-
+    console.log("no user - allow signup");
     // no user - allow signup
   	//alert("error: unknown user Type (" + userType + ")");
-    contractAddress = contractInvestorAddress;
     dappId = dappInvestorId;
   }
 
@@ -89,19 +82,17 @@ function triggerAuth(userType)
 
   var web3 = web3 || new Web3(); // CHECK!
   // var myContract;
-  walletBar.applyHook(web3)
-    .then(function() {
+  return walletBar.applyHook(web3)
+    .then(function(value) {
+      console.log("value", value);
       //document.getElementById("app").style.display="";
       G_blockone_auth = true;
   // myContract = web3.eth.contract(abi).at(contractAddress);
 
-      setInterval( function () {
-        //alert("done"); 
-      }, 1000);
     })
-  .catch(function(err) {
-    console.log(err);
-  });
+    .catch(function(err) {
+      console.log(err);
+    });
 }
 
 // Helper to update menu, etc according to user
