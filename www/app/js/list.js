@@ -97,19 +97,19 @@ setModalHandler = function() {
 
 bindEvents = function() {
     $("#btn-join-analysis").click(function() {
-        return Ratings.deployed().joinRequest.call(
-            $("#btn-join-analysis").data("key"),
-            { from: account, value: 0 })
-            .then(function (success) {
-                if (!success) {
-                    console.log("Cannot join. key:", $("#btn-join-analysis").data("key"));
-                    // TODO inform user that it failed
-                    throw "Cannot join";
-                }
-                return Ratings.deployed().joinRequest.sendTransaction(
-                    $("#btn-join-analysis").data("key"),
-                    { from: account, value: 0 });
-            })
+        var key = $("#btn-join-analysis").data("key");
+        // TODO get it from account or contract
+        var permid = "http://permid.org/1-4295884772"
+        // We need to hack this for BlockOne
+        var data = Ratings.deployed().contract.joinRequest.getData(
+            key, permid)
+        G_walletBar.createSecureSigner();
+        return web3.eth.sendTransactionPromise({
+                from: G_account,
+                to: Ratings.deployed().address,
+                data: data,
+                value: 0,
+                gas: 3000000 }) 
             .then(function (txHash) {
                 // TODO update screen to inform it is on the way
                 return web3.eth.getTransactionReceiptMined(txHash);
