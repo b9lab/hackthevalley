@@ -21,7 +21,10 @@ $(document).on("networkSet", function() {
 
 showDetails = function(itemId) {
   $("#detailsModal").on("show.bs.modal", function(e) {
-    var link = $(e.relatedTarget);
-    //$("#detailsModal").find(".modal-body").load("templates/list-details.html");
-  }
+    var r_source = $(e.relatedTarget);
+    var r_modal = $(e.currentTarget);
+    var $modalBody = $("#detailsModal").find(".modal-body");
+    $modalBody.load("templates/list-details.html");
+    setListDetails(r_modal, r_source);
+  });
 }

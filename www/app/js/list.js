@@ -21,11 +21,13 @@ $(document).on("networkSet", function() {
     setModalHandler();
 });
 
-setModalHandler = function(itemId) {
-    console.log("show");
+setModalHandler = function() {
   $("#detailsModal").on("show.bs.modal", function(e) {
-    var link = $(e.relatedTarget);
+    var r_source = $(e.relatedTarget);
+    var r_modal = $(e.target);
     var $modalBody = $("#detailsModal").find(".modal-body");
-    $modalBody.load("templates/list-details.html");
+    $modalBody.load("templates/list-details.html", function(e) {
+      setListDetails(r_modal, r_source);
+    });
   });
 }
