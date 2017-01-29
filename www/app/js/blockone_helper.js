@@ -21,7 +21,7 @@ $(document).on("networkSet", function() {
   // var myContract;
   return G_walletBar.applyHook(web3)
     .then(function() {
-      return waitPromise(1000);
+      return waitPromise(2000);
     })
     .then(function() {
       G_account = G_walletBar.getCurrentAccount()
@@ -81,18 +81,18 @@ function updateUI()
   btn_logout = $("#M_log_out");
   lbl_info = $("#M_info_label")
 
-  if(G_account_type == "investor" || G_account_type == "auditor") {
+  // if(G_account_type == "investor" || G_account_type == "auditor") {
     btn_login.hide();
     btn_signup_a.hide();
     btn_signup_i.hide();
-  } else if (G_account_type == "unknown") {
-    btn_login.hide();
-    btn_logout.hide();
-  } else {
-    btn_login.hide();
-    btn_signup_a.hide();
-    btn_signup_i.hide();
-    btn_logout.hide();
-    lbl_info.show();
-  }
+  // } else if (G_account_type == "unknown") {
+  //   btn_login.hide();
+  //   btn_logout.hide();
+  // } else {
+  //   btn_login.hide();
+  //   btn_signup_a.hide();
+  //   btn_signup_i.hide();
+  //   btn_logout.hide();
+  //   lbl_info.show();
+  // }
 }
