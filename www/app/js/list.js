@@ -1,9 +1,13 @@
 addListItem = function(logItemArgs) {
-    var actionbar = $("#list").append("<tr><td><a href='"+logItemArgs["uri"]+"'>"+logItemArgs["name"]+"</a></td><td>"+logItemArgs["ric"]+"</td><td>"+logItemArgs["reward"]+"</td><td class='action-cell text-center'></td>").find(".action-cell");
+    var actionbar = $("#list").append(
+        "<tr><td><a href='" + logItemArgs["uri"] + "'>" + logItemArgs["name"] + "</a></td>" +
+        "<td>" + logItemArgs["ric"] + "</td>" +
+        "<td>" + web3.fromWei(logItemArgs["reward"]).toNumber() + " Ethers</td>" + 
+        "<td class='action-cell text-center'></td>").find(".action-cell");
     var btn_join = $('<button/>', {
         text: 'Join analysis',
-        id: 'btn-join-analysis',
-        class: 'btn btn-success',
+        //id: 'btn-join-analysis',
+        class: 'btn btn-success btn-join-analysis',
         "data-key": logItemArgs["key"]
     });
 
@@ -56,6 +60,7 @@ $(document).on("networkSet", function() {
 
     Ratings.deployed().LogRequestForRatingSubmitted({}, {fromBlock: 'latest'}).watch(function(error, log) {
         addListItem(log.args);
+        bindEvents();
     })
 
     setModalHandler();
@@ -96,7 +101,8 @@ setModalHandler = function() {
 }
 
 bindEvents = function() {
-    $("#btn-join-analysis").click(function() {
+    $(".btn-join-analysis").on("click", function() {
+        console.log("in button");
         var key = $("#btn-join-analysis").data("key");
         // TODO get it from account or contract
         var permid = "http://permid.org/1-4295884772"
