@@ -25,7 +25,7 @@ addListItem = function(logItemArgs) {
         "data-key": logItemArgs["key"],
         "data-item-ipfsHash": logItemArgs["ipfsHash"],
         "data-item-name": logItemArgs["name"],
-        "data-item-description": logItemArgs["name"],
+        "data-item-description": logItemArgs["description"],
         "data-item-ric": logItemArgs["ric"],
         "data-item-permid": logItemArgs["permid"],
         "data-item-deadline": logItemArgs["deadline"],
