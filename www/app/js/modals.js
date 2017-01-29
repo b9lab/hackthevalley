@@ -35,8 +35,8 @@ $(document).ready(function() {
                     { from: account, value: web3.toWei(amount) });
             })
             .then(function (txHash) {
-            	$(".modal").modal("hide")
-            	
+            	$(".modal").modal("hide");
+
                 // TODO update screen to inform it is on the way
                 return web3.eth.getTransactionReceiptMined(txHash);
             })
