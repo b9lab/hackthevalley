@@ -4,6 +4,7 @@ Extensions.init(web3, assert);
 contract('BlockOneOracleClientTest', function(accounts) {
 
     var user;
+    var blockOneOracleClientTest;
 
     before("should prepare accounts", function() {
         assert.isAtLeast(accounts.length, 1, "should have at least 1 account");
@@ -18,14 +19,22 @@ contract('BlockOneOracleClientTest', function(accounts) {
             });
     });
 
+    beforeEach("should deploy a BlockOneOracleClientTest", function() {
+        return BlockOneOracleClientTest.new(EntitlementMock.deployed().address)
+            .then(function (_created) {
+                blockOneOracleClientTest = _created;
+                console.log(blockOneOracleClientTest);
+            });
+    });
+
     it("should get an intra day", function() {
         var requestId;
-        return BlockOneOracleClientTest.deployed()
+        return blockOneOracleClientTest
             .request_IntraDay.call("VOD.L", new Date().getTime())
             .then(function (requestId) {
                 assert.isAtLeast(requestId.toNumber(), 3, "should not be the first request");
                 return BlockOneOracleClientTest.deployed()
-                    .request_IntraDay.sendTransaction("VOD.L", new Date().getTime(), { from: user });
+                    .request_IntraDay.sendTransaction("VOD.L", new Date().getTime(), { from: user, gas: 3000000 });
             })
             .then(function (txHash) {
                 return web3.eth.getTransactionReceiptMined(txHash);
@@ -49,7 +58,7 @@ contract('BlockOneOracleClientTest', function(accounts) {
 
     it("should get an end of day", function() {
         var requestId;
-        return BlockOneOracleClientTest.deployed()
+        return blockOneOracleClientTest
             .request_EndOfDay.call("VOD.L", new Date().getTime())
             .then(function (requestId) {
                 assert.isAtLeast(requestId.toNumber(), 3, "should not be the first request");
@@ -80,7 +89,7 @@ contract('BlockOneOracleClientTest', function(accounts) {
         var requestId;
         var goldmanSachs = "http://permid.org/1-4295884772";
         var unilever = "http://permid.org/1-4295911963";
-        return BlockOneOracleClientTest.deployed()
+        return blockOneOracleClientTest
             .request_EntityConnect.call(goldmanSachs, unilever, 2)
             .then(function (requestId) {
                 assert.isAtLeast(requestId.toNumber(), 3, "should not be the first request");
