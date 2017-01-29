@@ -23,14 +23,14 @@ addListItem = function(logItemArgs) {
         "data-toggle": 'modal',
         "data-target": '#detailsModal',
         "data-key": logItemArgs["key"],
-        "data-item-ipfsHash": logItemArgs["ipfsHash"],
-        "data-item-name": logItemArgs["name"],
-        "data-item-description": logItemArgs["description"],
-        "data-item-ric": logItemArgs["ric"],
-        "data-item-permid": logItemArgs["permid"],
-        "data-item-deadline": logItemArgs["deadline"],
-        "data-item-maxAuditors": logItemArgs["maxAuditors"],
-        "data-item-reward": logItemArgs["reward"]
+        "data-ipfsHash": logItemArgs["ipfsHash"],
+        "data-name": logItemArgs["name"],
+        "data-description": logItemArgs["description"],
+        "data-ric": logItemArgs["ric"],
+        "data-permid": logItemArgs["permid"],
+        "data-deadline": logItemArgs["deadline"],
+        "data-maxAuditors": logItemArgs["maxAuditors"],
+        "data-reward": logItemArgs["reward"]
     });
     
         /*
