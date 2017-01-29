@@ -86,7 +86,7 @@ window.onload = function() {
     });
     web3.version.getNetworkPromise()
         .then(function(network) {
-            [ Ratings, RicUri ].forEach(function (contract) {
+            [ Ratings, RicUri, Migrations ].forEach(function (contract) {
                 if (contract.networks().indexOf(network) > -1) {
                     contract.setNetwork(network);
                 }

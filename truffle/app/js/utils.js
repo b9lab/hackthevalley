@@ -76,3 +76,12 @@ init = function (web3) {
         }
     };
 };
+
+waitPromise = function (timeOut, toPassOn) {
+    timeOut = timeOut ? timeOut : 1000;
+    return new Promise(function (resolve, reject) {
+        setTimeout(function () {
+                resolve(toPassOn);
+            }, timeOut);
+    });
+};
