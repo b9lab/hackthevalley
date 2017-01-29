@@ -99,4 +99,25 @@ function triggerAuth(userType) {
 function updateUI()
 {
   console.log("update ui. Account type: " + G_account_type);
+
+  btn_login = $("#M_log_in");
+  btn_signup_i = $("#M_signup_investor");
+  btn_signup_a = $("#M_signup_auditor");
+  btn_logout = $("#M_log_out");
+  lbl_info = $("#M_info_label")
+
+  if(G_account_type == "investor" || G_account_type == "auditor") {
+    btn_login.hide();
+    btn_signup_a.hide();
+    btn_signup_i.hide();
+  } else if (G_account_type == "unknown") {
+    btn_login.hide();
+    btn_logout.hide();
+  } else {
+    btn_login.hide();
+    btn_signup_a.hide();
+    btn_signup_i.hide();
+    btn_logout.hide();
+    lbl_info.show();
+  }
 }
