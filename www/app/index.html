@@ -25,15 +25,15 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="images/logo-white-alpha2.png"></a>
+      <a class="navbar-brand" href="index.html"><img src="images/logo-white-alpha2.png"></a>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>  
+            <a class="nav-link" href="index.html">Home</a>  
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>  
+            <a class="nav-link" data-toggle="modal" href="#aboutModal">About</a>  
           </li>
         </ul>
         <ul class="navbar-nav justify-content-end" id="right-nav">
@@ -49,6 +49,26 @@
         </ul>
       </div>
     </nav>
+
+    <!-- About Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">About</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            DNA is a DApp made by B9lab for the 2017 Hack the Valley Hackathon.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
 
