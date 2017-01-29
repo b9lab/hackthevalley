@@ -1,9 +1,13 @@
 addListItem = function(logItemArgs) {
-    var actionbar = $("#list").append("<tr><td><a href='"+logItemArgs["uri"]+"'>"+logItemArgs["name"]+"</a></td><td>"+logItemArgs["ric"]+"</td><td>"+logItemArgs["reward"]+"</td><td class='action-cell text-center'></td>").find(".action-cell");
+    var actionbar = $("#list").append(
+        "<tr><td><a href='" + logItemArgs["uri"] + "'>" + logItemArgs["name"] + "</a></td>" +
+        "<td>" + logItemArgs["ric"] + "</td>" +
+        "<td>" + web3.fromWei(logItemArgs["reward"]).toNumber() + " Ethers</td>" + 
+        "<td class='action-cell text-center'></td>").find(".action-cell");
     var btn_join = $('<button/>', {
         text: 'Join analysis',
-        id: 'btn-join-analysis',
-        class: 'btn btn-success',
+        //id: 'btn-join-analysis',
+        class: 'btn btn-success btn-join-analysis',
         "data-key": logItemArgs["key"]
     });
 
@@ -56,6 +60,7 @@ $(document).on("networkSet", function() {
 
     Ratings.deployed().LogRequestForRatingSubmitted({}, {fromBlock: 'latest'}).watch(function(error, log) {
         addListItem(log.args);
+        bindEvents();
     })
 
     setModalHandler();
@@ -96,20 +101,21 @@ setModalHandler = function() {
 }
 
 bindEvents = function() {
-    $("#btn-join-analysis").click(function() {
-        return Ratings.deployed().joinRequest.call(
-            $("#btn-join-analysis").data("key"),
-            { from: account, value: 0 })
-            .then(function (success) {
-                if (!success) {
-                    console.log("Cannot join. key:", $("#btn-join-analysis").data("key"));
-                    // TODO inform user that it failed
-                    throw "Cannot join";
-                }
-                return Ratings.deployed().joinRequest.sendTransaction(
-                    $("#btn-join-analysis").data("key"),
-                    { from: account, value: 0 });
-            })
+    $(".btn-join-analysis").on("click", function() {
+        console.log("in button");
+        var key = $("#btn-join-analysis").data("key");
+        // TODO get it from account or contract
+        var permid = "http://permid.org/1-4295884772"
+        // We need to hack this for BlockOne
+        var data = Ratings.deployed().contract.joinRequest.getData(
+            key, permid)
+        G_walletBar.createSecureSigner();
+        return web3.eth.sendTransactionPromise({
+                from: G_account,
+                to: Ratings.deployed().address,
+                data: data,
+                value: 0,
+                gas: 3000000 }) 
             .then(function (txHash) {
                 // TODO update screen to inform it is on the way
                 return web3.eth.getTransactionReceiptMined(txHash);

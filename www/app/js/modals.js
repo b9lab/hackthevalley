@@ -17,6 +17,7 @@ $(document).ready(function() {
         G_walletBar.createSecureSigner();
         console.log(G_account);
         console.log(Ratings.deployed())
+        // We need to hack this for BlockOne
         var data = Ratings.deployed().contract.submitRequestForRating.getData(
                     nameInput, descriptionInput, ricInput,
                     urlInput, deadline, maxAuditors, hashInput);
