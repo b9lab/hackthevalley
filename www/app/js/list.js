@@ -3,9 +3,9 @@ addListItem = function(logItemArgs) {
 }
 
 buildList = function() {
-    Ratings.deployed().LogRequestForRatingSubmitted({}, {fromBlock: 0}).get(function(error, logs) {
+    Ratings.deployed().LogRequestForRatingSubmitted({}, { fromBlock: 0 }).get(function(error, logs) {
         console.log(logs);
-        for(var i=0; i<=logs.length; i++) {
+        for(var i = 0; i < logs.length; i++) {
             addListItem(logs[i].args);
         }
     })
