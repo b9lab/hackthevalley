@@ -53,31 +53,6 @@ contract('Ratings', function(accounts) {
             });
     });
 
-    // before("should prepare Oracle", function() {
-    //     if (mocked) {
-    //         return BlockOneOracleMock.new()
-    //             .then(function (created) {
-    //                 oracle = created;
-    //                 return EntitlementRegistryMock.deployed().set(
-    //                     "com.tr.oracle.main", oracle.address)
-    //             })
-    //             .then(function (txHash) {
-    //                 return web3.eth.getTransactionReceiptMined(txHash);
-    //             })
-    //             .then(function (receipt) {
-    //                 return EntitlementRegistryMock.deployed()
-    //                     .get("com.tr.oracle.main");
-    //             })
-    //             .then(function (entitlement) {
-    //                 assert.strictEqual(entitlement, oracle.address);
-    //                 return Ratings.deployed().getEntitlement("com.tr.oracle.main");
-    //             })
-    //             .then(function (entitlement) {
-    //                 assert.strictEqual(entitlement, oracle.address);
-    //             });
-    //     }
-    // });
-
     var submittedKey;
 
     it("should be possible for investor to submit a request", function() {
@@ -86,7 +61,7 @@ contract('Ratings', function(accounts) {
                 "Augur ICO", "Augur is ambitious", "AUG", "http://something", 1485708344, 1, "Qmskjdfhsdjkf",
                 { from: investor, value: web3.toWei(100, "finney") })
             .then(function (success) {
-                assert.isTrue(success);
+                assert.isTrue(success, "should be possible");
                 return Ratings.deployed().submitRequestForRating(
                     "Augur ICO", "Augur is ambitious", "AUG", "http://something", 1485708344, 1, "Qmskjdfhsdjkf",
                     { from: investor, value: web3.toWei(100, "finney") })
@@ -108,7 +83,7 @@ contract('Ratings', function(accounts) {
                     return Extensions.getEventsPromise(BlockOneOracleMock.deployed()
                             .LogRequestEntityConnect({}, { fromBlock: blockNumber }))
                         .then(function (events2) {
-                            assert.strictEqual(events2.length, 1);
+                            assert.strictEqual(events2.length, 1, "should be 1");
                             var args = events2[0].args;
                             return BlockOneOracleEntityConnect.at(args.sender)
                                 .respondSuccess_EntityConnect(
@@ -162,7 +137,8 @@ contract('Ratings', function(accounts) {
             .then(function(requestForRating) {
                 assert.strictEqual(
                     requestForRating[3].toString(10),
-                    web3.toWei(150, "finney"));
+                    web3.toWei(150, "finney"),
+                    "should be 150");
             })
     });
 
