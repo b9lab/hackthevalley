@@ -1,14 +1,18 @@
 pragma solidity ^0.4.5;
 
 import "BlockOneUser.sol";
+import "BlockOneOracleClient.sol";
+import "BlockOneOracleEntityConnect.sol";
 import "RicUri.sol";
 
-contract Ratings is BlockOneUser {
+contract Ratings is BlockOneUser, BlockOneOracleClient, BlockOneOracleEntityConnect {
     uint constant IPFS_INDEX = 0;
     uint constant NAME_INDEX = 1;
     uint constant DESCRIPTION_INDEX = 2;
     uint constant RIC_INDEX = 3;
-    uint constant PERMID_INDEX = 4;
+
+    uint constant COMPANY_INTERACTIONS_LEVEL = 1;
+    uint constant AUDITOR_CONNECTIONS_LEVEL = 2;
 
     enum Status {
         OPEN, REFUND, PAYOUT
@@ -16,9 +20,16 @@ contract Ratings is BlockOneUser {
 
     struct Auditor {
         bool joined; // Whether has joined
+        bytes32 permid; // the auditor's perm id.
+        uint inCommon; // Common degrees
         uint rating; // The rating
         string ipfsHash; // Document that comes with the rating
         bool paid;
+    }
+
+    struct RequestTarget {
+        bytes32 key; // The key of the request for rating
+        address auditorAddr; // The auditor in question, or 0
     }
 
     struct RequestForRating {
@@ -26,8 +37,9 @@ contract Ratings is BlockOneUser {
         // [ NAME_INDEX ]: Name of the rating required
         // [ DESCRIPTION_INDEX ]: Description of the rating required
         // [ RIC_INDEX ]: RIC code as known by Thomson Reuters
-        // [ PERMID_INDEX ]: Uri as  known by Thomson Reuters
         string[] info;
+        bytes32 permid;
+        uint totalInteractions; // Total interactions.
         uint deadline; // As a 1970 timestamp
         uint reward; // In Ether in escrow in this contract
         uint maxAuditors; // Max number of auditors to work on it
@@ -39,6 +51,7 @@ contract Ratings is BlockOneUser {
     }
 
     mapping(bytes32 => RequestForRating) public requestForRatings;
+    mapping(uint => RequestTarget) public requests;
     RicUri public ricUri;
 
     event LogRequestForRatingSubmitted(
@@ -48,10 +61,13 @@ contract Ratings is BlockOneUser {
         string name,
         string description,
         string ric,
-        string permid,
+        bytes32 permid,
         uint deadline,
         uint maxAuditors,
         uint reward);
+    event LogRequestForRatingInteractionsUpdated(
+        bytes32 key,
+        uint totalInteractions);
     event LogRequestForRatingContributed(
         bytes32 indexed key,
         address indexed investor,
@@ -60,6 +76,7 @@ contract Ratings is BlockOneUser {
     event LogAuditorJoined(
         bytes32 indexed key,
         address indexed auditor,
+        bytes32 permid,
         uint auditorCount);
     event LogAuditorSubmitted(
         bytes32 indexed key,
@@ -67,6 +84,10 @@ contract Ratings is BlockOneUser {
         uint rating,
         string ipfsHash,
         uint submissionCount);
+    event LogAuditorConnectionsUpdated(
+        bytes32 indexed key,
+        address indexed auditor,
+        uint totalConnections);
     event LogAuditorPaid(
         bytes32 indexed key,
         address indexed auditor,
@@ -75,9 +96,15 @@ contract Ratings is BlockOneUser {
         bytes32 indexed key,
         address indexed investor,
         uint contribution);
+    event LogEntityConnect_onOracleFailure(
+        uint requestId,
+        bytes32 key,
+        address auditorAddr,
+        uint reason);
 
     function Ratings(address entitlementRegistry, address ricUriAddress)
-        BlockOneUser(entitlementRegistry) {
+        BlockOneUser(entitlementRegistry) 
+        BlockOneOracleClient(entitlementRegistry) {
         ricUri = RicUri(ricUriAddress);
     }
 
@@ -93,11 +120,10 @@ contract Ratings is BlockOneUser {
 
     function getInfo(bytes32 key)
         constant
-        returns (string ipfsHash, string name, string description, string ric, string permid) {
+        returns (string ipfsHash, string name, string description, string ric) {
         RequestForRating request = requestForRatings[key];
         return (request.info[IPFS_INDEX], request.info[NAME_INDEX],
-            request.info[DESCRIPTION_INDEX], request.info[RIC_INDEX],
-            request.info[PERMID_INDEX]);
+            request.info[DESCRIPTION_INDEX], request.info[RIC_INDEX]);
     }
 
     function getAuditor(bytes32 key, address auditorAddr)
@@ -113,14 +139,14 @@ contract Ratings is BlockOneUser {
      *      - not entitled investor
      */
     function submitRequestForRating(string name, string description, string ric,
-        string permid, uint deadline, uint maxAuditors, string ipfsHash)
-        entitledInvestorOnly
+        bytes32 permid, uint deadline, uint maxAuditors, string ipfsHash)
+        // entitledInvestorOnly
         payable
         returns (bool success) {
         if (msg.value == 0 || maxAuditors == 0 || bytes(ipfsHash).length == 0 || deadline <= now) {
             throw;
         }
-        bytes32 key = sha3(msg.sender, name, description,
+        bytes32 key = sha3(msg.sender, name, description, ric, permid,
             deadline, msg.value, maxAuditors, ipfsHash, block.number);
         RequestForRating request = requestForRatings[key];
         if (request.info.length != 0) {
@@ -131,7 +157,7 @@ contract Ratings is BlockOneUser {
         request.info[NAME_INDEX] = name;
         request.info[DESCRIPTION_INDEX] = description;
         request.info[RIC_INDEX] = ric;
-        request.info[PERMID_INDEX] = permid;
+        request.permid = permid;
         request.deadline = deadline;
         request.reward = msg.value;
         request.maxAuditors = maxAuditors;
@@ -144,6 +170,11 @@ contract Ratings is BlockOneUser {
             name, description, ric, permid,
             deadline,
             maxAuditors, msg.value);
+        uint queryId = request_EntityConnect(permid, 0, COMPANY_INTERACTIONS_LEVEL);
+        requests[queryId] = RequestTarget({
+            key: key,
+            auditorAddr: 0
+        });
         return true;
     }
 
@@ -164,7 +195,7 @@ contract Ratings is BlockOneUser {
         return true;
     }
 
-    function joinRating(bytes32 key)
+    function joinRating(bytes32 key, bytes32 permid)
         entitledAuditorOnly
         returns (bool success) {
         RequestForRating request = requestForRatings[key];
@@ -176,8 +207,14 @@ contract Ratings is BlockOneUser {
             || request.status != Status.OPEN) {
             throw;
         }
-        request.auditors[msg.sender].joined = true;
-        LogAuditorJoined(key, msg.sender, ++request.auditorCount);
+        auditor.joined = true;
+        auditor.permid = permid;
+        LogAuditorJoined(key, msg.sender, permid, ++request.auditorCount);
+        uint queryId = request_EntityConnect(request.permid, permid, AUDITOR_CONNECTIONS_LEVEL);
+        requests[queryId] = RequestTarget({
+            key: key,
+            auditorAddr: msg.sender
+        });
         return true;
     }
 
@@ -267,5 +304,35 @@ contract Ratings is BlockOneUser {
         }
         LogInvestorRefunded(key, msg.sender, refund);
         return true;
+    }
+
+    // Oracle response
+
+    function respondSuccess_EntityConnect(uint requestId, uint connections) {
+        RequestTarget target = requests[requestId];
+        RequestForRating request = requestForRatings[target.key];
+        if (request.info.length == 0) {
+            throw;
+        }
+        if (target.auditorAddr == 0) {
+            request.totalInteractions = connections;
+            LogRequestForRatingInteractionsUpdated(target.key, connections);
+        } else  {
+            Auditor auditor = request.auditors[target.auditorAddr];
+            if (!auditor.joined) {
+                throw;
+            }
+            auditor.inCommon = connections;
+            LogAuditorConnectionsUpdated(target.key, target.auditorAddr, connections);
+        }
+    }
+
+    function respondError_EntityConnect(uint requestId, uint reason) {
+        RequestTarget target = requests[requestId];
+        LogEntityConnect_onOracleFailure(
+            requestId,
+            target.key,
+            target.auditorAddr,
+            reason);
     }
 }
