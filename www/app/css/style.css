@@ -1,10 +1,10 @@
-.bkg-b9-red {
-    background: #dd4f52 !important;
-    color: #FFF
+.bkg-blue {
+    background: #4bceff !important;
+    color: #25677f
 }
 
-.bkg-b9-red th {
-    color: #FFF
+.bkg-blue th {
+    color: #25677f
 }
 
 .fa-check {
