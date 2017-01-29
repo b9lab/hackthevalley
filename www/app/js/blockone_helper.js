@@ -12,7 +12,7 @@ var G_account_type;
 $(document).on("networkSet", function() {
   checkAccount();
   triggerAuth();
-  //updateUI();
+  updateUI();
 });
 
 function checkAccount(callback) {
@@ -91,7 +91,7 @@ function triggerAuth(userType)
   // var myContract;
   walletBar.applyHook(web3)
     .then(function() {
-      document.getElementById("app").style.display="";
+      //document.getElementById("app").style.display="";
       G_blockone_auth = true;
   // myContract = web3.eth.contract(abi).at(contractAddress);
 
