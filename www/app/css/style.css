@@ -1,3 +1,7 @@
+.fixed-top {
+  right: 200px !important;
+}
+
 .bkg-blue {
     background: #4bceff !important;
     color: #25677f !important;

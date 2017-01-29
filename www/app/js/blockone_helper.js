@@ -6,43 +6,75 @@ var network = "norsborg"
 
 var G_blockone_auth = false;
 var G_account_type;
+var G_account;
+
+var G_walletBar;
 
 $(document).on("networkSet", function() {
-  checkAccount()
+  G_walletBar = new WalletBar({
+    dappNamespace: dappInvestorId,
+    blockchain: network,
+    callbacks: { signOut: function () { location.reload(); } }
+  });
+
+  // var myContract;
+  return G_walletBar.applyHook(web3)
+    .then(function() {
+      return waitPromise(1000);
+    })
+    .then(function() {
+      G_account = G_walletBar.getCurrentAccount()
+      if (!G_account) {
+        alert("You need to log in to transact, " + G_account);
+      }
+      console.log("account", G_account);
+      G_blockone_auth = true;
+      return checkAccount(G_account);
+    })
     .then(function (accountType) {
       console.log("accountType", accountType);
       G_account_type = accountType;
       triggerAuth();
       updateUI();
+    })
+    .catch(function(err) {
+      console.log(err);
     });
 });
 
+function testTx() {
+  G_walletBar.createSecureSigner();
+  return web3.eth.sendTransactionPromise({
+    from: G_account,
+    to: "0x5398d9454cb30778cc768253c7389dbab0f84587",
+    value: 1,
+    gas: 100000 })
+  .then(console.log)
+  .catch(console.error);
+}
+
+
 // Returns a Promise with the account type.
-function checkAccount() {
-  console.log("checking");
+function checkAccount(account) {
+  console.log("checking", account);
   if(!web3) {
     console.log("no web3");
     return null;
   }
 
-  return web3.eth.getAccountsPromise()
-    .then(function(accounts) {
-      account = accounts[0];
-
-      return Promise.all([
-        Ratings.deployed().getEntitlement("com.b9lab.drating.investor"),
-        Ratings.deployed().getEntitlement("com.b9lab.drating.auditor")
-      ]);
-      
-    })
+  return Promise.all([
+      Ratings.deployed().getEntitlement("com.b9lab.drating.investor"),
+      Ratings.deployed().getEntitlement("com.b9lab.drating.auditor")
+    ])
     .then(function(entitlementAddrs) {
+      console.log("entitlementAddrs", entitlementAddrs)
       return Promise.all([
           Entitlement.at(entitlementAddrs[0]).isEntitled(account),
           Entitlement.at(entitlementAddrs[1]).isEntitled(account)
         ]);
     })
     .then(function(isIndeeds) {
-      console.log("check entitlement", isIndeeds);
+      console.log("isIndeeds", isIndeeds);
       if (isIndeeds[0]) {
         return "investor";
       } else if (isIndeeds[1]) {
@@ -74,25 +106,6 @@ function triggerAuth(userType) {
     dappId = dappInvestorId;
   }
 
-  var walletBar = new WalletBar({
-    dappNamespace: dappId,
-    blockchain: network,
-    callbacks: { signOut: function () { location.reload(); } }
-  });
-
-  var web3 = web3 || new Web3(); // CHECK!
-  // var myContract;
-  return walletBar.applyHook(web3)
-    .then(function(value) {
-      console.log("value", value);
-      //document.getElementById("app").style.display="";
-      G_blockone_auth = true;
-  // myContract = web3.eth.contract(abi).at(contractAddress);
-
-    })
-    .catch(function(err) {
-      console.log(err);
-    });
 }
 
 // Helper to update menu, etc according to user
