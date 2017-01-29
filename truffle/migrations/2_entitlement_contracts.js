@@ -10,13 +10,17 @@ module.exports = function(deployer, network) {
             })
             .then(function () {
                 auditorEntitlement = EntitlementMock.address;
+                return deployer.deploy(BlockOneOracleMock);
+            })
+            .then(function () {
+                oracleEntitlement = BlockOneOracleMock.address;
                 return deployer.deploy(EntitlementRegistryMock);
             })
             .then(function () {
-                EntitlementRegistryMock.at(EntitlementRegistryMock.address)
-                    .set("com.b9lab.drating.investor", investorEntitlement);
-                EntitlementRegistryMock.at(EntitlementRegistryMock.address)
-                    .set("com.b9lab.drating.auditor", auditorEntitlement);
+                var registry = EntitlementRegistryMock.at(EntitlementRegistryMock.address);
+                registry.set("com.b9lab.drating.investor", investorEntitlement);
+                registry.set("com.b9lab.drating.auditor", auditorEntitlement);
+                registry.set("com.tr.oracle.main", oracleEntitlement);
             });
     }
 };
