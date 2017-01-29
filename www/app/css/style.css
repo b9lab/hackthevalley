@@ -1,10 +1,14 @@
 .bkg-blue {
     background: #4bceff !important;
-    color: #25677f
+    color: #25677f !important;
 }
 
-.bkg-blue th {
-    color: #25677f
+.bkg-blue th a {
+    color: #25677f !important;
+}
+
+.navbar a {
+    color: #25677f !important;
 }
 
 .fa-check {
