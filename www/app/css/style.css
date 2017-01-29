@@ -1,7 +1,3 @@
-.fixed-top {
-  right: 200px !important;
-}
-
 .bkg-orange {
     background: #FF9800 !important;
     color: #FFF !important;
@@ -9,6 +5,10 @@
 
 .bkg-orange th a {
     color: #FFF !important;
+}
+
+.navbar {
+    z-index: -999;
 }
 
 .navbar a {
@@ -38,6 +38,10 @@
 
 .navbar-brand img {
     max-width: 100px;
+}
+
+#right-nav {
+    margin-right: 200px
 }
 
 
