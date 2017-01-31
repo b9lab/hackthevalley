@@ -1,3 +1,11 @@
+a {
+    color: #e65100;
+}
+
+a:hover {
+    color: #e65100;
+}
+
 .bkg-orange {
     background: #FF9800 !important;
     color: #FFF !important;
@@ -36,8 +44,52 @@
     width: 40vw;
 }
 
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.jumbotron-logos {
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron-logos img{
+    width: 100%;
+}
+
+.title-logo img {
+    margin-top: 64px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-row {
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+}
+
+.subtitle {
+    margin: 20px 20vw 50px;
+    color: #FF9800;
+}
+
+
 .navbar-brand img {
     max-width: 100px;
+}
+
+.landing-overview-image img {
+    max-width: 100%;
 }
 
 #right-nav {
@@ -45,14 +97,38 @@
 }
 
 #slideshow-flex-container {
+    margin-top: 50px;
+    margin-bottom: 120px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #slideshow {
-    margin-top: 84px;
+    margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer-text {
+    padding-left: calc(20px + 50px);
+    margin-left: auto;
+}
+
+.footer-logo {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.footer-logo img {
+    max-height: 50px;
 }
 
 /*------ Sticky footer -------*/
