@@ -1,14 +1,15 @@
 addListItem = function(logItemArgs) {
     var actionbar = $("#list").append(
-        "<tr><td><a href='" + logItemArgs["uri"] + "'>" + logItemArgs["name"] + "</a></td>" +
-        "<td>" + logItemArgs["ric"] + "</td>" +
-        "<td>" + web3.fromWei(logItemArgs["reward"]).toNumber() + " Ethers</td>" + 
+        "<tr><td><a href='" + web3.toUtf8(logItemArgs[ LogRequestForRatingSubmitted.permid ]) + "'>" +
+            logItemArgs[ LogRequestForRatingSubmitted.name ] + "</a></td>" +
+        "<td>" + logItemArgs[ LogRequestForRatingSubmitted.ric ] + "</td>" +
+        "<td>" + web3.fromWei(logItemArgs[ LogRequestForRatingSubmitted.rewardWei ]).toNumber() + " Ethers</td>" + 
         "<td class='action-cell text-center'></td>").find(".action-cell");
     var btn_join = $('<button/>', {
         text: 'Join analysis',
         //id: 'btn-join-analysis',
         class: 'btn btn-success btn-join-analysis',
-        "data-key": logItemArgs["key"]
+        "data-key": logItemArgs[ LogRequestForRatingSubmitted.key ]
     });
 
     var btn_response = $('<button/>', {
@@ -17,7 +18,7 @@ addListItem = function(logItemArgs) {
         class: 'btn btn-primary',
         "data-toggle": 'modal',
         "data-target": '#responseModal',
-        "data-key": logItemArgs["key"]
+        "data-key": logItemArgs[ LogRequestForRatingSubmitted.key ]
     });
     
     var btn_details = $('<button/>', {
@@ -26,15 +27,15 @@ addListItem = function(logItemArgs) {
         class: 'btn btn-success',
         "data-toggle": 'modal',
         "data-target": '#detailsModal',
-        "data-key": logItemArgs["key"],
-        "data-ipfsHash": logItemArgs["ipfsHash"],
-        "data-name": logItemArgs["name"],
-        "data-description": logItemArgs["description"],
-        "data-ric": logItemArgs["ric"],
-        "data-permid": logItemArgs["permid"],
-        "data-deadline": logItemArgs["deadline"],
-        "data-maxAuditors": logItemArgs["maxAuditors"],
-        "data-reward": logItemArgs["reward"]
+        "data-key": logItemArgs[ LogRequestForRatingSubmitted.key ],
+        "data-ipfsHash": logItemArgs[ LogRequestForRatingSubmitted.ipfsHash ],
+        "data-name": logItemArgs[ LogRequestForRatingSubmitted.name ],
+        "data-description": logItemArgs[ LogRequestForRatingSubmitted.description ],
+        "data-ric": logItemArgs[ LogRequestForRatingSubmitted.ric ],
+        "data-permid": logItemArgs[ LogRequestForRatingSubmitted.permid ],
+        "data-deadline": logItemArgs[ LogRequestForRatingSubmitted.deadlineStamp ].toNumber(),
+        "data-maxAuditors": logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
+        "data-reward": logItemArgs[ LogRequestForRatingSubmitted.rewardWei ].toString(10)
     });
     
         /*
@@ -44,27 +45,247 @@ addListItem = function(logItemArgs) {
         */
 
     actionbar.append(btn_join).append(btn_response).append(btn_details);
-}
+};
 
-buildList = function() {
-    Ratings.deployed().LogRequestForRatingSubmitted({}, { fromBlock: 0 }).get(function(error, logs) {
-        console.log(logs);
-        for(var i = 0; i < logs.length; i++) {
-            addListItem(logs[i].args);
-        }
-    })
-}
+buildInitialList = function(initialBlock, lastBlock) {
+    return filterGetPromise(Ratings.deployed()
+            .LogRequestForRatingSubmitted(
+                {},
+                { fromBlock: initialBlock, toBlock: lastBlock }))
+        .then(function (logs) {
+            for(var i = 0; i < logs.length; i++) {
+                addListItem(logs[i].args);
+            }
+            return logs;
+        });
+};
+
+updateRequestInteractions = function (logItemArgs) {
+    // TODO
+};
+
+updateRequestInteractionsList = function(initialBlock, lastBlock) {
+    return filterGetPromise(Ratings.deployed()
+            .LogRequestForRatingInteractionsUpdated(
+                {},
+                { fromBlock: initialBlock, toBlock: lastBlock }))
+        .then(function (logs) {
+            for (var i = 0; i < logs.length; i++) {
+                updateRequestInteractions(logs[i].args);
+            }
+            return logs;
+        });
+};
+
+updateRequestContributed = function (logItemArgs) {
+    // TODO
+};
+
+updateRequestContributedList = function (initialBlock, lastBlock) {
+    return filterGetPromise(Ratings.deployed()
+            .LogRequestForRatingContributed(
+                {},
+                { fromBlock: initialBlock, toBlock: lastBlock }))
+        .then(function (logs) {
+            for (var i = 0; i < logs.length; i++) {
+                updateRequestContributed(logs[i].args);
+            }
+            return logs;            
+        });
+};
+
+updateAuditorJoined = function (logItemArgs) {
+    // TODO
+};
+
+updateAuditorJoinedList = function (initialBlock, lastBlock) {
+    return filterGetPromise(Ratings.deployed()
+            .LogAuditorJoined(
+                {},
+                { fromBlock: initialBlock, toBlock: lastBlock }))
+        .then(function (logs) {
+            for (var i = 0; i < logs.length; i++) {
+                updateAuditorJoined(logs[i].args);
+            }
+            return logs;            
+        });
+};
+
+updateAuditorSubmitted = function (logItemArgs) {
+    // TODO
+};
+
+updateAuditorSubmittedList = function (initialBlock, lastBlock) {
+    return filterGetPromise(Ratings.deployed()
+            .LogAuditorSubmitted(
+                {},
+                { fromBlock: initialBlock, toBlock: lastBlock }))
+        .then(function (logs) {
+            for (var i = 0; i < logs.length; i++) {
+                updateAuditorSubmitted(logs[i].args);
+            }
+            return logs;            
+        });
+};
+
+updateAuditorConnections = function (logItemArgs) {
+    // TODO
+};
+
+updateAuditorConnectionsList = function (initialBlock, lastBlock) {
+    return filterGetPromise(Ratings.deployed()
+            .LogAuditorConnectionsUpdated(
+                {},
+                { fromBlock: initialBlock, toBlock: lastBlock }))
+        .then(function (logs) {
+            for (var i = 0; i < logs.length; i++) {
+                updateAuditorConnections(logs[i].args);
+            }
+            return logs;            
+        });
+};
+
+updateAuditorPaid = function (logItemArgs) {
+    // TODO
+};
+
+updateAuditorPaidList = function (initialBlock, lastBlock) {
+    return filterGetPromise(Ratings.deployed()
+            .LogAuditorPaid(
+                {},
+                { fromBlock: initialBlock, toBlock: lastBlock }))
+        .then(function (logs) {
+            for (var i = 0; i < logs.length; i++) {
+                updateAuditorPaid(logs[i].args);
+            }
+            return logs;            
+        });
+};
+
+updateInvestorRefunded = function (logItemArgs) {
+    // TODO
+};
+
+updateInvestorRefundedList = function (initialBlock, lastBlock) {
+    return filterGetPromise(Ratings.deployed()
+            .LogInvestorRefunded(
+                {},
+                { fromBlock: initialBlock, toBlock: lastBlock }))
+        .then(function (logs) {
+            for (var i = 0; i < logs.length; i++) {
+                updateInvestorRefunded(logs[i].args);
+            }
+            return logs;            
+        });
+};
+
+updateEntityConnectFailure = function (logItemArgs) {
+    // TODO
+};
+
+updateEntityConnectFailureList = function (initialBlock, lastBlock) {
+    return filterGetPromise(Ratings.deployed()
+            .LogEntityConnect_onOracleFailure(
+                {},
+                { fromBlock: initialBlock, toBlock: lastBlock }))
+        .then(function (logs) {
+            for (var i = 0; i < logs.length; i++) {
+                updateEntityConnectFailure(logs[i].args);
+            }
+            return logs;            
+        });
+};
 
 $(document).on("networkSet", function() {
-    buildList();
-
-    Ratings.deployed().LogRequestForRatingSubmitted({}, {fromBlock: 'latest'}).watch(function(error, log) {
-        addListItem(log.args);
-        bindEvents();
-    })
+    var initialBlock = 0;
+    var blockNumber;
+    /*return*/ web3.eth.getBlockNumberPromise()
+        .then(function (_blockNumber) {
+            blockNumber = _blockNumber;
+            return buildInitialList(initialBlock, blockNumber);
+        })
+        .then(function (logs) {
+            Ratings.deployed().LogRequestForRatingSubmitted(
+                    {}, { fromBlock: blockNumber + 1, toBlock: 'latest' })
+                .watch(function(error, log) {
+                    addListItem(log.args);
+                    bindEvents(); // TODO remove when jQuery can inject live
+                });
+            return updateRequestInteractionsList(initialBlock, blockNumber);
+        })
+        .then(function (logs) {
+            Ratings.deployed().LogRequestForRatingInteractionsUpdated(
+                    {}, { fromBlock: blockNumber + 1, toBlock: 'latest' })
+                .watch(function (error, log) {
+                    updateRequestInteractions(log.args);
+                    bindEvents(); // TODO remove when jQuery can inject live
+                });
+            return updateRequestContributedList(initialBlock, blockNumber);
+        })
+        .then(function (logs) {
+            Ratings.deployed().LogRequestForRatingContributed(
+                    {}, { fromBlock: blockNumber + 1, toBlock: 'latest' })
+                .watch(function (error, log) {
+                    updateRequestContributed(log.args);
+                    bindEvents(); // TODO remove when jQuery can inject live
+                });
+            return updateAuditorJoinedList(initialBlock, blockNumber);
+        })
+        .then(function (logs) {
+            Ratings.deployed().LogAuditorJoined(
+                    {}, { fromBlock: blockNumber + 1, toBlock: 'latest' })
+                .watch(function (error, log) {
+                    updateAuditorJoined(log.args);
+                    bindEvents(); // TODO remove when jQuery can inject live
+                });
+            return updateAuditorSubmittedList(initialBlock, blockNumber);
+        })
+        .then(function (logs) {
+            Ratings.deployed().LogAuditorSubmitted(
+                    {}, { fromBlock: blockNumber + 1, toBlock: 'latest' })
+                .watch(function (error, log) {
+                    updateAuditorSubmitted(log.args);
+                    bindEvents(); // TODO remove when jQuery can inject live
+                });
+            return updateAuditorConnectionsList(initialBlock, blockNumber);
+        })
+        .then(function (logs) {
+            Ratings.deployed().LogAuditorConnectionsUpdated(
+                    {}, { fromBlock: blockNumber + 1, toBlock: 'latest' })
+                .watch(function (error, log) {
+                    updateAuditorConnections(log.args);
+                    bindEvents(); // TODO remove when jQuery can inject live
+                });
+            return updateAuditorPaidList(initialBlock, blockNumber);
+        })
+        .then(function (logs) {
+            Ratings.deployed().LogAuditorPaid(
+                    {}, { fromBlock: blockNumber + 1, toBlock: 'latest' })
+                .watch(function (error, log) {
+                    updateAuditorPaid(log.args);
+                    bindEvents(); // TODO remove when jQuery can inject live
+                });
+            return updateInvestorRefundedList(initialBlock, blockNumber);
+        })
+        .then(function (logs) {
+            Ratings.deployed().LogInvestorRefunded(
+                    {}, { fromBlock: blockNumber + 1, toBlock: 'latest' })
+                .watch(function (error, log) {
+                    updateInvestorRefunded(log.args);
+                    bindEvents(); // TODO remove when jQuery can inject live
+                });
+            return updateEntityConnectFailureList(initialBlock, blockNumber);
+        })
+        .then(function (logs) {
+            Ratings.deployed().LogEntityConnect_onOracleFailure(
+                    {}, { fromBlock: blockNumber + 1, toBlock: 'latest' })
+                .watch(function (error, log) {
+                    updateEntityConnectFailure(log.args);
+                    bindEvents(); // TODO remove when jQuery can inject live
+                });
+        });
 
     setModalHandler();
-
     bindEvents();
 });
 
@@ -97,11 +318,10 @@ setModalHandler = function() {
       // nop
     });
   });
-
 }
 
 bindEvents = function() {
-    $(".btn-join-analysis").on("click", function() {
+    $(".btn-join-analysis").click(function() {
         console.log("in button");
         var key = $("#btn-join-analysis").data("key");
         // TODO get it from account or contract
