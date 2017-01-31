@@ -1,9 +1,13 @@
 addListItem = function(logItemArgs) {
     var actionbar = $("#list").append(
-        "<tr><td><a href='" + web3.toUtf8(logItemArgs[ LogRequestForRatingSubmitted.permid ]) + "'>" +
-            logItemArgs[ LogRequestForRatingSubmitted.name ] + "</a></td>" +
-        "<td>" + logItemArgs[ LogRequestForRatingSubmitted.ric ] + "</td>" +
-        "<td>" + web3.fromWei(logItemArgs[ LogRequestForRatingSubmitted.rewardWei ]).toNumber() + " Ethers</td>" + 
+        "<tr data-key=\"" + logItemArgs[ LogRequestForRatingSubmitted.key ] + "\">" +
+            "<td class=\"name\"><a href='" + web3.toUtf8(logItemArgs[ LogRequestForRatingSubmitted.permid ]) + "'>" +
+                logItemArgs[ LogRequestForRatingSubmitted.name ] + "</a></td>" +
+        "<td class=\"ric\">" + logItemArgs[ LogRequestForRatingSubmitted.ric ] + "</td>" +
+        "<td class=\"reward\">" + web3.fromWei(logItemArgs[ LogRequestForRatingSubmitted.rewardWei ]).toNumber() + " Ethers</td>" + 
+        "<td class=\"available\">" + logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber() + "</td>" +
+        "<td class=\"joined\">" + 0 + "</td>" +
+        "<td class=\"submitted\">" + 0 + "</td>" +
         "<td class='action-cell text-center'></td>").find(".action-cell");
     var btn_join = $('<button/>', {
         text: 'Join analysis',
@@ -15,7 +19,7 @@ addListItem = function(logItemArgs) {
     var btn_response = $('<button/>', {
         text: 'Submit analysis',
         id: 'btn-submit-analysis',
-        class: 'btn btn-primary',
+        class: 'btn btn-primary btn-submit-analysis',
         "data-toggle": 'modal',
         "data-target": '#responseModal',
         "data-key": logItemArgs[ LogRequestForRatingSubmitted.key ]
@@ -24,7 +28,7 @@ addListItem = function(logItemArgs) {
     var btn_details = $('<button/>', {
         text: 'Details',
         id: 'btn-details-analysis',
-        class: 'btn btn-success',
+        class: 'btn btn-success btn-details-analysis',
         "data-toggle": 'modal',
         "data-target": '#detailsModal',
         "data-key": logItemArgs[ LogRequestForRatingSubmitted.key ],
@@ -35,6 +39,9 @@ addListItem = function(logItemArgs) {
         "data-permid": logItemArgs[ LogRequestForRatingSubmitted.permid ],
         "data-deadline": logItemArgs[ LogRequestForRatingSubmitted.deadlineStamp ].toNumber(),
         "data-maxAuditors": logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
+        "data-availableSlots": logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
+        "data-joinedSlots": 0,
+        "data-submittedSlots": 0,
         "data-reward": logItemArgs[ LogRequestForRatingSubmitted.rewardWei ].toString(10)
     });
     
@@ -78,7 +85,12 @@ updateRequestInteractionsList = function(initialBlock, lastBlock) {
 };
 
 updateRequestContributed = function (logItemArgs) {
-    // TODO
+    var row = $("#list").find("[data-key=\"" + logItemArgs[ LogRequestForRatingContributed.key ] + "\"]");
+    row.find("td.reward").html(
+        web3.fromWei(logItemArgs[ LogRequestForRatingContributed.totalReward ]).toNumber());
+    row.find("button.btn-details-analysis").attr(
+        "data-reward",
+        logItemArgs[ LogRequestForRatingContributed.totalReward ].toString(10));
 };
 
 updateRequestContributedList = function (initialBlock, lastBlock) {

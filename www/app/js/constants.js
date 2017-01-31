@@ -10,3 +10,15 @@ var LogRequestForRatingSubmitted = {
     maxAuditors: "maxAuditors",
     rewardWei: "reward"
 };
+
+var LogRequestForRatingInteractionsUpdated = {
+    key: "key",
+    totalInteractions: "totalInteractions"
+};
+
+var LogRequestForRatingContributed = {
+    key: "key",
+    investor: "investor",
+    contribution: "contribution",
+    totalReward: "totalReward"
+};
