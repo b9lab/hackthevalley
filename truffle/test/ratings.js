@@ -95,7 +95,7 @@ contract('Ratings', function(accounts) {
                         });
                 }
             })
-            .then(function() {
+            .then(function(receipt) {
                 return Extensions.getEventsPromise(Ratings.deployed().LogRequestForRatingInteractionsUpdated(
                     {}, { fromBlock: blockNumber }));
             })
