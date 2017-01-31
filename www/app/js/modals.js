@@ -22,6 +22,35 @@ $(document).ready(function() {
                     nameInput, descriptionInput, ricInput,
                     urlInput, deadline, maxAuditors, hashInput);
         console.log(data);
+        return web3.eth.callPromise({
+                from: G_account,
+                to: Ratings.deployed().address,
+                value: web3.toWei(amount),
+                data: data,
+                gas: 3000000
+            })
+            .then(function (success) {
+                // Returns a string
+                if (typeof success == "string") {
+                    success = web3.toBigNumber(success).toNumber() > 0;
+                }
+                if (!success) {
+                    console.log("Cannot submitRequestForRating. nameInput:", nameInput,
+                        ", descriptionInput", descriptionInput, ", ricInput", ricInput,
+                        ", urlInput", urlInput, ", deadline", deadline,
+                        ", maxAuditors", maxAuditors, ", ipfsHash", hashInput,
+                        ", account", G_account, ", ether", amount);
+                    // TODO inform user that it failed
+                    throw "Cannot submitRequestForRating";
+                }
+                return web3.eth.sendTransactionPromise({
+                        from: G_account,
+                        to: Ratings.deployed().address,
+                        value: web3.toWei(amount),
+                        data: data,
+                        gas: 3000000
+                    });
+            })
         // return Ratings.deployed().submitRequestForRating.call(
         //     nameInput, descriptionInput, ricInput,
         //     urlInput, deadline, maxAuditors, hashInput,
@@ -41,13 +70,6 @@ $(document).ready(function() {
                 //     urlInput, deadline, maxAuditors, hashInput,
                 //     { from: G_account, value: web3.toWei(amount) })
             // })
-        return web3.eth.sendTransactionPromise({
-                from: G_account,
-                to: Ratings.deployed().address,
-                value: web3.toWei(amount),
-                data: data,
-                gas: 3000000
-            })
             .then(function (txHash) {
             	$(".modal").modal("hide");
 
