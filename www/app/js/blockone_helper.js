@@ -95,14 +95,14 @@ function updateStatusUI() {
   var td_network = $("#status_net");
 
   if(web3 && web3.isConnected()) {
-    td_client.html("Connected").removeClass().addClass("status-success");
+    td_client.html("Connected").removeClass().addClass("alert-success");
   } else {
-    td_client.html("No connection").removeClass().addClass("status-fail");
+    td_client.html("No connection").removeClass().addClass("alert-danger");
   }
 
   if(web3 && web3.version.network=="16123") {
-    td_network.html("Connected").removeClass().addClass("status-success");
+    td_network.html("Connected").removeClass().addClass("alert-success");
   } else {
-    td_network.html("Not connection").removeClass().addClass("status-fail");
+    td_network.html("Not connection").removeClass().addClass("alert-danger");
   }
 }
