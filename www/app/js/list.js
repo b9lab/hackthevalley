@@ -1,4 +1,5 @@
 addListItem = function(logItemArgs) {
+    logItemArgs[ InfoElements.status ] = "Open";
     var actionbar = $("#list").append(
         "<tr data-key=\"" + logItemArgs[ LogRequestForRatingSubmitted.key ] + "\">" +
             "<td class=\"name\"><a href='" + web3.toUtf8(logItemArgs[ LogRequestForRatingSubmitted.permid ]) + "'>" +
@@ -38,18 +39,21 @@ addListItem = function(logItemArgs) {
         class: 'btn btn-success btn-details-analysis',
         "data-toggle": 'modal',
         "data-target": '#detailsModal',
-        "data-key": logItemArgs[ LogRequestForRatingSubmitted.key ],
-        "data-ipfsHash": logItemArgs[ LogRequestForRatingSubmitted.ipfsHash ],
-        "data-name": logItemArgs[ LogRequestForRatingSubmitted.name ],
-        "data-description": logItemArgs[ LogRequestForRatingSubmitted.description ],
-        "data-ric": logItemArgs[ LogRequestForRatingSubmitted.ric ],
-        "data-permid": web3.toUtf8(logItemArgs[ LogRequestForRatingSubmitted.permid ]),
-        "data-deadline": logItemArgs[ LogRequestForRatingSubmitted.deadlineStamp ].toNumber(),
-        "data-maxAuditors": logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
-        "data-availableSlots": logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
-        "data-joinedSlots": 0,
-        "data-submittedSlots": 0,
-        "data-reward": logItemArgs[ LogRequestForRatingSubmitted.rewardWei ].toString(10)
+        "data": {
+            "key": logItemArgs[ LogRequestForRatingSubmitted.key ],
+            "ipfs-hash": logItemArgs[ LogRequestForRatingSubmitted.ipfsHash ],
+            "name": logItemArgs[ LogRequestForRatingSubmitted.name ],
+            "description": logItemArgs[ LogRequestForRatingSubmitted.description ],
+            "ric": logItemArgs[ LogRequestForRatingSubmitted.ric ],
+            "permid": web3.toUtf8(logItemArgs[ LogRequestForRatingSubmitted.permid ]),
+            "deadline": logItemArgs[ LogRequestForRatingSubmitted.deadlineStamp ].toNumber(),
+            "max-auditors": logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
+            "available-slots": logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
+            "joined-slots": 0,
+            "submitted-slots": 0,
+            "reward": logItemArgs[ LogRequestForRatingSubmitted.rewardWei ].toString(10),
+            "status": logItemArgs[ InfoElements.status ]
+        }
     });
 
         /*

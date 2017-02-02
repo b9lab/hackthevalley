@@ -1,3 +1,8 @@
+var InfoElements = {
+    // These ones are not part of the event
+    status: "status"
+};
+
 var LogRequestForRatingSubmitted = {
     key: "key",
     investorAddr: "investor",
