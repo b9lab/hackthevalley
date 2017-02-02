@@ -9,6 +9,13 @@ addListItem = function(logItemArgs) {
         "<td class=\"joined\">" + 0 + "</td>" +
         "<td class=\"submitted\">" + 0 + "</td>" +
         "<td class='action-cell text-center'></td>").find(".action-cell");
+
+    var btn_contribute = $("<button/>", {
+        text: "Contribute",
+        class: 'btn btn-primary btn-contribute-analysis',
+        "data-key": logItemArgs[ LogRequestForRatingSubmitted.key ]
+    });
+
     var btn_join = $('<button/>', {
         text: 'Join analysis',
         //id: 'btn-join-analysis',
