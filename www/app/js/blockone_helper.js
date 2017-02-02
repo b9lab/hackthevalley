@@ -5,41 +5,57 @@ var dappId = {
     "?auditor": "com.b9lab.drating.auditor"
   }[window.location.search] || "com.b9lab.drating.auditor";
 console.log(dappId);
-  var network = "norsborg"
+var network = "norsborg"
+
+const MAIN_NETWORK_ID = 1;
+const ROPSTEN_NETWORK_ID = 3;
+const NORSBORG_NETWORK_ID = 16123;
 
 var G_account;
 
 var G_walletBar;
 
-$(document).on("networkSet", function() {
-  G_walletBar = new WalletBar({
-    dappNamespace: dappId,
-    blockchain: network,
-    callbacks: { signOut: function () { location.reload(); } }
-  });
-  fixUI();
-  updateStatusUI();
-
-  // var myContract;
-  return G_walletBar.applyHook(web3)
-    .then(function() {
-      return waitPromise(2000);
-    })
-    .then(function() {
-      G_account = G_walletBar.getCurrentAccount()
-      if (!G_account) {
-        alert("You need to log in to transact, " + G_account);
-      }
-      console.log("account", G_account);
-      return checkAccount(G_account);
-    })
-    .then(function () {
-      updateUI();
-    })
-    .catch(function(err) {
-      console.log(err);
-    });
-});
+window.onload = function() {
+    init(web3);
+    return web3.version.getNetworkPromise()
+        .catch(function(err) {
+            updateStatusUI(false);
+            throw "Failed to connect";
+        })
+        .then(function(networkId) {
+            updateStatusUI(true);
+            updateNetworkUI(networkId)
+            [ Ratings, RicUri, Migrations ].forEach(function (contract) {
+                if (contract.networks().indexOf(networkId) > -1) {
+                    contract.setNetwork(networkId);
+                }
+            });
+            G_walletBar = new WalletBar({
+                dappNamespace: dappId,
+                blockchain: network,
+                callbacks: { signOut: function () { location.reload(); } }
+            });
+            fixUI();
+            return G_walletBar.applyHook(web3);
+        })
+        .then(function() {
+            return waitPromise(2000);
+        })
+        .then(function() {
+            G_account = G_walletBar.getCurrentAccount()
+            if (!G_account) {
+                alert("You need to log in to transact, " + G_account);
+            }
+            console.log("account", G_account);
+            return checkAccount(G_account);
+        })
+        .then(function () {
+            updateUI();
+        })
+        .catch(function(err) {
+            console.log(err);
+        });
+}
 
 function testTx() {
   G_walletBar.createSecureSigner();
@@ -51,7 +67,6 @@ function testTx() {
   .then(console.log)
   .catch(console.error);
 }
-
 
 // Returns a Promise 
 function checkAccount(account) {
@@ -74,35 +89,32 @@ function checkAccount(account) {
     });
 }
 
-// Helper to update menu, etc according to user
-function updateUI()
-{
-  // not used anymore
-}
-
 // UI only function to fixup the zindex and positioning
 function fixUI() {
-  $("#authBarPlaceHolder").css({
-    "z-index": "1000",
-    "position": "fixed",
-    "top": "12px",
-    "right": "12px"
-  }).css
+    $("#authBarPlaceHolder").css({
+        "z-index": "1000",
+        "position": "fixed",
+        "top": "12px",
+        "right": "12px"
+    }).css
 }
 
-function updateStatusUI() {
-  var td_client = $("#status_client");
-  var td_network = $("#status_net");
+function updateStatusUI(isConnected) {
+    var td_client = $("#status_client");
 
-  if(web3 && web3.isConnected()) {
-    td_client.html("Connected").removeClass().addClass("alert-success");
-  } else {
-    td_client.html("No connection").removeClass().addClass("alert-danger");
-  }
+    if(isConnected) {
+        td_client.html("Connected").removeClass().addClass("alert-success");
+    } else {
+        td_client.html("No connection").removeClass().addClass("alert-danger");
+    }
+}
 
-  if(web3 && web3.version.network=="16123") {
-    td_network.html("Connected").removeClass().addClass("alert-success");
-  } else {
-    td_network.html("Not connection").removeClass().addClass("alert-danger");
-  }
+function updateNetworkUI(networkId) {
+    var td_network = $("#status_net");
+
+    if(networkId == NORSBORG_NETWORK_ID) {
+        td_network.html("Connected").removeClass().addClass("alert-success");
+    } else {
+        td_network.html("Not connection").removeClass().addClass("alert-danger");
+    }
 }
