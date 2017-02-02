@@ -43,7 +43,7 @@ addListItem = function(logItemArgs) {
         "data-name": logItemArgs[ LogRequestForRatingSubmitted.name ],
         "data-description": logItemArgs[ LogRequestForRatingSubmitted.description ],
         "data-ric": logItemArgs[ LogRequestForRatingSubmitted.ric ],
-        "data-permid": logItemArgs[ LogRequestForRatingSubmitted.permid ],
+        "data-permid": web3.toUtf8(logItemArgs[ LogRequestForRatingSubmitted.permid ]),
         "data-deadline": logItemArgs[ LogRequestForRatingSubmitted.deadlineStamp ].toNumber(),
         "data-maxAuditors": logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
         "data-availableSlots": logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),

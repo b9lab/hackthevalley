@@ -5,13 +5,13 @@ setListDetails = function(modal, listitem) {
     console.log("modal:");
     console.log(modal);
 
-    var f_ipfs_hash = listitem.data("ipfsHash");
+    var f_ipfs_hash = listitem.data("ipfshash");
     var f_name = listitem.data("name");
     var f_description = listitem.data("description");
-    var f_ric = listitem.data("ipfsHash");
-    var f_permid = listitem.data("ipfsHash");
+    var f_ric = listitem.data("ric");
+    var f_permid = listitem.data("permid");
     var f_deadline = listitem.data("deadline");
-    var f_max_auditors = listitem.data("maxAuditors");
+    var f_max_auditors = listitem.data("maxauditors");
     var f_reward = listitem.data("reward");
 
     $(modal).find("#F_company_name").html(f_name);
