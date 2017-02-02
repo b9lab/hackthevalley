@@ -65,14 +65,32 @@
 
       <div class="starter-template">
         <!-- Button trigger modal -->
+        <!-- fixme ... -->
         <br>
         <br>
+        <br>
+        <br>
+        <div id="network-status">
+          <table>
+            <tr><td>
+              Client:
+            </td><td id="status_client" class="status-success">
+              Running
+            </td></tr>
+            <tr><td>
+              Testnet(Norsborg):
+            </td><td id="status_net" class="status-success">
+              Connected
+            </td></tr>
+          </table>
+          <span class="status-info-text">
+            This demo requires you to be connected to the Norsborg testnet. Please check the <a href="https://blockone.thomsonreuters.com/docs/Norsborg.html" target="_blank">Norsborg documentation</a> for further information.
+          </span>
+        </div>
         <br>
         <br>
         
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#requestModal">
-          New request
-        </button>
+        
 
         <!-- Modal -->
         <div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -96,8 +114,7 @@
         </div>
 
       </div>
-      <br>
-      <br>
+
 
       <!-- Modal -->
       <div class="modal fade" id="responseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -147,6 +164,10 @@
         
         <div class="card">
             <div class="card-block">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#requestModal">
+                New request
+              </button>
+              <br>&nbsp;
                 
                 <table class="table table-striped table-bordered">
                     <thead class="">

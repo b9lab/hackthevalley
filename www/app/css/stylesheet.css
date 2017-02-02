@@ -16,7 +16,7 @@ a:hover {
 }
 
 .navbar {
-    z-index: -999;
+    z-index: 999; /* button is on 1000 */
 }
 
 .navbar a {
@@ -160,4 +160,10 @@ body {
 #M_info_label {
   color: #ffffff;
   display: none;
+}
+
+#network-status {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  padding: 20px;
 }
