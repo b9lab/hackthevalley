@@ -44,14 +44,18 @@ addListItem = function(logItemArgs) {
         "data-submittedSlots": 0,
         "data-reward": logItemArgs[ LogRequestForRatingSubmitted.rewardWei ].toString(10)
     });
-    
+
         /*
         <button class='btn btn-success' id='btn-join-analysis' data-key='"+logItemArgs["key"]+"'>Join Analysis</button>
         <button type='button' class='btn btn-primary' data-toggle='modal' data-target='#responseModal' data-key='"+logItemArgs["key"]+"'>Submit analysis</button>
         <button class='btn btn-success' data-toggle='modal' data-target='#detailsModal'>DETAILS</button></td></tr>"
         */
 
-    actionbar.append(btn_join).append(btn_response).append(btn_details);
+    actionbar
+        .append(btn_contribute)
+        .append(btn_join)
+        .append(btn_response)
+        .append(btn_details);
 };
 
 buildInitialList = function(initialBlock, lastBlock) {
