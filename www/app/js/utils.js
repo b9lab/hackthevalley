@@ -21,19 +21,34 @@ promisify = function (web3) {
         version: [ "ethereum", "network", "node", "whisper" ]
     };
 
+    promisifyFunction = function(groups) {
+        var original = web3;
+        var promisified = web3;
+        var groupLength = groups.length;
+        groups.forEach(function(group, index) {
+            original = original[group];
+            if (index < groupLength - 1) {
+                promisified = promisified[group];
+            } else {
+                // Now we are at the last element
+                promisified[group + "Promise"] = function () {
+                    var args = arguments;
+                    return new Promise(function (resolve, reject) {
+                        args[args.length] = callbackToResolve(resolve, reject);
+                        args.length++;
+                        original.apply(web3[group], args);
+                    });
+                };        
+            }
+        });
+    };
+
     Object.keys(syncGetters).forEach(function(group) {
         Object.keys(web3[group]).forEach(function (method) {
             if (syncGetters[group].indexOf(method) > -1) {
                 // Skip
             } else if (typeof web3[group][method] === "function") {
-                web3[group][method + "Promise"] = function () {
-                    var args = arguments;
-                    return new Promise(function (resolve, reject) {
-                        args[args.length] = callbackToResolve(resolve, reject);
-                        args.length++;
-                        web3[group][method].apply(web3[group], args);
-                    });
-                };
+                promisifyFunction([group, method]);
             }
         });
     });
@@ -83,5 +98,21 @@ waitPromise = function (timeOut, toPassOn) {
         setTimeout(function () {
                 resolve(toPassOn);
             }, timeOut);
+    });
+};
+
+filterGetPromise = function (filter) {
+    return new Promise(function (resolve, reject) {
+        try {
+            filter.get(function (error, logs) {
+                if (error) {
+                    reject(error);
+                } else {
+                    resolve(logs);
+                }
+            });
+        } catch (error) {
+            reject(error);
+        }
     });
 };

@@ -65,15 +65,3 @@ function setupSolidityEventExamples() {
         { key: keyToWatch }, { fromBlock: 0 });
 }
 
-window.onload = function() {
-    init(web3);
-    web3.version.getNetworkPromise()
-        .then(function(network) {
-            [ Ratings, RicUri, Migrations ].forEach(function (contract) {
-                if (contract.networks().indexOf(network) > -1) {
-                    contract.setNetwork(network);
-                }
-            });
-            $.event.trigger({ type: "networkSet"});
-        });
-}
