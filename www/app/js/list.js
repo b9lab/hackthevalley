@@ -219,7 +219,7 @@ updateEntityConnectFailureList = function (initialBlock, lastBlock) {
         });
 };
 
-$(document).on("networkSet", function() {
+$(document).on("onInitialised", function() {
     var initialBlock = 0;
     var blockNumber;
     /*return*/ web3.eth.getBlockNumberPromise()

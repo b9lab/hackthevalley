@@ -24,7 +24,7 @@ window.onload = function() {
         })
         .then(function(networkId) {
             updateStatusUI(true);
-            updateNetworkUI(networkId)
+            updateNetworkUI(networkId);
             [ Ratings, RicUri, Migrations ].forEach(function (contract) {
                 if (contract.networks().indexOf(networkId) > -1) {
                     contract.setNetwork(networkId);
@@ -51,6 +51,7 @@ window.onload = function() {
         })
         .then(function () {
             updateUI();
+            $.event.trigger({ type: "onInitialised" });
         })
         .catch(function(err) {
             console.log(err);
