@@ -108,6 +108,7 @@ function updateStatusUI(isConnected) {
         td_client.html("Connected").removeClass().addClass("alert-success");
     } else {
         td_client.html("No connection").removeClass().addClass("alert-danger");
+        updateNetworkUI(0);
     }
 }
 
@@ -117,6 +118,6 @@ function updateNetworkUI(networkId) {
     if(networkId == NORSBORG_NETWORK_ID) {
         td_network.html("Connected").removeClass().addClass("alert-success");
     } else {
-        td_network.html("Not connection").removeClass().addClass("alert-danger");
+        td_network.html("No connection").removeClass().addClass("alert-danger");
     }
 }
