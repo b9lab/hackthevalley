@@ -70,28 +70,28 @@
         <br>
         <br>
         <br>
-        <div id="network-status">
-          <table>
-            <tr><td>
-              Client:
-            </td><td id="status_client" class="status-success">
-              Running
-            </td></tr>
-            <tr><td>
-              Testnet(Norsborg):
-            </td><td id="status_net" class="status-success">
-              Connected
-            </td></tr>
-          </table>
-          <span class="status-info-text">
-            This demo requires you to be connected to the Norsborg testnet. Please check the <a href="https://blockone.thomsonreuters.com/docs/Norsborg.html" target="_blank">Norsborg documentation</a> for further information.
-          </span>
-        </div>
-        <br>
-        <br>
+          <div class="card">
+              <div class="card-block">
+                  <h3>Network Status</h3>
+                  <div class="alert alert-info" role="alert">
+                    This demo requires you to be connected to the Norsborg testnet. Please check the <a href="https://blockone.thomsonreuters.com/docs/Norsborg.html" target="_blank">Norsborg documentation</a> for further information.
+                  </div>
+                  <table class="table table-bordered"> 
+                      <tr>
+                          <td>Client:</td>
+                          <td id="status_client" class="alert alert-success" role="alert">Running</td>
+                      </tr>
+                      <tr>
+                          <td>Testnet(Norsborg):</td>
+                          <td id="status_net" class="alert alert-success" role="alert">Connected</td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+          
+          <br>
+          <br>
         
-        
-
         <!-- Modal -->
         <div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
