@@ -231,13 +231,13 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 
   Contract.new = function() {
     if (this.currentProvider == null) {
-      throw new Error("BlockOneOracleClientTest error: Please call setProvider() first before calling new().");
+      throw new Error("BlockOneOracleMock error: Please call setProvider() first before calling new().");
     }
 
     var args = Array.prototype.slice.call(arguments);
 
     if (!this.unlinked_binary) {
-      throw new Error("BlockOneOracleClientTest error: contract binary not set. Can't deploy new instance.");
+      throw new Error("BlockOneOracleMock error: contract binary not set. Can't deploy new instance.");
     }
 
     var regex = /__[^_]+_+/g;
@@ -256,7 +256,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         return name != arr[index + 1];
       }).join(", ");
 
-      throw new Error("BlockOneOracleClientTest contains unresolved libraries. You must deploy and link the following libraries before you can deploy a new version of BlockOneOracleClientTest: " + unlinked_libraries);
+      throw new Error("BlockOneOracleMock contains unresolved libraries. You must deploy and link the following libraries before you can deploy a new version of BlockOneOracleMock: " + unlinked_libraries);
     }
 
     var self = this;
@@ -297,7 +297,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 
   Contract.at = function(address) {
     if (address == null || typeof address != "string" || address.length != 42) {
-      throw new Error("Invalid address passed to BlockOneOracleClientTest.at(): " + address);
+      throw new Error("Invalid address passed to BlockOneOracleMock.at(): " + address);
     }
 
     var contract_class = this.web3.eth.contract(this.abi);
@@ -308,7 +308,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 
   Contract.deployed = function() {
     if (!this.address) {
-      throw new Error("Cannot find deployed address: BlockOneOracleClientTest not deployed or address not set.");
+      throw new Error("Cannot find deployed address: BlockOneOracleMock not deployed or address not set.");
     }
 
     return this.at(this.address);
@@ -347,45 +347,8 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   };
 
   Contract.all_networks = {
-  "default": {
+  "16123": {
     "abi": [
-      {
-        "constant": false,
-        "inputs": [
-          {
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "name": "timestamp",
-            "type": "uint256"
-          },
-          {
-            "name": "symbol",
-            "type": "bytes32"
-          },
-          {
-            "name": "price",
-            "type": "uint256"
-          },
-          {
-            "name": "bid",
-            "type": "uint256"
-          },
-          {
-            "name": "ask",
-            "type": "uint256"
-          },
-          {
-            "name": "volume",
-            "type": "uint256"
-          }
-        ],
-        "name": "respondSuccess_IntraDay",
-        "outputs": [],
-        "payable": false,
-        "type": "function"
-      },
       {
         "constant": false,
         "inputs": [
@@ -401,128 +364,28 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "name": "request_IntraDay",
         "outputs": [
           {
-            "name": "requestId",
+            "name": "",
             "type": "uint256"
           }
         ],
-        "payable": false,
-        "type": "function"
-      },
-      {
-        "constant": false,
-        "inputs": [
-          {
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "name": "timestamp",
-            "type": "uint256"
-          },
-          {
-            "name": "symbol",
-            "type": "bytes32"
-          },
-          {
-            "name": "price",
-            "type": "uint256"
-          },
-          {
-            "name": "bid",
-            "type": "uint256"
-          },
-          {
-            "name": "ask",
-            "type": "uint256"
-          },
-          {
-            "name": "volume",
-            "type": "uint256"
-          }
-        ],
-        "name": "respondSuccess_EndOfDay",
-        "outputs": [],
-        "payable": false,
-        "type": "function"
-      },
-      {
-        "constant": false,
-        "inputs": [
-          {
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "name": "reason",
-            "type": "uint256"
-          }
-        ],
-        "name": "respondError_EntityConnect",
-        "outputs": [],
-        "payable": false,
-        "type": "function"
-      },
-      {
-        "constant": false,
-        "inputs": [
-          {
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "name": "reason",
-            "type": "uint256"
-          }
-        ],
-        "name": "respondError_EndOfDay",
-        "outputs": [],
-        "payable": false,
-        "type": "function"
-      },
-      {
-        "constant": false,
-        "inputs": [
-          {
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "name": "reason",
-            "type": "uint256"
-          }
-        ],
-        "name": "respondError_IntraDay",
-        "outputs": [],
         "payable": false,
         "type": "function"
       },
       {
         "constant": true,
-        "inputs": [],
-        "name": "getOracle",
-        "outputs": [
+        "inputs": [
           {
-            "name": "",
+            "name": "_address",
             "type": "address"
           }
         ],
-        "payable": false,
-        "type": "function"
-      },
-      {
-        "constant": false,
-        "inputs": [
+        "name": "isEntitled",
+        "outputs": [
           {
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "name": "connections",
-            "type": "uint256"
+            "name": "isIndeed",
+            "type": "bool"
           }
         ],
-        "name": "respondSuccess_EntityConnect",
-        "outputs": [],
         "payable": false,
         "type": "function"
       },
@@ -545,26 +408,8 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "name": "request_EntityConnect",
         "outputs": [
           {
-            "name": "requestId",
-            "type": "uint256"
-          }
-        ],
-        "payable": false,
-        "type": "function"
-      },
-      {
-        "constant": true,
-        "inputs": [
-          {
-            "name": "name",
-            "type": "string"
-          }
-        ],
-        "name": "getEntitlement",
-        "outputs": [
-          {
             "name": "",
-            "type": "address"
+            "type": "uint256"
           }
         ],
         "payable": false,
@@ -585,7 +430,102 @@ var SolidityEvent = require("web3/lib/web3/event.js");
         "name": "request_EndOfDay",
         "outputs": [
           {
-            "name": "requestId",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "sender",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "queryId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "uri1",
+            "type": "bytes32"
+          },
+          {
+            "indexed": false,
+            "name": "uri2",
+            "type": "bytes32"
+          },
+          {
+            "indexed": false,
+            "name": "level",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestEntityConnect",
+        "type": "event"
+      }
+    ],
+    "unlinked_binary": "0x606060405234610000575b6101df806100196000396000f300606060405263ffffffff60e060020a60003504166315226e1481146100455780639ce6582d1461006a578063a0cf91f5146100a4578063d185e2cd14610045575b610000565b34610000576100586004356024356100f1565b60408051918252519081900360200190f35b346100005761009073ffffffffffffffffffffffffffffffffffffffff600435166100fe565b604080519115158252519081900360200190f35b3461000057610058600435602435604435610106565b60408051918252519081900360200190f35b34610000576100586004356024356100f1565b60408051918252519081900360200190f35b6000610000565b92915050565b60015b919050565b6040805184815260208082018590528183018490524260608084019190915243608080850191909152845160a094819003850181203373ffffffffffffffffffffffffffffffffffffffff1682529381018490528086018990529182018790528101859052925160009391927fc36c09b88a670fc8c55e9ffe53458044112c5843b33d6b4c48e2fe30c957f105928290030190a18091505b509392505050565b6000610000565b929150505600a165627a7a72305820b022bae280ec7b88e127acc79b022fbcf6b69af7e6c1de0d6f8bf9424238a1f00029",
+    "events": {
+      "0xc36c09b88a670fc8c55e9ffe53458044112c5843b33d6b4c48e2fe30c957f105": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "sender",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "queryId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "uri1",
+            "type": "bytes32"
+          },
+          {
+            "indexed": false,
+            "name": "uri2",
+            "type": "bytes32"
+          },
+          {
+            "indexed": false,
+            "name": "level",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogRequestEntityConnect",
+        "type": "event"
+      }
+    },
+    "updated_at": 1485652632375,
+    "links": {}
+  },
+  "default": {
+    "abi": [
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "request_IntraDay",
+        "outputs": [
+          {
+            "name": "",
             "type": "uint256"
           }
         ],
@@ -594,364 +534,139 @@ var SolidityEvent = require("web3/lib/web3/event.js");
       },
       {
         "constant": true,
-        "inputs": [],
-        "name": "getAppName",
+        "inputs": [
+          {
+            "name": "_address",
+            "type": "address"
+          }
+        ],
+        "name": "isEntitled",
         "outputs": [
           {
-            "name": "",
-            "type": "string"
+            "name": "isIndeed",
+            "type": "bool"
           }
         ],
         "payable": false,
         "type": "function"
       },
       {
+        "constant": false,
         "inputs": [
           {
-            "name": "entitlementRegistry",
-            "type": "address"
+            "name": "uri1",
+            "type": "bytes32"
+          },
+          {
+            "name": "uri2",
+            "type": "bytes32"
+          },
+          {
+            "name": "level",
+            "type": "uint256"
+          }
+        ],
+        "name": "request_EntityConnect",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
           }
         ],
         "payable": false,
-        "type": "constructor"
+        "type": "function"
       },
       {
-        "anonymous": false,
+        "constant": false,
         "inputs": [
           {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_onOracleResponse",
-        "type": "event"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "reason",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_onOracleFailure",
-        "type": "event"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_requested_IntraDay",
-        "type": "event"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "timestamp",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
             "name": "symbol",
             "type": "bytes32"
           },
           {
-            "indexed": false,
-            "name": "price",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "bid",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "ask",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "volume",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_respond_IntraDay",
-        "type": "event"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_requested_EndOfDay",
-        "type": "event"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
             "name": "timestamp",
             "type": "uint256"
+          }
+        ],
+        "name": "request_EndOfDay",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "type": "function"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "sender",
+            "type": "address"
           },
           {
             "indexed": false,
-            "name": "symbol",
+            "name": "queryId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "uri1",
             "type": "bytes32"
           },
           {
             "indexed": false,
-            "name": "price",
-            "type": "uint256"
+            "name": "uri2",
+            "type": "bytes32"
           },
           {
             "indexed": false,
-            "name": "bid",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "ask",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "volume",
+            "name": "level",
             "type": "uint256"
           }
         ],
-        "name": "BlockOneOracleClientTest_respond_EndOfDay",
-        "type": "event"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_requested_EntityConnect",
-        "type": "event"
-      },
-      {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "connections",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_respond_EntityConnect",
+        "name": "LogRequestEntityConnect",
         "type": "event"
       }
     ],
-    "unlinked_binary": "0x6060604052346100005760405160208061093a83398101604052515b805b805b600160a060020a038116151561003457610000565b60008054600160a060020a031916600160a060020a0383161790555b5060018054600160a060020a03191633600160a060020a03161790555b505b505b6108ba806100806000396000f3006060604052361561009e5763ffffffff60e060020a6000350416630c51402681146100a357806315226e14146100c757806317a96e5e146100ec57806320b08482146101105780636fda1150146101105780637c6a595114610110578063833b1fce1461014f57806383d04ed414610178578063a0cf91f51461018d578063cbaaa3ac146101b5578063d185e2cd14610224578063fe80dc3814610249575b610000565b34610000576100c560043560243560443560643560843560a43560c4356102d6565b005b34610000576100da60043560243561033c565b60408051918252519081900360200190f35b34610000576100c560043560243560443560643560843560a43560c435610386565b005b34610000576100c56004356024356103ec565b005b34610000576100c56004356024356103ec565b005b34610000576100c56004356024356103ec565b005b346100005761015c6104ac565b60408051600160a060020a039092168252519081900360200190f35b34610000576100c56004356024356104f3565b005b34610000576100da600435602435604435610533565b60408051918252519081900360200190f35b346100005761015c600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284375094965061057f95505050505050565b60408051600160a060020a039092168252519081900360200190f35b34610000576100da60043560243561066a565b60408051918252519081900360200190f35b34610000576102566106b4565b60408051602080825283518183015283519192839290830191850190808383821561029c575b80518252602083111561029c57601f19909201916020918201910161027c565b505050905090810190601f1680156102c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6040805188815260208101889052808201879052606081018690526080810185905260a0810184905260c0810183905290517f22884df0d5b5279f371d4e62c09a39d8949263624148338cf7101a35c9dfa82e9181900360e00190a15b50505050505050565b600061034883836106f9565b6040805182815290519192507f93b88a2969f23d4db3228f80ab79d8665fe82fb014f430e92fa8b9bbb6247cac919081900360200190a15b92915050565b6040805188815260208101889052808201879052606081018690526080810185905260a0810184905260c0810183905290517fdd184b3e7a312e9f821669373834128810cdded53b1eadbdb699e8c9e78a55849181900360e00190a15b50505050505050565b604080518381526020810183905281517f128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be929181900390910190a15b5050565b604080518381526020810183905281517f128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be929181900390910190a15b5050565b604080518381526020810183905281517f128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be929181900390910190a15b5050565b60006104ed604060405190810160405280601281526020017f636f6d2e74722e6f7261636c652e6d61696e000000000000000000000000000081525061057f565b90505b90565b604080518381526020810183905281517f4d92bae7a66a63f8707f63c99d43ff45132be5c5fb0ced21d061041b3a2f2ddb929181900390910190a15b5050565b6000610540848484610777565b6040805182815290519192507f04f4809a2498e814c9d8b482ab9781e5c8ba5933a69e97ad53835118110cfb28919081900360200190a15b9392505050565b6000805460408051602090810184905290517fdc5acb9000000000000000000000000000000000000000000000000000000000815260048101828152855160248301528551600160a060020a039094169363dc5acb909387938392604490910191850190808383821561060d575b80518252602083111561060d57601f1990920191602091820191016105ed565b505050905090810190601f1680156106395780820380516001836020036101000a031916815260200191505b5092505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b919050565b60006106768383610810565b6040805182815290519192507fe554cce36fbdeba6fb46d90d34f96262fd4a0775aa7d0f5d081264a6c2d0654f919081900360200190a15b92915050565b604080516020818101835260009091528151808301909252601582527f636f6d2e62396c61622e6f7261636c652e746573740000000000000000000000908201525b90565b60006107036104ac565b600160a060020a03166315226e1484846000604051602001526040518363ffffffff1660e060020a02815260040180836000191660001916815260200182815260200192505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b92915050565b60006107816104ac565b604080516000602091820181905282517fa0cf91f50000000000000000000000000000000000000000000000000000000081526004810189905260248101889052604481018790529251600160a060020a03949094169363a0cf91f59360648082019493918390030190829087803b156100005760325a03f115610000575050604051519150505b9392505050565b600061081a6104ac565b600160a060020a031663d185e2cd84846000604051602001526040518363ffffffff1660e060020a02815260040180836000191660001916815260200182815260200192505050602060405180830381600087803b156100005760325a03f115610000575050604051519150505b929150505600a165627a7a72305820f543e242c2d2a9ca68d58f665bf4f96bdea912afd37e9a9cce4ae22e51caa8b30029",
+    "unlinked_binary": "0x606060405234610000575b6101df806100196000396000f300606060405263ffffffff60e060020a60003504166315226e1481146100455780639ce6582d1461006a578063a0cf91f5146100a4578063d185e2cd14610045575b610000565b34610000576100586004356024356100f1565b60408051918252519081900360200190f35b346100005761009073ffffffffffffffffffffffffffffffffffffffff600435166100fe565b604080519115158252519081900360200190f35b3461000057610058600435602435604435610106565b60408051918252519081900360200190f35b34610000576100586004356024356100f1565b60408051918252519081900360200190f35b6000610000565b92915050565b60015b919050565b6040805184815260208082018590528183018490524260608084019190915243608080850191909152845160a094819003850181203373ffffffffffffffffffffffffffffffffffffffff1682529381018490528086018990529182018790528101859052925160009391927fc36c09b88a670fc8c55e9ffe53458044112c5843b33d6b4c48e2fe30c957f105928290030190a18091505b509392505050565b6000610000565b929150505600a165627a7a723058204edb9fd97893d242def17779c129d336bfaabe225a2fd844bea5adf1157f86ce0029",
     "events": {
-      "0x68385462c45956b3bd1196a090705283c21cb02a3a231b1e0957fa5113252b53": {
+      "0xc36c09b88a670fc8c55e9ffe53458044112c5843b33d6b4c48e2fe30c957f105": {
         "anonymous": false,
         "inputs": [
           {
             "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_onOracleResponse",
-        "type": "event"
-      },
-      "0x128f9becc8bee8161d289ec19f2f13730dfcb614e03f81c17623d186241849be": {
-        "anonymous": false,
-        "inputs": [
+            "name": "sender",
+            "type": "address"
+          },
           {
             "indexed": false,
-            "name": "requestId",
+            "name": "queryId",
             "type": "uint256"
           },
           {
             "indexed": false,
-            "name": "reason",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_onOracleFailure",
-        "type": "event"
-      },
-      "0x93b88a2969f23d4db3228f80ab79d8665fe82fb014f430e92fa8b9bbb6247cac": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_requested_IntraDay",
-        "type": "event"
-      },
-      "0x22884df0d5b5279f371d4e62c09a39d8949263624148338cf7101a35c9dfa82e": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "timestamp",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "symbol",
+            "name": "uri1",
             "type": "bytes32"
           },
           {
             "indexed": false,
-            "name": "price",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "bid",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "ask",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "volume",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_respond_IntraDay",
-        "type": "event"
-      },
-      "0xe554cce36fbdeba6fb46d90d34f96262fd4a0775aa7d0f5d081264a6c2d0654f": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_requested_EndOfDay",
-        "type": "event"
-      },
-      "0xdd184b3e7a312e9f821669373834128810cdded53b1eadbdb699e8c9e78a5584": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "timestamp",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "symbol",
+            "name": "uri2",
             "type": "bytes32"
           },
           {
             "indexed": false,
-            "name": "price",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "bid",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "ask",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "volume",
+            "name": "level",
             "type": "uint256"
           }
         ],
-        "name": "BlockOneOracleClientTest_respond_EndOfDay",
-        "type": "event"
-      },
-      "0x04f4809a2498e814c9d8b482ab9781e5c8ba5933a69e97ad53835118110cfb28": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_requested_EntityConnect",
-        "type": "event"
-      },
-      "0x4d92bae7a66a63f8707f63c99d43ff45132be5c5fb0ced21d061041b3a2f2ddb": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
-            "name": "requestId",
-            "type": "uint256"
-          },
-          {
-            "indexed": false,
-            "name": "connections",
-            "type": "uint256"
-          }
-        ],
-        "name": "BlockOneOracleClientTest_respond_EntityConnect",
+        "name": "LogRequestEntityConnect",
         "type": "event"
       }
     },
-    "updated_at": 1485621487842
+    "updated_at": 1485652656301
   }
 };
 
@@ -1036,7 +751,7 @@ var SolidityEvent = require("web3/lib/web3/event.js");
     Contract.links[name] = address;
   };
 
-  Contract.contract_name   = Contract.prototype.contract_name   = "BlockOneOracleClientTest";
+  Contract.contract_name   = Contract.prototype.contract_name   = "BlockOneOracleMock";
   Contract.generated_with  = Contract.prototype.generated_with  = "3.2.0";
 
   // Allow people to opt-in to breaking changes now.
@@ -1076,6 +791,6 @@ var SolidityEvent = require("web3/lib/web3/event.js");
   } else {
     // There will only be one version of this contract in the browser,
     // and we can use that.
-    window.BlockOneOracleClientTest = Contract;
+    window.BlockOneOracleMock = Contract;
   }
 })();
