@@ -88,3 +88,20 @@ function fixUI() {
     "right": "12px"
   }).css
 }
+
+function updateStatusUI() {
+  var td_client = $("#status_client");
+  var td_network = $("#status_network");
+
+  if(web3 && web3.isConnected()) {
+    td_client.html("Connected").removeClass().addClass("status-success");
+  } else {
+    td_client.html("No connection").removeClass().addClass("status-fail");
+  }
+
+  if(web3 && web3.version.network=="16123") {
+    td_network.html("Connected").removeClass().addClass("status-success");
+  } else {
+    td_network.html("Not connection").removeClass().addClass("status-fail");
+  }
+}
