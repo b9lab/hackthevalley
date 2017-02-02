@@ -97,7 +97,7 @@ function fixUI() {
         "z-index": "1000",
         "position": "fixed",
         "top": "12px",
-        "right": "12px"
+        "right": "64px"
     }).css
 }
 

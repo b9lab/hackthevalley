@@ -112,7 +112,7 @@ a:hover {
 
 .footer-logo {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 64px;
 }
 
 .footer-logo img {
@@ -152,6 +152,28 @@ body {
   background-color: #292b2c;
 }
 /*------ End Sticky footer -------*/
+
+
+
+/*--- Blockone ID ------*/
+
+.authBarSignInButton {
+    background: none !important;
+    border: 2px solid #FFF !important;
+}
+
+.authBarSignInButton:hover {
+    background: #FFF !important;
+    color: #FF9800 !important;
+}
+
+.authBarSignInButton:active {
+    background: #EDEDED !important;
+    color: #FF9800 !important;
+    border: 2px solid #EDEDED !important;
+}
+
+/*--- End Blockone ID ------*/
 
 #M_info_label {
   color: #ffffff;
