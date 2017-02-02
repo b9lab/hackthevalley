@@ -36,6 +36,7 @@ window.onload = function() {
                 callbacks: { signOut: function () { location.reload(); } }
             });
             fixUI();
+            $.event.trigger({ type: "onContractsInitialised" });
             return G_walletBar.applyHook(web3);
         })
         .then(function() {
@@ -51,7 +52,7 @@ window.onload = function() {
         })
         .then(function () {
             updateUI();
-            $.event.trigger({ type: "onInitialised" });
+            $.event.trigger({ type: "onWalletInitialised" });
         })
         .catch(function(err) {
             console.log(err);
