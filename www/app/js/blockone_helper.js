@@ -18,6 +18,7 @@ $(document).on("networkSet", function() {
     callbacks: { signOut: function () { location.reload(); } }
   });
   fixUI();
+  updateStatusUI();
 
   // var myContract;
   return G_walletBar.applyHook(web3)
@@ -91,7 +92,7 @@ function fixUI() {
 
 function updateStatusUI() {
   var td_client = $("#status_client");
-  var td_network = $("#status_network");
+  var td_network = $("#status_net");
 
   if(web3 && web3.isConnected()) {
     td_client.html("Connected").removeClass().addClass("status-success");
