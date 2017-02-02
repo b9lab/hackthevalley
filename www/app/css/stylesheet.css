@@ -54,13 +54,9 @@ a:hover {
     padding-bottom: 20px;
 }
 
-.jumbotron-logos {
-    display: flex;
-    align-items: center;
-}
-
 .jumbotron-logos img{
     width: 100%;
+    max-width: 50vw;
 }
 
 .title-logo img {
@@ -79,7 +75,7 @@ a:hover {
 }
 
 .subtitle {
-    margin: 20px 20vw 50px;
+    margin: 20px 10vw 50px;
     color: #FF9800;
 }
 
@@ -160,6 +156,17 @@ body {
 #M_info_label {
   color: #ffffff;
   display: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .subtitle {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .title-logo img {
+        max-width: 70%;
+    }
 }
 
 
