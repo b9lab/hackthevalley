@@ -1,6 +1,7 @@
 addListItem = function(logItemArgs) {
     // load new row from
     var actionbar = $("#list");
+    
     actionbar.append( newRow );
     //maybe get the object?
 
