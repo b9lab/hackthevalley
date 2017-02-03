@@ -17,6 +17,7 @@ a:hover {
 
 .navbar {
     z-index: 999; /* button is on 1000 */
+    border-bottom: 2px #FFF solid;
 }
 
 .navbar a {
