@@ -33,8 +33,8 @@ window.onload = function() {
             updateStatusUI(true);
             updateNetworkUI(networkId);
             [ Ratings, RicUri, Migrations ].forEach(function (contract) {
+                contract.setProvider(web3.currentProvider);
                 if (contract.networks().indexOf(networkId) > -1) {
-                    contract.setProvider(web3.currentProvider);
                     contract.setNetwork(networkId);
                 }
             });
