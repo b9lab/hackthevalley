@@ -5,7 +5,8 @@ var dappId = {
     "?auditor": "com.b9lab.drating.auditor"
   }[window.location.search] || "com.b9lab.drating.auditor";
 console.log(dappId);
-var network = "norsborg"
+var network = "norsborg";
+var publicGeth;
 
 const MAIN_NETWORK_ID = 1;
 const ROPSTEN_NETWORK_ID = 3;
@@ -19,6 +20,12 @@ window.onload = function() {
     init(web3);
     return web3.version.getNetworkPromise()
         .catch(function(err) {
+            // Failed locally, let's try the public Geth
+            publicGeth = new Web3.providers.HttpProvider('http://geth.b9lab.com:8550');
+            web3.setProvider(publicGeth);
+            return web3.version.getNetworkPromise();
+        })
+        .catch(function(err) {
             updateStatusUI(false);
             throw "Failed to connect";
         })
@@ -27,6 +34,7 @@ window.onload = function() {
             updateNetworkUI(networkId);
             [ Ratings, RicUri, Migrations ].forEach(function (contract) {
                 if (contract.networks().indexOf(networkId) > -1) {
+                    contract.setProvider(web3.currentProvider);
                     contract.setNetwork(networkId);
                 }
             });

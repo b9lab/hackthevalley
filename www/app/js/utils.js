@@ -33,7 +33,7 @@ promisify = function (web3) {
                 // Now we are at the last element
                 promisified[group + "Promise"] = function () {
                     var args = arguments;
-                    return new Promise(function (resolve, reject) {
+                    return new Promise(function promiseResolver(resolve, reject) {
                         args[args.length] = callbackToResolve(resolve, reject);
                         args.length++;
                         original.apply(web3[group], args);
