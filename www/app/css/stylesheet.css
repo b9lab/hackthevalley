@@ -1,3 +1,9 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #ff9800;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
 a {
     color: #e65100;
 }
@@ -138,6 +144,29 @@ a:hover {
     overflow: scroll;
 }
 
+.half-width-images {
+    margin-top: 50px;
+    padding: 0;    
+}
+
+.half-width-images img {
+    width: 50vw; 
+}
+
+.team-images {
+    text-align: center;
+}
+
+.team-images img {
+    width: 80%; 
+}
+
+.team-images h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #ff9800;
+}
+
 /*------ Sticky footer -------*/
 html {
   position: relative;
@@ -148,13 +177,14 @@ body {
   margin-bottom: 60px;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #292b2c;
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    border-top: 2px solid #FFF
 }
 /*------ End Sticky footer -------*/
 
@@ -193,6 +223,10 @@ body {
     
     .title-logo img {
         max-width: 70%;
+    }
+    
+    .half-width-images img {
+        width: 100vw;
     }
 }
 
