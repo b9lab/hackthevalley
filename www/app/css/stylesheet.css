@@ -228,6 +228,20 @@ body {
     .half-width-images img {
         width: 100vw;
     }
+    
+    /*--- footer overspill fix ---*/
+    .footer-logo {
+        margin-right: 10px;
+    }
+    
+    .footer-text span {
+        font-size: 10px;
+    }
+    
+    .footer-text {
+        padding-left: 10px;
+    }
+    /*--- footer overspill fix/ ---*/
 }
 
 
