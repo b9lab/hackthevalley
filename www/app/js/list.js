@@ -330,7 +330,7 @@ setModalHandler = function() {
     var r_source = $(e.relatedTarget);
     var r_modal = $(e.target);
     
-    r_modal.find("#submit-request").data("key") = r_source.data("key");
+    r_modal.find("#submit-request").data("key", r_source.data("key"));
     console.log("set data key:" + r_source.data("key"));
   });
 
