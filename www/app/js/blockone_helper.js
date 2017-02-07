@@ -6,6 +6,7 @@ var dappId = {
   }[window.location.search] || "com.b9lab.drating.auditor";
 console.log(dappId);
 var network = "norsborg";
+var publicGethHost = 'http://geth.b9lab.com:8550';
 var publicGeth;
 
 const MAIN_NETWORK_ID = 1;
@@ -21,7 +22,7 @@ window.onload = function() {
     return web3.version.getNetworkPromise()
         .catch(function(err) {
             // Failed locally, let's try the public Geth
-            publicGeth = new Web3.providers.HttpProvider('http://geth.b9lab.com:8550');
+            publicGeth = new Web3.providers.HttpProvider(publicGethHost);
             web3.setProvider(publicGeth);
             return web3.version.getNetworkPromise();
         })
@@ -124,7 +125,11 @@ function updateNetworkUI(networkId) {
     var td_network = $("#status_net");
 
     if(networkId == NORSBORG_NETWORK_ID) {
-        td_network.html("Connected").removeClass().addClass("alert-success");
+        if (typeof publicGeth != "undefined" && publicGeth.host == publicGethHost) {
+            td_network.html("Connected to " + publicGethHost).removeClass().addClass("alert-success");
+        } else {
+            td_network.html("Connected").removeClass().addClass("alert-success");
+        }
     } else {
         td_network.html("No connection").removeClass().addClass("alert-danger");
     }
