@@ -1,6 +1,35 @@
 addListItem = function(logItemArgs) {
     logItemArgs[ InfoElements.status ] = "Open";
-    var actionbar = $("#list").append(
+    // load new row from
+    var actionbar = $("#list");
+    
+    actionbar.append( newRow );
+    //maybe get the object?
+
+    var objs = [newRow.find("#btn_join_analysis"), newRow.find("#btn_submit_analysis"), newRow.find("#btn_details_analysis")];
+    var dataset = [
+        { key:LogItemArgs[ LogRequestForRatingSubmitted.key] },
+        { key:LogItemArgs[ LogRequestForRatingSubmitted.key] },
+        {
+            key:LogItemArgs[ LogRequestForRatingSubmitted.key],
+            ipfsHash: logItemArgs[ LogRequestForRatingSubmitted.ipfsHash ],
+            name: logItemArgs[ LogRequestForRatingSubmitted.name ],
+            description: logItemArgs[ LogRequestForRatingSubmitted.description ],
+            ric: logItemArgs[ LogRequestForRatingSubmitted.ric ],
+            permid: logItemArgs[ LogRequestForRatingSubmitted.permid ],
+            deadline: logItemArgs[ LogRequestForRatingSubmitted.deadlineStamp ].toNumber(),
+            maxAuditors: logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
+            availableSlots: logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
+            joinedSlots: 0,
+            submittedSlots: 0,
+            reward: logItemArgs[ LogRequestForRatingSubmitted.rewardWei ].toString(10)
+        }
+    ];
+
+    pushMultiDataHash(objs, dataset);
+
+// left here for reference - to be removed
+/*
         "<tr data-key=\"" + logItemArgs[ LogRequestForRatingSubmitted.key ] + "\">" +
             "<td class=\"name\"><a href='" + web3.toUtf8(logItemArgs[ LogRequestForRatingSubmitted.permid ]) + "'>" +
                 logItemArgs[ LogRequestForRatingSubmitted.name ] + "</a></td>" +
