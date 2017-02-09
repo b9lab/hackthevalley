@@ -2,31 +2,18 @@ addListItem = function(logItemArgs) {
     logItemArgs[ InfoElements.status ] = "Open";
     // load new row from
     var actionbar = $("#list");
-    
+
+    var newRow = $("<tr/>", { "data-key": logItemArgs[ LogRequestForRatingSubmitted.key ], "class": "list-row" });
     actionbar.append( newRow );
-    //maybe get the object?
 
-    var objs = [newRow.find("#btn_join_analysis"), newRow.find("#btn_submit_analysis"), newRow.find("#btn_details_analysis")];
-    var dataset = [
-        { key:LogItemArgs[ LogRequestForRatingSubmitted.key] },
-        { key:LogItemArgs[ LogRequestForRatingSubmitted.key] },
-        {
-            key:LogItemArgs[ LogRequestForRatingSubmitted.key],
-            ipfsHash: logItemArgs[ LogRequestForRatingSubmitted.ipfsHash ],
-            name: logItemArgs[ LogRequestForRatingSubmitted.name ],
-            description: logItemArgs[ LogRequestForRatingSubmitted.description ],
-            ric: logItemArgs[ LogRequestForRatingSubmitted.ric ],
-            permid: logItemArgs[ LogRequestForRatingSubmitted.permid ],
-            deadline: logItemArgs[ LogRequestForRatingSubmitted.deadlineStamp ].toNumber(),
-            maxAuditors: logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
-            availableSlots: logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
-            joinedSlots: 0,
-            submittedSlots: 0,
-            reward: logItemArgs[ LogRequestForRatingSubmitted.rewardWei ].toString(10)
-        }
-    ];
+    newRow.load("templates/list-item.html", function(e) {
+        console.log("update row data:");
+        console.log(newRow);
+        console.log(logItemArgs)
+        updateRowData(newRow, logItemArgs);
+    });
 
-    pushMultiDataHash(objs, dataset);
+    
 
 // left here for reference - to be removed
 /*
@@ -91,12 +78,39 @@ addListItem = function(logItemArgs) {
         <button class='btn btn-success' data-toggle='modal' data-target='#detailsModal'>DETAILS</button></td></tr>"
         */
 
-    actionbar
-        .append(btn_contribute)
-        .append(btn_join)
-        .append(btn_response)
-        .append(btn_details);
 };
+
+updateRowData = function(row, rowdata) {
+    // setup data on the buttons
+    var objs = [row.find("#btn_contribute"), row.find("#btn_join_analysis"), row.find("#btn_submit_analysis"), row.find("#btn_details_analysis")];
+    var dataset = [
+        { key: rowdata[ LogRequestForRatingSubmitted.key] },
+        { key: rowdata[ LogRequestForRatingSubmitted.key] },
+        { 
+            toggle: 'modal',
+            target: '#responseModal',
+            key: rowdata[ LogRequestForRatingSubmitted.key]
+        },
+        {
+            toggle: 'modal',
+            target: '#detailsModal',
+            key: rowdata[ LogRequestForRatingSubmitted.key],
+            ipfsHash: rowdata[ LogRequestForRatingSubmitted.ipfsHash ],
+            name: rowdata[ LogRequestForRatingSubmitted.name ],
+            description: rowdata[ LogRequestForRatingSubmitted.description ],
+            ric: rowdata[ LogRequestForRatingSubmitted.ric ],
+            permid: rowdata[ LogRequestForRatingSubmitted.permid ],
+            deadline: rowdata[ LogRequestForRatingSubmitted.deadlineStamp ].toNumber(),
+            maxAuditors: rowdata[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
+            availableSlots: rowdata[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
+            joinedSlots: 0,
+            submittedSlots: 0,
+            reward: rowdata[ LogRequestForRatingSubmitted.rewardWei ].toString(10)
+        }
+    ];
+
+    pushMultiDataHash(objs, dataset);
+}
 
 buildInitialList = function(initialBlock, lastBlock) {
     return filterGetPromise(Ratings.deployed()
