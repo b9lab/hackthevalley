@@ -14,6 +14,14 @@ addListItem = function(logItemArgs) {
 };
 
 updateRowData = function(row, rowdata) {
+    // update row fields
+    row.find(".name").html(rowdata[ LogRequestForRatingSubmitted.name ])
+    row.find(".ric").html(rowdata[ LogRequestForRatingSubmitted.ric ]);
+    row.find(".reward").html((rowdata[ LogRequestForRatingSubmitted.rewardWei ]/1000000000000000000).toString(10));
+    row.find(".available").html(rowdata[ LogRequestForRatingSubmitted.maxAuditors ].toNumber());
+    row.find(".joined").html(0);
+    row.find(".submitted").html(0);
+    
     // setup data on the buttons
     var objs = [row.find("#btn_contribute"), row.find("#btn_join_analysis"), row.find("#btn_submit_analysis"), row.find("#btn_details_analysis")];
     var dataset = [
