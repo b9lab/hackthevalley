@@ -1,83 +1,16 @@
 addListItem = function(logItemArgs) {
     logItemArgs[ InfoElements.status ] = "Open";
-    // load new row from
+
     var actionbar = $("#list");
 
+    // we must wrap the tr here, because if we load it, it will be injected twice (bug?)
     var newRow = $("<tr/>", { "data-key": logItemArgs[ LogRequestForRatingSubmitted.key ], "class": "list-row" });
     actionbar.append( newRow );
 
+    // the following call will use default caching rules!
     newRow.load("templates/list-item.html", function(e) {
-        console.log("update row data:");
-        console.log(newRow);
-        console.log(logItemArgs)
         updateRowData(newRow, logItemArgs);
     });
-
-    
-
-// left here for reference - to be removed
-/*
-        "<tr data-key=\"" + logItemArgs[ LogRequestForRatingSubmitted.key ] + "\">" +
-            "<td class=\"name\"><a href='" + web3.toUtf8(logItemArgs[ LogRequestForRatingSubmitted.permid ]) + "'>" +
-                logItemArgs[ LogRequestForRatingSubmitted.name ] + "</a></td>" +
-        "<td class=\"ric\">" + logItemArgs[ LogRequestForRatingSubmitted.ric ] + "</td>" +
-        "<td class=\"reward\">" + web3.fromWei(logItemArgs[ LogRequestForRatingSubmitted.rewardWei ]).toNumber() + " Ethers</td>" + 
-        "<td class=\"available\">" + logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber() + "</td>" +
-        "<td class=\"joined\">" + 0 + "</td>" +
-        "<td class=\"submitted\">" + 0 + "</td>" +
-        "<td class='action-cell text-center'></td>").find(".action-cell");
-
-    var btn_contribute = $("<button/>", {
-        text: "Contribute",
-        class: 'btn btn-primary btn-contribute-analysis',
-        "data-key": logItemArgs[ LogRequestForRatingSubmitted.key ]
-    });
-
-    var btn_join = $('<button/>', {
-        text: 'Join analysis',
-        //id: 'btn-join-analysis',
-        class: 'btn btn-success btn-join-analysis',
-        "data-key": logItemArgs[ LogRequestForRatingSubmitted.key ]
-    });
-
-    var btn_response = $('<button/>', {
-        text: 'Submit analysis',
-        id: 'btn-submit-analysis',
-        class: 'btn btn-primary btn-submit-analysis',
-        "data-toggle": 'modal',
-        "data-target": '#responseModal',
-        "data-key": logItemArgs[ LogRequestForRatingSubmitted.key ]
-    });
-    
-    var btn_details = $('<button/>', {
-        text: 'Details',
-        id: 'btn-details-analysis',
-        class: 'btn btn-success btn-details-analysis',
-        "data-toggle": 'modal',
-        "data-target": '#detailsModal',
-        "data": {
-            "key": logItemArgs[ LogRequestForRatingSubmitted.key ],
-            "ipfs-hash": logItemArgs[ LogRequestForRatingSubmitted.ipfsHash ],
-            "name": logItemArgs[ LogRequestForRatingSubmitted.name ],
-            "description": logItemArgs[ LogRequestForRatingSubmitted.description ],
-            "ric": logItemArgs[ LogRequestForRatingSubmitted.ric ],
-            "permid": web3.toUtf8(logItemArgs[ LogRequestForRatingSubmitted.permid ]),
-            "deadline": logItemArgs[ LogRequestForRatingSubmitted.deadlineStamp ].toNumber(),
-            "max-auditors": logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
-            "available-slots": logItemArgs[ LogRequestForRatingSubmitted.maxAuditors ].toNumber(),
-            "joined-slots": 0,
-            "submitted-slots": 0,
-            "reward": logItemArgs[ LogRequestForRatingSubmitted.rewardWei ].toString(10),
-            "status": logItemArgs[ InfoElements.status ]
-        }
-    });
-
-        /*
-        <button class='btn btn-success' id='btn-join-analysis' data-key='"+logItemArgs["key"]+"'>Join Analysis</button>
-        <button type='button' class='btn btn-primary' data-toggle='modal' data-target='#responseModal' data-key='"+logItemArgs["key"]+"'>Submit analysis</button>
-        <button class='btn btn-success' data-toggle='modal' data-target='#detailsModal'>DETAILS</button></td></tr>"
-        */
-
 };
 
 updateRowData = function(row, rowdata) {
