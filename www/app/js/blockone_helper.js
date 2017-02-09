@@ -114,7 +114,7 @@ function updateStatusUI(isConnected) {
     var td_client = $("#status_client");
 
     if(isConnected) {
-        td_client.html("Connected").removeClass().addClass("alert-success");
+        td_client.html("Connected to " + publicGeth.host).removeClass().addClass("alert-success");
     } else {
         td_client.html("No connection").removeClass().addClass("alert-danger");
         updateNetworkUI(0);
@@ -125,11 +125,7 @@ function updateNetworkUI(networkId) {
     var td_network = $("#status_net");
 
     if(networkId == NORSBORG_NETWORK_ID) {
-        if (typeof publicGeth != "undefined" && publicGeth.host == publicGethHost) {
-            td_network.html("Connected to " + publicGethHost).removeClass().addClass("alert-success");
-        } else {
-            td_network.html("Connected").removeClass().addClass("alert-success");
-        }
+        td_network.html("Connected").removeClass().addClass("alert-success");
     } else {
         td_network.html("No connection").removeClass().addClass("alert-danger");
     }
