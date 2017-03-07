@@ -21,6 +21,10 @@ a:hover {
     color: #FFF !important;
 }
 
+.orange-overlay {
+    background: rgba(255,152,0,0.5);
+}
+
 .navbar {
     z-index: 999; /* button is on 1000 */
     border-bottom: 2px #FFF solid;
@@ -59,6 +63,9 @@ a:hover {
     min-height: 400px;
     text-align: center;
     padding-bottom: 20px;
+    background: linear-gradient(rgba(255,152,0,1), rgba(255,152,0,0.8), rgba(255,152,0,1)), url("../images/code-bkg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .jumbotron-logos img{
@@ -83,9 +90,8 @@ a:hover {
 
 .subtitle {
     margin: 20px 10vw 50px;
-    color: #FF9800;
+    color: #FFF;
 }
-
 
 .navbar-brand img {
     max-width: 100px;
